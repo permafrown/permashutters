@@ -33,7 +33,7 @@
   </div>
 </head>
 <body>
-  <h1 class="title_centered" style="margin-top: 10%;">permashutters on git</h1>
+  <h1 class="title_centered" style="margin-top: 10%;">permashutters about</h1>
   <h2 class="animated pulse">gaming | fauna | science | words | sundry | family</h2>
   <div class="container-fluid">
     <div class="col-xs-12">

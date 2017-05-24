@@ -59,7 +59,7 @@ body, html{
 
 /*SUBMENU*/
 .submenu a {
-    color: #DDD;
+    color: #777;
     text-decoration: none;
 }
 
@@ -170,7 +170,7 @@ ul.topnav li a:hover {
   text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .title_centered {
   margin-bottom: 50px;

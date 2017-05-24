@@ -35,7 +35,7 @@
 </head>
 <body>
   <h1 class="title_centered" style="margin-top: 10%;">permashutters on git</h1>
-  <h2 class="animated pulse"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="family.php">family</a></h2>
+  <h2 class="submenu animated pulse"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="family.php">family</a></h2>
   <div class="container-fluid">
     <div class="col-xs-12">
       <img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" />

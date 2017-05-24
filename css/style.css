@@ -59,9 +59,8 @@ body, html{
 
 /*SUBMENU*/
 .submenu a {
-    color: #BBB;
+    color: #DDD;
     text-decoration: none;
-    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
 
 /*TOP NAV*/

@@ -34,7 +34,7 @@
   </div>
 </head>
 <body>
-  <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small> sundry</h1>
+  <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>sundry</h1>
   <div class="container-fluid">
     <div class="col-xs-12">
       <img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" />

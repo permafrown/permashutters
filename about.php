@@ -35,6 +35,17 @@
 </head>
 <body>
   <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
+  <p>permashutters is a place where i like to keep a variety of things that interest me</p>
+  <p>since there are many things that do, i've tried to create some different spaces for different topics that tickle my fancy</p>
+  <hr>
+  <ul>
+      <li>games</li>
+      <li>fauna</li>
+      <li>science</li>
+      <li>words</li>
+      <li>sundry</li>
+      <li>family</li>
+  </ul>
   <div class="container-fluid">
     <div class="col-xs-12">
       <img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" />

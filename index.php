@@ -20,9 +20,10 @@
   <h2 class="submenu animated pulse"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="family.php">family</a></h2>
   <div class="container-fluid">
     <div class="col-xs-12">
-      <img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" />
+      <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
     </div>
   </div>
+  <h2 class="submenu animated pulse" style="margin-bottom: 5%;">a collection of things i find interesting</h2>
     <div class="column shutters">
       <div class="col-xs-2 shutt" id="games_shutter">
         <a href="games.php"><div class="vert_text">games</div></a>

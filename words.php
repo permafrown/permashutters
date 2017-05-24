@@ -22,6 +22,7 @@
       <a href="index.php"><img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
     </div>
   </div>
+  <hr class="perma_hr">
     <div class="column shutters">
       <div class="col-xs-2 shutt" id="games_shutter">
         <a href="games.php"><div class="vert_text">games</div></a>

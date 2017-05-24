@@ -24,9 +24,10 @@
     </div>
   </div>
   <h2 class="submenu animated pulse" style="margin-bottom: 5%;">a collection of things i find interesting</h2>
+  <hr class="perma_hr">
     <div class="column shutters">
       <div class="col-xs-2 shutt" id="games_shutter">
-        <a href="games.php"><div class="vert_text">games</div></a>
+        <a href="games.php"><div class="vert_text games_shutter">games</div></a>
       </div>
       <div class="col-xs-2 shutt" id="fauna_shutter">
         <a href="fauna.php"><div class="vert_text">fauna</div></a>

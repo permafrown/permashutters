@@ -220,6 +220,12 @@ hr.perma_hr {
   http://www.zastavki.com/pictures/originals/2015/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg
   http://www.walldevil.com/wallpapers/a68/landscape-images-grey-background-desctopwalls-search.jpg
 */
+/*.games_shutter:before {
+    content: url('/includes/games_bg.jpg');
+}
+.games_shutter {
+    background: url("includes/games_bg.jpg");
+}*/
 .home_bg {
   background: #555; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#555, #222); /* For Safari 5.1 to 6.0 */

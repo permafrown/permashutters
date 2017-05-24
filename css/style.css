@@ -59,7 +59,8 @@ body, html{
 
 /*SUBMENU*/
 .submenu a {
-    color: #777;
+    color: #888;
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
 

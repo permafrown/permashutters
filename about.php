@@ -35,42 +35,30 @@
 </head>
 <body>
   <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
+  <div class="container-fluid about_content">
   <p>permashutters is a place where i like to keep a variety of things that interest me</p>
   <p>since there are many things that do, i've tried to create some different spaces for different topics that tickle my fancy</p>
-  <hr>
-  <ul>
-      <li>games</li>
-      <li>fauna</li>
-      <li>science</li>
-      <li>words</li>
-      <li>sundry</li>
-      <li>family</li>
+  <hr class="perma_hr">
+  <ul class="about_desc_list">
+      <li><h3><a href="games.php">games</a></h3></li>
+      <li>asdf</li>
+      <li><h3><a href="fauna.php">fauna</a></h3></li>
+      <li>asdf</li>
+      <li><h3><a href="science.php">science</a></h3></li>
+      <li>asdf</li>
+      <li><h3><a href="words.php">words</a></h3></li>
+      <li>asdf</li>
+      <li><h3><a href="sundry.php">sundry</a></h3></li>
+      <li>asdf</li>
+      <li><h3><a href="family.php">family</a></h3></li>
+      <li>asdf</li>
   </ul>
+  </div>
   <div class="container-fluid">
     <div class="col-xs-12">
-      <img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" />
+      <img style="margin-bottom: 5%; margin-top: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" />
     </div>
   </div>
-  <div class="column shutters">
-    <div class="col-xs-2 shutt" id="games_shutter">
-      <a href="games.php"><div class="vert_text">games</div></a>
-    </div>
-    <div class="col-xs-2 shutt" id="fauna_shutter">
-      <a href="fauna.php"><div class="vert_text">fauna</div></a>
-    </div>
-    <div class="col-xs-2 shutt" id="science_shutter">
-      <a href="science.php"><div class="vert_text">science</div></a>
-    </div>
-    <div class="col-xs-2 shutt" id="words_shutter">
-      <a href="words.php"><div class="vert_text">words</div></a>
-    </div>
-    <div class="col-xs-2 shutt" id="sundry_shutter">
-      <a href="sundry.php"><div class="vert_text">sundry</div></a>
-    </div>
-    <div class="col-xs-2 shutt" id="family_shutter">
-      <a href="family.php"><div class="vert_text">family</div></a>
-      </div>
-    </div>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/npm.js"></script>

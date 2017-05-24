@@ -59,9 +59,8 @@ body, html{
 
 /*SUBMENU*/
 .submenu a {
-    color: #888;
-    font-family: 'Lato', sans-serif;
     text-decoration: none;
+    color: inherit;
 }
 
 /*TOP NAV*/
@@ -79,7 +78,6 @@ body, html{
   margin: 0;
   padding: 9px 0;
   overflow: hidden;
-  /*font-family: 'Poiret One', cursive;*/
   font-family: 'Overlock', cursive;
   text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }

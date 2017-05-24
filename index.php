@@ -34,7 +34,7 @@
   </div>
 </head>
 <body>
-  <h1 class="title_centered" style="margin-top: 10%;">permashutters on git</h1>
+  <h1 class="title_centered" style="margin-top: 10%;">permashutters</h1>
   <h2 class="submenu animated pulse"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="family.php">family</a></h2>
   <div class="container-fluid">
     <div class="col-xs-12">

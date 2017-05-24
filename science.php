@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/animate-master/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>permashutters</title>
+  <title>science | permashutters</title>
   <div class="container-fluid top_nav">
     <div class="row">
       <div class="col-xs-12">
@@ -34,8 +34,7 @@
   </div>
 </head>
 <body>
-  <h1 class="title_centered" style="margin-top: 10%;">permashutters science</h1>
-  <h2 class="animated pulse">games | fauna | science | words | sundry | family</h2>
+  <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small> science</h1>
   <div class="container-fluid">
     <div class="col-xs-12">
       <img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" />

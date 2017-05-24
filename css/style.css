@@ -1,0 +1,286 @@
+/* Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext);
+
+/*GENERAL OVERARCHING*/
+body, html{
+  margin: 0 auto;
+  text-align: center;
+  background-color: #555;
+  /*height: 100%;*/
+  box-sizing: border-box;
+}
+/*END GENERAL*/
+
+/*SHUTTERS*/
+.shutters {
+  /*background-color: #543;*/
+  display: flex;
+}
+.shutt {
+  background-color: rgba(45,45,45,0.5);
+  max-width: 20%;
+  min-width: 10%;
+  min-height: 30%;
+  text-align: center;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+.shutt:hover {
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+    min-width: 40% !important;
+    background-color: #345;
+  }
+.shutt a {
+  color: #BBB;
+  text-decoration: none;
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+  font-family: 'Poiret One', cursive;
+  font-size:calc(40px + 1.8vw);
+}
+.vert_text {
+  /*transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);*/
+}
+/*#gaming_shutter, #science_shutter, #sundry_shutter {
+  background-color: #DDD;
+  background-size: 100%;
+  vertical-align: top;
+}*/
+/*#fauna_shutter, #words_shutter, #family_shutter {
+  background-color: #333;
+  background-size: cover;
+  vertical-align: top;
+}*/
+/*END SHUTTERS*/
+
+/*TOP NAV*/
+.top_nav {
+  background-color: #555;
+  background-color: rgba(45,45,45,0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 2;
+}
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 9px 0;
+  overflow: hidden;
+  /*font-family: 'Poiret One', cursive;*/
+  font-family: 'Overlock', cursive;
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+ul.topnav li {float: right;}
+ul.topnav li:nth-last-child(2) {float: left;}
+ul.topnav li.icon {display: none;}
+/*END TOP NAV*/
+
+/*BOT NAV*/
+.bot_nav {
+  background-color: #555;
+  background-color: rgba(45,45,45,0.5);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Overlock', cursive;
+}
+.foot_nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/*END BOT NAV*/
+
+/*NAV LINX*/
+li a, button.btn a, shutt a{
+  color: #BBB;
+  text-align: center;
+  padding: 14px 16px;
+}
+ul.topnav li a:hover {
+  color: #DDD;
+  background-color: #444;
+  text-decoration: none;
+  border-radius: 0 0 50px 50px;
+}
+.bot_nav button.btn, .btn {
+  color: #DDD;
+  background-color: #555;
+  background-color: rgba(45,45,45,0);
+  border-style: none;
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+.bot_nav button.btn a:hover, .btn:hover{
+  color: #DDD;
+  background-color: #444;
+  text-decoration: none;
+  border-radius: 50px 50px 50px 50px;
+}
+
+/*CONTACT PAGE*/
+.contact_pointer p {
+  color: #d9d9d9;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  font-size:calc(8px + 0.8vw);
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+.contact_form {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.form-control {
+  text-align: center;
+}
+.controls {
+  margin-top: 15%;
+}
+/*END CONTACT PAGE*/
+
+/*FURTHER TWEAKS*/
+.home_page {
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.content p {
+  color: #d9d9d9;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  font-size:calc(12px + 1.8vw);
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+a {
+  text-decoration: none;
+}
+.title_centered {
+  margin-bottom: 50px;
+  color: #BBB;
+  font-family: 'Poiret One', cursive;
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+  font-size:calc(70px + 1.8vw);
+}
+h3 {
+  padding: 60px 0 30px 0;
+  font-family: 'Cinzel', serif;
+  font-size: 45px;
+  font-size: 4.2vw;
+}
+.h3_light {
+  color: #d9d9d9;
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+.h3_dark {
+  color: #0d0d0d;
+  text-shadow: 4px 4px 2px rgba(230, 230, 230, 1);
+}
+.avatar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  max-height: 150px;
+}
+/*END FURTHER TWEAKS*/
+
+/*BACKGROUNDS
+  https://ihunsw.edu.au/wp-content/uploads/2014/07/grey-website-background-illusionapparel2.jpg
+  https://images4.alphacoders.com/594/594600.jpg
+  http://www.zastavki.com/pictures/originals/2015/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg
+  http://www.walldevil.com/wallpapers/a68/landscape-images-grey-background-desctopwalls-search.jpg
+*/
+.home_bg {
+  background: #555; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#555, #222); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#555, #222); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#555, #222); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#555, #222); /* Standard syntax */
+  /*background: url('https://ihunsw.edu.au/wp-content/uploads/2014/07/grey-website-background-illusionapparel2.jpg'), repeat;*/
+  height: 1280px;
+}
+.about_bg {
+  background: #222; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#222, #888); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#222, #888); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#222, #888); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#222, #888); /* Standard syntax */
+  /*background: url('https://images4.alphacoders.com/594/594600.jpg'), repeat;*/
+  height: 1280px;
+}
+.portfolio_bg {
+  background: #888; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#888, #555); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#888, #555); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#888, #555); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#888, #555); /* Standard syntax */
+  /*background: url('http://www.walldevil.com/wallpapers/a68/landscape-images-grey-background-desctopwalls-search.jpg'), repeat;*/
+  height: 1280px;
+}
+.contact_bg {
+  background: #555; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#555, #222); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#555, #222); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#555, #222); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#555, #222); /* Standard syntax */
+  /*background: url('http://www.zastavki.com/pictures/originals/2015/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg'), repeat;*/
+  height: 1280px;
+}
+/*END BACKGROUNDS*/
+
+/*RESPONSIVE*/
+@media screen and (max-width: 600px) {
+  ul.topnav li:not(:nth-last-child(2)) {
+    display: none;
+  }
+  ul.topnav li:nth-last-child(2) {
+    float: left;
+    display: block;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: block;
+  }
+  ul.topnav li a:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
+/*END RESPONSIVE*/
+
+/*HAMBURGER MENU*/
+@media screen and (max-width: 600px) {
+  ul.topnav.burger {
+    position: relative;
+  }
+  ul.topnav.burger li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.burger li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.burger li a {
+    background-color: #000;
+    display: block;
+    text-align: center;
+  }
+  ul.topnav.burger li a:hover {
+  border-radius: 0;
+  }
+}
+/*END HAMBURGER MENU*/

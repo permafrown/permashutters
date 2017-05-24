@@ -17,6 +17,7 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="topnav" id="top_nav_burg">
+          <li><a href="#about">about</a></li>
           <li><a href="#family">family</a></li>
           <li><a href="#sundry">sundry</a></li>
           <li><a href="#words">words</a></li>

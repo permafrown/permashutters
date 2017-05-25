@@ -32,10 +32,7 @@
       <a href="index.php"><img style="margin-bottom: 5%; margin-top: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
     </div>
   </div>
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/npm.js"></script>
-  <script src="js/permafrown.js"></script>
+  <?php include_once 'includes/body_scripts.php';?>
 </body>
 
 <footer>

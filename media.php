@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/animate-master/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>family | permashutters</title>
+  <title>media | permashutters</title>
   <?php include_once 'includes/topnav.php';?>
 </head>
 <body>
-  <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>family</h1>
+  <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>media</h1>
   <div class="container-fluid">
     <div class="col-xs-12">
       <a href="index.php"><img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
@@ -39,8 +39,8 @@
     <div class="col-xs-2 shutt" id="sundry_shutter">
       <a href="sundry.php"><div class="vert_text">sundry</div></a>
     </div>
-    <div class="col-xs-2 shutt" id="family_shutter">
-      <a href="family.php"><div class="vert_text">family</div></a>
+    <div class="col-xs-2 shutt" id="media_shutter">
+      <a href="media.php"><div class="vert_text">media</div></a>
       </div>
     </div>
   <script src="js/jquery-3.1.1.min.js"></script>

@@ -39,8 +39,8 @@
       <div class="col-xs-2 shutt" id="sundry_shutter">
         <a href="sundry.php"><div class="vert_text">sundry</div></a>
       </div>
-      <div class="col-xs-2 shutt" id="family_shutter">
-        <a href="family.php"><div class="vert_text">family</div></a>
+      <div class="col-xs-2 shutt" id="media_shutter">
+        <a href="media.php"><div class="vert_text">media</div></a>
       </div>
     </div>
   <script src="js/jquery-3.1.1.min.js"></script>

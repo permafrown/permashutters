@@ -26,7 +26,7 @@
   <hr class="perma_hr">
     <div class="column shutters">
       <div class="col-xs-2 shutt" id="games_shutter">
-        <a href="games.php"><div class="vert_text games_shutter">games</div></a>
+        <a href="games.php"><div class="vert_text games_shutter"><span class="hidden-sm hidden-xs">games</span><span class="hidden-md hidden-lg hidden-xl"><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></span></div></a>
       </div>
       <div class="col-xs-2 shutt" id="fauna_shutter">
         <a href="fauna.php"><div class="vert_text">fauna</div></a>

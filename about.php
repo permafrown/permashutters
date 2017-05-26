@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/animate-master/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <?php include_once 'includes/topnav.php';?>
-
-  <title>about | permashutters</title>
+    <title>about | permashutters</title>
 </head>
 <body>
   <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>

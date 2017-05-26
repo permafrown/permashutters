@@ -12,12 +12,11 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/animate-master/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <?php include_once 'includes/topnav.php';?>
     <title>permashutters</title>
 </head>
 <body>
   <h1 class="title_centered" style="margin-top: 10%;">permashutters</h1>
-  <h2 class="submenu animated pulse"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a></h2>
+  <h2 class="submenu animated pulse"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
   <div class="container-fluid">
     <div class="col-xs-12">
       <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
@@ -47,8 +46,6 @@
     </div>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/npm.js"></script>
-  <script src="js/permafrown.js"></script>
 </body>
 
 <footer>

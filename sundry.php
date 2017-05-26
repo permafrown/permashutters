@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="css/animate-master/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>sundry | permashutters</title>
-    <?php include_once 'includes/topnav.php';?>
 </head>
 <body>
   <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>sundry</h1>
@@ -43,10 +42,7 @@
         <a href="media.php"><div class="vert_text">media</div></a>
       </div>
     </div>
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/npm.js"></script>
-  <script src="js/permafrown.js"></script>
+    <?php include_once 'includes/body_scripts.php';?>
 </body>
 
 <footer>

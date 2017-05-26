@@ -254,22 +254,30 @@ hr.perma_hr {
 
 @media screen and (max-width: 720px){
     body, html {
-        font-size:calc(12px + 0.1vw);
         font-size: 14px;
+        font-size:calc(12px + 0.1vw);
     }
 }
 
 @media screen and (max-width: 640px){
     body, html {
-        font-size:calc(10px + 0.2vw);
         font-size: 12px;
+        font-size:calc(10px + 0.2vw);
     }
+    .title_centered {
+        font-size: 32px;
+        font-size:calc(32px + 2.2vw);
+    }
+
+}
+
+@media screen and (max-width: 400px) {
 }
 
 @media screen and (max-width: 320px){
     body, html {
-        font-size:calc(10px + 0.1vw);
         font-size: 10px;
+        font-size:calc(10px + 0.1vw);
     }
 }
 /*END RESPONSIVE*/

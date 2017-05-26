@@ -111,7 +111,7 @@ li a, button.btn a, shutt a{
 }
 ul.topnav li a:hover {
   color: #DDD;
-  background-color: #444;
+  background-color: #4d334d;
   text-decoration: none;
   border-radius: 0 0 50px 50px;
 }
@@ -124,7 +124,7 @@ ul.topnav li a:hover {
 }
 .bot_nav button.btn a:hover, .btn:hover{
   color: #DDD;
-  background-color: #444;
+  background-color: #4d334d;
   text-decoration: none;
   border-radius: 50px 50px 50px 50px;
 }

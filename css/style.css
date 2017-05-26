@@ -8,6 +8,8 @@ body, html{
   background-color: #555;
   /*height: 100%;*/
   box-sizing: border-box;
+  font-size: 16px;
+  font-size:calc(12px + 0.2vw);
 }
 /*END GENERAL*/
 
@@ -38,6 +40,7 @@ body, html{
   text-decoration: none;
   text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
   font-family: 'Poiret One', cursive;
+  font-size: 24px;
   font-size:calc(40px + 1.8vw);
 }
 .vert_text {
@@ -176,6 +179,7 @@ a {
   color: #BBB;
   font-family: 'Poiret One', cursive;
   text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+  font-size: 32px;
   font-size:calc(70px + 1.8vw);
 }
 h3 {
@@ -214,54 +218,13 @@ hr.perma_hr {
 }
 /*END FURTHER TWEAKS*/
 
-/*BACKGROUNDS
-  https://ihunsw.edu.au/wp-content/uploads/2014/07/grey-website-background-illusionapparel2.jpg
-  https://images4.alphacoders.com/594/594600.jpg
-  http://www.zastavki.com/pictures/originals/2015/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg
-  http://www.walldevil.com/wallpapers/a68/landscape-images-grey-background-desctopwalls-search.jpg
-*/
+/*BACKGROUNDS*/
 /*.games_shutter:before {
     content: url('/includes/games_bg.jpg');
 }
 .games_shutter {
     background: url("includes/games_bg.jpg");
 }*/
-.home_bg {
-  background: #555; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#555, #222); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#555, #222); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#555, #222); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#555, #222); /* Standard syntax */
-  /*background: url('https://ihunsw.edu.au/wp-content/uploads/2014/07/grey-website-background-illusionapparel2.jpg'), repeat;*/
-  height: 1280px;
-}
-.about_bg {
-  background: #222; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#222, #888); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#222, #888); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#222, #888); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#222, #888); /* Standard syntax */
-  /*background: url('https://images4.alphacoders.com/594/594600.jpg'), repeat;*/
-  height: 1280px;
-}
-.portfolio_bg {
-  background: #888; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#888, #555); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#888, #555); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#888, #555); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#888, #555); /* Standard syntax */
-  /*background: url('http://www.walldevil.com/wallpapers/a68/landscape-images-grey-background-desctopwalls-search.jpg'), repeat;*/
-  height: 1280px;
-}
-.contact_bg {
-  background: #555; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#555, #222); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#555, #222); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#555, #222); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#555, #222); /* Standard syntax */
-  /*background: url('http://www.zastavki.com/pictures/originals/2015/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg'), repeat;*/
-  height: 1280px;
-}
 /*END BACKGROUNDS*/
 
 /*RESPONSIVE*/
@@ -282,6 +245,27 @@ hr.perma_hr {
     margin-bottom: 0;
     border-radius: 0;
   }
+}
+
+@media screen and (max-width: 720px){
+    body, html {
+        font-size:calc(12px + 0.1vw);
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    body, html {
+        font-size:calc(10px + 0.2vw);
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body, html {
+        font-size:calc(10px + 0.1vw);
+        font-size: 10px;
+    }
 }
 /*END RESPONSIVE*/
 

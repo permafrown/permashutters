@@ -1,0 +1,41 @@
+https://ihunsw.edu.au/wp-content/uploads/2014/07/grey-website-background-illusionapparel2.jpg
+https://images4.alphacoders.com/594/594600.jpg
+http://www.zastavki.com/pictures/originals/2015/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg
+http://www.walldevil.com/wallpapers/a68/landscape-images-grey-background-desctopwalls-search.jpg
+
+.home_bg {
+  background: #555; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#555, #222); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#555, #222); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#555, #222); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#555, #222); /* Standard syntax */
+  /*background: url('https://ihunsw.edu.au/wp-content/uploads/2014/07/grey-website-background-illusionapparel2.jpg'), repeat;*/
+  height: 1280px;
+}
+.about_bg {
+  background: #222; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#222, #888); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#222, #888); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#222, #888); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#222, #888); /* Standard syntax */
+  /*background: url('https://images4.alphacoders.com/594/594600.jpg'), repeat;*/
+  height: 1280px;
+}
+.portfolio_bg {
+  background: #888; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#888, #555); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#888, #555); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#888, #555); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#888, #555); /* Standard syntax */
+  /*background: url('http://www.walldevil.com/wallpapers/a68/landscape-images-grey-background-desctopwalls-search.jpg'), repeat;*/
+  height: 1280px;
+}
+.contact_bg {
+  background: #555; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#555, #222); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#555, #222); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#555, #222); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#555, #222); /* Standard syntax */
+  /*background: url('http://www.zastavki.com/pictures/originals/2015/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg'), repeat;*/
+  height: 1280px;
+}

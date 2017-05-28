@@ -21,17 +21,23 @@
   <p>since there are many things that do, i've tried to create some different spaces for different topics that tickle my fancy</p>
   <hr class="perma_hr">
   <ul class="about_desc_list">
-      <li><h3><a href="games.php">games</a></h3></li>
+      <li><h3><a href="games.php">games </a></h3><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></li>
+      <li>&nbsp;</li>
       <li>starting with tabletop games, then from nintendo to playstation to pc,including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</li>
-      <li><h3><a href="fauna.php">fauna</a></h3></li>
+      <li><h3><a href="fauna.php">fauna </a></h3><img src="img/fauna_icon.png" alt="fauna" style="width:48px;height:48px;"/></li>
+      <li>&nbsp;</li>
       <li>i'll admit that 'fauna' is only half the story here since flora certainly play a role as well -- i love all the created things... ALL THE THINGS!</li>
-      <li><h3><a href="science.php">science</a></h3></li>
+      <li><h3><a href="science.php">science </a></h3><img src="img/science_icon.png" alt="science" style="width:48px;height:48px;"/></li>
+      <li>&nbsp;</li>
       <li>and math and physics and stuff... these are cool concepts or discoveries that blow my mind</li>
-      <li><h3><a href="words.php">words</a></h3></li>
+      <li><h3><a href="words.php">words </a></h3><img src="img/words_icon.png" alt="words" style="width:48px;height:48px;"/></li>
+      <li>&nbsp;</li>
       <li>i love language... more than lamp</li>
-      <li><h3><a href="sundry.php">sundry</a></h3></li>
+      <li><h3><a href="sundry.php">sundry </a></h3><img src="img/sundry_icon.png" alt="sundry" style="width:48px;height:48px;"/></li>
+      <li>&nbsp;</li>
       <li>a place to drop other random things i think are neat but don't fit the other categories</li>
-      <li><h3><a href="media.php">media</a></h3></li>
+      <li><h3><a href="media.php">media </a></h3><img src="img/media_icon.png" alt="media" style="width:48px;height:48px;"/></li>
+      <li>&nbsp;</li>
       <li>films & music & art</li>
   </ul>
   </div>

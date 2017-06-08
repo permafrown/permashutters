@@ -39,3 +39,79 @@ http://www.walldevil.com/wallpapers/a68/landscape-images-grey-background-desctop
   /*background: url('http://www.zastavki.com/pictures/originals/2015/Backgrounds_Line_of_computer_code__gray_background_099063_.jpg'), repeat;*/
   height: 1280px;
 }
+
+/*TOP NAV*/
+.top_nav {
+  background-color: #555;
+  background-color: rgba(45,45,45,0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 2;
+}
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 9px 0;
+  overflow: hidden;
+  font-family: 'Overlock', cursive;
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+ul.topnav li {float: right;}
+ul.topnav li:nth-last-child(2) {float: left;}
+ul.topnav li.icon {display: none;}
+
+ul.topnav li a:hover {
+  color: #DDD;
+  background-color: #4d334d;
+  text-decoration: none;
+  border-radius: 0 0 50px 50px;
+}
+/*END TOP NAV*/
+
+/*CONTACT PAGE*/
+.contact_pointer p {
+  color: #d9d9d9;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  font-size:calc(8px + 0.8vw);
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+.contact_form {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.form-control {
+  text-align: center;
+}
+.controls {
+  margin-top: 15%;
+}
+/*END CONTACT PAGE*/
+
+
+/*HAMBURGER MENU*/
+@media screen and (max-width: 600px) {
+  ul.topnav.burger {
+    position: relative;
+  }
+  ul.topnav.burger li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.burger li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.burger li a {
+    background-color: #000;
+    display: block;
+    text-align: center;
+  }
+  ul.topnav.burger li a:hover {
+  border-radius: 0;
+  }
+}
+/*END HAMBURGER MENU*/

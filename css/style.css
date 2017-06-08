@@ -1,5 +1,5 @@
 /* Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. */
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext);
+/*@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext);*/
 
 /*GENERAL OVERARCHING*/
 body, html{
@@ -55,6 +55,24 @@ body, html{
   background-size: cover;
   vertical-align: top;
 }*/
+.games_shutt {
+    background-image: url("../img/games_bg.jpg");
+}
+.fauna_shutt {
+    background-image: url("../img/fauna_bg.jpg");
+}
+.science_shutt {
+    background-image: url("../img/science_bg.png");
+}
+.words_shutt {
+    background-image: url("../img/words_bg.jpg");
+}
+.sundry_shutt {
+    background-image: url("../img/sundry_bg.jpg");
+}
+.media_shutt {
+    background-image: url("../img/media_bg.jpg");
+}
 /*END SHUTTERS*/
 
 /*SUBMENU*/
@@ -192,10 +210,18 @@ hr.perma_hr {
   }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 745px){
     body, html {
         font-size: 14px;
         font-size:calc(12px + 0.1vw);
+    }
+    .games_shutt, .science_shutt, .sundry_shutt {
+        height: 80em;
+        background-image: linear-gradient(#555,#888);
+    }
+    .fauna_shutt, .words_shutt, .media_shutt {
+        height: 80em;
+        background-image: linear-gradient(#888,#555);
     }
 }
 
@@ -208,7 +234,6 @@ hr.perma_hr {
         font-size: 32px;
         font-size:calc(32px + 2.2vw);
     }
-
 }
 
 @media screen and (max-width: 400px) {

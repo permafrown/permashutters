@@ -22,7 +22,6 @@
     </div>
   </div>
   <hr class="perma_hr">
-  <div class="column shutters">
     <?php include_once 'includes/shutter_menu.php';?>
     <?php include_once 'includes/body_scripts.php';?>
 </body>

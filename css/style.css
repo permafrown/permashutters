@@ -32,7 +32,6 @@ body, html{
 .shutt:hover {
     transition: .5s;
     min-width: 40% !important;
-    background-color: #4d334d;
   }
 .shutt a {
   color: #BBB;
@@ -222,6 +221,11 @@ hr.perma_hr {
     .fauna_shutt, .words_shutt, .media_shutt {
         height: 80em;
         background-image: linear-gradient(#888,#555);
+    }
+    .games_shutt:hover, .science_shutt:hover, .sundry_shutt:hover, .fauna_shutt:hover, .words_shutt:hover, .media_shutt:hover {
+        transition: .5s;
+        min-width: 40% !important;
+        background-image: linear-gradient(#4d334d,#4d334d);
     }
 }
 

@@ -422,7 +422,7 @@ main {
     }
     #slide-4 .hsContent {
         margin-left: -340px;
-        position: fixed;
+        position: relative;
     }
     #slide-4 h3 {
         background: none;

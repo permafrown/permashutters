@@ -15,16 +15,8 @@
     <title>permashutters</title>
 </head>
 <body>
-
-<!-- MAIN TITLE -->
   <h1 class="title_centered" style="margin-top: 2.5%;">permashutters</h1>
-<!-- END MAIN TITLE -->
-
-<!-- LARGE SCREEN SUBMENU -->
   <h2 class="submenu hidden-sm hidden-xs"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
-<!-- END LARGE SCREEN SUBMENU -->
-
-<!-- SHUTTER MENU -->
   <div class="container-fluid hidden-sm hidden-xs">
     <div class="col-xs-12">
       <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
@@ -41,13 +33,24 @@
         <a class="shutt col-xs-2 media_shutt" href="media.php"><span class="hidden-sm hidden-xs">media</span></a>
     </div>
     <hr class="perma_hr">
-<!-- END SHUTTER MENU -->
-
-<!-- SMALL SCREEN SUBMENU -->
+    <!-- <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a></h2>
+    <hr class="perma_hr hidden-md hidden-lg hidden-xl"> -->
     <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="about.php">about</a></h2>
-<!-- END SMALL SCREEN SUBMENU -->
-
-<!-- SCRIPTS -->
+    <!--<div class="container-fluid hidden-md hidden-lg hidden-xl">
+        <div class="col-xs-12">
+            <a href="games.php"><span class="hidden-md hidden-lg hidden-xl"><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>
+            <a href="fauna.php"<span class="hidden-md hidden-lg hidden-xl"><img src="img/fauna_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>
+            <a href="science.php"><span class="hidden-md hidden-lg hidden-xl"><img src="img/science_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>
+            <a href="words.php"><span class="hidden-md hidden-lg hidden-xl"><img src="img/words_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>
+            <a href="sundry.php"><span class="hidden-md hidden-lg hidden-xl"><img src="img/sundry_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>
+            <a href="media.php"><span class="hidden-md hidden-lg hidden-xl"><img src="img/media_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>
+        </div>
+    </div>
+    <div class="container-fluid hidden-md hidden-lg hidden-xl">
+      <div class="col-xs-12">
+        <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
+    </div>
+  </div>-->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
   <script src="js/bootstrap.min.js"></script>
@@ -56,8 +59,6 @@
   <script src="js/skrollr.js"></script>
   <script src="js/_main.js"></script>
   <script src="js/enquire.min.js"></script>
-<!-- END SCRIPTS -->
-
 </body>
 
 <footer>

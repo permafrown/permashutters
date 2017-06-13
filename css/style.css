@@ -320,8 +320,8 @@ main {
 
 /* Slide 1 */
 #slide-1 .hsContent {
-	bottom: 200px;
-	top: 500px;
+	bottom: 50%;
+	top: 50%;
     left: 25%;
 }
 

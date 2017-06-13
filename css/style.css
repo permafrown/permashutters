@@ -302,20 +302,21 @@ main {
 	top: 50%;
 }
 	.hsContent h3  {
-		color: #fff8de;
+		color: #BBB;
 		background-color: rgba(0,0,0,0.5);
 		padding: 10px 5px;
 		font-size: 35px;
 		line-height: 38px;
 		margin-bottom: 12px;
+        text-decoration: none;
 	}
 	.hsContent p {
 		width: 400px;
-		color: #b2b2b2;
+		color: #BBB;
 	}
 	.hsContent a {
-		color: #b2b2b2;
-		text-decoration: underline;
+		color: #BBB;
+		text-decoration: none;
 	}
 
 /* Slide 1 */

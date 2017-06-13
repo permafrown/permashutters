@@ -16,13 +16,13 @@
 </head>
 <body>
   <h1 class="title_centered" style="margin-top: 2.5%;">permashutters</h1>
-  <h2 class="submenu animated pulse hidden-sm hidden-xs"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
+  <h2 class="submenu hidden-sm hidden-xs"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
   <div class="container-fluid hidden-sm hidden-xs">
     <div class="col-xs-12">
       <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
     </div>
   </div>
-  <h2 class="submenu animated pulse" style="margin-bottom: 2.5%;">a collection of things i find interesting</h2>
+  <h2 class="submenu" style="margin-bottom: 2.5%;">a collection of things i find interesting</h2>
   <hr class="perma_hr">
     <div class="column shutters">
         <div class="col-xs-2 shutt games_shutt" id="games_shutter">
@@ -70,9 +70,9 @@
         </div>
     </div>
     <hr class="perma_hr">
-    <h2 class="submenu animated pulse hidden-md hidden-lg hidden-xl"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a></h2>
+    <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a></h2>
     <hr class="perma_hr">
-    <h2 class="submenu animated pulse hidden-md hidden-lg hidden-xl"><a href="about.php">about</a></h2>
+    <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="about.php">about</a></h2>
     <!--<div class="container-fluid hidden-md hidden-lg hidden-xl">
         <div class="col-xs-12">
             <a href="games.php"><span class="hidden-md hidden-lg hidden-xl"><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>

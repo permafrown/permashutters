@@ -30,8 +30,8 @@
                     data-anchor-target="#slide-1 h1";
                 >
                     <h1 class="title_centered"><small>permashutters</small>about</h1><br/>
-                    <p>permashutters is a place where i like to keep a variety of things that interest me</p>
-                    <p>since there are many things that do, i've tried to create some different spaces for different topics that tickle my fancy</p>
+                    <p class="text_centered">permashutters is a place where i like to keep a variety of things that interest me</p>
+                    <p class="text_centered">since there are many things that do, i've tried to create some different spaces for different topics that tickle my fancy</p>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@
                     data-anchor-target="#slide-2"
                 >
                     <h3><a href="games.php">games </h3><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>
-                    <p>starting with tabletop games, then from nintendo to playstation to pc,including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</p>
+                    <p class="text_centered">starting with tabletop games, then from nintendo to playstation to pc,including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</p>
                 </div>
             </div>
         </div>

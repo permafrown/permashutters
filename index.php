@@ -33,8 +33,8 @@
         <a class="shutt col-xs-2 media_shutt" href="media.php"><span class="hidden-sm hidden-xs">media</span></a>
     </div>
     <hr class="perma_hr">
-    <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a></h2>
-    <hr class="perma_hr hidden-md hidden-lg hidden-xl">
+    <!-- <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a></h2>
+    <hr class="perma_hr hidden-md hidden-lg hidden-xl"> -->
     <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="about.php">about</a></h2>
     <!--<div class="container-fluid hidden-md hidden-lg hidden-xl">
         <div class="col-xs-12">

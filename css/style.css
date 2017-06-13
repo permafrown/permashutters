@@ -18,7 +18,7 @@ body, html{
   /*background-color: #543;*/
   display: flex;
 }
-.shutt {
+.shutt{
   background-color: rgba(45,45,45,0.5);
   background-repeat: no-repeat;
   background-position: center;
@@ -32,8 +32,9 @@ body, html{
 .shutt:hover {
     transition: .5s;
     min-width: 40% !important;
+    text-decoration: none;
   }
-.shutt a {
+.shutt a, a span {
   color: #BBB;
   text-decoration: none;
   text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
@@ -41,19 +42,10 @@ body, html{
   font-size: 28px;
   font-size:calc(28px + 1.8vw);
 }
-.vert_text {
-  /*transform: rotate(-90deg);*/
+a span:hover {
+    color: #BBB;
+    text-decoration: none;
 }
-/*#games_shutter, #science_shutter, #sundry_shutter {
-  background-color: #DDD;
-  background-size: 100%;
-  vertical-align: top;
-}*/
-/*#fauna_shutter, #words_shutter, #media_shutter {
-  background-color: #333;
-  background-size: cover;
-  vertical-align: top;
-}*/
 .games_shutt {
     background-image: url("../img/games_bg.jpg");
 }
@@ -110,7 +102,7 @@ body, html{
 /*END BOT NAV*/
 
 /*NAV LINX*/
-li a, button.btn a, shutt a{
+li a, button.btn a, shutt a, shutt_a a{
   color: #BBB;
   text-align: center;
   padding: 14px 16px;

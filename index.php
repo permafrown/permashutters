@@ -25,53 +25,16 @@
   <h2 class="submenu" style="margin-bottom: 2.5%;">a collection of things i find interesting</h2>
   <hr class="perma_hr">
     <div class="column shutters">
-        <div class="col-xs-2 shutt games_shutt" id="games_shutter">
-            <a href="games.php">
-                <div class="vert_text">
-                    <span class="hidden-sm hidden-xs">games</span>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-2 shutt fauna_shutt" id="fauna_shutter">
-            <a href="fauna.php">
-                <div class="vert_text">
-                    <span class="hidden-sm hidden-xs">fauna</span>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-2 shutt science_shutt" id="science_shutter">
-            <a href="science.php">
-                <div class="vert_text">
-                    <span class="hidden-sm hidden-xs">science</span>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-2 shutt words_shutt" id="words_shutter">
-            <a href="words.php">
-                <div class="vert_text">
-                    <span class="hidden-sm hidden-xs">words</span>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-2 shutt sundry_shutt" id="sundry_shutter">
-            <a href="sundry.php">
-                <div class="vert_text">
-                    <span class="hidden-sm hidden-xs">sundry</span>
-                    <!-- <span class="jumbotron hidden-md hidden-lg hidden-xl">gerbil</span> -->
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-2 shutt media_shutt" id="media_shutter">
-            <a href="media.php">
-                <div class="vert_text">
-                    <span class="hidden-sm hidden-xs">media</span>
-                </div>
-            </a>
-        </div>
+        <a class="shutt col-xs-2 games_shutt" href="games.php"><span class="hidden-sm hidden-xs">games</span></a>
+        <a class="shutt col-xs-2 fauna_shutt" href="fauna.php"><span class="hidden-sm hidden-xs">fauna</span></a>
+        <a class="shutt col-xs-2 science_shutt" href="science.php"><span class="hidden-sm hidden-xs">science</span></a>
+        <a class="shutt col-xs-2 words_shutt" href="words.php"><span class="hidden-sm hidden-xs">words</span></a>
+        <a class="shutt col-xs-2 sundry_shutt" href="sundry.php"><span class="hidden-sm hidden-xs">sundry</span></a>
+        <a class="shutt col-xs-2 media_shutt" href="media.php"><span class="hidden-sm hidden-xs">media</span></a>
     </div>
     <hr class="perma_hr">
     <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a></h2>
-    <hr class="perma_hr">
+    <hr class="perma_hr hidden-md hidden-lg hidden-xl">
     <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="about.php">about</a></h2>
     <!--<div class="container-fluid hidden-md hidden-lg hidden-xl">
         <div class="col-xs-12">

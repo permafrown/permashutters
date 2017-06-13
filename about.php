@@ -20,7 +20,7 @@
     <section id="slide-1" class="homeSlide">
         <div class="bcg"
             data-center="background-position: 50% 0px;"
-            data-top-bottom="background-position: 50% -100px;"
+            data-top-bottom="background-position: 50% 0px;"
             data-anchor-target="#slide-1";
         >
             <div class="hsContainer">

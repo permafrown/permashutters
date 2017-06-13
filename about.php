@@ -30,6 +30,9 @@
                     data-anchor-target="#slide-1 h3";
                 >
                     <h3>permashutters | about</h3>
+                    <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
+                    <p>permashutters is a place where i like to keep a variety of things that interest me</p>
+                    <p>since there are many things that do, i've tried to create some different spaces for different topics that tickle my fancy</p>
                 </div>
             </div>
         </div>

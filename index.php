@@ -70,8 +70,10 @@
         </div>
     </div>
     <hr class="perma_hr">
-    <h2 class="submenu animated pulse hidden-md hidden-lg hidden-xl"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
-    <div class="container-fluid hidden-md hidden-lg hidden-xl">
+    <h2 class="submenu animated pulse hidden-md hidden-lg hidden-xl"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a></h2>
+    <hr class="perma_hr">
+    <h2 class="submenu animated pulse hidden-md hidden-lg hidden-xl"><a href="about.php">about</a></h2>
+    <!--<div class="container-fluid hidden-md hidden-lg hidden-xl">
         <div class="col-xs-12">
             <a href="games.php"><span class="hidden-md hidden-lg hidden-xl"><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>
             <a href="fauna.php"<span class="hidden-md hidden-lg hidden-xl"><img src="img/fauna_icon.png" alt="games" style="width:48px;height:48px;"/></span></a>
@@ -84,8 +86,8 @@
     <div class="container-fluid hidden-md hidden-lg hidden-xl">
       <div class="col-xs-12">
         <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
-      </div>
     </div>
+  </div>-->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
   <script src="js/bootstrap.min.js"></script>

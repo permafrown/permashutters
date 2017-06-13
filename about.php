@@ -52,9 +52,8 @@
                     data--100-bottom="opacity: 0;"
                     data-anchor-target="#slide-2"
                 >
-                    <li><h3><a href="games.php">games </h3><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a></li>
-                    <li>&nbsp;</li>
-                    <li>starting with tabletop games, then from nintendo to playstation to pc,including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</li>
+                    <h3 class="h3_dark"><a href="games.php">games </h3><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a><br/>
+                    <span class="h3_dark">starting with tabletop games, then from nintendo to playstation to pc,including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</span>
                 </div>
             </div>
         </div>

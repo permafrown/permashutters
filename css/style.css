@@ -64,14 +64,6 @@ a span:hover {
 .media_shutt {
     background-image: url("../img/media_bg.jpg");
 }
-/*.shutt_blank {
-    background-color: #FFF;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    margin: 20%;
-    padding: 20%;
-}*/
 /*END SHUTTERS*/
 
 /*SUBMENU*/
@@ -339,7 +331,7 @@ main {
 	top: auto;
 }
 #slide-2 h3 {
-    position: fixed;
+    position: relative;
     top: 70%;
 }
 
@@ -357,7 +349,7 @@ main {
 #slide-4 .bcg {background-image:url('../img/para_words_bg.png')}
 #slide-4 .hsContent {
 	margin-left: -450px;
-    position: fixed;
+    position: relative;
     top: 250px;
 }
 #slide-4 h3 {
@@ -391,7 +383,7 @@ main {
     }
     .hsContent {
         max-width: 700px;
-        position: absolute;
+        position: relative;
         /*left: 50%;
         top: 50%;
         text-align: left;*/
@@ -413,7 +405,7 @@ main {
         top: auto;
     }
     #slide-2 h3 {
-        position: fixed;
+        position: relative;
         top: 70%;
     }
     #slide-3 .hsContent {

@@ -386,8 +386,8 @@ main {
         max-width: 700px;
         position: relative;
         /*left: 50%;
-        top: 50%;
-        text-align: left;*/
+        top: 50%;*/
+        text-align: center;
         padding: 0;
     }
         .hsContent h3  {
@@ -398,8 +398,9 @@ main {
         width: 400px;
     }
     #slide-1 .hsContent {
-        /*bottom: 200px;*/
-        /*top: auto;*/
+        bottom: 50%;
+    	top: 50%;
+        left: 25%;
     }
     #slide-2 .hsContent {
         margin-left: -340px;

@@ -8,4 +8,3 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="css/animate-master/animate.css">
 <link rel="stylesheet" href="css/style.css">
-<?php include_once 'includes/topnav.php';?>

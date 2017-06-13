@@ -266,7 +266,7 @@ body, html {
 	background: url('../img/ico_loading.gif') no-repeat center center;
 }
 section {
-	min-width: 960px;
+	min-width: 550px;
 	opacity: 0;
 }
 .loaded section,

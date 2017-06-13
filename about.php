@@ -27,7 +27,7 @@
                 <div class="hsContent"
                     data-center="bottom: 200px; opacity: 1;"
                     data-top="bottom: 1200px; opacity: 0;"
-                    data-anchor-target="#slide-1 h2";
+                    data-anchor-target="#slide-1 h3";
                 >
                     <li><h3><a href="games.php">games </h3><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a></li>
                     <li>&nbsp;</li>
@@ -52,7 +52,7 @@
                     data--100-bottom="opacity: 0;"
                     data-anchor-target="#slide-2"
                 >
-                    <h2>fauna is awesome!</h2>
+                    <h3>fauna is awesome!</h3>
                 </div>
             </div>
         </div>
@@ -72,9 +72,9 @@
                 data--200-bottom="opacity: 1;"
                 data-center="opacity: 1"
                 data-200-top="opacity: 0"
-                data-anchor-target="#slide-3 h2"
+                data-anchor-target="#slide-3 h3"
             >
-                    <h2>science FTW</h2>
+                    <h3>science FTW</h3>
                 </div>
             </div>
 
@@ -96,7 +96,7 @@
                     data-top="opacity: 1"
                     data-anchor-target="#slide-4"
                 >
-                    <h2>words is words</h2>
+                    <h3>words is words</h3>
                 </div>
             </div>
 

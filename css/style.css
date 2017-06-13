@@ -405,8 +405,8 @@ main {
         width: 400px;
     }
     #slide-1 .hsContent {
-        bottom: 200px;
-        top: auto;
+        /*bottom: 200px;*/
+        /*top: auto;*/
     }
     #slide-2 .hsContent {
         margin-left: -340px;

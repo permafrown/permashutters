@@ -27,10 +27,10 @@
                 <div class="hsContent"
                     data-center="bottom: 200px; opacity: 1;"
                     data-top="bottom: 1200px; opacity: 0;"
-                    data-anchor-target="#slide-1 h3";
+                    data-anchor-target="#slide-1 h1";
                 >
                     <h3>permashutters | about</h3>
-                    <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
+                    <h1 class="title_centered"><small>permashutters</small>about</h1>
                     <p>permashutters is a place where i like to keep a variety of things that interest me</p>
                     <p>since there are many things that do, i've tried to create some different spaces for different topics that tickle my fancy</p>
                 </div>

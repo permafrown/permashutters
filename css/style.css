@@ -392,9 +392,9 @@ main {
     .hsContent {
         max-width: 700px;
         position: absolute;
-        left: 50%;
+        /*left: 50%;
         top: 50%;
-        text-align: left;
+        text-align: left;*/
         padding: 0;
     }
         .hsContent h3  {

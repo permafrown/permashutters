@@ -335,14 +335,13 @@ main {
 	}
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/para_games_bg.png')}
 #slide-1 .hsContent {
 	bottom: 200px;
 	top: auto;
 }
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../img/para_fauna_bg.png')}
+#slide-2 .bcg {background-image:url('../img/para_games_bg.png')}
 #slide-2 .hsContent {
 	margin-left: -450px;
 	top: auto;

@@ -337,7 +337,7 @@ main {
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../img/para_games_bg_1440x1232.png')}
 #slide-2 .hsContent {
-	margin-left: -450px;
+	/*margin-left: -450px;*/
 	top: auto;
 }
 #slide-2 h3 {

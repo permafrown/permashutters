@@ -325,6 +325,12 @@ main {
 	top: 50%;
     left: 25%;
 }
+#slide-1 span {
+    font-family: 'Libre Baskerville', serif;
+    color: #BBB;
+    font-size:calc(14px + 1vw);
+    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
 
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../img/para_games_bg_1440x1232.png')}

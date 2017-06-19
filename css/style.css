@@ -324,7 +324,7 @@ main {
 /* Slide 1 */
 #slide-1 .hsContent {
 	bottom: 50%;
-	top: 50%;
+	/*top: 50%;*/
     left: 25%;
 }
 #slide-1 p {

@@ -33,7 +33,7 @@
                     <h1 class="title_centered"><small>permashutters</small>about</h1><br/>
                     <p>permashutters is a place where i like to keep a variety of things that interest me</p>
                     <p>since there are many, i've created some different spaces for different topics that tickle my fancy</p>
-                    <span class="title_centered">^^^^^scroll down to see more^^^^^</span>
+                    <span>^^^^^scroll down to see more^^^^^</span>
                 </div>
             </div>
         </div>

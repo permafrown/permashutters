@@ -17,6 +17,7 @@
 <body>
     <main>
 
+    <!-- About Section -->
     <section id="slide-1" class="homeSlide">
         <div class="bcg"
             data-center="background-position: 50% 0px;"
@@ -37,7 +38,7 @@
         </div>
     </section>
 
-    <!-- Section 2 -->
+    <!-- games section -->
     <section id="slide-2" class="homeSlide">
         <div class="bcg"
             data-center="background-position: 50% 0px;"
@@ -59,7 +60,7 @@
         </div>
     </section>
 
-    <!-- Section 3 -->
+    <!-- fauna section -->
     <section id="slide-3" class="homeSlide">
         <div class="bcg"
             data-center="background-position: 50% 0px;"
@@ -75,14 +76,14 @@
                 data-200-top="opacity: 0"
                 data-anchor-target="#slide-3 h3"
             >
-                    <h3>science FTW</h3>
+                    <h3>fauna</h3>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Section 4 -->
+    <!-- science section -->
     <section id="slide-4" class="homeSlide">
         <div class="bcg"
             data-center="background-position: 50% 0px;"
@@ -97,7 +98,73 @@
                     data-top="opacity: 1"
                     data-anchor-target="#slide-4"
                 >
+                    <h3>science FTW</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- words section -->
+    <section id="slide-5" class="homeSlide">
+        <div class="bcg"
+            data-center="background-position: 50% 0px;"
+            data-top-bottom="background-position: 50% -100px;"
+            data-bottom-top="background-position: 50% 100px;"
+            data-anchor-target="#slide-5"
+        >
+            <div class="hsContainer">
+                <div class="hsContent"
+                    data-bottom-top="opacity: 0"
+                    data-25p-top="opacity: 0"
+                    data-top="opacity: 1"
+                    data-anchor-target="#slide-5"
+                >
                     <h3>words is words</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- sundry section -->
+    <section id="slide-6" class="homeSlide">
+        <div class="bcg"
+            data-center="background-position: 50% 0px;"
+            data-top-bottom="background-position: 50% -100px;"
+            data-bottom-top="background-position: 50% 100px;"
+            data-anchor-target="#slide-6"
+        >
+            <div class="hsContainer">
+                <div class="hsContent"
+                    data-bottom-top="opacity: 0"
+                    data-25p-top="opacity: 0"
+                    data-top="opacity: 1"
+                    data-anchor-target="#slide-6"
+                >
+                    <h3>sundry is fundry</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- media section -->
+    <section id="slide-7" class="homeSlide">
+        <div class="bcg"
+            data-center="background-position: 50% 0px;"
+            data-top-bottom="background-position: 50% -100px;"
+            data-bottom-top="background-position: 50% 100px;"
+            data-anchor-target="#slide-7"
+        >
+            <div class="hsContainer">
+                <div class="hsContent"
+                    data-bottom-top="opacity: 0"
+                    data-25p-top="opacity: 0"
+                    data-top="opacity: 1"
+                    data-anchor-target="#slide-7"
+                >
+                    <h3>media medium medius</h3>
                 </div>
             </div>
 

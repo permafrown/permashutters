@@ -327,7 +327,7 @@ main {
 }
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../img/para_games_bg.png')}
+#slide-2 .bcg {background-image:url('../img/para_games_bg_1440x1232.png')}
 #slide-2 .hsContent {
 	margin-left: -450px;
 	top: auto;
@@ -338,7 +338,7 @@ main {
 }
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/para_science_bg.png')}
+#slide-3 .bcg {background-image:url('../img/para_fauna_bg_1440x1232.png')}
 #slide-3 .hsContent {
 	margin-left: -239px;
 }
@@ -348,13 +348,49 @@ main {
 	}
 
 /* Slide 4 */
-#slide-4 .bcg {background-image:url('../img/para_words_bg.png')}
+#slide-4 .bcg {background-image:url('../img/para_science_bg_1440x1232.png')}
 #slide-4 .hsContent {
 	margin-left: -450px;
     position: relative;
     top: 250px;
 }
 #slide-4 h3 {
+	background: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+/* Slide 5 */
+#slide-5 .bcg {background-image:url('../img/para_words_bg_1440x1232.png')}
+#slide-5 .hsContent {
+	margin-left: -450px;
+    position: relative;
+    top: 250px;
+}
+#slide-5 h3 {
+	background: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+/* Slide 6 */
+#slide-6 .bcg {background-image:url('../img/para_sundry_bg_1440x1232.png')}
+#slide-6 .hsContent {
+	margin-left: -450px;
+    position: relative;
+    top: 250px;
+}
+#slide-6 h3 {
+	background: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+/* Slide 7 */
+#slide-7 .bcg {background-image:url('../img/para_media_bg_1440x1232.png')}
+#slide-7 .hsContent {
+	margin-left: -450px;
+    position: relative;
+    top: 250px;
+}
+#slide-7 h3 {
 	background: none;
 	padding-left: 0;
 	padding-right: 0;
@@ -418,6 +454,27 @@ main {
         position: relative;
     }
     #slide-4 h3 {
+        background: none;
+    }
+    #slide-5 .hsContent {
+        margin-left: -340px;
+        position: relative;
+    }
+    #slide-5 h3 {
+        background: none;
+    }
+    #slide-6 .hsContent {
+        margin-left: -340px;
+        position: relative;
+    }
+    #slide-6 h3 {
+        background: none;
+    }
+    #slide-7 .hsContent {
+        margin-left: -340px;
+        position: relative;
+    }
+    #slide-7 h3 {
         background: none;
     }
 

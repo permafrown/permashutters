@@ -287,7 +287,9 @@ main {
 	height: 100%;
 	width: 100%;
 }
-
+.homeSlide {
+    height: 1232px;
+}
 .hsContainer {
 	width: 100%;
 	height: 100%;

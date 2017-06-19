@@ -325,7 +325,7 @@ main {
 	top: 50%;
     left: 25%;
 }
-#slide-1 span {
+#slide-1 p {
     font-family: 'Libre Baskerville', serif;
     color: #BBB;
     font-size:calc(14px + 1vw);

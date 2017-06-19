@@ -28,7 +28,7 @@
                 <div class="hsContent"
                     data-center="bottom: 200px; opacity: 1;"
                     data-top="bottom: 800px; opacity: 0;"
-                    data-anchor-target="#slide-1 h1";
+                    data-anchor-target="#slide-1 p";
                 >
                     <h1 class="title_centered"><small>permashutters</small>about</h1><br/>
                     <p>permashutters is a place where i like to keep a variety of things that interest me</p>
@@ -48,8 +48,8 @@
         >
             <div class="hsContainer">
                 <div class="hsContent"
-                    data-center="opacity: 1"
-                    data-center-top="opacity: 0"
+                    data-center="opacity: 1;"
+                    data-center-top="opacity: 0;"
                     data--100-bottom="opacity: 0;"
                     data-anchor-target="#slide-2"
                 >

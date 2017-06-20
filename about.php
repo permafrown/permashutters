@@ -93,6 +93,26 @@
     </div>
   </section>
 
+  <section class="para_page" id="tail_para_page">
+    <div class="para_bg" id="tail_para_bg">
+      <div class="para_content" id="tail_para_content">
+        <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
+        <div class="container-fluid about_content">
+          <p>that's it for the descriptions</p>
+          <p>now get in there and check it out</p>
+          <hr class="perma_hr">
+          <div class="container-fluid">
+            <div class="col-xs-12">
+              <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
+            </div>
+          </div>
+          <hr class="perma_hr">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <?php include_once 'includes/body_scripts.php';?>
 </body>
 

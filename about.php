@@ -17,7 +17,7 @@
 <body>
   <section class="para_page" id="about_para_page">
     <div class="para_bg" id="about_para_bg">
-      <div class="para_content" id="about_para_content">
+      <div class="about_content" id="about_para_content">
         <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
         <div class="container-fluid about_content">
           <p>permashutters is a place where i like to keep a variety of things that interest me</p>
@@ -95,7 +95,7 @@
 
   <section class="para_page" id="tail_para_page">
     <div class="para_bg" id="tail_para_bg">
-      <div class="para_content" id="tail_para_content">
+      <div class="about_content" id="tail_para_content">
         <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
         <div class="container-fluid about_content">
           <p>that's it for the descriptions</p>

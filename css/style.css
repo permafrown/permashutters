@@ -249,6 +249,9 @@ hr.perma_hr {
 .para_page {
   height: 1232px;
 }
+.para_page a {
+  color: #BBB;
+}
 .para_bg {
 	background-position: center center;
 	background-repeat: no-repeat;

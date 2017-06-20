@@ -280,7 +280,7 @@ hr.perma_hr {
 .para_content {
     position: relative;
     margin: 0 auto;
-    height: 20vh;
+    height: 25vh;
     width: 40vw;
     background-color: rgba(40,40,40,0.5);
 }
@@ -292,6 +292,10 @@ hr.perma_hr {
 }
 .para_content img {
     margin-bottom: 2vh;
+}
+#games_para_page .para_content {
+    position: relative;
+    top: 37.5vh;
 }
 
 

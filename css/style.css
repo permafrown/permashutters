@@ -279,8 +279,8 @@ hr.perma_hr {
 }
 .para_content {
     /*margin: 0 auto;*/
-    top: 50vh;
-    left: 50vw;
+    justify-content: center;
+    text-align: center;
     max-width: 40vw;
 }
 .para_content p {

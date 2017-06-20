@@ -249,3 +249,25 @@ hr.perma_hr {
 .para_page {
   height: 1232px;
 }
+.para_bg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+/* PARALLAX BACKGROUNDS */
+#games_para_bg {background-image:url('../img/para_games_bg_1440x1232.png')}
+#fauna_para_bg {background-image:url('../img/para_fauna_bg_1440x1232.png')}
+#science_para_bg {background-image:url('../img/para_science_bg_1440x1232.png')}
+#words_para_bg {background-image:url('../img/para_words_bg_1440x1232.png')}
+#sundry_para_bg {background-image:url('../img/para_sundry_bg_1440x1232.png')}
+#media_para_bg {background-image:url('../img/para_media_bg_1440x1232.png')}
+/* END PARALLAX BACKGROUNDS */
+
+/* END ABOUT PARALLAX */

@@ -41,6 +41,68 @@
       </div>
     </div>
   </section>
+
+  <section class="para_page" id="fauna_para_page">
+    <div class="para_bg" id="fauna_para_bg">
+      <div class="para_content_container" id="fauna_para_content_container">
+        <div class="para_content" id="fauna_para_content">
+          <h3><a href="fauna.php">fauna </h3>
+            <img src="img/fauna_icon.png" alt="fauna" style="width:48px;height:48px;"/></a>
+            <p>i'll admit that 'fauna' is only half the story here since flora certainly play a role as well -- i love all the created things... ALL THE THINGS!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="para_page" id="science_para_page">
+    <div class="para_bg" id="science_para_bg">
+      <div class="para_content_container" id="science_para_content_container">
+        <div class="para_content" id="science_para_content">
+          <h3><a href="science.php">science </h3>
+            <img src="img/science_icon.png" alt="science" style="width:48px;height:48px;"/></a>
+            <p>and math and physics and stuff... these are cool concepts or discoveries that blow my mind</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="para_page" id="words_para_page">
+    <div class="para_bg" id="words_para_bg">
+      <div class="para_content_container" id="words_para_content_container">
+        <div class="para_content" id="words_para_content">
+          <h3><a href="words.php">words </h3>
+            <img src="img/words_icon.png" alt="words" style="width:48px;height:48px;"/></a>
+            <p>i love language... more than lamp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="para_page" id="sundry_para_page">
+    <div class="para_bg" id="sundry_para_bg">
+      <div class="para_content_container" id="sundry_para_content_container">
+        <div class="para_content" id="sundry_para_content">
+          <h3><a href="sundry.php">sundry </h3>
+            <img src="img/sundry_icon.png" alt="sundry" style="width:48px;height:48px;"/></a>
+            <p>a place to drop other random things i think are neat but don't fit the other categories</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="para_page" id="media_para_page">
+    <div class="para_bg" id="media_para_bg">
+      <div class="para_content_container" id="media_para_content_container">
+        <div class="para_content" id="media_para_content">
+          <h3><a href="media.php">media </h3>
+            <img src="img/media_icon.png" alt="media" style="width:48px;height:48px;"/></a>
+            <p>films & music & art</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <ul class="about_desc_list">
       <li><h3><a href="games.php">games </h3><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a></li>
       <li>&nbsp;</li>

@@ -25,7 +25,7 @@
           <hr class="perma_hr">
           <div class="container-fluid">
             <div class="col-xs-12">
-              <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
+              <a href="index.php"><img class="avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
     <div class="para_bg" id="games_para_bg">
       <div class="para_content" id="games_para_content">
         <h3><a href="games.php">games </h3>
-          <img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>
+          <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>
           <p>starting with tabletop games, then from nintendo to playstation to pc, including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</p>
       </div>
     </div>

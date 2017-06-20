@@ -243,3 +243,9 @@ hr.perma_hr {
     }
 }
 /*END RESPONSIVE*/
+
+
+/* START ABOUT PARALLAX */
+.para_page {
+  height: 1232px;
+}

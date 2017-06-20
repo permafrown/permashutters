@@ -15,11 +15,21 @@
     <title>about | permashutters</title>
 </head>
 <body>
-  <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
-  <div class="container-fluid about_content">
-  <p>permashutters is a place where i like to keep a variety of things that interest me</p>
-  <p>since there are many, i've created some different spaces for different topics that tickle my fancy</p>
-  <hr class="perma_hr">
+  <section class="para_page" id="about_para_page">
+    <div class="para_bg" id="games_para_bg">
+      <div class="para_content_container" id="games_para_content_container">
+        <div class="para_content" id="games_para_content">
+          <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
+          <div class="container-fluid about_content">
+            <p>permashutters is a place where i like to keep a variety of things that interest me</p>
+            <p>since there are many, i've created some different spaces for different topics that tickle my fancy</p>
+            <hr class="perma_hr">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="para_page" id="games_para_page">
     <div class="para_bg" id="games_para_bg">
       <div class="para_content_container" id="games_para_content_container">

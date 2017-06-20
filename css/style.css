@@ -1,6 +1,22 @@
 /* Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. */
 /*@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext);*/
-
+/* FONT CODES
+font-family: 'Bevan', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Overlock', cursive;
+font-family: 'Overlock SC', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Tangerine', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
 /*GENERAL OVERARCHING*/
 body, html{
   margin: 0 auto;
@@ -267,7 +283,7 @@ hr.perma_hr {
 }
 .para_content p {
     font-size: 1vw;
-    font-family: 'Cinzel', serif;
+    font-family: 'Overlock SC', cursive;
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
     color: #BBB;
 }

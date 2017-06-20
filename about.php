@@ -23,6 +23,11 @@
           <p>permashutters is a place where i like to keep a variety of things that interest me</p>
           <p>since there are many, i've created some different spaces for different topics that tickle my fancy</p>
           <hr class="perma_hr">
+          <div class="container-fluid">
+            <div class="col-xs-12">
+              <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

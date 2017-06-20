@@ -262,6 +262,7 @@ hr.perma_hr {
 
 
 /* PARALLAX BACKGROUNDS */
+#about_para_bg {background-color: inherit; height: 1232px;}
 #games_para_bg {background-image:url('../img/para_games_bg_1440x1232.png')}
 #fauna_para_bg {background-image:url('../img/para_fauna_bg_1440x1232.png')}
 #science_para_bg {background-image:url('../img/para_science_bg_1440x1232.png')}

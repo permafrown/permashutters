@@ -107,6 +107,7 @@
             </div>
           </div>
           <hr class="perma_hr">
+          <a href="index.php">home</a>
         </div>
       </div>
     </div>

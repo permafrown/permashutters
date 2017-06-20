@@ -281,6 +281,7 @@ hr.perma_hr {
     top: 40%;
     margin: 0 auto;
     max-width: 40vw;
+    background-color: rgba(40,40,40,0.5);
 }
 .para_content p {
     font-size: 1vw;

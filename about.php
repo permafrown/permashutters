@@ -25,7 +25,7 @@
           <hr class="perma_hr">
           <div class="container-fluid">
             <div class="col-xs-12">
-              <a href="index.php"><img class="avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
+              <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
     <div class="para_bg" id="science_para_bg">
       <div class="para_content" id="science_para_content">
         <h3><a href="science.php">science </h3>
-          <img src="img/science_icon.png" alt="science" style="width:48px;height:48px;"/></a>
+          <img class="avatar" src="img/science_icon.png" alt="science" style="width:48px;height:48px;"/></a>
           <p>and math and physics and stuff... these are cool concepts or discoveries that blow my mind</p>
       </div>
     </div>
@@ -67,7 +67,7 @@
     <div class="para_bg" id="words_para_bg">
       <div class="para_content" id="words_para_content">
         <h3><a href="words.php">words </h3>
-          <img src="img/words_icon.png" alt="words" style="width:48px;height:48px;"/></a>
+          <img class="avatar" src="img/words_icon.png" alt="words" style="width:48px;height:48px;"/></a>
           <p>i love language... more than lamp</p>
       </div>
     </div>
@@ -77,7 +77,7 @@
     <div class="para_bg" id="sundry_para_bg">
       <div class="para_content" id="sundry_para_content">
         <h3><a href="sundry.php">sundry </h3>
-          <img src="img/sundry_icon.png" alt="sundry" style="width:48px;height:48px;"/></a>
+          <img class="avatar" src="img/sundry_icon.png" alt="sundry" style="width:48px;height:48px;"/></a>
           <p>a place to drop other random things i think are neat but don't fit the other categories</p>
       </div>
     </div>
@@ -87,7 +87,7 @@
     <div class="para_bg" id="media_para_bg">
       <div class="para_content" id="media_para_content">
         <h3><a href="media.php">media </h3>
-          <img src="img/media_icon.png" alt="media" style="width:48px;height:48px;"/></a>
+          <img class="avatar" src="img/media_icon.png" alt="media" style="width:48px;height:48px;"/></a>
           <p>films & music & art</p>
       </div>
     </div>

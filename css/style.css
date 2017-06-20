@@ -274,8 +274,8 @@ hr.perma_hr {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 }
 .para_content {
     margin: 40vh auto;
@@ -290,7 +290,7 @@ hr.perma_hr {
     color: #BBB;
 }
 .para_content img {
-    margin-bottom: 2vmin;
+    margin-bottom: 2vh;
 }
 
 

@@ -278,9 +278,9 @@ hr.perma_hr {
 	width: 100%;
 }
 .para_content {
-    top: 40%;
-    margin: 0 auto;
-    max-width: 40vw;
+    margin: 35vh auto;
+    height: 30vh;
+    width: 40vw;
     background-color: rgba(40,40,40,0.5);
 }
 .para_content p {

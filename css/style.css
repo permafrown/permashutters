@@ -262,6 +262,7 @@ hr.perma_hr {
 	width: 100%;
 }
 .para_content {
+    margin: 0 auto;
     max-width: 50vw;
 }
 

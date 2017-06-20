@@ -283,7 +283,7 @@ hr.perma_hr {
 }
 .para_content p {
     font-size: 1vw;
-    font-family: 'Overlock SC', cursive;
+    font-family: 'Overlock', cursive;
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
     color: #BBB;
 }

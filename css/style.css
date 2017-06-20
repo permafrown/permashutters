@@ -261,7 +261,9 @@ hr.perma_hr {
 	height: 100%;
 	width: 100%;
 }
-
+.para_content {
+    max-width: 50vw;
+}
 
 
 

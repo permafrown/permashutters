@@ -40,7 +40,12 @@
         data-bottom-top="background-position: 50% 100px;"
         data-anchor-target="#games_para_page"
     >
-      <div class="para_content" id="games_para_content">
+      <div class="para_content" id="games_para_content"
+      data-center="opacity: 1;"
+      data-center-top="opacity: 0;"
+      data--100-bottom="opacity: 0;"
+      data-anchor-target="#slide-2"
+      >
         <h3><a href="games.php">games </h3>
           <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>
           <p>starting with tabletop games, then from nintendo to playstation to pc, including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</p>

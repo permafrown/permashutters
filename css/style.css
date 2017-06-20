@@ -278,6 +278,7 @@ hr.perma_hr {
 	width: 100vw;
 }
 .para_content {
+    position: relative;
     margin: 0 auto;
     height: 20vh;
     width: 40vw;

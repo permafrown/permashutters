@@ -18,8 +18,19 @@
   <h1 class="title_centered" style="margin-top: 10%;"><small>permashutters</small>about</h1>
   <div class="container-fluid about_content">
   <p>permashutters is a place where i like to keep a variety of things that interest me</p>
-  <p>since there are many things that do, i've tried to create some different spaces for different topics that tickle my fancy</p>
+  <p>since there are many, i've created some different spaces for different topics that tickle my fancy</p>
   <hr class="perma_hr">
+  <section class="para_page" id="games_para_page">
+    <div class="para_bg" id="games_para_bg">
+      <div class="para_content_container" id="games_para_content_container">
+        <div class="para_content" id="games_para_content">
+          <h3><a href="games.php">games </h3>
+            <img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>
+            <p>starting with tabletop games, then from nintendo to playstation to pc, including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <ul class="about_desc_list">
       <li><h3><a href="games.php">games </h3><img src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a></li>
       <li>&nbsp;</li>

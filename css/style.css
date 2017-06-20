@@ -278,7 +278,7 @@ hr.perma_hr {
 	width: 100vw;
 }
 .para_content {
-    margin: 40vh auto;
+    margin: 0 auto;
     height: 20vh;
     width: 40vw;
     background-color: rgba(40,40,40,0.5);

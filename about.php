@@ -44,8 +44,9 @@
     >
       <div class="para_content" id="games_para_content"
         data-center="opacity: 1;"
-        data-center-top="opacity: 0;"
+        data-center-top="opacity: 0.5;"
         data--100-bottom="opacity: 0;"
+        data--100-bottom="left: -500px;"
         data-anchor-target="#games_para_page"
       >
         <h3><a href="games.php">games </h3>

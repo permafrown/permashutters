@@ -38,15 +38,15 @@
   <section class="para_page" id="games_para_page">
     <div class="para_bg" id="games_para_bg"
         data-center="opacity: 1;"
-        data-bottom="opacity: 0;"
-        data-top="opacity: 0.5"
-        data-anchor-target="#games_para_page"
+        data-bottom-top="opacity: 0;"
+        data-top-bottom="opacity: 0.5"
+        data-anchor-target="#games_para_content"
     >
       <div class="para_content" id="games_para_content"
         data-center="opacity: 1;"
         data-center-top="opacity: 0.5;"
         data-100-bottom="opacity: 0;"
-        data-100-bottom="position: fixed; left: -500px;"
+        data-100-bottom="position: fixed; margin: 30vh 30vh auto;"
         data--100-top="opacity: 0;"
         data-anchor-target="#games_para_content"
       >

@@ -265,6 +265,12 @@ hr.perma_hr {
     margin: 0 auto;
     max-width: 50vw;
 }
+.para_content p {
+    font-size: 1vw;
+    font-family: 'Cinzel', serif;
+    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+    color: #BBB;
+}
 
 
 

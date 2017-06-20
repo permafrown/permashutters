@@ -45,7 +45,7 @@
       <div class="para_content" id="games_para_content"
         data-center="opacity: 1; position: relative; left: 0px;"
         data-center-top="opacity: 0.5;"
-        data-100-bottom="opacity: 0; position: relative; left: -100vw;"
+        data--100-bottom="opacity: 0; position: relative; left: -100vw;"
         data--100-top="opacity: 0.5; position: relative; left: 100vw;"
         data-anchor-target="#games_para_content"
       >

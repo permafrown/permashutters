@@ -39,14 +39,13 @@
     <div class="para_bg" id="games_para_bg"
         data-center="opacity: 1;"
         data-bottom-top="opacity: 0;"
-        data-top-bottom="opacity: 0.5"
+        data-top-bottom="opacity: 0;"
         data-anchor-target="#games_para_content"
     >
       <div class="para_content" id="games_para_content"
         data-center="opacity: 1;"
         data-center-top="opacity: 0.5;"
-        data-100-bottom="opacity: 0;"
-        data-100-bottom="position: fixed; margin: 30vh 30vh auto;"
+        data-100-bottom="opacity: 0; position: 50% -50vw;"
         data--100-top="opacity: 0;"
         data-anchor-target="#games_para_content"
       >

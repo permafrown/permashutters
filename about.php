@@ -28,6 +28,8 @@
               <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
             </div>
           </div>
+          <hr class="perma_hr">
+          <h2 class="submenu"><a href="#games_para_page">games</a> | <a href="#fauna_para_page">fauna</a> | <a href="#science_para_page">science</a> | <a href="#words_para_page">words</a> | <a href="#sundry_para_page">sundry</a> | <a href="#media_para_page">media</a></h2>
         </div>
       </div>
     </div>

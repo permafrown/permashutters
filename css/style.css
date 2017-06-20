@@ -285,6 +285,11 @@ hr.perma_hr {
     width: 45vw;
     background-color: rgba(40,40,40,0.5);
 }
+.about_content {
+    position: relative;
+    top: 37.5vh;
+    margin: 0 auto;
+}
 .para_content p {
     font-size: 1vw;
     font-family: 'Lato', sans-serif;

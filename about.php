@@ -44,7 +44,7 @@
       data-center="opacity: 1;"
       data-center-top="opacity: 0;"
       data--100-bottom="opacity: 0;"
-      data-anchor-target="#slide-2"
+      data-anchor-target="#games_para_page"
       >
         <h3><a href="games.php">games </h3>
           <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>

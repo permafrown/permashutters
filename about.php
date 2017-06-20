@@ -36,7 +36,12 @@
   </section>
 
   <section class="para_page" id="games_para_page">
-    <div class="para_bg" id="games_para_bg">
+    <div class="para_bg" id="games_para_bg"
+        data-center="opacity: 1;"
+        data-bottom="opacity: 0;"
+        data-top="opacity: 0.5"
+        data-anchor-target="#games_para_page"
+    >
       <div class="para_content" id="games_para_content"
         data-center="opacity: 1;"
         data-center-top="opacity: 0.5;"

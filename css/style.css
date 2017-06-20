@@ -247,7 +247,8 @@ hr.perma_hr {
 
 /* START ABOUT PARALLAX */
 .para_page {
-  height: 1232px;
+  /*height: 1232px;*/
+  height: 100vh;
 }
 .para_page a {
   color: #BBB;

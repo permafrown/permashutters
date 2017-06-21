@@ -46,8 +46,8 @@
         <div class="para_content_wrapper" id="games_para_content_wrapper">
           <div class="para_content" id="games_para_content"
             data-bottom-top="display: none;"
-            data-center-top="display: block;"
-            data--100-top="display: none;"
+            data-center-top="display: block; opacity: 1;"
+            data--100-top="opacity: 0;"
             data-anchor-target="#games_para_content"
           >
             <h3><a href="games.php">games </h3>

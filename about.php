@@ -37,10 +37,9 @@
 
   <section class="para_page" id="games_para_page">
     <div class="para_bg" id="games_para_bg"
-        data-center="opacity: 1;"
-        data-center-top="opacity: 1;"
-        data-center-bottom="opacity: 1;"
         data-bottom-top="opacity: 0;"
+        data-center-top="opacity: 1;"
+        data-100-top="opacity: 1;"
         data-top-bottom="opacity: 0;"
         data-anchor-target="#games_para_content"
     >

@@ -303,6 +303,9 @@ hr.perma_hr {
     position: relative;
     top: 18vh;
 }
+.para_content_wrapper {
+    background-color: #FFF;
+}
 
 
 /* PARALLAX BACKGROUNDS */

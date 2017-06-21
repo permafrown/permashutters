@@ -43,10 +43,10 @@
         data-anchor-target="#games_para_page"
     >
       <div class="para_content" id="games_para_content"
-        data-center="opacity: 1; position: relative; left: 0%;"
+        data-center="opacity: 1;"
         data-center-top="opacity: 0.5;"
-        data-100-bottom="opacity: 0; position: relative; left: -50%;"
-        data--100-top="opacity: 0.5; position: relative; left: 50%;"
+        data-100-bottom="opacity: 0;"
+        data--100-top="opacity: 0.5;"
         data-anchor-target="#games_para_content"
       >
         <h3><a href="games.php">games </h3>
@@ -57,7 +57,12 @@
   </section>
 
   <section class="para_page" id="fauna_para_page">
-    <div class="para_bg" id="fauna_para_bg">
+    <div class="para_bg" id="fauna_para_bg"
+    data-center="opacity: 1;"
+    data-bottom-top="opacity: 0;"
+    data-top-bottom="opacity: 0;"
+    data-anchor-target="#fauna_para_page"
+    >
       <div class="para_content" id="fauna_para_content">
         <h3><a href="fauna.php">fauna </h3>
           <img src="img/fauna_icon.png" alt="fauna" style="width:48px;height:48px;"/></a>
@@ -67,7 +72,12 @@
   </section>
 
   <section class="para_page" id="science_para_page">
-    <div class="para_bg" id="science_para_bg">
+    <div class="para_bg" id="science_para_bg"
+    data-center="opacity: 1;"
+    data-bottom-top="opacity: 0;"
+    data-top-bottom="opacity: 0;"
+    data-anchor-target="#science_para_page"
+    >
       <div class="para_content" id="science_para_content">
         <h3><a href="science.php">science </h3>
           <img class="avatar" src="img/science_icon.png" alt="science" style="width:48px;height:48px;"/></a>
@@ -77,7 +87,12 @@
   </section>
 
   <section class="para_page" id="words_para_page">
-    <div class="para_bg" id="words_para_bg">
+    <div class="para_bg" id="words_para_bg"
+    data-center="opacity: 1;"
+    data-bottom-top="opacity: 0;"
+    data-top-bottom="opacity: 0;"
+    data-anchor-target="#words_para_page"
+    >
       <div class="para_content" id="words_para_content">
         <h3><a href="words.php">words </h3>
           <img class="avatar" src="img/words_icon.png" alt="words" style="width:48px;height:48px;"/></a>
@@ -87,7 +102,12 @@
   </section>
 
   <section class="para_page" id="sundry_para_page">
-    <div class="para_bg" id="sundry_para_bg">
+    <div class="para_bg" id="sundry_para_bg"
+    data-center="opacity: 1;"
+    data-bottom-top="opacity: 0;"
+    data-top-bottom="opacity: 0;"
+    data-anchor-target="#sundry_para_page"
+    >
       <div class="para_content" id="sundry_para_content">
         <h3><a href="sundry.php">sundry </h3>
           <img class="avatar" src="img/sundry_icon.png" alt="sundry" style="width:48px;height:48px;"/></a>
@@ -97,7 +117,12 @@
   </section>
 
   <section class="para_page" id="media_para_page">
-    <div class="para_bg" id="media_para_bg">
+    <div class="para_bg" id="media_para_bg"
+    data-center="opacity: 1;"
+    data-bottom-top="opacity: 0;"
+    data-top-bottom="opacity: 0;"
+    data-anchor-target="#sundry_para_page"
+    >
       <div class="para_content" id="media_para_content">
         <h3><a href="media.php">media </h3>
           <img class="avatar" src="img/media_icon.png" alt="media" style="width:48px;height:48px;"/></a>

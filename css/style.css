@@ -299,7 +299,10 @@ hr.perma_hr {
 .para_content img {
     margin-bottom: 2vh;
 }
-
+#games_para_content {
+    position: relative;
+    top: 25vh;
+}
 
 
 /* PARALLAX BACKGROUNDS */

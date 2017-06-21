@@ -299,9 +299,10 @@ hr.perma_hr {
 .para_content img {
     margin-bottom: 2vh;
 }
-#games_para_content {
-    position: relative;
+#games_para_content.para_content {
+    position: absolute;
     top: 25vh;
+    background-color: #FFF;
 }
 
 

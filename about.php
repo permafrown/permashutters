@@ -43,11 +43,7 @@
         data-top-bottom="opacity: 0;"
         data-anchor-target="#games_para_content"
     >
-        <div class="para_content_wrapper" id="games_para_content_wrapper"
-            data-bottom-top="opacity: 0;"
-
-            data-anchor-target="#games_para_page"
-        >
+        <div class="para_content_wrapper" id="games_para_content_wrapper">
           <div class="para_content" id="games_para_content">
             <h3><a href="games.php">games </h3>
               <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>

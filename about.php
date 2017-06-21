@@ -42,11 +42,7 @@
         data-top-bottom="opacity: 0;"
         data-anchor-target="#games_para_content"
     >
-      <div class="para_content" id="games_para_content"
-        data-bottom-top="position: relative; transform: translateY(-280px);"
-        data-center="position: relative; transform: translate(0px, -280px);"
-        data-anchor-target="#games_para_content"
-      >
+      <div class="para_content" id="games_para_content">
         <h3><a href="games.php">games </h3>
           <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>
           <p>starting with tabletop games, then from nintendo to playstation to pc, including everything from FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</p>

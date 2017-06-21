@@ -300,11 +300,11 @@ hr.perma_hr {
     margin-bottom: 2vh;
 }
 #games_para_content.para_content {
-    position: relative;
-    top: 18vh;
 }
 .para_content_wrapper {
     background-color: #FFF;
+    position: relative;
+    top: 18vh;
 }
 
 

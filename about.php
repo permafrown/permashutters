@@ -43,9 +43,9 @@
         data-anchor-target="#games_para_page"
     >
       <div class="para_content" id="games_para_content"
-        data-bottom-top="position: relative; transform: translateY(-308px);"
-        data-center="position: relative; transform: translate(0px, -308px);"
-        data-anchor-target="#games_para_content"
+        data-bottom-top="position: relative; transform: translateY(-280px);"
+        data-center="position: relative; transform: translate(0px, -280px);"
+        data-anchor-target="#games_para_page"
       >
         <h3><a href="games.php">games </h3>
           <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>

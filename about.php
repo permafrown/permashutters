@@ -43,8 +43,8 @@
         data-anchor-target="#games_para_page"
     >
       <div class="para_content" id="games_para_content"
-        data-bottom-top="position: relative; transform: translateY(308px);"
-        <!--data-center="opacity: 1;"-->
+        data-bottom-top="position: relative; transform: translateY(-308px);"
+        data-center="opacity: 1; position: relative; transform: translate(0px, -308px);"
         <!--data-center-top="opacity: 0.5;"-->
         <!--data-100-bottom="opacity: 0;"-->
         <!--data--100-top="opacity: 0.5;"-->

@@ -46,8 +46,8 @@
         <div class="para_content_wrapper" id="games_para_content_wrapper">
           <div class="para_content" id="games_para_content"
             data-bottom-top="display: none;"
-            data-center-top="display: inline-block;"
-            data-100-top="display: inline-block;"
+            data-center-top="display: block;"
+            data-100-top="display: block;"
             data-top-bottom="display: none;"
             data-anchor-target="#games_para_page"
           >

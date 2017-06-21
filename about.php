@@ -123,7 +123,7 @@
     data-center-top="opacity: 1;"
     data-100-top="opacity: 1;"
     data-top-bottom="opacity: 0;"
-    data-anchor-target="#sundry_para_content"
+    data-anchor-target="#media_para_content"
     >
       <div class="para_content" id="media_para_content">
         <h3><a href="media.php">media </h3>

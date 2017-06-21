@@ -40,13 +40,13 @@
         data-center="opacity: 1;"
         data-bottom-top="opacity: 0;"
         data-top-bottom="opacity: 0;"
-        data-anchor-target="#games_para_content"
+        data-anchor-target="#games_para_page"
     >
       <div class="para_content" id="games_para_content"
-        data-center="opacity: 1; position: relative; left: 0vw;"
+        data-center="opacity: 1;"
         data-center-top="opacity: 0.5;"
-        data--100-bottom="opacity: 0; position: relative; left: -50vw;"
-        data--100-top="opacity: 0.5; position: relative; left: 50vw;"
+        data--100-bottom="opacity: 0; transform: translateX(-50vw, -50vh);"
+        data--100-top="opacity: 0.5; transform: translateX(50vw, 50vh);"
         data-anchor-target="#games_para_content"
       >
         <h3><a href="games.php">games </h3>

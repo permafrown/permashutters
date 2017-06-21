@@ -43,10 +43,10 @@
         data-anchor-target="#games_para_page"
     >
       <div class="para_content" id="games_para_content"
-        data-center="opacity: 1; position: relative; left: 50%;"
+        data-center="opacity: 1; position: relative; left: 0%;"
         data-center-top="opacity: 0.5;"
-        data-100-bottom="opacity: 0; position: relative; left: 0%;"
-        data--100-top="opacity: 0.5; position: relative; left: 100%;"
+        data-100-bottom="opacity: 0; position: relative; left: -50%;"
+        data--100-top="opacity: 0.5; position: relative; left: 50%;"
         data-anchor-target="#games_para_content"
       >
         <h3><a href="games.php">games </h3>

@@ -41,7 +41,7 @@
         data-center-top="opacity: 1;"
         data-100-top="opacity: 1;"
         data-top-bottom="opacity: 0;"
-        data-anchor-target="#games_para_content"
+        data-anchor-target="#games_para_page"
     >
         <div class="para_content_wrapper" id="games_para_content_wrapper">
           <div class="para_content" id="games_para_content"

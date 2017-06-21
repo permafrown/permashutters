@@ -49,7 +49,7 @@
             data-center-top="display: block;"
             data-100-top="display: block;"
             data-top-bottom="display: none;"
-            data-anchor-target="#games_para_page"
+            data-anchor-target="#games_para_content"
           >
             <h3><a href="games.php">games </h3>
               <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>

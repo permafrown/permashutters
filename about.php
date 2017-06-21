@@ -55,10 +55,11 @@
 
   <section class="para_page" id="fauna_para_page">
     <div class="para_bg" id="fauna_para_bg"
-    data-center="opacity: 1;"
     data-bottom-top="opacity: 0;"
+    data-center-top="opacity: 1;"
+    data-100-top="opacity: 1;"
     data-top-bottom="opacity: 0;"
-    data-anchor-target="#fauna_para_page"
+    data-anchor-target="#fauna_para_content"
     >
       <div class="para_content" id="fauna_para_content">
         <h3><a href="fauna.php">fauna </h3>
@@ -70,10 +71,11 @@
 
   <section class="para_page" id="science_para_page">
     <div class="para_bg" id="science_para_bg"
-    data-center="opacity: 1;"
     data-bottom-top="opacity: 0;"
+    data-center-top="opacity: 1;"
+    data-100-top="opacity: 1;"
     data-top-bottom="opacity: 0;"
-    data-anchor-target="#science_para_page"
+    data-anchor-target="#science_para_content"
     >
       <div class="para_content" id="science_para_content">
         <h3><a href="science.php">science </h3>
@@ -85,10 +87,11 @@
 
   <section class="para_page" id="words_para_page">
     <div class="para_bg" id="words_para_bg"
-    data-center="opacity: 1;"
     data-bottom-top="opacity: 0;"
+    data-center-top="opacity: 1;"
+    data-100-top="opacity: 1;"
     data-top-bottom="opacity: 0;"
-    data-anchor-target="#words_para_page"
+    data-anchor-target="#words_para_content"
     >
       <div class="para_content" id="words_para_content">
         <h3><a href="words.php">words </h3>
@@ -100,10 +103,11 @@
 
   <section class="para_page" id="sundry_para_page">
     <div class="para_bg" id="sundry_para_bg"
-    data-center="opacity: 1;"
     data-bottom-top="opacity: 0;"
+    data-center-top="opacity: 1;"
+    data-100-top="opacity: 1;"
     data-top-bottom="opacity: 0;"
-    data-anchor-target="#sundry_para_page"
+    data-anchor-target="#sundry_para_content"
     >
       <div class="para_content" id="sundry_para_content">
         <h3><a href="sundry.php">sundry </h3>
@@ -115,10 +119,11 @@
 
   <section class="para_page" id="media_para_page">
     <div class="para_bg" id="media_para_bg"
-    data-center="opacity: 1;"
     data-bottom-top="opacity: 0;"
+    data-center-top="opacity: 1;"
+    data-100-top="opacity: 1;"
     data-top-bottom="opacity: 0;"
-    data-anchor-target="#sundry_para_page"
+    data-anchor-target="#sundry_para_content"
     >
       <div class="para_content" id="media_para_content">
         <h3><a href="media.php">media </h3>

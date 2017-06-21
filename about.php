@@ -48,7 +48,7 @@
             data-bottom-top="display: none;"
             data-center-top="display: block;"
             data-100-top="display: block;"
-            data-top-bottom="display: none;"
+            data--100-bottom="display: none;"
             data-anchor-target="#games_para_content"
           >
             <h3><a href="games.php">games </h3>

@@ -40,12 +40,12 @@
         data-center="opacity: 1;"
         data-bottom-top="opacity: 0;"
         data-top-bottom="opacity: 0;"
-        data-anchor-target="#games_para_page"
+        data-anchor-target="#games_para_content"
     >
       <div class="para_content" id="games_para_content"
         data-bottom-top="position: relative; transform: translateY(-280px);"
         data-center="position: relative; transform: translate(0px, -280px);"
-        data-anchor-target="#games_para_page"
+        data-anchor-target="#games_para_content"
       >
         <h3><a href="games.php">games </h3>
           <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>

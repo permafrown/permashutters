@@ -44,11 +44,8 @@
     >
       <div class="para_content" id="games_para_content"
         data-bottom-top="position: relative; transform: translateY(-308px);"
-        data-center="opacity: 1; position: relative; transform: translate(0px, -308px);"
-        <!--data-center-top="opacity: 0.5;"-->
-        <!--data-100-bottom="opacity: 0;"-->
-        <!--data--100-top="opacity: 0.5;"-->
-        <!--data-anchor-target="#games_para_content"-->
+        data-center="position: relative; transform: translate(0px, -308px);"
+        data-anchor-target="#games_para_content"
       >
         <h3><a href="games.php">games </h3>
           <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>

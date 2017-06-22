@@ -300,7 +300,9 @@ hr.perma_hr {
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
 @media screen and (max-width: 768px){
-
+    .para_content {
+        width: 100vw;
+    }
 }
 .para_content p {
     font-size: 1vw;
@@ -309,7 +311,7 @@ hr.perma_hr {
 }
 @media screen and (max-width: 768px){
     .para_content p {
-    font-size: 2vmin;
+        font-size: 2vmin;
     }
 }
 .para_content img {

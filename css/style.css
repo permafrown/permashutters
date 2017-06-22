@@ -326,7 +326,7 @@ hr.perma_hr {
 @media screen and (max-width: 768px){
 
 }
-#games_para_content.para_content {
+#games_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 18vh;
     left: 27.5vw;

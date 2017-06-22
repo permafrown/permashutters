@@ -318,12 +318,12 @@ hr.perma_hr {
 }
 #sundry_para_content.para_content {
     position: relative;
-    top: 18vh;
+    top: 14vh;
 }
 #media_para_content.para_content {
     position: relative;
     top: 36.5vh;
-    left: 50vw;
+    left: -250vw;
 }
 
 

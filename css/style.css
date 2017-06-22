@@ -329,6 +329,10 @@ hr.perma_hr {
 #games_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 18vh;
+}
+#games_para_content.para_content {
+    position:absolute;
+    top: 0;
     left: 27.5vw;
     background-color: rgba(40,40,40,0.5);
 }

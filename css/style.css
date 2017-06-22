@@ -319,10 +319,12 @@ hr.perma_hr {
 #words_para_content.para_content {
     position: relative;
     top: 36.8vh;
+    background-color: rgba(40,40,40,0.2);
 }
 #sundry_para_content.para_content {
     position: relative;
     top: 14vh;
+    background-color: rgba(40,40,40,0.2);
 }
 #media_para_content.para_content {
     position: relative;

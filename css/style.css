@@ -229,9 +229,12 @@ hr.perma_hr {
         min-width: 40% !important;
     }
     .submenu {
-        font-size:calc(14px + 1vw);
+        font-size: 5vmin;
         color: #BBB;
         font-family: 'Cinzel', serif;
+    }
+    .about_content {
+        font-size: 5vmin;
     }
 }
 

@@ -310,20 +310,20 @@ hr.perma_hr {
 }
 #fauna_para_content.para_content {
     position: relative;
-    top: 20vh;
+    top: 22vh;
 }
 #words_para_content.para_content {
     position: relative;
-    top: 37vh;
+    top: 36.8vh;
 }
 #sundry_para_content.para_content {
     position: relative;
-    top: 20vh;
+    top: 18vh;
 }
 #media_para_content.para_content {
     position: relative;
-    top: 37vh;
-    left: 18vw;
+    top: 36.5vh;
+    left: 50vw;
 }
 
 

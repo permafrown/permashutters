@@ -333,13 +333,13 @@ hr.perma_hr {
     background-color: rgba(40,40,40,0.5);
 }
 @media screen and (max-width: 768px){
-    #games_para_content.para_content {
+    #games_para_content_wrapper.para_content_wrapper {
         left: 0;
         top: 0;
         height: 100vh;
         background-color: rgba(40,40,40,0.8);
     }
-    #games_para_content_wrapper.para_content_wrapper {
+    #games_para_content.para_content {
         position: sticky;
         top: 18vh;
     }

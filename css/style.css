@@ -315,6 +315,7 @@ hr.perma_hr {
 }
 #science_para_content.para_content {
     background-color: rgba(40,40,40,0.8);
+    width: 35vw;
 }
 #words_para_content.para_content {
     position: relative;

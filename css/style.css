@@ -267,7 +267,7 @@ hr.perma_hr {
   color: #BBB;
 }
 @media screen and (max-width: 768px){
-    .para_page a {
+    .para_page h3 {
         font-size: 8vmin;
     }
 }
@@ -285,7 +285,9 @@ hr.perma_hr {
     margin: 0 auto;
 }
 @media screen and (max-width: 768px){
-
+    .about_para_content p {
+        font-size: 5vmin;
+    }
 }
 .para_content {
     position: relative;

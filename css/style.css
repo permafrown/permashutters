@@ -220,11 +220,9 @@ hr.perma_hr {
     }
     .games_shutt, .science_shutt, .sundry_shutt {
         height: 30em;
-        background-image: image();
     }
     .fauna_shutt, .words_shutt, .media_shutt {
         height: auto;
-        background-image: image();
     }
     .games_shutt:hover, .science_shutt:hover, .sundry_shutt:hover, .fauna_shutt:hover, .words_shutt:hover, .media_shutt:hover {
         transition: .5s;
@@ -233,7 +231,7 @@ hr.perma_hr {
     }
     .submenu {
         font-size:calc(14px + 1vw);
-        color: #111;
+        color: #BBB;
         font-family: 'Cinzel', serif;
     }
 }
@@ -277,7 +275,7 @@ hr.perma_hr {
 	width: 100vw;
 }
 .para_content_wrapper {
-    background-color: #FFE;
+    background-color: #FFF;
     position: relative;
     top: 18vh;
 }

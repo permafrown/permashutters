@@ -293,11 +293,11 @@ hr.perma_hr {
     height: 25vh;
     width: 45vw;
     background-color: rgba(40,40,40,0.5);
+    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
 .para_content p {
     font-size: 1vw;
     font-family: 'Lato', sans-serif;
-    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
     color: #BBB;
 }
 .para_content img {
@@ -331,7 +331,6 @@ hr.perma_hr {
     width: 22.5vw;
     height: 23vh;
     left: -4vw;
-    color: #555;
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
     background-color: rgba(40,40,40,0.8);
 }

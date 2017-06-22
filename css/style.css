@@ -227,7 +227,6 @@ hr.perma_hr {
     .games_shutt:hover, .science_shutt:hover, .sundry_shutt:hover, .fauna_shutt:hover, .words_shutt:hover, .media_shutt:hover {
         transition: .5s;
         min-width: 40% !important;
-        /*background-image: linear-gradient(#4d334d,#4d334d);*/
     }
     .submenu {
         font-size:calc(14px + 1vw);
@@ -256,6 +255,7 @@ hr.perma_hr {
         font-size:calc(10px + 0.1vw);
     }
 }
+
 /*END RESPONSIVE*/
 
 
@@ -279,10 +279,16 @@ hr.perma_hr {
     position: relative;
     top: 18vh;
 }
+@media screen and (max-width: 768px){
+
+}
 .about_para_content {
     position: relative;
     top: 20vh;
     margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+
 }
 .para_content {
     position: relative;
@@ -293,37 +299,63 @@ hr.perma_hr {
     background-color: rgba(40,40,40,0.5);
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
+@media screen and (max-width: 768px){
+
+}
 .para_content p {
     font-size: 1vw;
     font-family: 'Lato', sans-serif;
     color: #BBB;
 }
+@media screen and (max-width: 768px){
+    .para_content p {
+    font-size: 2vmin;
+    }
+}
 .para_content img {
     margin-bottom: 2vh;
+}
+@media screen and (max-width: 768px){
+
 }
 #games_para_content.para_content {
     position: absolute;
     top: 0;
     left: 27.5vw;
 }
+@media screen and (max-width: 768px){
+
+}
 #fauna_para_content.para_content {
     position: relative;
     top: 22vh;
     background-color: rgba(40,40,40,0.8);
 }
+@media screen and (max-width: 768px){
+
+}
 #science_para_content.para_content {
     background-color: rgba(40,40,40,0.8);
     width: 25vw;
+}
+@media screen and (max-width: 768px){
+
 }
 #words_para_content.para_content {
     position: relative;
     top: 36.8vh;
     background-color: inherit;
 }
+@media screen and (max-width: 768px){
+
+}
 #sundry_para_content.para_content {
     position: relative;
     top: 14vh;
     background-color: inherit;
+}
+@media screen and (max-width: 768px){
+
 }
 #media_para_content.para_content {
     position: relative;
@@ -332,6 +364,9 @@ hr.perma_hr {
     left: -4vw;
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
     background-color: rgba(40,40,40,0.8);
+}
+@media screen and (max-width: 768px){
+
 }
 
 

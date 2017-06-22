@@ -322,6 +322,7 @@ hr.perma_hr {
 }
 #media_para_content.para_content {
     position: relative;
+    width: 22.5vw;
     top: 36.5vh;
     left: -8vw;
 }

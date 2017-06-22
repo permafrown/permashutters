@@ -340,7 +340,7 @@ hr.perma_hr {
         background-color: rgba(40,40,40,0.8);
     }
     #games_para_content.para_content h3 {
-        position: absolute;
+        position: sticky;
         top: 18vh;
     }
 }

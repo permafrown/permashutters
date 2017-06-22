@@ -276,6 +276,11 @@ hr.perma_hr {
 	height: 100vh;
 	width: 100vw;
 }
+.para_content_wrapper {
+    background-color: #FFF;
+    position: relative;
+    top: 18vh;
+}
 .about_para_content {
     position: relative;
     top: 20vh;
@@ -305,12 +310,20 @@ hr.perma_hr {
 }
 #fauna_para_content.para_content {
     position: relative;
-    top: 18vh;
+    top: 20vh;
 }
-.para_content_wrapper {
-    background-color: #FFF;
+#words_para_content.para_content {
     position: relative;
-    top: 18vh;
+    top: 37vh;
+}
+#sundry_para_content.para_content {
+    position: relative;
+    top: 20vh;
+}
+#media_para_content.para_content {
+    position: relative;
+    top: 37vh;
+    left: 18vw;
 }
 
 

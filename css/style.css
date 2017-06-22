@@ -335,7 +335,7 @@ hr.perma_hr {
 @media screen and (max-width: 768px){
     #games_para_content.para_content {
         left: 0;
-        padding-top: 2vh;
+        margin-top: 2vh;
         height: 100vh;
         background-color: rgba(40,40,40,0.8);
     }
@@ -347,7 +347,7 @@ hr.perma_hr {
 }
 @media screen and (max-width: 768px){
     #fauna_para_content.para_content {
-        padding-top: 2vh;
+        margin-top: 2vh;
         height: 100vh;
     }
 }
@@ -359,7 +359,7 @@ hr.perma_hr {
     #science_para_content.para_content {
         width: 100vw;
         height: 100vh;
-        padding-top: 2vh;
+        margin-top: 2vh;
     }
 }
 #words_para_content.para_content {
@@ -371,7 +371,7 @@ hr.perma_hr {
     #words_para_content.para_content {
         position: relative;
         height: 100vh;
-        padding-top: 2vh;
+        margin-top: 2vh;
         background-color: rgba(40,40,40,0.5);
     }
 }
@@ -382,7 +382,7 @@ hr.perma_hr {
 }
 @media screen and (max-width: 768px){
     #sundry_para_content.para_content {
-        padding-top: 2vh;
+        margin-top: 2vh;
         height: 100vh;
         background-color: rgba(40,40,40,0.5);
     }
@@ -398,7 +398,7 @@ hr.perma_hr {
 @media screen and (max-width: 768px){
     #media_para_content.para_content {
         position: relative;
-        padding-top: 2vh;
+        margin-top: 2vh;
         width: 100vw;
         height: 100vh;
         left: 0vw;

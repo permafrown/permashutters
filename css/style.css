@@ -327,6 +327,7 @@ hr.perma_hr {
     left: -4vw;
     color: #555;
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+    background-color: rgba(40,40,40,0.8);
 }
 
 

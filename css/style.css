@@ -303,6 +303,10 @@ hr.perma_hr {
     top: 0;
     left: 27.5vw;
 }
+#fauna_para_content.para_content {
+    position: relative;
+    top: 18vh;
+}
 .para_content_wrapper {
     background-color: #FFF;
     position: relative;

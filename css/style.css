@@ -274,14 +274,6 @@ hr.perma_hr {
 	height: 100vh;
 	width: 100vw;
 }
-.para_content_wrapper {
-    background-color: #FFF;
-    position: relative;
-    top: 18vh;
-}
-@media screen and (max-width: 768px){
-
-}
 .about_para_content {
     position: relative;
     top: 20vh;
@@ -321,12 +313,14 @@ hr.perma_hr {
 
 }
 #games_para_content.para_content {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 18vh;
     left: 27.5vw;
 }
 @media screen and (max-width: 768px){
-
+    #games_para_content.para_content {
+        left: 0;
+    }
 }
 #fauna_para_content.para_content {
     position: relative;

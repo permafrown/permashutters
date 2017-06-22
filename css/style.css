@@ -311,6 +311,10 @@ hr.perma_hr {
 #fauna_para_content.para_content {
     position: relative;
     top: 22vh;
+    background-color: rgba(40,40,40,0.8);
+}
+#science_para_content.para_content {
+    background-color: rgba(40,40,40,0.8);
 }
 #words_para_content.para_content {
     position: relative;

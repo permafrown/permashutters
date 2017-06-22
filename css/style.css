@@ -266,6 +266,11 @@ hr.perma_hr {
 .para_page a {
   color: #BBB;
 }
+@media screen and (max-width: 768px){
+    .para_page a {
+        font-size: 8vmin;
+    }
+}
 .para_bg {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -317,10 +322,12 @@ hr.perma_hr {
     position: relative;
     top: 18vh;
     left: 27.5vw;
+    background-color: rgba(40,40,40,0.5);
 }
 @media screen and (max-width: 768px){
     #games_para_content.para_content {
         left: 0;
+        background-color: rgba(40,40,40,0.8);
     }
 }
 #fauna_para_content.para_content {

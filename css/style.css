@@ -339,7 +339,7 @@ hr.perma_hr {
         height: 100vh;
         background-color: rgba(40,40,40,0.8);
     }
-    #games_para_content.para_content h3 {
+    #games_para_content_wrapper.para_content_wrapper {
         position: sticky;
         top: 18vh;
     }

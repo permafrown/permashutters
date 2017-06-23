@@ -271,7 +271,7 @@ hr.perma_hr {
 }
 @media screen and (max-width: 768px){
     .para_page h3 {
-        font-size: 8vmin;
+        font-size: 6.5vmin;
     }
 }
 .para_bg {
@@ -327,7 +327,7 @@ hr.perma_hr {
 }
 @media screen and (max-width: 768px){
     .para_content p {
-        font-size: 5vmin;
+        font-size: 3.5vmin;
     }
 }
 .para_content img {

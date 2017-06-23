@@ -355,6 +355,7 @@ hr.perma_hr {
         position: absolute;
         top: 18vh;
         left: 0;
+        width: 90vw;
     }
 }
 #fauna_para_content_wrapper.para_content_wrapper {
@@ -367,6 +368,11 @@ hr.perma_hr {
         top: 0;
         height: 100vh;
     }
+    #fauna_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+        width: 90vw;
+    }
 }
 #science_para_content_wrapper.para_content_wrapper {
     background-color: rgba(40,40,40,0.8);
@@ -377,6 +383,11 @@ hr.perma_hr {
         width: 100vw;
         height: 100vh;
         top: 0;
+    }
+    #science_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+        width: 90vw;
     }
 }
 #words_para_content_wrapper.para_content_wrapper {
@@ -391,6 +402,11 @@ hr.perma_hr {
         top: 0;
         background-color: rgba(40,40,40,0.5);
     }
+    #words_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+        width: 90vw;
+    }
 }
 #sundry_para_content_wrapper.para_content_wrapper {
     position: relative;
@@ -403,14 +419,21 @@ hr.perma_hr {
         height: 100vh;
         background-color: rgba(40,40,40,0.5);
     }
+    #sundry_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+        width: 90vw;
+    }
 }
 #media_para_content_wrapper.para_content_wrapper {
     position: relative;
     width: 22.5vw;
     height: 23vh;
-    left: -4vw;
-    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
     background-color: rgba(40,40,40,0.8);
+}
+#media_para_content.para_content {
+    position: absolute;
+    left: -4vw;
 }
 @media screen and (max-width: 768px){
     #media_para_content_wrapper.para_content_wrapper {
@@ -418,9 +441,13 @@ hr.perma_hr {
         top: 0;
         width: 100vw;
         height: 100vh;
-        left: 0vw;
-        text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
         background-color: rgba(40,40,40,0.8);
+    }
+    #media_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+        left: 0vw;
+        width: 90vw;
     }
 }
 

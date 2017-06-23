@@ -288,7 +288,7 @@ hr.perma_hr {
     margin: 0 auto;
 }
 @media screen and (max-width: 768px){
-    .about_para_content_wrapper {
+    .about_para_content {
         top: 0;
     }
     .about_para_content p {

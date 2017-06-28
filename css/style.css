@@ -384,7 +384,7 @@ h3 a:hover {
 }
 #fauna_para_content.para_content {
     position: relative;
-    padding: 2vh 0;
+    padding: 1vh 0;
 }
 @media screen and (max-width: 768px){
     #fauna_para_content_wrapper.para_content_wrapper {
@@ -400,6 +400,10 @@ h3 a:hover {
     background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.8);
     width: 25vw;
+    left: 12.5vw;
+}
+#science_para_content.para_content {
+    width: 24vw;
 }
 @media screen and (max-width: 768px){
     #science_para_content_wrapper.para_content_wrapper {

@@ -400,10 +400,11 @@ h3 a:hover {
     background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.8);
     width: 25vw;
-    left: 12.5vw;
+    left: 0;
 }
 #science_para_content.para_content {
     width: 24vw;
+    top: 1vh;
 }
 @media screen and (max-width: 768px){
     #science_para_content_wrapper.para_content_wrapper {

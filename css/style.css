@@ -22,8 +22,6 @@ body, html{
   margin: 0 auto;
   text-align: center;
   background-color: #555;
-  /*height: 100%;*/
-  box-sizing: border-box;
   font-size: 16px;
   font-size:calc(12px + 0.2vw);
 }
@@ -35,6 +33,7 @@ body, html{
   display: flex;
 }
 .shutt{
+  background-color: rgb(45,45,45);
   background-color: rgba(45,45,45,0.5);
   background-repeat: no-repeat;
   background-position: center;
@@ -47,12 +46,13 @@ body, html{
 }
 .shutt:hover {
     transition: .5s;
-    min-width: 40% !important;
+    min-width: 40%;
     text-decoration: none;
   }
 .shutt a, a span {
   color: #BBB;
   text-decoration: none;
+  text-shadow: 4px 4px 2px rgb(10, 10, 10);
   text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
   font-family: 'Poiret One', cursive;
   font-size: 28px;
@@ -120,6 +120,7 @@ li a, button.btn a, shutt a{
   background-color: #555;
   background-color: rgba(45,45,45,0);
   border-style: none;
+  text-shadow: 4px 4px 2px rgb(10, 10, 10);
   text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
 .bot_nav button.btn a:hover, .btn:hover{
@@ -183,7 +184,7 @@ h3 a:hover {
 .about_desc_list {
     list-style-type: none;
 }
-hr.perma_hr {
+.perma_hr {
     border-top: 3px solid #666;
 }
 .about_content {
@@ -202,7 +203,7 @@ hr.perma_hr {
     float: left;
     display: block;
   }
-  ul.topnav li.icon {
+  ul.topnav icon {
     float: right;
     display: block;
   }
@@ -226,7 +227,7 @@ hr.perma_hr {
     }
     .games_shutt:hover, .science_shutt:hover, .sundry_shutt:hover, .fauna_shutt:hover, .words_shutt:hover, .media_shutt:hover {
         transition: .5s;
-        min-width: 40% !important;
+        min-width: 40%;
     }
     .submenu {
         font-size: 5vmin;
@@ -297,10 +298,12 @@ hr.perma_hr {
 }
 .para_content_wrapper {
     position: relative;
+    background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.5);
     top: 37.5vh;
     height: 25vh;
     width: 45vw;
+    left: 27.5vw;
 }
 @media screen and (max-width: 768px){
     .para_content_wrapper {
@@ -311,6 +314,7 @@ hr.perma_hr {
 .para_content {
     position: relative;
     margin: 0 auto;
+    text-shadow: 4px 4px 2px rgb(10,10,10);
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
 @media screen and (max-width: 768px){
@@ -339,18 +343,20 @@ hr.perma_hr {
 #games_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 18vh;
+    background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.5);
 }
 #games_para_content.para_content {
     position:absolute;
     top: 0;
-    left: 27.5vw;
+    left: 0;
 }
 @media screen and (max-width: 768px){
     #games_para_content_wrapper.para_content_wrapper {
         left: 0;
         top: 0;
         height: 100vh;
+        background-color: rgb(40,40,40);
         background-color: rgba(40,40,40,0.8);
     }
     #games_para_content.para_content {
@@ -363,6 +369,7 @@ hr.perma_hr {
 #fauna_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 22vh;
+    background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.8);
 }
 @media screen and (max-width: 768px){
@@ -376,6 +383,7 @@ hr.perma_hr {
     }
 }
 #science_para_content_wrapper.para_content_wrapper {
+    background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.8);
     width: 25vw;
 }
@@ -401,6 +409,7 @@ hr.perma_hr {
         position: relative;
         height: 100vh;
         top: 0;
+        background-color: rgb(40,40,40);
         background-color: rgba(40,40,40,0.5);
     }
     #words_para_content.para_content {
@@ -417,6 +426,7 @@ hr.perma_hr {
     #sundry_para_content_wrapper.para_content_wrapper {
         top: 0;
         height: 100vh;
+        background-color: rgb(40,40,40);
         background-color: rgba(40,40,40,0.5);
     }
     #sundry_para_content.para_content {
@@ -428,6 +438,7 @@ hr.perma_hr {
     position: relative;
     width: 22.5vw;
     height: 23vh;
+    background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.8);
 }
 #media_para_content.para_content {
@@ -440,6 +451,7 @@ hr.perma_hr {
         top: 0;
         width: 100vw;
         height: 100vh;
+        background-color: rgb(40,40,40);
         background-color: rgba(40,40,40,0.8);
     }
     #media_para_content.para_content {

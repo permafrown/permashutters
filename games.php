@@ -13,6 +13,15 @@
     </div>
   </div>
   <hr class="perma_hr">
+  <div class="container-fluid">
+      <div class="col-xs-12">
+          <div class="jumbotron">
+              <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">Far Cry 5 Announce Trailer</a>
+              <a href="https://far-cry.ubisoft.com/game/en-ca/home/">Far Cry 5 Website</a>
+          </div>
+      </div>
+  </div>
+  <hr class="perma_hr">
     <?php include_once 'includes/shutter_menu.php';?>
     <?php include_once 'includes/body_scripts.php';?>
 </body>

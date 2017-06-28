@@ -15,10 +15,10 @@
   <hr class="perma_hr">
   <div class="container-fluid shutt_page_content">
       <div class="col-xs-12">
-          <div class="well" id="well001">
+          <div class="button shutt_butt" id="button001">
               <p><a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">Far Cry 5 Announce Trailer</a></p>
           </div>
-          <div class="button" id="button001">
+          <div class="button shutt_butt" id="button002">
               <p><a href="https://far-cry.ubisoft.com/game/en-ca/home/">Far Cry 5 Website</a></p>
           </div>
       </div>

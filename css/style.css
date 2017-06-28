@@ -216,7 +216,7 @@ h3 a:hover {
 ***************************/
 .shutt_page_content {
     margin: 0 auto;
-    display: inline-block;
+    display: inline;
 }
 .shutt_page_content p, a {
     color: #BBB;
@@ -225,7 +225,7 @@ h3 a:hover {
     background-color: #333;
     background-color: rgba(40,40,40,0.5);
 }
-.shutt_page_content .button {
+.shutt_page_content .shutt_butt {
     background-color: #333;
     background-color: rgba(40,40,40,0.5);
 }

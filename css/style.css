@@ -373,7 +373,6 @@ h3 a:hover {
     #games_para_content.para_content {
         position: absolute;
         top: 18vh;
-        left: 5vw;
         width: 90vw;
     }
 }
@@ -389,6 +388,7 @@ h3 a:hover {
 @media screen and (max-width: 768px){
     #fauna_para_content_wrapper.para_content_wrapper {
         top: 0;
+        left: 0;
         height: 100vh;
     }
     #fauna_para_content.para_content {
@@ -411,6 +411,7 @@ h3 a:hover {
         width: 100vw;
         height: 100vh;
         top: 0;
+        left: 0;
     }
     #science_para_content.para_content {
         position: absolute;
@@ -428,6 +429,7 @@ h3 a:hover {
         position: relative;
         height: 100vh;
         top: 0;
+        left: 0;
         background-color: rgb(40,40,40);
         background-color: rgba(40,40,40,0.5);
     }
@@ -445,6 +447,7 @@ h3 a:hover {
 @media screen and (max-width: 768px){
     #sundry_para_content_wrapper.para_content_wrapper {
         top: 0;
+        left: 0;
         height: 100vh;
         background-color: rgb(40,40,40);
         background-color: rgba(40,40,40,0.5);
@@ -471,6 +474,7 @@ h3 a:hover {
     #media_para_content_wrapper.para_content_wrapper {
         position: relative;
         top: 0;
+        left: 0;
         width: 100vw;
         height: 100vh;
         background-color: rgb(40,40,40);
@@ -479,7 +483,7 @@ h3 a:hover {
     #media_para_content.para_content {
         position: absolute;
         top: 18vh;
-        left: 5vw;
+        left: 0;
         width: 90vw;
     }
 }

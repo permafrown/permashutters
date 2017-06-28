@@ -30,7 +30,7 @@
       <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
     </div>
   </div>
-  <h2 class="submenu" style="margin-bottom: 2.5%;">a collection of things i find interesting</h2>
+  <h2 class="submenu subtext" style="margin-bottom: 2.5%;">a collection of things i find interesting</h2>
   <hr class="perma_hr">
     <div class="column shutters">
         <a class="shutt col-xs-2 games_shutt" href="games.php"><span class="hidden-sm hidden-xs">games</span></a>

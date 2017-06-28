@@ -15,8 +15,10 @@
   <hr class="perma_hr">
   <div class="container-fluid">
       <div class="col-xs-12">
-          <div class="jumbotron">
+          <div class="well" id="well001">
               <p><a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">Far Cry 5 Announce Trailer</a></p>
+          </div>
+          <div class="well" id="well002">
               <p><a href="https://far-cry.ubisoft.com/game/en-ca/home/">Far Cry 5 Website</a></p>
           </div>
       </div>

@@ -384,7 +384,7 @@ h3 a:hover {
 }
 #fauna_para_content.para_content {
     position: relative;
-    padding: 5vh 0;
+    padding: 2vh 0;
 }
 @media screen and (max-width: 768px){
     #fauna_para_content_wrapper.para_content_wrapper {

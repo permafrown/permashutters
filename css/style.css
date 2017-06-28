@@ -300,9 +300,9 @@ h3 a:hover {
     position: relative;
     background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.5);
-    top: 37.5vh;
     height: 25vh;
     width: 45vw;
+    top: 37.5vh;
     left: 27.5vw;
 }
 @media screen and (max-width: 768px){
@@ -314,7 +314,7 @@ h3 a:hover {
 .para_content {
     position: relative;
     margin: 0 auto;
-    width: 40vw;
+    width: 33.33vw;
     text-shadow: 4px 4px 2px rgb(10,10,10);
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
@@ -348,9 +348,8 @@ h3 a:hover {
     background-color: rgba(40,40,40,0.5);
 }
 #games_para_content.para_content {
-    position:absolute;
+    position: relative;
     top: -7.5vh;
-    left: 0;
 }
 @media screen and (max-width: 768px){
     #games_para_content_wrapper.para_content_wrapper {

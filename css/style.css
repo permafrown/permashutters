@@ -324,6 +324,7 @@ h3 a:hover {
 .para_content {
     position: relative;
     margin: 0 auto;
+    padding: 1vh 0;
     width: 33.33vw;
     text-shadow: 4px 4px 2px rgb(10,10,10);
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
@@ -360,7 +361,6 @@ h3 a:hover {
 #games_para_content.para_content {
     position: relative;
     height: 100%;
-    padding: 1vh 0;
 }
 @media screen and (max-width: 768px){
     #games_para_content_wrapper.para_content_wrapper {
@@ -385,7 +385,6 @@ h3 a:hover {
 }
 #fauna_para_content.para_content {
     position: relative;
-    padding: 1vh 0;
 }
 @media screen and (max-width: 768px){
     #fauna_para_content_wrapper.para_content_wrapper {
@@ -402,11 +401,10 @@ h3 a:hover {
     background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.8);
     width: 25vw;
-    left: 37.5;
+    left: 0;
 }
 #science_para_content.para_content {
     width: 24vw;
-    top: 1vh;
 }
 @media screen and (max-width: 768px){
     #science_para_content_wrapper.para_content_wrapper {

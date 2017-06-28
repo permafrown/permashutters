@@ -216,18 +216,16 @@ h3 a:hover {
 ***************************/
 .shutt_page_content {
     margin: 0 auto;
-    display: inline;
 }
 .shutt_page_content p, a {
     color: #BBB;
 }
-.shutt_page_content .well {
-    background-color: #333;
-    background-color: rgba(40,40,40,0.5);
-}
 .shutt_page_content .shutt_butt {
     background-color: #333;
     background-color: rgba(40,40,40,0.5);
+    display: inline-flex;
+    min-width: 25vw;
+    min-height: 10vh;
 }
 
 /***END SHUTTER PAGE CONTENT

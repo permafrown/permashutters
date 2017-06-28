@@ -350,7 +350,7 @@ h3 a:hover {
 #games_para_content.para_content {
     position: relative;
     height: 100%;
-    top: -8.5vh;
+    top: -5vh;
 }
 @media screen and (max-width: 768px){
     #games_para_content_wrapper.para_content_wrapper {

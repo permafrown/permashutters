@@ -420,7 +420,7 @@ h3 a:hover {
 }
 #words_para_content_wrapper.para_content_wrapper {
     position: relative;
-    top: 36.8vh;
+    top: 38.5vh;
     background-color: inherit;
 }
 @media screen and (max-width: 768px){
@@ -439,7 +439,8 @@ h3 a:hover {
 #sundry_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 14vh;
-    background-color: inherit;
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.5);
 }
 @media screen and (max-width: 768px){
     #sundry_para_content_wrapper.para_content_wrapper {
@@ -456,13 +457,15 @@ h3 a:hover {
 #media_para_content_wrapper.para_content_wrapper {
     position: relative;
     width: 22.5vw;
-    height: 23vh;
+    height: 20vh;
+    left: 35.5vw;
+    top: 40vh;
     background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.8);
 }
 #media_para_content.para_content {
     position: absolute;
-    left: -4vw;
+    left: -5.5vw;
 }
 @media screen and (max-width: 768px){
     #media_para_content_wrapper.para_content_wrapper {

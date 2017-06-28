@@ -220,10 +220,15 @@ h3 a:hover {
 .shutt_page_content p, a {
     color: #BBB;
 }
+.shutt_page_content a:hover {
+    color: #888;
+}
 .shutt_page_content .shutt_butt {
     background-color: #333;
     background-color: rgba(40,40,40,0.5);
     display: inline-flex;
+    text-align: center;
+    justify-content: center;
     min-width: 25vw;
     min-height: 10vh;
 }

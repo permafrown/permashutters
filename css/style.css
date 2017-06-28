@@ -314,7 +314,7 @@ h3 a:hover {
 .para_content {
     position: relative;
     margin: 0 auto;
-    width: 40vh;
+    width: 40vw;
     text-shadow: 4px 4px 2px rgb(10,10,10);
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
@@ -349,7 +349,7 @@ h3 a:hover {
 }
 #games_para_content.para_content {
     position:absolute;
-    top: -5vh;
+    top: -7.5vh;
     left: 0;
 }
 @media screen and (max-width: 768px){

@@ -16,8 +16,8 @@
   <div class="container-fluid">
       <div class="col-xs-12">
           <div class="jumbotron">
-              <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">Far Cry 5 Announce Trailer</a>
-              <a href="https://far-cry.ubisoft.com/game/en-ca/home/">Far Cry 5 Website</a>
+              <p><a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">Far Cry 5 Announce Trailer</a></p>
+              <p><a href="https://far-cry.ubisoft.com/game/en-ca/home/">Far Cry 5 Website</a></p>
           </div>
       </div>
   </div>

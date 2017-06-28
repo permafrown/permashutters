@@ -13,7 +13,7 @@
     </div>
   </div>
   <hr class="perma_hr">
-  <div class="container-fluid">
+  <div class="container-fluid shutt_page_content">
       <div class="col-xs-12">
           <div class="well" id="well001">
               <p><a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">Far Cry 5 Announce Trailer</a></p>

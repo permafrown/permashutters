@@ -201,6 +201,17 @@ h3 a:hover {
 }
 /*END FURTHER TWEAKS*/
 
+/*SHUTTER PAGE CONTENT*/
+.shutt_page_content {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+
+/*END SHUTTER PAGE CONTENT*/
+
+
 /*RESPONSIVE*/
 @media screen and (max-width: 600px) {
   ul.topnav li:not(:nth-last-child(2)) {

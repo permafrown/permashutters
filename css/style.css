@@ -353,14 +353,14 @@ h3 a:hover {
 }
 #games_para_content_wrapper.para_content_wrapper {
     position: relative;
-    top: 25vh;
+    top: 23vh;
     background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.5);
 }
 #games_para_content.para_content {
     position: relative;
     height: 100%;
-    margin: 1vh auto;
+    margin: 2vh auto;
 }
 @media screen and (max-width: 768px){
     #games_para_content_wrapper.para_content_wrapper {

@@ -17,7 +17,8 @@ font-family: 'Source Serif Pro', serif;
 font-family: 'Tangerine', cursive;
 font-family: 'Montserrat', sans-serif;
 */
-/*GENERAL OVERARCHING*/
+/*******GENERAL OVERARCHING
+***************************/
 body, html{
   margin: 0 auto;
   text-align: center;
@@ -25,11 +26,12 @@ body, html{
   font-size: 16px;
   font-size:calc(12px + 0.2vw);
 }
-/*END GENERAL*/
+/***************END GENERAL
+***************************/
 
-/*SHUTTERS*/
+/******************SHUTTERS
+***************************/
 .shutters {
-  /*background-color: #543;*/
   display: flex;
 }
 .shutt{
@@ -80,9 +82,11 @@ a span:hover {
 .media_shutt {
     background-image: url("../img/media_bg.jpg");
 }
-/*END SHUTTERS*/
+/***************END SHUTTERS
+***************************/
 
-/*SUBMENU*/
+/*******************SUBMENU
+***************************/
 .submenu {
     font-size: inherit;
     font-size:calc(10px + 1vw);
@@ -97,9 +101,11 @@ a span:hover {
     text-shadow: 4px 4px 2px rgb(10, 10, 10);
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
-/*END SUBMENU*/
+/***************END SUBMENU
+***************************/
 
-/*BOT NAV*/
+/*******************BOT NAV
+***************************/
 .bot_nav {
   background-color: #555;
   background-color: rgba(45,45,45,0.5);
@@ -114,9 +120,11 @@ a span:hover {
   padding: 0;
   overflow: hidden;
 }
-/*END BOT NAV*/
+/****************END BOT NAV
+***************************/
 
-/*NAV LINX*/
+/*******************NAV LINX
+***************************/
 li a, button.btn a, shutt a{
   color: #BBB;
   text-align: center;
@@ -136,9 +144,11 @@ li a, button.btn a, shutt a{
   text-decoration: none;
   border-radius: 50px 50px 50px 50px;
 }
-/*END NAV LINX*?
+/***************END NAV LINX
+***************************/
 
-/*FURTHER TWEAKS*/
+/*************FURTHER TWEAKS
+***************************/
 .home_page {
   justify-content: center;
   align-items: center;
@@ -199,20 +209,30 @@ h3 a:hover {
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
     font-family: 'Libre Baskerville', serif;
 }
-/*END FURTHER TWEAKS*/
+/********END FURTHER TWEAKS
+***************************/
 
-/*SHUTTER PAGE CONTENT*/
+/*******SHUTTER PAGE CONTENT
+***************************/
 .shutt_page_content {
     margin: 0 auto;
     display: inline-block;
 }
+.shutt_page_content well {
+    background-color: #333;
+    background-color: rgba(40,40,40,0.5);
+}
+.shutt_page_content p, a {
+    color: #BBB;
+}
 
 
 
-/*END SHUTTER PAGE CONTENT*/
+/***END SHUTTER PAGE CONTENT
+***************************/
 
-
-/*RESPONSIVE*/
+/*****************RESPONSIVE
+***************************/
 @media screen and (max-width: 600px) {
   ul.topnav li:not(:nth-last-child(2)) {
     display: none;
@@ -278,10 +298,12 @@ h3 a:hover {
     }
 }
 
-/*END RESPONSIVE*/
+/*************END RESPONSIVE
+***************************/
 
 
-/* START ABOUT PARALLAX */
+/*******START ABOUT PARALLAX
+***************************/
 .para_page {
   height: 100vh;
 }
@@ -503,7 +525,8 @@ h3 a:hover {
 }
 
 
-/* PARALLAX BACKGROUNDS */
+/*******PARALLAX BACKGROUNDS
+***************************/
 #about_para_bg {background-image:url('../img/para_about_bg_1440x1232.png');}
 #games_para_bg {background-image:url('../img/para_games_bg_1440x1232.png');}
 #fauna_para_bg {background-image:url('../img/para_fauna_bg_1440x1232.png');}
@@ -511,6 +534,8 @@ h3 a:hover {
 #words_para_bg {background-image:url('../img/para_words_bg_1440x1232.png');}
 #sundry_para_bg {background-image:url('../img/para_sundry_bg_1440x1232.png');}
 #media_para_bg {background-image:url('../img/para_media_bg_1440x1232.png');}
-/* END PARALLAX BACKGROUNDS */
+/***END PARALLAX BACKGROUNDS
+***************************/
 
-/* END ABOUT PARALLAX */
+/*********END ABOUT PARALLAX
+***************************/

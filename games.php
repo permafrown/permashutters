@@ -20,9 +20,11 @@
               <p>Far Cry 5 Announce Trailer</p>
           </div>
         </a>
+        <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
           <div class="button shutt_butt" id="button002">
-              <p><a href="https://far-cry.ubisoft.com/game/en-ca/home/">Far Cry 5 Website</a></p>
+              <p>Far Cry 5 Website</p>
           </div>
+        </a>
       </div>
   </div>
   <hr class="perma_hr">

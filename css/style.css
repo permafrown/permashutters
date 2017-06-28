@@ -219,6 +219,7 @@ h3 a:hover {
 }
 .shutt_page_content p, a {
     color: #BBB;
+    text-decoration: none;
 }
 .shutt_page_content a:hover {
     color: #888;

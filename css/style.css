@@ -415,7 +415,7 @@ h3 a:hover {
     }
     #science_para_content.para_content {
         position: absolute;
-        top: 18vh;
+        top: 33vh;
         width: 90vw;
     }
 }
@@ -435,7 +435,10 @@ h3 a:hover {
     }
     #words_para_content.para_content {
         position: absolute;
-        top: 18vh;
+        top: 35vh;
+    }
+    #words_para_content h3 {
+        padding: 10px 0;
     }
 }
 #sundry_para_content_wrapper.para_content_wrapper {
@@ -454,7 +457,7 @@ h3 a:hover {
     }
     #sundry_para_content.para_content {
         position: absolute;
-        top: 18vh;
+        top: 10vh;
     }
 }
 #media_para_content_wrapper.para_content_wrapper {
@@ -474,7 +477,7 @@ h3 a:hover {
     #media_para_content_wrapper.para_content_wrapper {
         position: relative;
         top: 0;
-        left: 0;
+        left: 0vw;
         width: 100vw;
         height: 100vh;
         background-color: rgb(40,40,40);
@@ -482,8 +485,8 @@ h3 a:hover {
     }
     #media_para_content.para_content {
         position: absolute;
-        top: 18vh;
-        left: 0;
+        top: 35vh;
+        left: 7.5vw;
         width: 90vw;
     }
 }

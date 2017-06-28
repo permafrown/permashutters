@@ -401,7 +401,7 @@ h3 a:hover {
     background-color: rgb(40,40,40);
     background-color: rgba(40,40,40,0.8);
     width: 25vw;
-    left: 0;
+    left: 37.5;
 }
 #science_para_content.para_content {
     width: 24vw;

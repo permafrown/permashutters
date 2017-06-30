@@ -1,0 +1,547 @@
+/* Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. */
+/*@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext);*/
+/* FONT CODES
+font-family: 'Bevan', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Overlock', cursive;
+font-family: 'Overlock SC', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Tangerine', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+/*******GENERAL OVERARCHING
+***************************/
+body, html{
+  margin: 0 auto;
+  text-align: center;
+  background-color: #555;
+  font-size: 16px;
+  font-size:calc(12px + 0.2vw);
+}
+/***************END GENERAL
+***************************/
+
+/******************SHUTTERS
+***************************/
+.shutters {
+  display: flex;
+}
+.shutt{
+  background-color: rgb(45,45,45);
+  background-color: rgba(45,45,45,0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40em;
+  max-width: 20%;
+  min-width: 10%;
+  text-align: center;
+  transition: .5s;
+}
+.shutt:hover {
+    transition: .5s;
+    min-width: 40%;
+    text-decoration: none;
+  }
+.shutt a, a span {
+  color: #BBB;
+  text-decoration: none;
+  text-shadow: 4px 4px 2px rgb(10, 10, 10);
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+  font-family: 'Poiret One', cursive;
+  font-size: 28px;
+  font-size:calc(28px + 1.8vw);
+}
+a span:hover {
+    color: #BBB;
+    text-decoration: none;
+}
+.games_shutt {
+    background-image: url("../img/games_bg.jpg");
+}
+.fauna_shutt {
+    background-image: url("../img/fauna_bg.jpg");
+}
+.science_shutt {
+    background-image: url("../img/science_bg.jpg");
+}
+.words_shutt {
+    background-image: url("../img/words_bg.jpg");
+}
+.sundry_shutt {
+    background-image: url("../img/sundry_bg.jpg");
+}
+.media_shutt {
+    background-image: url("../img/media_bg.jpg");
+}
+/***************END SHUTTERS
+***************************/
+
+/*******************SUBMENU
+***************************/
+.submenu {
+    font-size: inherit;
+    font-size:calc(10px + 1vw);
+}
+.submenu a {
+    color: inherit;
+}
+.subtext {
+    color: #BBB;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 2.5vh;
+    text-shadow: 4px 4px 2px rgb(10, 10, 10);
+    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+/***************END SUBMENU
+***************************/
+
+/*******************BOT NAV
+***************************/
+.bot_nav {
+  background-color: #555;
+  background-color: rgba(45,45,45,0.5);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Overlock', cursive;
+}
+.foot_nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/****************END BOT NAV
+***************************/
+
+/*******************NAV LINX
+***************************/
+li a, button.btn a, shutt a{
+  color: #BBB;
+  text-align: center;
+  padding: 14px 16px;
+}
+.bot_nav button.btn, .btn {
+  color: #DDD;
+  background-color: #555;
+  background-color: rgba(45,45,45,0);
+  border-style: none;
+  text-shadow: 4px 4px 2px rgb(10, 10, 10);
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+.bot_nav button.btn a:hover, .btn:hover{
+  color: #DDD;
+  background-color: #4d334d;
+  text-decoration: none;
+  border-radius: 50px 50px 50px 50px;
+}
+/***************END NAV LINX
+***************************/
+
+/*************FURTHER TWEAKS
+***************************/
+.home_page {
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.content p {
+  color: #d9d9d9;
+  font-family: 'Libre Baskerville', serif;
+  font-size: inherit;
+  font-size:calc(12px + 1.8vw);
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+.title_centered {
+  margin-bottom: 50px;
+  color: #BBB;
+  font-family: 'Poiret One', cursive;
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+  font-size: 32px;
+  font-size:calc(70px + 1.8vw);
+}
+h3 {
+  padding: 60px 0 30px 0;
+  font-family: 'Cinzel', serif;
+  font-size: 25px;
+  font-size:calc(12px + 1.8vw);
+}
+h3 a:hover {
+    color: inherit;
+}
+.h3_light {
+  color: #d9d9d9;
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+.h3_dark {
+  color: #0d0d0d;
+  text-shadow: 4px 4px 2px rgba(230, 230, 230, 1);
+}
+.avatar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  max-height: 150px;
+}
+.about_desc_list {
+    list-style-type: none;
+}
+.perma_hr {
+    border-top: 3px solid #666;
+}
+.about_content {
+    color: #d9d9d9;
+    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+    font-family: 'Libre Baskerville', serif;
+}
+/********END FURTHER TWEAKS
+***************************/
+
+/*******SHUTTER PAGE CONTENT
+***************************/
+.shutt_page_content {
+    margin: 0 auto;
+}
+.shutt_page_content p, a {
+    color: #BBB;
+    text-decoration: none;
+}
+.shutt_page_content a:hover {
+    color: #888;
+}
+.shutt_page_content .shutt_butt {
+    background-color: #333;
+    background-color: rgba(40,40,40,0.5);
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    min-width: 25vw;
+    min-height: 10vh;
+}
+
+/***END SHUTTER PAGE CONTENT
+***************************/
+
+/*****************RESPONSIVE
+***************************/
+@media screen and (max-width: 600px) {
+  ul.topnav li:not(:nth-last-child(2)) {
+    display: none;
+  }
+  ul.topnav li:nth-last-child(2) {
+    float: left;
+    display: block;
+  }
+  ul.topnav icon {
+    float: right;
+    display: block;
+  }
+  ul.topnav li a:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 768px){
+    body, html {
+        font-size: 14px;
+        font-size:calc(12px + 0.1vw);
+    }
+    .games_shutt, .science_shutt, .sundry_shutt {
+        height: 30em;
+    }
+    .fauna_shutt, .words_shutt, .media_shutt {
+        height: auto;
+    }
+    .games_shutt:hover, .science_shutt:hover, .sundry_shutt:hover, .fauna_shutt:hover, .words_shutt:hover, .media_shutt:hover {
+        transition: .5s;
+        min-width: 40%;
+    }
+    .submenu {
+        font-size: 5vmin;
+        color: #BBB;
+        font-family: 'Cinzel', serif;
+    }
+    .about_content {
+        font-size: 5vmin;
+    }
+}
+
+@media screen and (max-width: 640px){
+    body, html {
+        font-size: 12px;
+        font-size:calc(10px + 0.2vw);
+    }
+    .title_centered {
+        font-size: 32px;
+        font-size:calc(32px + 2.2vw);
+    }
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 320px){
+    body, html {
+        font-size: 10px;
+        font-size:calc(10px + 0.1vw);
+    }
+}
+
+/*************END RESPONSIVE
+***************************/
+
+
+/*******START ABOUT PARALLAX
+***************************/
+.para_page {
+  height: 100vh;
+}
+.para_page a {
+  color: #BBB;
+}
+.para_page h3 {
+    padding: 10px 0 30px 0;
+}
+@media screen and (max-width: 768px){
+    .para_page h3 {
+        font-size: 6.5vmin;
+    }
+}
+.para_bg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+.about_para_content {
+    position: relative;
+    top: 20vh;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .about_para_content {
+        top: 0;
+    }
+    .about_para_content p {
+        font-size: 3.5vmin;
+    }
+}
+.para_content_wrapper {
+    position: relative;
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.5);
+    height: 25vh;
+    width: 45vw;
+    top: 37.5vh;
+    left: 27.5vw;
+}
+@media screen and (max-width: 768px){
+    .para_content_wrapper {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+.para_content {
+    position: relative;
+    margin: 0 auto;
+    padding: 1vh 0;
+    width: 33.33vw;
+    text-shadow: 4px 4px 2px rgb(10,10,10);
+    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+}
+@media screen and (max-width: 768px){
+    .para_content {
+        font-size: 5vmin;
+        width: 90vw;
+        left: 5vw;
+    }
+}
+.para_content p {
+    font-size: 1vw;
+    font-family: 'Lato', sans-serif;
+    color: #BBB;
+}
+@media screen and (max-width: 768px){
+    .para_content p {
+        font-size: 3.5vmin;
+    }
+}
+.para_content img {
+    margin-bottom: 2vh;
+}
+@media screen and (max-width: 768px){
+
+}
+#games_para_content_wrapper.para_content_wrapper {
+    position: relative;
+    top: 22vh;
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.5);
+}
+#games_para_content.para_content {
+    position: relative;
+    height: 100%;
+}
+@media screen and (max-width: 768px){
+    #games_para_content_wrapper.para_content_wrapper {
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background-color: rgb(40,40,40);
+        background-color: rgba(40,40,40,0.8);
+    }
+    #games_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+        width: 90vw;
+    }
+}
+#fauna_para_content_wrapper.para_content_wrapper {
+    position: relative;
+    top: 27vh;
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.8);
+}
+#fauna_para_content.para_content {
+    position: relative;
+}
+@media screen and (max-width: 768px){
+    #fauna_para_content_wrapper.para_content_wrapper {
+        top: 0;
+        left: 0;
+        height: 100vh;
+    }
+    #fauna_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+    }
+}
+#science_para_content_wrapper.para_content_wrapper {
+    position: relative;
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.8);
+    width: 25vw;
+    left: 37.5vw;
+}
+#science_para_content.para_content {
+    width: 24vw;
+}
+@media screen and (max-width: 768px){
+    #science_para_content_wrapper.para_content_wrapper {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    #science_para_content.para_content {
+        position: absolute;
+        top: 33vh;
+        width: 90vw;
+    }
+}
+#words_para_content_wrapper.para_content_wrapper {
+    position: relative;
+    top: 38.5vh;
+    background-color: inherit;
+}
+@media screen and (max-width: 768px){
+    #words_para_content_wrapper.para_content_wrapper {
+        position: relative;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgb(40,40,40);
+        background-color: rgba(40,40,40,0.5);
+    }
+    #words_para_content.para_content {
+        position: absolute;
+        top: 35vh;
+    }
+    #words_para_content h3 {
+        padding: 10px 0;
+    }
+}
+#sundry_para_content_wrapper.para_content_wrapper {
+    position: relative;
+    top: 14vh;
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.5);
+}
+@media screen and (max-width: 768px){
+    #sundry_para_content_wrapper.para_content_wrapper {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgb(40,40,40);
+        background-color: rgba(40,40,40,0.5);
+    }
+    #sundry_para_content.para_content {
+        position: absolute;
+        top: 10vh;
+    }
+}
+#media_para_content_wrapper.para_content_wrapper {
+    position: relative;
+    width: 22.5vw;
+    height: 20vh;
+    left: 35.5vw;
+    top: 40vh;
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.8);
+}
+#media_para_content.para_content {
+    position: absolute;
+    left: -5.5vw;
+}
+@media screen and (max-width: 768px){
+    #media_para_content_wrapper.para_content_wrapper {
+        position: relative;
+        top: 0;
+        left: 0vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(40,40,40);
+        background-color: rgba(40,40,40,0.8);
+    }
+    #media_para_content.para_content {
+        position: absolute;
+        top: 35vh;
+        left: 7.5vw;
+        width: 90vw;
+    }
+}
+
+
+/*******PARALLAX BACKGROUNDS
+***************************/
+#about_para_bg {background-image:url('../img/para_about_bg_1440x1232.png');}
+#games_para_bg {background-image:url('../img/para_games_bg_1440x1232.png');}
+#fauna_para_bg {background-image:url('../img/para_fauna_bg_1440x1232.png');}
+#science_para_bg {background-image:url('../img/para_science_bg_1440x1232.png');}
+#words_para_bg {background-image:url('../img/para_words_bg_1440x1232.png');}
+#sundry_para_bg {background-image:url('../img/para_sundry_bg_1440x1232.png');}
+#media_para_bg {background-image:url('../img/para_media_bg_1440x1232.png');}
+/***END PARALLAX BACKGROUNDS
+***************************/
+
+/*********END ABOUT PARALLAX
+***************************/

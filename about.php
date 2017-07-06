@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <?php include_once 'includes/head.php';?>
+    <link rel="stylesheet" href="css/about.css">
     <title>about | permashutters</title>
 </head>
 <body>

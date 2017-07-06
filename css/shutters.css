@@ -1,0 +1,55 @@
+/******************SHUTTERS
+***************************/
+.shutters {
+  display: flex;
+}
+.shutt{
+  background-color: rgb(45,45,45);
+  background-color: rgba(45,45,45,0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40em;
+  max-width: 20%;
+  min-width: 10%;
+  text-align: center;
+  transition: .5s;
+}
+.shutt:hover {
+    transition: .5s;
+    min-width: 40%;
+    text-decoration: none;
+  }
+.shutt a, a span {
+  color: #BBB;
+  text-decoration: none;
+  text-shadow: 4px 4px 2px rgb(10, 10, 10);
+  text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+  font-family: 'Poiret One', cursive;
+  font-size: 28px;
+  font-size:calc(28px + 1.8vw);
+}
+a span:hover {
+    color: #BBB;
+    text-decoration: none;
+}
+.games_shutt {
+    background-image: url("../img/games_bg.jpg");
+}
+.fauna_shutt {
+    background-image: url("../img/fauna_bg.jpg");
+}
+.science_shutt {
+    background-image: url("../img/science_bg.jpg");
+}
+.words_shutt {
+    background-image: url("../img/words_bg.jpg");
+}
+.sundry_shutt {
+    background-image: url("../img/sundry_bg.jpg");
+}
+.media_shutt {
+    background-image: url("../img/media_bg.jpg");
+}
+/***************END SHUTTERS
+***************************/

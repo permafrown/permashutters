@@ -8,3 +8,4 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="css/animate-master/animate.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/shutters.css">

@@ -2,7 +2,7 @@ paths:
     cache: app/cache
     config: app/config
     database: app/database
-    web: %site%/vhosts/hrsvrt.ca/permashutters.hrsvrt.ca/bolt
+    web: public
     themebase: public/theme
     files: public/files
     view: public/bolt-public/view

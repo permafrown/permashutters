@@ -8,7 +8,7 @@
 <body>
 
 <!-- MAIN TITLE -->
-  <h1 class="title_centered" style="margin-top: 2.5%;">permashutters</h1>
+  <h1 class="title_centered" style="margin-top: 2.5%;">TESTpermashutters</h1>
 <!-- END MAIN TITLE -->
 
 <!-- LARGE SCREEN SUBMENU -->

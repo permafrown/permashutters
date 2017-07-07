@@ -2,7 +2,7 @@ paths:
     cache: files/bolt/app/cache
     config: files/bolt/app/config
     database: files/bolt/app/database
-    web: files/bolt/public
+    web: "%site%/files/bolt/public"
     themebase: files/bolt/public/theme
     files: files/bolt/public/files
     view: files/bolt/public/bolt-public/view

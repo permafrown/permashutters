@@ -10,7 +10,7 @@
   <section class="para_page" id="about_para_page">
     <div class="para_bg" id="about_para_bg">
       <div class="about_para_content" id="about_para_content">
-        <h1 class="title_centered"><small>permashutters</small>about</h1>
+        <h1 class="title_centered"><small>TESTpermashutters</small>about</h1>
         <div class="container-fluid about_content">
           <p>a TESTING place for everything</p>
           <p>and everything in its place</p>

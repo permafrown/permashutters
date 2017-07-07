@@ -12,7 +12,7 @@
       <div class="about_para_content" id="about_para_content">
         <h1 class="title_centered"><small>permashutters</small>about</h1>
         <div class="container-fluid about_content">
-          <p>a place for everything</p>
+          <p>a TESTING place for everything</p>
           <p>and everything in its place</p>
           <hr class="perma_hr">
           <div class="container-fluid">

@@ -1,8 +1,8 @@
 paths:
-    cache: app/cache
-    config: app/config
-    database: app/database
-    web: public
-    themebase: public/theme
-    files: public/files
-    view: public/bolt-public/view
+    cache: bolt/app/cache
+    config: bolt/app/config
+    database: bolt/app/database
+    web: bolt/public
+    themebase: bolt/public/theme
+    files: bolt/public/files
+    view: bolt/public/bolt-public/view

@@ -1,6 +1,6 @@
 paths:
-    cache: bolt/app/cache
-    config: bolt/app/config
+    cache: app/cache
+    config: app/config
     database: app/database
     web: public
     themebase: public/theme

@@ -174,8 +174,8 @@ h3 a:hover {
     display: inline-flex;
     text-align: center;
     justify-content: center;
-    min-width: 25vw;
-    min-height: 10vh;
+    width: 40vw;
+    height: 30vh;
 }
 
 /***END SHUTTER PAGE CONTENT

@@ -1,5 +1,6 @@
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <?php require_once ('perma_couch/cms.php'); ?>
+<cms:template title="games page" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +15,7 @@
     </div>
   </div>
   <hr class="perma_hr">
+  <cms:editable name='main_content' type='richtext'>
   <div class="container-fluid shutt_page_content">
       <div class="col-xs-12">
         <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
@@ -28,6 +30,7 @@
         </a>
       </div>
   </div>
+  </cms:editable>
   <hr class="perma_hr">
     <?php include_once 'includes/shutter_menu.php';?>
     <?php include_once 'includes/body_scripts.php';?>

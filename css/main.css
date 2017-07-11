@@ -160,6 +160,7 @@ h3 a:hover {
 ***************************/
 .shutt_page_content {
     margin: 0 auto;
+    padding: 10px 20px;
 }
 .shutt_page_content p, a {
     color: #BBB;
@@ -173,7 +174,6 @@ h3 a:hover {
     color: #888;
 }
 .shutt_page_content .shutt_butt {
-    padding: 10px 20px;
     background-color: #333;
     background-color: rgba(40,40,40,0.5);
     display: inline-block;

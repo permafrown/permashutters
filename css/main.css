@@ -167,7 +167,7 @@ h3 a:hover {
 }
 .shutt_page_content img {
     width: 40vw;
-    height: 30vh;
+    height: calc(40vw * (9/16));
 }
 .shutt_page_content a:hover {
     color: #888;

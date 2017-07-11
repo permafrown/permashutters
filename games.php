@@ -16,6 +16,7 @@
   </div>
   <hr class="perma_hr">
   <cms:editable name='main_content' type='richtext'>
+  <cms:show video />
   <div class="container-fluid shutt_page_content"></div>
   </cms:editable>
   <hr class="perma_hr">

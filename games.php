@@ -17,7 +17,7 @@
   <hr class="perma_hr">
   <cms:editable name='main_content' type='richtext'>
   <div class="container-fluid shutt_page_content">
-      <div class="col-xs-12">
+      <!--<div class="col-xs-12">
         <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
           <div class="button shutt_butt" id="button001">
               <p>Far Cry 5 Announce Trailer</p>
@@ -28,7 +28,7 @@
               <p>Far Cry 5 Website</p>
           </div>
         </a>
-      </div>
+    </div>-->
   </div>
   </cms:editable>
   <hr class="perma_hr">

@@ -15,16 +15,16 @@
   <hr class="perma_hr">
   <div class="container-fluid shutt_page_content">
       <div class="col-xs-12">
-        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
-          <div class="button shutt_butt" id="button001">
-              <p>Far Cry 5 Announce Trailer</p>
-          </div>
-        </a>
-        <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
-          <div class="button shutt_butt" id="button002">
-              <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg"/>
-          </div>
-        </a>
+        <div class="button shutt_butt" id="button001">
+            <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
+                <p>Far Cry 5 Announce Trailer</p>
+            </a>
+        </div>
+        <div class="button shutt_butt" id="button002">
+            <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
+                <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg"/>
+            </a>
+        </div>
       </div>
   </div>
   <hr class="perma_hr">

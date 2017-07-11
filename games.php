@@ -13,7 +13,7 @@
     </div>
   </div>
   <hr class="perma_hr">
-  <div class="container-fluid shutt_page_content">
+  <div class="cushycms container-fluid shutt_page_content">
     <div class="button shutt_butt" id="button001">
         <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
             <img src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 announce trailer"/>

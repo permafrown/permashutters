@@ -26,10 +26,6 @@ body, html{
   font-size: 16px;
   font-size:calc(12px + 0.2vw);
 }
-img {
-    width: 40vw;
-    height: 30vh;
-}
 /***************END GENERAL
 ***************************/
 
@@ -168,6 +164,10 @@ h3 a:hover {
 .shutt_page_content p, a {
     color: #BBB;
     text-decoration: none;
+}
+.shutt_page_content img {
+    width: 40vw;
+    height: 30vh;
 }
 .shutt_page_content a:hover {
     color: #888;

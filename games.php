@@ -1,4 +1,5 @@
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
+<?php require_once ('perma_couch/cms.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,3 +38,4 @@
 </footer>
 
 </html>
+<?php COUCH::invoke(); ?>

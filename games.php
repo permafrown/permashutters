@@ -21,7 +21,7 @@
     </div>
     <div class="button shutt_butt" id="button002">
         <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
-            <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 product page"/>
+            <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
         </a>
     </div>
   </div>

@@ -22,7 +22,7 @@
         </a>
         <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
           <div class="button shutt_butt" id="button002">
-              <p>Far Cry 5 Website</p>
+              <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg"/>
           </div>
         </a>
       </div>

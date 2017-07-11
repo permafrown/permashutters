@@ -45,10 +45,10 @@
     define( 'K_DB_USER', 'permafrown_DB' );
     // 6.
     // Database password
-    define( 'K_DB_PASSWORD', 'Joplin098*34tMy@$51' );
+    define( 'K_DB_PASSWORD', 'Joplin098*34tMy@$5!' );
     // 7.
     // MySQL hostname (it will usually be 'localhost')
-    define( 'K_DB_HOST', 'localhost' );
+    define( 'K_DB_HOST', 'localhost:3306' );
     // 7b.
     // Needed only if multiple instances of this CMS are to be installed in the same database
     // (please use only alphanumeric characters or underscore (NO hyphen))

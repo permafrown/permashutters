@@ -174,11 +174,9 @@ h3 a:hover {
     display: inline-flex;
     text-align: center;
     justify-content: center;
-    min-width: 40vw;
-    max-width: 40vw;
-    min-height: 30vh;
-    max-height: 30vh;
-    object-fit: contain;
+    width: 40vw;
+    height: 30vh;
+    object-fit: cover;
 }
 
 /***END SHUTTER PAGE CONTENT

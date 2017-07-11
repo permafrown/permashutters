@@ -160,7 +160,7 @@ h3 a:hover {
 ***************************/
 .shutt_page_content {
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 2vh 2vw;
 }
 .shutt_page_content p, a {
     color: #BBB;

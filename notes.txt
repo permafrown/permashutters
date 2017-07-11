@@ -5,3 +5,28 @@ Warrior Trailer | https://www.youtube.com/watch?v=kY7HcUACs58
 Far Cry 5 Announce Trailer | https://www.youtube.com/watch?v=Kdaoe4hbMso
 
 Far Cry 5 Site | https://far-cry.ubisoft.com/game/en-ca/home/
+
+
+
+
+
+
+
+
+
+
+
+
+REF from GAMES PAGE prior to couch implementation
+<!--<div class="col-xs-12">
+  <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
+    <div class="button shutt_butt" id="button001">
+        <p>Far Cry 5 Announce Trailer</p>
+    </div>
+  </a>
+  <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
+    <div class="button shutt_butt" id="button002">
+        <p>Far Cry 5 Website</p>
+    </div>
+  </a>
+</div>-->

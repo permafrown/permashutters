@@ -1,6 +1,4 @@
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
-<?php require_once ('perma_couch/cms.php'); ?>
-<cms:template title="games page" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +13,20 @@
     </div>
   </div>
   <hr class="perma_hr">
-  <cms:editable name='main_content' type='richtext'>
-    <div class="container-fluid shutt_page_content"></div>
-  </cms:editable>
+  <div class="container-fluid shutt_page_content">
+      <div class="col-xs-12">
+        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
+          <div class="button shutt_butt" id="button001">
+              <p>Far Cry 5 Announce Trailer</p>
+          </div>
+        </a>
+        <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
+          <div class="button shutt_butt" id="button002">
+              <p>Far Cry 5 Website</p>
+          </div>
+        </a>
+      </div>
+  </div>
   <hr class="perma_hr">
     <?php include_once 'includes/shutter_menu.php';?>
     <?php include_once 'includes/body_scripts.php';?>
@@ -28,4 +37,3 @@
 </footer>
 
 </html>
-<?php COUCH::invoke(); ?>

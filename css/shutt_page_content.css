@@ -31,14 +31,18 @@
     padding: 1vh 1vw;
     background-color: #777;
 }
-.card_header {
+.card-header {
     background-color: #333;
     color: #BBB;
 }
-.card_block {
+.card-block {
     background-color: inherit;
 }
-.card_block p h4 li{
+.card-block p h4 li{
+    color: #BBB;
+}
+.card-footer {
+    background-color: #333;
     color: #BBB;
 }
 

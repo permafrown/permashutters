@@ -42,7 +42,7 @@
 .card-title {
     padding: 1vh 0;
     background-color: inherit;
-    color: #BBB;
+    color: #333;
     font-family: 'Poiret One', cursive;
     font-weight: 500;
 }
@@ -52,7 +52,7 @@
     color: #333;
     background-color: #BBB;
     padding: 1vh 1vw;
-    border-radius: 1vw;
+    border-radius: 1vw 0.2vw;
 }
 .list-group, .list-group-flush, .list-group-item {
     background-color: #BBB;

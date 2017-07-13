@@ -29,11 +29,11 @@
 }
 .card {
     padding: 1vh 1vw;
-    background-color: #555;
+    background-color: #888;
 }
 .card-header, .card-footer {
-    background-color: #333;
-    color: #BBB;
+    background-color: #BBB;
+    color: #333;
     font-size: calc(16px + 1vw);
 }
 .card-block {
@@ -50,6 +50,7 @@
     font-family: 'Poiret One', cursive;
     font-size: calc(10px + 1vw);
     color: #333;
+    background-color: #BBB;
 }
 .list-group, .list-group-flush, .list-group-item {
     background-color: #333;

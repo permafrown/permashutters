@@ -13,59 +13,59 @@
     </div>
   </div>
   <hr class="perma_hr">
-  <div class="container-fluid shutt_page_content">
-    <div class="button shutt_butt" id="button001">
-        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
-            <img src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 announce trailer"/>
-        </a>
-    </div>
-    <div class="button shutt_butt" id="button002">
-        <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
-            <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
-        </a>
-    </div>
-    <div class="row shutt_row shutt_page_content">
-        <div class="col-xs-6">
-            <div class="card shutt_card">
-                <div class="card-header">perma-featured</div>
-                <img class="card-img-top" src="..." alt="Card image cap"/>
-                <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">some quick text to build on the card title and blah blah blah</p>
+  <div class="container shutt_page_content">
+        <div class="button shutt_butt" id="button001">
+            <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
+                <img src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 announce trailer"/>
+            </a>
+        </div>
+        <div class="button shutt_butt" id="button002">
+            <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
+                <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
+            </a>
+        </div>
+        <div class="row shutt_row">
+            <div class="col-xs-6">
+                <div class="card shutt_card">
+                    <div class="card-header">perma-featured</div>
+                    <img class="card-img-top" src="..." alt="Card image cap"/>
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">some quick text to build on the card title and blah blah blah</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">item 001</li>
+                        <li class="list-group-item">item 002</li>
+                        <li class="list-group-item">item 003</li>
+                    </ul>
+                    <div class="card-block">
+                        <a href="#" class="card-link">card link</a>
+                        <a href="#" class="card-link">un autre link</a>
+                    </div>
+                    <div class="card-footer text-muted">this has been perma-featured</div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">item 001</li>
-                    <li class="list-group-item">item 002</li>
-                    <li class="list-group-item">item 003</li>
-                </ul>
-                <div class="card-block">
-                    <a href="#" class="card-link">card link</a>
-                    <a href="#" class="card-link">un autre link</a>
+            </div>
+            <div class="col-xs-6">
+                <div class="card shutt_card">
+                    <div class="card-header">perma-featured</div>
+                    <img class="card-img-top" src="..." alt="Card image cap"/>
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">some quick text to build on the card title and blah blah blah</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">item 001</li>
+                        <li class="list-group-item">item 002</li>
+                        <li class="list-group-item">item 003</li>
+                    </ul>
+                    <div class="card-block">
+                        <a href="#" class="card-link">card link</a>
+                        <a href="#" class="card-link">un autre link</a>
+                    </div>
+                    <div class="card-footer text-muted">this has been perma-featured</div>
                 </div>
-                <div class="card-footer text-muted">this has been perma-featured</div>
             </div>
         </div>
-        <div class="col-xs-6">
-            <div class="card shutt_card">
-                <div class="card-header">perma-featured</div>
-                <img class="card-img-top" src="..." alt="Card image cap"/>
-                <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">some quick text to build on the card title and blah blah blah</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">item 001</li>
-                    <li class="list-group-item">item 002</li>
-                    <li class="list-group-item">item 003</li>
-                </ul>
-                <div class="card-block">
-                    <a href="#" class="card-link">card link</a>
-                    <a href="#" class="card-link">un autre link</a>
-                </div>
-                <div class="card-footer text-muted">this has been perma-featured</div>
-            </div>
-        </div>
-    </div>
   </div>
   <hr class="perma_hr">
     <?php include_once 'includes/shutter_menu.php';?>

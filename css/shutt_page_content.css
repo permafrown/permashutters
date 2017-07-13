@@ -27,7 +27,7 @@
 .shutt_row {
     display: flex;
 }
-.shutt_row card {
+.shutt_card {
     padding: 1vh 1vw;
     background-color: #777;
 }

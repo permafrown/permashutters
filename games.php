@@ -30,7 +30,7 @@
                     <div class="card-header">perma-featured</div>
                     <img class="card-img-top" src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 Announce Trailer"/>
                     <div class="card-block">
-                        <h4 class="card-title">far cry 5 announce trailer</h4>
+                        <h3 class="card-title">far cry 5 announce trailer</h3>
                         <p class="card-text">can't wait for this game</p>
                     </div>
                     <ul class="list-group list-group-flush">

@@ -24,7 +24,7 @@
     width: 40vw;
     height: calc(40vw * (9/16));
 }
-.shutt_row {
+.row {
     display: flex;
 }
 .card {
@@ -40,7 +40,9 @@
 }
 .card-block p h4 li a ul{
     color: #BBB;
+    background-color: #0F0;
 }
+
 .card-footer {
     background-color: #BBB;
     color: #333;

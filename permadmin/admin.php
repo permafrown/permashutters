@@ -34,7 +34,12 @@
     }
     if ( empty ( $post ) && empty ( $cat) ) {
         echo 'home';
+    } elseif ( !empty ( $post )) {
+        echo 'single';
+    } elseif ( !empty ( $cat )) {
+        echo 'cat';
     }
+
     echo $post;
     echo $cat;
 

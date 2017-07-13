@@ -26,8 +26,10 @@
 <!-- END LARGE SCREEN SUBMENU -->
 
 <!-- SMALL SCREEN SUBMENU -->
+    <hr class="permahr">
     <h2 class="submenu hidden-md-up"><a href="../index.php">home</a></h2>
     <h2 class="submenu hidden-md-up"><a href="../about.php">about</a></h2>
+    <hr class="permahr">
 <!-- END SMALL SCREEN SUBMENU -->
 
 <!-- SCRIPTS -->

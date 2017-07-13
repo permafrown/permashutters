@@ -31,21 +31,20 @@
     padding: 1vh 1vw;
     background-color: #777;
 }
-.card-header {
+.card-header .card-footer .card-title .list-group .list-group-flush .list-group-item {
     background-color: #BBB;
     color: #333;
 }
 .card-block {
     background-color: inherit;
 }
-.card-block p h4 li a ul{
-    color: #BBB;
-    background-color: #0F0;
+.card-title {
+    font-family: 'Poiret One', cursive;
+    text-shadow: 4px 4px 2px rgb(10, 10, 10);
+    text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
-
-.card-footer {
-    background-color: #BBB;
-    color: #333;
+.card-link {
+    font-family: 'Poiret One', cursive;
 }
 
 /***END SHUTTER PAGE CONTENT

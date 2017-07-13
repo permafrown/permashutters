@@ -29,8 +29,10 @@
 <!-- CMS -->
 <?php
     if ( !empty ( $_GET )) {
-    $post = $_GET['p'];
-    $cat = $_GET['cat'];
+        $post = $_GET['p'];
+    }
+    if ( !empty ( $_GET )) {
+        $cat = $_GET['cat'];
     }
 
     echo $post;

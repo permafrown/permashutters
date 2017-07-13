@@ -35,13 +35,10 @@
     if ( empty ( $post ) && empty ( $cat) ) {
         echo 'home';
     } elseif ( !empty ( $post )) {
-        echo 'single';
+        echo 'single post page';
     } elseif ( !empty ( $cat )) {
-        echo 'cat';
+        echo 'category page';
     }
-
-    echo $post;
-    echo $cat;
 
 ?>
 <!-- END CMS -->

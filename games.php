@@ -27,11 +27,11 @@
         <div class="row justify-content-center align-items-center shutt_row">
             <div class="col-xs-5">
                 <div class="card shutt_card">
-                    <div class="card-header">perma-featured</div>
+                    <div class="card-header shutt_card_header">perma-featured</div>
                     <img class="card-img-top" src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 Announce Trailer"/>
-                    <div class="card-block">
-                        <h4 class="card-title">far cry 5 announce trailer</h4>
-                        <p class="card-text">can't wait for this game</p>
+                    <div class="card-block shutt_card_block">
+                        <h4 class="card-title shutt_card_title">far cry 5 announce trailer</h4>
+                        <p class="card-text shutt_card_text">can't wait for this game</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">item 001</li>
@@ -39,10 +39,10 @@
                         <li class="list-group-item">item 003</li>
                     </ul>
                     <div class="card-block">
-                        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso" class="card-link">trailer</a>
-                        <a href="#" class="card-link">un autre link</a>
+                        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso" class="card-link shutt_card_link">trailer</a>
+                        <a href="#" class="card-link shutt_card_link">un autre link</a>
                     </div>
-                    <div class="card-footer text-muted">this has been perma-featured</div>
+                    <div class="card-footer shutt_card_footer text-muted">this has been perma-featured</div>
                 </div>
             </div>
             <div class="col-xs-1">spacer</div>

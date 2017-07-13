@@ -32,18 +32,18 @@
     background-color: #777;
 }
 .card-header {
-    background-color: #333;
-    color: #BBB;
+    background-color: #BBB;
+    color: #333;
 }
 .card-block {
     background-color: inherit;
 }
-.card-block p h4 li{
+.card-block p h4 li a ul{
     color: #BBB;
 }
 .card-footer {
-    background-color: #333;
-    color: #BBB;
+    background-color: #BBB;
+    color: #333;
 }
 
 /***END SHUTTER PAGE CONTENT

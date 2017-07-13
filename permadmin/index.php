@@ -39,7 +39,6 @@
     } elseif ( !empty ( $cat )) {
         echo 'category page';
     }
-
 ?>
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->

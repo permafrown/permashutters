@@ -48,7 +48,8 @@
 }
 .card-link {
     font-family: 'Poiret One', cursive;
-    font-size: calc(10px + 1vw);
+    font-size: calc(12px + 1vw);
+    font-weight: 700;
     color: #333;
     background-color: #BBB;
     padding: 1vh 1vw;

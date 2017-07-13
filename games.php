@@ -45,7 +45,6 @@
                     <div class="card-footer text-muted">this has been perma-featured</div>
                 </div>
             </div>
-            <div class="col-xs-1">spacer</div>
             <div class="col-xs-5">
                 <div class="card shutt_card">
                     <div class="card-header">perma-featured</div>

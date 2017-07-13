@@ -47,6 +47,11 @@
     font-family: 'Poiret One', cursive;
     font-weight: 700;
 }
+.card-text {
+    font-size: 16px;
+    font-size: 1vw;
+    font-size: calc(8px + 1vw);
+}
 .card-link {
     font-family: 'Poiret One', cursive;
     font-size: calc(12px + 1vw);

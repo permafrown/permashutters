@@ -32,7 +32,7 @@
         $post = $_GET['p'];
     }
     if ( !empty ( $_GET )) {
-        $cat = $_GET['cat'];
+        $post = $_GET['cat'];
     }
 
     echo $post;

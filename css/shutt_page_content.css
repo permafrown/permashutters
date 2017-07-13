@@ -31,7 +31,7 @@
     padding: 1vh 1vw;
     background-color: #777;
 }
-.card-header .card-footer .card-title .list-group .list-group-flush .list-group-item {
+.card-header .card-footer .card-title{
     background-color: #999;
     color: #333;
 }
@@ -48,6 +48,11 @@
     font-family: 'Poiret One', cursive;
     font-size: calc(10px + 1vw);
 }
+.list-group .list-group-flush .list-group-item {
+    background-color: #333;
+    color: #999;
+}
+
 
 /***END SHUTTER PAGE CONTENT
 ***************************/

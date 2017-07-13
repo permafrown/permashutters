@@ -22,11 +22,12 @@
 <!-- END MAIN TITLE -->
 
 <!-- LARGE SCREEN SUBMENU -->
-  <h2 class="submenu hidden-sm-down"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
+  <h2 class="submenu hidden-sm-down"><a href="../index.php">home</a> | <a href="../games.php">games</a> | <a href="../fauna.php">fauna</a> | <a href="../science.php">science</a> | <a href="../words.php">words</a> | <a href="../sundry.php">sundry</a> | <a href="../media.php">media</a> | <a href="../about.php">about</a></h2>
 <!-- END LARGE SCREEN SUBMENU -->
 
 <!-- SMALL SCREEN SUBMENU -->
-    <h2 class="submenu hidden-md-up"><a href="about.php">about</a></h2>
+    <h2 class="submenu hidden-md-up"><a href="../index.php">home</a></h2>
+    <h2 class="submenu hidden-md-up"><a href="../about.php">about</a></h2>
 <!-- END SMALL SCREEN SUBMENU -->
 
 <!-- SCRIPTS -->

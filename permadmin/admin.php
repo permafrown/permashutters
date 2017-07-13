@@ -30,12 +30,13 @@
 <?php
     if ( !empty ( $_GET )) {
         $post = $_GET['p'];
+        $cat = $_GET['cat'];
     }
-    if ( !empty ( $_GET )) {
-        $post = $_GET['cat'];
+    if ( empty ( $post ) && empty ( $cat) ) {
+        echo 'home';
     }
-
     echo $post;
+    echo $cat;
 
 ?>
 <!-- END CMS -->

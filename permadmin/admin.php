@@ -18,7 +18,7 @@
 <body>
 
 <!-- MAIN TITLE -->
-  <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;">permADMIN</h1>
+    <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;">permADMIN</h1>
 <!-- END MAIN TITLE -->
 
 <!-- LARGE SCREEN SUBMENU -->
@@ -26,7 +26,17 @@
     <h2 class="submenu hidden-sm-down"><a href="../index.php">home</a> | <a href="../games.php">games</a> | <a href="../fauna.php">fauna</a> | <a href="../science.php">science</a> | <a href="../words.php">words</a> | <a href="../sundry.php">sundry</a> | <a href="../media.php">media</a> | <a href="../about.php">about</a></h2>
     <hr class="permahr hidden-sm-down">
 <!-- END LARGE SCREEN SUBMENU -->
+<!-- CMS -->
+<?php
+    if ( !empty ( $_GET )) {
+    $post = $_GET['p'];
+    $cat = $_GET['cat'];
+    }
 
+    echo $post;
+
+?>
+<!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->
     <hr class="permahr hidden-md-up">
     <h2 class="submenu hidden-md-up"><a href="../index.php">home</a></h2>

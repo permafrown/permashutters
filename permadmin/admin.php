@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include_once 'includes/head.php';?>
+    <?php include_once '../includes/head.php';?>
     <title>TESTpermashuttersADMIN</title>
 </head>
 <body>
@@ -20,20 +20,13 @@
 <!-- END SMALL SCREEN SUBMENU -->
 
 <!-- SCRIPTS -->
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/modernizr-2.7.1.min.js"></script>
-  <script src="js/imagesloaded.js"></script>
-  <script src="js/skrollr.js"></script>
-  <script src="js/_main.js"></script>
-  <script src="js/enquire.min.js"></script>
+  <?php include_once '../includes/body_scripts';?>
 <!-- END SCRIPTS -->
 
 </body>
 
 <footer>
-    <?php include_once 'includes/botnav.php';?>
+    <?php include_once '../includes/botnav.php';?>
 </footer>
 
 </html>

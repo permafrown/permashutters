@@ -10,14 +10,13 @@
   background-position: center;
   background-size: cover;
   height: 40em;
-  max-width: 20%;
-  min-width: 10%;
+  width: 16.66vw;
   text-align: center;
   transition: .5s;
 }
 .shutt:hover {
     transition: .5s;
-    min-width: 40%;
+    width: 40%;
     text-decoration: none;
   }
 .shutt a, a span {

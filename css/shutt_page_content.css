@@ -1,0 +1,29 @@
+/*******SHUTTER PAGE CONTENT
+***************************/
+.shutt_page_content {
+    margin: 0 auto;
+    padding: 2vh 2vw;
+}
+.shutt_page_content p, a {
+    color: #BBB;
+    text-decoration: none;
+}
+.shutt_page_content img {
+    width: 40vw;
+    height: calc(40vw * (9/16));
+}
+.shutt_page_content a:hover {
+    color: #888;
+}
+.shutt_page_content .shutt_butt {
+    background-color: #333;
+    background-color: rgba(40,40,40,0.5);
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 40vw;
+    height: calc(40vw * (9/16));
+}
+
+/***END SHUTTER PAGE CONTENT
+***************************/

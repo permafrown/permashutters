@@ -51,7 +51,7 @@
                     <div class="card-header">perma-featured</div>
                     <img class="card-img-top" src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
                     <div class="card-block">
-                        <h4 class="card-title">far cry 5 official site</h4>
+                        <h3 class="card-title">far cry 5 official site</h3>
                         <p class="card-text">check it out to follow updates, etc.</p>
                     </div>
                     <ul class="list-group list-group-flush">

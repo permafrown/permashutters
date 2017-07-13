@@ -26,7 +26,7 @@
     </div>
     <div class="row">
         <div class="col-xs-6">
-            <div class="card" style="width: 25vw;">
+            <div class="card">
                 <div class="card-header">perma-featured</div>
                 <img class="card-img-top" src="..." alt="Card image cap"/>
                 <div class="card-block">

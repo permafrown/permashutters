@@ -24,9 +24,9 @@
             <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
         </a>
     </div>
-    <div class="row shutt_page_content">
+    <div class="row shutt_row shutt_page_content">
         <div class="col-xs-6">
-            <div class="card">
+            <div class="card shutt_card">
                 <div class="card-header">perma-featured</div>
                 <img class="card-img-top" src="..." alt="Card image cap"/>
                 <div class="card-block">
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="col-xs-6">
-            <div class="card">
+            <div class="card shutt_card">
                 <div class="card-header">perma-featured</div>
                 <img class="card-img-top" src="..." alt="Card image cap"/>
                 <div class="card-block">

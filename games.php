@@ -28,10 +28,10 @@
             <div class="col-xs-5">
                 <div class="card shutt_card">
                     <div class="card-header">perma-featured</div>
-                    <img class="card-img-top" src="..." alt="Card image cap"/>
+                    <img class="card-img-top" src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 Announce Trailer"/>
                     <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">some quick text to build on the card title and blah blah blah</p>
+                        <h4 class="card-title">far cry 5 announce trailer</h4>
+                        <p class="card-text">can't wait for this game</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">item 001</li>
@@ -39,7 +39,7 @@
                         <li class="list-group-item">item 003</li>
                     </ul>
                     <div class="card-block">
-                        <a href="#" class="card-link">card link</a>
+                        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso" class="card-link">trailer</a>
                         <a href="#" class="card-link">un autre link</a>
                     </div>
                     <div class="card-footer text-muted">this has been perma-featured</div>
@@ -49,10 +49,10 @@
             <div class="col-xs-5">
                 <div class="card shutt_card">
                     <div class="card-header">perma-featured</div>
-                    <img class="card-img-top" src="..." alt="Card image cap"/>
+                    <img class="card-img-top" src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
                     <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">some quick text to build on the card title and blah blah blah</p>
+                        <h4 class="card-title">far cry 5 official site</h4>
+                        <p class="card-text">check it out to follow updates, etc.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">item 001</li>
@@ -60,7 +60,7 @@
                         <li class="list-group-item">item 003</li>
                     </ul>
                     <div class="card-block">
-                        <a href="#" class="card-link">card link</a>
+                        <a href="https://far-cry.ubisoft.com/game/en-ca/home/" class="card-link">site</a>
                         <a href="#" class="card-link">un autre link</a>
                     </div>
                     <div class="card-footer text-muted">this has been perma-featured</div>

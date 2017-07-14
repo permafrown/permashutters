@@ -32,7 +32,7 @@ if(!class_exists('shuttDatabase')){
 		 * uses the constants defined in config.php
 		 */
 		function connect() {
-			$link = mysql_connect('localhost', DB_USER, DB_PASS);
+			$link = mysql_connect('localhost:3306', DB_USER, DB_PASS);
 
 			if (!$link) {
 				die('Could not connect: ' . mysql_error());

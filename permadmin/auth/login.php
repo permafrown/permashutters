@@ -25,7 +25,8 @@
 
         <input type="submit">
 
-
+    <a href="index.php">welcome</a>
+    <a href="reg.php">register</a>
 
 
 

@@ -30,11 +30,9 @@
         <input type="text" placeholder="enter username" name="u/n">
         <input type="password" placeholder="enter password" name="p/w">
 
-        <input type="submit">
+        <input type="submit"><br>
 
-    <p><a href="index.php">back</a></p>
-    <p>or</p>
-    <p><a href="reg.php">register</a></p>
+    <p><a href="index.php">back</a> or <a href="reg.php">register</a></p>
 
 
 

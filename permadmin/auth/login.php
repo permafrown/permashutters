@@ -1,3 +1,12 @@
+<?php
+
+    if ( !empty($_POST['u/n'])) {
+        echo $_POST['u/n'];
+        die();
+    }
+    endif;
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>

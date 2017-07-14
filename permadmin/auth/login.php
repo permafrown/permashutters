@@ -1,6 +1,6 @@
 <?php
 
-    if ( !empty($_POST['u/n'])):
+    if ( !empty($_POST['u/n']) && !empty($_POST['p/w'])):
         echo $_POST['u/n'];
         die();
     endif;

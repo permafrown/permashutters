@@ -1,3 +1,24 @@
+<?php
+
+$server = 'localhost';
+$username = 'permafrown_DB';
+$password = 'Joplin098*34tMy@$5!';
+$database = 'testshutters_DBasdfa';
+
+try{
+    $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password)
+} catch(PDOException $e){
+    die( "connection failed: " . $e->getMessage());
+}
+
+    if ( !empty($_POST['u/n']) && !empty($_POST['p/w'])):
+        //enter users into DB
+
+
+    endif;
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +39,16 @@
 <body>
 
     <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;"><small>perma</small>REG</h1>
+
+    <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;"><small>perma</small>LOGIN</h1>
+
+    <form action="reg.php" method="POST">
+        <input type="text" placeholder="enter username" name="u/n">
+        <input type="password" placeholder="enter password" name="p/w">
+        <input type="password" placeholder="confirm password" name="p/w">
+
+        <input type="submit">
+
 
     <p><a href="index.php">back</a></p>
     <p>or</p>

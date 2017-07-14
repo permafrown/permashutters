@@ -18,7 +18,7 @@ define('DB_USER', 'permafrown_DB');
 /* DB Password
  * Enter the above user's password below.
  */
-define('DB_PASS', '__________________');
+define('DB_PASS', 'Joplin098*34tMy@$5!');
 
 //SALT Information
 

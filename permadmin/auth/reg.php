@@ -19,7 +19,8 @@
 
     <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;"><small>perma</small>REG</h1>
 
-
+    <a href="index.php">welcome</a>
+    <a href="login.php">login</a>
 
 
 

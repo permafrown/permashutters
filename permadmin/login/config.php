@@ -8,7 +8,7 @@
 /* DB Name
  * Enter the name of your database below.
  */
-define('DB_NAME', 'testshutters_DB:3306');
+define('DB_NAME', 'testshutters_DB');
 
 /* DB Username
  * Enter the username of the user with access to the database below.

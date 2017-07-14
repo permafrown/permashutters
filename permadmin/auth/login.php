@@ -1,9 +1,8 @@
 <?php
 
-    if ( !empty($_POST['u/n'])) {
+    if ( !empty($_POST['u/n'])):
         echo $_POST['u/n'];
         die();
-    }
     endif;
 
  ?>

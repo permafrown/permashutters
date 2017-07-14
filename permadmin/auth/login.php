@@ -25,8 +25,9 @@
 
         <input type="submit">
 
-    <a href="index.php">welcome</a>
-    <a href="reg.php">register</a>
+    <p><a href="index.php">back</a></p>
+    <p>or</p>
+    <p><a href="reg.php">register</a></p>
 
 
 

@@ -1,19 +1,20 @@
 <?php
 
-$server = 'localhost:3306';
-$username = 'permafrown_DB';
-$password = 'Joplin098*34tMy@$5!';
-$database = 'testshutters_DB';
-
-try{
-    $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password)
-} catch(PDOException $e){
-    die( "connection failed: " . $e->getMessage());
-}
+require 'db.php';
 
     if ( !empty($_POST['u/n']) && !empty($_POST['p/w'])):
         //enter users into DB
+        $sql = "INSERT INTO shutt_users (u/n, p/w) VALUES (:user_name, :user_pw)";
+        $stmt = $conn->prepare($sql);
 
+        $stmt->bindParam(':user_name', $_POST['u/n');
+        $stmt->bindParam(':user_pw', $_POST['p/w');
+
+        if( $stmt->execute() ):
+            die('success');
+        else:
+            die('fail');
+        endif;
 
     endif;
 

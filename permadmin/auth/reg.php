@@ -1,6 +1,6 @@
 <?php
 
-$server = 'localhost';
+$server = 'localhost:3306';
 $username = 'permafrown_DB';
 $password = 'Joplin098*34tMy@$5!';
 $database = 'testshutters_DB';

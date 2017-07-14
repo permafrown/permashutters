@@ -47,12 +47,10 @@ require 'db.php';
         <input type="password" placeholder="enter password" name="p/w">
         <input type="password" placeholder="confirm password" name="p/w">
 
-        <input type="submit">
+        <input type="submit"><br>
 
 
-    <p><a href="index.php">back</a></p>
-    <p>or</p>
-    <p><a href="login.php">login</a></p>
+    <p><a href="index.php">back</a> or <a href="login.php">login</a></p>
 
 
 

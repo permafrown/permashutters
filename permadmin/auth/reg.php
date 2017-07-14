@@ -18,8 +18,6 @@
 
     <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;"><small>perma</small>REG</h1>
 
-    <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;"><small>perma</small>LOGIN</h1>
-
     <form action="reg.php" method="POST">
         <input type="text" placeholder="enter username" name="u/n">
         <input type="password" placeholder="enter password" name="p/w">

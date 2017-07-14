@@ -19,7 +19,7 @@
 		$authID = $cookie['authID'];
 
 		//Query the database for the selected user
-		$table = 'j_users';
+		$table = 'shutt_users';
 		$sql = "SELECT * FROM $table WHERE user_login = '" . $user . "'";
 		$results = $ldb->select($sql);
 

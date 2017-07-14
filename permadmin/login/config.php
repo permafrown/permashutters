@@ -8,7 +8,7 @@
 /* DB Name
  * Enter the name of your database below.
  */
-define('DB_NAME', 'testshutters_DB');
+define('DB_NAME', 'localhost:3306');
 
 /* DB Username
  * Enter the username of the user with access to the database below.

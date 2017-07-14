@@ -6,7 +6,10 @@
 </head>
 
 <body>
+
     <h1>welcome to permaLogin</h1>
+    <a href="login.php">login</a> or
+    <a href="reg.php">register</a>
 
 </body>
 </html>

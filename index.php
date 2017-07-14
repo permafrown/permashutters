@@ -12,30 +12,30 @@
 <!-- END MAIN TITLE -->
 
 <!-- LARGE SCREEN SUBMENU -->
-  <h2 class="submenu hidden-sm hidden-xs"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
+  <h2 class="submenu hidden-sm-down"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a> | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
 <!-- END LARGE SCREEN SUBMENU -->
 
 <!-- SHUTTER MENU -->
-  <div class="container-fluid hidden-sm hidden-xs">
+  <div class="container-fluid hidden-sm-down">
     <div class="col-xs-12">
       <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
     </div>
   </div>
-  <h2 class="submenu subtext">a collection of things i find interesting</h2>
+  <h2 class="submenu subtext hidden-sm-down">a collection of things i find interesting</h2>
   <hr class="perma_hr">
     <div class="column shutters">
-        <a class="shutt col-xs-2 games_shutt" href="games.php"><span class="hidden-sm hidden-xs">games</span></a>
-        <a class="shutt col-xs-2 fauna_shutt" href="fauna.php"><span class="hidden-sm hidden-xs">fauna</span></a>
-        <a class="shutt col-xs-2 science_shutt" href="science.php"><span class="hidden-sm hidden-xs">science</span></a>
-        <a class="shutt col-xs-2 words_shutt" href="words.php"><span class="hidden-sm hidden-xs">words</span></a>
-        <a class="shutt col-xs-2 sundry_shutt" href="sundry.php"><span class="hidden-sm hidden-xs">sundry</span></a>
-        <a class="shutt col-xs-2 media_shutt" href="media.php"><span class="hidden-sm hidden-xs">media</span></a>
+        <a class="shutt col-xs-2 games_shutt" href="games.php"><span class="hidden-sm-down">games</span></a>
+        <a class="shutt col-xs-2 fauna_shutt" href="fauna.php"><span class="hidden-sm-down">fauna</span></a>
+        <a class="shutt col-xs-2 science_shutt" href="science.php"><span class="hidden-sm-down">science</span></a>
+        <a class="shutt col-xs-2 words_shutt" href="words.php"><span class="hidden-sm-down">words</span></a>
+        <a class="shutt col-xs-2 sundry_shutt" href="sundry.php"><span class="hidden-sm-down">sundry</span></a>
+        <a class="shutt col-xs-2 media_shutt" href="media.php"><span class="hidden-sm-down">media</span></a>
     </div>
     <hr class="perma_hr">
 <!-- END SHUTTER MENU -->
 
 <!-- SMALL SCREEN SUBMENU -->
-    <h2 class="submenu hidden-md hidden-lg hidden-xl"><a href="about.php">about</a></h2>
+    <h2 class="submenu hidden-md-up"><a href="about.php">about</a></h2>
 <!-- END SMALL SCREEN SUBMENU -->
 
 <!-- SCRIPTS -->

@@ -13,19 +13,59 @@
     </div>
   </div>
   <hr class="perma_hr">
-  <div class="container-fluid shutt_page_content">
-      <div class="col-xs-12">
-        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
-          <div class="button shutt_butt" id="button001">
-              <p>Far Cry 5 Announce Trailer</p>
-          </div>
-        </a>
-        <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
-          <div class="button shutt_butt" id="button002">
-              <p>Far Cry 5 Website</p>
-          </div>
-        </a>
-      </div>
+  <div class="container-fluid d-inline-flex shutt_page_content">
+        <!-- <div class="button shutt_butt" id="button001">
+            <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
+                <img src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 announce trailer"/>
+            </a>
+        </div>
+        <div class="button shutt_butt" id="button002">
+            <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
+                <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
+            </a>
+        </div> -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-xs-5">
+                <div class="card">
+                    <div class="card-header">perma-featured</div>
+                    <img class="card-img-top" src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 Announce Trailer"/>
+                    <div class="card-block">
+                        <h3 class="card-title">far cry 5 announce trailer</h3>
+                        <p class="card-text">can't wait for this game</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">item 001</li>
+                        <li class="list-group-item">item 002</li>
+                        <li class="list-group-item">item 003</li>
+                    </ul>
+                    <div class="card-block">
+                        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso" class="card-link">trailer</a>
+                        <a href="#" class="card-link">un autre link</a>
+                    </div>
+                    <div class="card-footer text-muted">this has been perma-featured</div>
+                </div>
+            </div>
+            <div class="col-xs-5">
+                <div class="card shutt_card">
+                    <div class="card-header">perma-featured</div>
+                    <img class="card-img-top" src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
+                    <div class="card-block">
+                        <h3 class="card-title">far cry 5 official site</h3>
+                        <p class="card-text">check it out to follow updates, etc.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">item 001</li>
+                        <li class="list-group-item">item 002</li>
+                        <li class="list-group-item">item 003</li>
+                    </ul>
+                    <div class="card-block">
+                        <a href="https://far-cry.ubisoft.com/game/en-ca/home/" class="card-link">site</a>
+                        <a href="#" class="card-link">un autre link</a>
+                    </div>
+                    <div class="card-footer text-muted">this has been perma-featured</div>
+                </div>
+            </div>
+        </div>
   </div>
   <hr class="perma_hr">
     <?php include_once 'includes/shutter_menu.php';?>

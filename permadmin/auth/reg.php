@@ -3,7 +3,7 @@
 $server = 'localhost';
 $username = 'permafrown_DB';
 $password = 'Joplin098*34tMy@$5!';
-$database = 'testshutters_DBasdfa';
+$database = 'testshutters_DB';
 
 try{
     $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password)

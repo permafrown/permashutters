@@ -1,3 +1,24 @@
+<?php
+
+require 'db.php';
+
+    if ( !empty($_POST['u/n']) & !empty($_POST['p/w']));
+        //enter users into DB
+        $sql = "INSERT INTO shutt_users (u/n, p/w) VALUES (:user_name, :user_pw)";
+        $stmt = $conn->prepare($sql);
+
+        $stmt->bindParam(':user_name', $_POST['u/n']);
+        $stmt->bindParam(':user_pw', $_POST['p/w']);
+
+        if( $stmt->execute() ):
+            $message = ('success');
+        else:
+            $message = ('fail');
+        endif;
+
+    endif;
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,9 +40,9 @@
     <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;"><small>perma</small>REG</h1>
 
     <form action="reg.php" method="POST">
-        <input type="text" placeholder="enter username" name="u/n">
-        <input type="password" placeholder="enter password" name="p/w">
-        <input type="password" placeholder="confirm password" name="p/w">
+        <input type="text" placeholder="enter username" name="un">
+        <input type="password" placeholder="enter password" name="pw">
+        <input type="password" placeholder="confirm password" name="pw">
 
         <input type="submit"><br>
 

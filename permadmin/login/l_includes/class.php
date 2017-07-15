@@ -215,5 +215,5 @@ if(!class_exists('shutt_class')){
 }
 
 //Instantiate our database class
-$j = new shutt_class;
+$l = new shutt_class;
 ?>

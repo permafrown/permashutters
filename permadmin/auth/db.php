@@ -15,7 +15,7 @@ $database = 'testshutters_DB';
 $mysqli = new mysqli($server, $username, $password, $database);
 $result = $mysqli->query("SELECT 'Hello, dear MySQL user!' AS _message FROM DUAL");
 $row = $result->fetch_assoc();
-echo htmlentities($row['_message   |   ']);
+echo htmlentities($row['_message' + '    |     ']);
 
 
 $link = mysql_connect($server, $username, $password);

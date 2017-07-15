@@ -6,7 +6,8 @@ require 'db.php';
 
 echo $username
 
-$link = mysql_connect($server, $username, $password);
+$mysqli = new mysqli($server, $username, $password, $database);
+$link = mysqli($server, $username, $password);
 if (!$link) {
     die('Could not connect: ' . mysql_error());
 }

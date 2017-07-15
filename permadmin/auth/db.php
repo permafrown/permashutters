@@ -25,10 +25,10 @@ if (!$link) {
 if (!mysql_select_db($database)) {
     die('Could not select database: ' . mysql_error());
 }
-$result = mysql_query('SELECT user_name FROM shutt_users');
-if (!$result) {
-    die('Could not query:' . mysql_error());
-}
-echo mysql_result($result, 0); // outputs first user's user_ID
+// $result = mysql_query('SELECT user_name FROM shutt_users');
+// if (!$result) {
+//     die('Could not query:' . mysql_error());
+// }
+// echo mysql_result($result, 0); // outputs first user's user_ID
 
 ?>

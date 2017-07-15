@@ -9,26 +9,28 @@ if (!$link) {
 if (!mysql_select_db($database)) {
     die('Could not select database: ' . mysql_error());
 }
-$result = mysql_query('SELECT user_name FROM shutt_users');
-if (!$result) {
-    die('Could not query:' . mysql_error());
-}
-echo mysql_result($result, 0);
-    // if ( !empty($_POST['u/n']) & !empty($_POST['p/w']));
-    //     //enter users into DB
-    //     $sql = "INSERT INTO shutt_users (u/n, p/w) VALUES (:user_name, :user_pw)";
-    //     $stmt = $conn->prepare($sql);
-    //
-    //     $stmt->bindParam(':user_name', $_POST['u/n']);
-    //     $stmt->bindParam(':user_pw', $_POST['p/w']);
-    //
-    //     if( $stmt->execute() ):
-    //         $message = ('success');
-    //     else:
-    //         $message = ('fail');
-    //     endif;
-    //
-    // endif;
+// $result = mysql_query('SELECT user_name FROM shutt_users');
+// if (!$result) {
+//     die('Could not query:' . mysql_error());
+// }
+// echo mysql_result($result, 0);
+
+
+    if ( !empty($_POST['u/n']) & !empty($_POST['p/w']));
+        //enter users into DB
+        $sql = "INSERT INTO shutt_users (u/n, p/w) VALUES (:user_name, :user_pw)";
+        $stmt = $conn->prepare($sql);
+
+        $stmt->bindParam(':user_name', $_POST['u/n']);
+        $stmt->bindParam(':user_pw', $_POST['p/w']);
+
+        if( $stmt->execute() ):
+            $message = ('success');
+        else:
+            $message = ('fail');
+        endif;
+
+    endif;
 
 ?>
 <!DOCTYPE html>

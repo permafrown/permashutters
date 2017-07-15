@@ -1,5 +1,8 @@
 <?php
-require_once('./permadmin/login/load.php');
+require_once('./permadmin/login/config.php');
+require_once('./permadmin/login/l_includes/db.php');
+require_once('./permadmin/login/l_includes/class.php');
+//require_once('./permadmin/login/load.php');
 //	$logged = $l->checkLogin();
 //
 //	if ( $logged == false ) {

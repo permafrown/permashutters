@@ -1,8 +1,8 @@
 <?php
 
 $server = 'localhost:3306';
-$username = 'permafrown_DB';
-$password = 'Joplin098*34tMy@$5!';
+$username = 'shutt_dbU';
+$password = 'Joplin098*';
 $database = 'testshutters_DB';
 
 try{

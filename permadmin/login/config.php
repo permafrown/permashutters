@@ -4,6 +4,10 @@
  */
 
 //Database Information
+/* Server Name
+ * Enter the name of your server below.
+ */
+define('SERVER_NAME', 'localhost:3306')
 
 /* DB Name
  * Enter the name of your database below.

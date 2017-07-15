@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 	require_once('./permadmin/login/load.php');
 	$logged = $l->checkLogin();
 
@@ -30,7 +30,7 @@
 
 		//Fetch our results into an associative array
 		$results = mysql_fetch_assoc( $results );
-?>
+?> -->
 <!DOCTYPE html>
 <html>
 	<head>

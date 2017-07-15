@@ -45,7 +45,7 @@ if(!class_exists('shuttDatabase')){
 		// 		die('Can\'t use ' . $DB_NAME . ': ' . mysql_error());
 		// 	}
 		// }
-		$link = mysql_connect($server, $username, $password);
+		$link = mysql_connect($SERVER_NAME, $DB_USER, $DB_PASS);
 		if (!$link) {
 		    die('Could not connect: ' . mysql_error());
 		}

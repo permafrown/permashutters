@@ -1,7 +1,7 @@
 <?php
 
 $server = 'localhost:3306';
-$username = 'shutt_dbU';
+$username = 'shutt_dbU@localhost';
 $password = 'Joplin098*';
 $database = 'testshutters_DB';
 

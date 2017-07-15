@@ -1,5 +1,5 @@
 <?php
-require_once('./permadmin/login/config.php');
+include_once('./permadmin/login/config.php');
 // Our database class
 if(!class_exists('shuttDatabase')){
 	class shuttDatabase {

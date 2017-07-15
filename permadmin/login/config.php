@@ -13,7 +13,7 @@ define('DB_NAME', 'testshutters_DB');
 /* DB Username
  * Enter the username of the user with access to the database below.
  */
-define('DB_USER', 'permafrown_DB');
+define('DB_USER', 'permafrown_DB@localhost');
 
 /* DB Password
  * Enter the above user's password below.

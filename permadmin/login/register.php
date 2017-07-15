@@ -1,6 +1,6 @@
 <?php
-	require_once('load.php');
-	$l->register('login.php');
+	require_once('./permadmin/login/load.php');
+	$l->register('./permadmin/login/login.php');
 ?>
 
 <html>

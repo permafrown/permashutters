@@ -18,7 +18,7 @@ $DB_NAME = 'testshutters_DB';
  * Enter the username of the user with access to the database below.
  */
 //define($DB_USER, 'shutt_dbU');
-$DB_USER = 'shutt_dbU';
+$DB_USER = 'shutt_dbU@localhost';
 /* DB Password
  * Enter the above user's password below.
  */

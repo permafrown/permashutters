@@ -1,5 +1,5 @@
 <?php
-include('../config.php');
+require('../config.php');
 // Our database class
 if(!class_exists('shuttDatabase')){
 	class shuttDatabase {

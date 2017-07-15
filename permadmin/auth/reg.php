@@ -1,7 +1,7 @@
-<?php require 'db.php'; ?>
 <?php
 
-echo $username
+require 'db.php';
+
 $link = mysql_connect($server, $username, $password);
 if (!$link) {
     die('Could not connect: ' . mysql_error());

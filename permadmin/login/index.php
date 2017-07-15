@@ -1,36 +1,36 @@
-<!-- <?php
-	require_once('./permadmin/login/load.php');
-	$logged = $l->checkLogin();
-
-	if ( $logged == false ) {
-		//Build our redirect
-		$url = "http" . ((!empty($_SERVER['HTTPS'])) ? "s" : "") . "://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-		$redirect = str_replace('index.php', 'login.php', $url);
-
-		//Redirect to the home page
-		header("Location: $redirect?msg=login");
-		exit;
-	} else {
-		//Grab our authorization cookie array
-		$cookie = $_COOKIE['shuttlogauth'];
-
-		//Set our user and authID variables
-		$user = $cookie['user'];
-		$authID = $cookie['authID'];
-
-		//Query the database for the selected user
-		$table = 'shutt_users';
-		$sql = "SELECT * FROM $table WHERE user_login = '" . $user . "'";
-		$results = $ldb->select($sql);
-
-		//Kill the script if the submitted username doesn't exit
-		if (!$results) {
-			die('Sorry, that username does not exist!');
-		}
-
-		//Fetch our results into an associative array
-		$results = mysql_fetch_assoc( $results );
-?> -->
+<?php
+//	require_once('./permadmin/login/load.php');
+//	$logged = $l->checkLogin();
+//
+//	if ( $logged == false ) {
+//		//Build our redirect
+//		$url = "http" . ((!empty($_SERVER['HTTPS'])) ? "s" : "") . "://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+//		$redirect = str_replace('index.php', 'login.php', $url);
+//
+//		//Redirect to the home page
+//		header("Location: $redirect?msg=login");
+//		exit;
+//	} else {
+//		//Grab our authorization cookie array
+//		$cookie = $_COOKIE['shuttlogauth'];
+//
+//		//Set our user and authID variables
+//		$user = $cookie['user'];
+//		$authID = $cookie['authID'];
+//
+//		//Query the database for the selected user
+//		$table = 'shutt_users';
+//		$sql = "SELECT * FROM $table WHERE user_login = '" . $user . "'";
+//		$results = $ldb->select($sql);
+//
+//		//Kill the script if the submitted username doesn't exit
+//		if (!$results) {
+//			die('Sorry, that username does not exist!');
+//		}
+//
+//		//Fetch our results into an associative array
+//		$results = mysql_fetch_assoc( $results );
+?>
 <!DOCTYPE html>
 <html>
 	<head>

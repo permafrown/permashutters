@@ -62,6 +62,6 @@ $result = mysql_query('SELECT user_name FROM shutt_users');
 if (!$result) {
     die('Could not query:' . mysql_error());
 }
-echo mysql_result($result, 0); // outputs first user's user_ID
+echo mysql_result('hooray'); // outputs first user's user_ID
 
 ?>

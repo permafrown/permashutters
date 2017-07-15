@@ -2,13 +2,6 @@
 
 require 'db.php';
 
-$link = mysql_connect($server, $username, $password);
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
-}
-if (!mysql_select_db($database)) {
-    die('Could not select database: ' . mysql_error());
-}
 // $result = mysql_query('SELECT user_name FROM shutt_users');
 // if (!$result) {
 //     die('Could not query:' . mysql_error());

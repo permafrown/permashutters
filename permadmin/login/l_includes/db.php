@@ -1,4 +1,5 @@
 <?php
+
 // Our database class
 if(!class_exists('shuttDatabase')){
 	class shuttDatabase {
@@ -32,16 +33,16 @@ if(!class_exists('shuttDatabase')){
 		 * uses the constants defined in config.php
 		 */
 		function connect() {
-			$link = mysql_connect(SERVER_NAME, DB_USER, DB_PASS);
+			$link = mysql_connect($SERVER_NAME, $DB_USER, $DB_PASS);
 
 			if (!$link) {
 				die('couldnt connect: ' . mysql_error());
 			}
 
-			$db_selected = mysql_select_db(DB_NAME, $link);
+			$db_selected = mysql_select_db($DB_NAME, $link);
 
 			if (!$db_selected) {
-				die('Can\'t use ' . DB_NAME . ': ' . mysql_error());
+				die('Can\'t use ' . $DB_NAME . ': ' . mysql_error());
 			}
 		}
 
@@ -69,7 +70,7 @@ if(!class_exists('shuttDatabase')){
 		 * return string $secureHash The hashed password
 		 */
 		function hash_password($password, $nonce) {
-		  $secureHash = hash_hmac('sha512', $password . $nonce, SITE_KEY);
+		  $secureHash = hash_hmac('sha512', $password . $nonce, $SITE_KEY);
 
 		  return $secureHash;
 		}

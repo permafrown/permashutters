@@ -33,19 +33,24 @@ if(!class_exists('shuttDatabase')){
 		 * uses the constants defined in config.php
 		 */
 		function connect() {
-			$link = mysql_connect($SERVER_NAME, $DB_USER, $DB_PASS);
-
-			if (!$link) {
-				die('couldnt connect: ' . mysql_error());
-			}
-
-			$db_selected = mysql_select_db($DB_NAME, $link);
-
-			if (!$db_selected) {
-				die('Can\'t use ' . $DB_NAME . ': ' . mysql_error());
-			}
+		// 	$link = mysql_connect($SERVER_NAME, $DB_USER, $DB_PASS);
+		//
+		// 	if (!$link) {
+		// 		die('couldnt connect: ' . mysql_error());
+		// 	}
+		//
+		// 	$db_selected = mysql_select_db($DB_NAME, $link);
+		//
+		// 	if (!$db_selected) {
+		// 		die('Can\'t use ' . $DB_NAME . ': ' . mysql_error());
+		// 	}
+		// }
+		$link = mysql_connect($server, $username, $password);
+		if (!$link) {
+		    die('Could not connect: ' . mysql_error());
 		}
-
+		if (!mysql_select_db($database)) {
+		    die('Could not select database: ' . mysql_error());
 		/**
 		 * Clean the array using mysql_real_escape_string
 		 *

@@ -45,7 +45,7 @@ if(!class_exists('shutt_class')){
 					$userreg = $_POST['date'];
 
 					//We create a NONCE using the action, username, timestamp, and the NONCE SALT
-					$nonce = md5('registration-' . $userlogin . $userreg . NONCE_SALT);
+					$nonce = md5('registration-' . $userlogin . $userreg . $NONCE_SALT);
 
 					//We hash our password
 					$userpass = $ldb->hash_password($userpass, $nonce);
@@ -112,7 +112,7 @@ if(!class_exists('shutt_class')){
 				$stopass = $results['user_pw'];
 
 				//Recreate our NONCE used at registration
-				$nonce = md5('registration-' . $subname . $storeg . NONCE_SALT);
+				$nonce = md5('registration-' . $subname . $storeg . $NONCE_SALT);
 
 				//Rehash the submitted password to see if it matches the stored hash
 				$subpass = $ldb->hash_password($subpass, $nonce);
@@ -121,7 +121,7 @@ if(!class_exists('shutt_class')){
 				if ( $subpass == $stopass ) {
 
 					//If there's a match, we rehash password to store in a cookie
-					$authnonce = md5('cookie-' . $subname . $storeg . AUTH_SALT);
+					$authnonce = md5('cookie-' . $subname . $storeg . $AUTH_SALT);
 					$authID = $ldb->hash_password($subpass, $authnonce);
 
 					//Set our authorization cookie
@@ -191,7 +191,7 @@ if(!class_exists('shutt_class')){
 				$stopass = $results['user_pw'];
 
 				//Rehash password to see if it matches the value stored in the cookie
-				$authnonce = md5('cookie-' . $user . $storeg . AUTH_SALT);
+				$authnonce = md5('cookie-' . $user . $storeg . $AUTH_SALT);
 				$stopass = $ldb->hash_password($stopass, $authnonce);
 
 				if ( $stopass == $authID ) {

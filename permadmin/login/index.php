@@ -1,5 +1,5 @@
 <?php
-	require_once('load.php');
+	require_once('./permadmin/login/load.php');
 	$logged = $l->checkLogin();
 
 	if ( $logged == false ) {
@@ -31,6 +31,7 @@
 		//Fetch our results into an associative array
 		$results = mysql_fetch_assoc( $results );
 ?>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Members Area</title>

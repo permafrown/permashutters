@@ -55,7 +55,7 @@ $link = mysql_connect($SERVER_NAME, $DB_USER, $DB_PASS);
 if (!$link) {
     die('Could not connect: ' . mysql_error());
 }
-if (!mysql_select_db($database)) {
+if (!mysql_select_db($DB_NAME)) {
     die('Could not select database: ' . mysql_error());
 }
 $result = mysql_query('SELECT user_name FROM shutt_users');

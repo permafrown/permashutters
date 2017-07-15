@@ -35,7 +35,7 @@ if(!class_exists('shuttDatabase')){
 			$link = mysql_connect(SERVER_NAME, DB_USER, DB_PASS);
 
 			if (!$link) {
-				die('Could not connect: ' . mysql_error());
+				die('couldnt connect: ' . mysql_error());
 			}
 
 			$db_selected = mysql_select_db(DB_NAME, $link);

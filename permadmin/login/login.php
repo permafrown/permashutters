@@ -1,5 +1,5 @@
 <?php
-	require_once('load.php');
+	require_once('./permadmin/login/load.php');
 	if ( $_GET['action'] == 'logout' ) {
 		$loggedout = $l->logout();
 	}

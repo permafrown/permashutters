@@ -1,26 +1,19 @@
+<?php require 'db.php'; ?>
 <?php
-ini_set('display_errors', 1); error_reporting(E-ALL);
-
-require 'db.php';
-
 
 echo $username
-
-$mysqli = new mysqli($server, $username, $password, $database);
-$link = mysqli($server, $username, $password);
+$link = mysql_connect($server, $username, $password);
 if (!$link) {
     die('Could not connect: ' . mysql_error());
 }
 if (!mysql_select_db($database)) {
     die('Could not select database: ' . mysql_error());
 }
-$result = mysql_query('SELECT user_ID FROM shutt_users');
+$result = mysql_query('SELECT user_name FROM shutt_users');
 if (!$result) {
     die('Could not query:' . mysql_error());
 }
-echo mysql_result($result, 0); // outputs first user's user_ID
-
-mysql_close($link);
+echo mysql_result($result, 0);
     // if ( !empty($_POST['u/n']) & !empty($_POST['p/w']));
     //     //enter users into DB
     //     $sql = "INSERT INTO shutt_users (u/n, p/w) VALUES (:user_name, :user_pw)";

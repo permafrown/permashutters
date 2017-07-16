@@ -43,7 +43,7 @@ require('db.php');
     <form action="reg.php" method="POST">
         <input type="text" placeholder="enter your name" name="uun">
         <input type="text" placeholder="enter your username" name="ulogin">
-        <input type="password" placeholder="enter p1assword" name="upw">1
+        <input type="password" placeholder="enter p1assword" name="upw">
         <input type="password" placeholder="confirm password" name="upw">
         <input type="email" placeholder="enter your email" name="uemail">
         <input type="email" placeholder="confirm your email" name="uemail">

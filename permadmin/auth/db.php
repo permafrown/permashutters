@@ -10,6 +10,5 @@ $database = 'testshutters_DB';
         } catch(PDOException $e) {
             die( "connection failed: " . $e->getMessage());
     }
-    echo ("hello");
 
 ?>

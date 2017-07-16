@@ -40,7 +40,6 @@
 					</tr>
 				</table>
 			</form>
-			<p>Already a member? <a href="login.php">Log in here</a></p>
 		</div>
 	</body>
 </html>

@@ -4,12 +4,15 @@ require('db.php');
 
     if ( !empty($_POST['un']) & !empty($_POST['pw']))
         //enter users into DB
-        $sql = "INSERT INTO shutt_users (un, pw) VALUES (:user_name, :user_pw)";
+        $sql = "INSERT INTO shutt_users (uun, ulogin, upw, uemail, ureg) VALUES (:user_name, :user_login, :user_pw, :user_email, :user_reg)";
         $stmt = $conn->prepare($sql);
-    
-        $stmt->bindParam(':user_name', $_POST['un']);
-        $stmt->bindParam(':user_pw', $_POST['pw']);
-    
+
+        $stmt->bindParam(':user_name', $_POST['uun']);
+        $stmt->bindParam(':user_login', $_POST['ulogin']);
+        $stmt->bindParam(':user_pw', $_POST['upw']);
+        $stmt->bindParam(':user_email', $_POST['uemail']);
+        //$stmt->bindParam(':user_reg', $_POST['ureg']);
+
         if( $stmt->execute() ):
             $message = ('success');
         else:
@@ -38,9 +41,12 @@ require('db.php');
     <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;"><small>perma</small>REG</h1>
 
     <form action="reg.php" method="POST">
-        <input type="text" placeholder="enter username" name="un">
-        <input type="password" placeholder="enter password" name="pw">
-        <input type="password" placeholder="confirm password" name="pw">
+        <input type="text" placeholder="enter your name" name="uun">
+        <input type="text" placeholder="enter your username" name="ulogin">
+        <input type="password" placeholder="enter p1assword" name="upw">1
+        <input type="password" placeholder="confirm password" name="upw">
+        <input type="email" placeholder="enter your email" name="uemail">
+        <input type="email" placeholder="confirm your email" name="uemail">
 
         <input type="submit"><br>
 

@@ -1,6 +1,6 @@
 <?php
 
-include_once('./permadmin/auth/db.php');
+require('./permadmin/auth/db.php');
 
 // $result = mysql_query('SELECT user_name FROM shutt_users');
 // if (!$result) {

@@ -44,12 +44,11 @@ if(!class_exists('shuttDatabase')){
 		// 		die('Can\'t use ' . DB_NAME . ': ' . mysql_error());
 		// 	}
 		// }
-		$link = mysql_connect(SERVER_NAME, DB_USER, DB_PASS);
-		if (!$link) {
-		    die('Could not connect: ' . mysql_error());
-		}
-		if (!mysql_select_db(DB_NAME)) {
-		    die('Could not select database: ' . mysql_error());
+    try {
+        $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+        } catch(PDOException $e) {
+            die( "connection failed: " . $e->getMessage());
+    }
 		/**
 		 * Clean the array using mysql_real_escape_string
 		 *
@@ -122,4 +121,4 @@ if(!class_exists('shuttDatabase')){
 
 //Instantiate our database class
 $ldb = new shuttDatabase;
-}?>
+?>

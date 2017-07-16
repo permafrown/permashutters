@@ -1,5 +1,5 @@
 <?php
-require_once('./permadmin/login/load.php');
+require_once('load.php');
 	$logged = $l->checkLogin();
 
 	if ( $logged == false ) {

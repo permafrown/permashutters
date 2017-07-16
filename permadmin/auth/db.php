@@ -10,11 +10,6 @@ $database = 'testshutters_DB';
         } catch(PDOException $e) {
             die( "connection failed: " . $e->getMessage());
     }
-
-$result = mysql_query('SELECT user_name FROM shutt_users');
-if (!$result) {
-    die('Could not query:' . mysql_error());
-}
-echo mysql_result($result, 0); // outputs first user's user_ID
+    echo ("hello");
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
-    if ( !empty($_POST['u/n']) && !empty($_POST['p/w'])):
-        echo $_POST['u/n'];
+    if ( !empty($_POST['un']) && !empty($_POST['pw'])):
+        echo $_POST['un'];
         die();
     endif;
 
@@ -27,8 +27,8 @@
     <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;"><small>perma</small>LOGIN</h1>
 
     <form action="login.php" method="POST">
-        <input type="text" placeholder="enter username" name="u/n">
-        <input type="password" placeholder="enter password" name="p/w">
+        <input type="text" placeholder="enter username" name="un">
+        <input type="password" placeholder="enter password" name="pw">
 
         <input type="submit"><br>
 

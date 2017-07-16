@@ -1,13 +1,6 @@
 <?php
 
-require('./permadmin/auth/db.php');
-
-// $result = mysql_query('SELECT user_name FROM shutt_users');
-// if (!$result) {
-//     die('Could not query:' . mysql_error());
-// }
-// echo mysql_result($result, 0);
-
+require('db.php');
 
     if ( !empty($_POST['un']) & !empty($_POST['pw']))
         //enter users into DB
@@ -22,8 +15,6 @@ require('./permadmin/auth/db.php');
         else:
             $message = ('fail');
         endif;
-    
-    //endif;
 
 ?>
 <!DOCTYPE html>

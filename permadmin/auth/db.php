@@ -5,11 +5,11 @@ $username = 'shutt_dbU';
 $password = 'Joplin098*';
 $database = 'testshutters_DB';
 
-// try{
-//      $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password)
-// } catch(PDOException $e){
-//     die( "connection failed: " . $e->getMessage());
-// }
+    try {
+        $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+        } catch(PDOException $e) {
+            die( "connection failed: " . $e->getMessage());
+    }
 //
 //
 // $mysqli = new mysqli($server, $username, $password, $database);
@@ -18,17 +18,17 @@ $database = 'testshutters_DB';
 // echo htmlentities($row['_message']);
 //
 
-$link = mysql_connect($server, $username, $password);
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
-}
-if (!mysql_select_db($database)) {
-    die('Could not select database: ' . mysql_error());
-}
-$result = mysql_query('SELECT user_name FROM shutt_users');
-if (!$result) {
-    die('Could not query:' . mysql_error());
-}
-echo mysql_result($result, 0); // outputs first user's user_ID
+// $link = mysql_connect($server, $username, $password);
+// if (!$link) {
+//     die('Could not connect: ' . mysql_error());
+// }
+// if (!mysql_select_db($database)) {
+//     die('Could not select database: ' . mysql_error());
+// }
+// $result = mysql_query('SELECT user_name FROM shutt_users');
+// if (!$result) {
+//     die('Could not query:' . mysql_error());
+// }
+// echo mysql_result($result, 0); // outputs first user's user_ID
 
 ?>

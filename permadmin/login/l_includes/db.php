@@ -118,7 +118,8 @@ if(!class_exists('shuttDatabase')){
 		}
 	}
 }
+	}
 
 //Instantiate our database class
 $ldb = new shuttDatabase;
-?>
+}?>

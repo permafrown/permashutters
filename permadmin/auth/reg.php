@@ -1,6 +1,6 @@
 <?php
 
-require 'db.php';
+include_once('./permadmin/auth/db.php');
 
 // $result = mysql_query('SELECT user_name FROM shutt_users');
 // if (!$result) {
@@ -9,13 +9,13 @@ require 'db.php';
 // echo mysql_result($result, 0);
 
 
-    if ( !empty($_POST['u/n']) & !empty($_POST['p/w']))
+    if ( !empty($_POST['un']) & !empty($_POST['pw']))
         //enter users into DB
-        $sql = "INSERT INTO shutt_users (u/n, p/w) VALUES (:user_name, :user_pw)";
+        $sql = "INSERT INTO shutt_users (un, pw) VALUES (:user_name, :user_pw)";
         $stmt = $conn->prepare($sql);
     
-        $stmt->bindParam(':user_name', $_POST['u/n']);
-        $stmt->bindParam(':user_pw', $_POST['p/w']);
+        $stmt->bindParam(':user_name', $_POST['un']);
+        $stmt->bindParam(':user_pw', $_POST['pw']);
     
         if( $stmt->execute() ):
             $message = ('success');

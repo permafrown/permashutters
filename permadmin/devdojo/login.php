@@ -11,7 +11,7 @@ require 'database.php';
 if(!empty($_POST['email']) && !empty($_POST['password'])):
 	
 	$records = $conn->prepare('SELECT id,email,password FROM shutt_users WHERE email = :user_email');
-	$records->bindParam(':email', $_POST['email']);
+	$records->bindParam(':user_email', $_POST['email']);
 	$records->execute();
 	$results = $records->fetch(PDO::FETCH_ASSOC);
 

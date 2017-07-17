@@ -13,7 +13,7 @@ $message = '';
 if(!empty($_POST['email']) && !empty($_POST['password'])):
 	
 	// Enter the new user in the database
-	$sql = "INSERT INTO shutt_users (name, username, password, email, date) VALUES (:user_name, :user_login, :user_pw, :user_email, :user_reg)";
+	$sql = "INSERT INTO shutt_users (:user_name, :user_login, :user_pw, :user_email, :user_reg) VALUES (name, username, password, email, date)";
 	$stmt = $conn->prepare($sql);
 
 	$stmt->bindParam(':user_name', $_POST['name']);
@@ -32,37 +32,42 @@ endif;
 
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Register Below</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-</head>
-<body>
+	<!DOCTYPE html>
+	<html>
 
-	<div class="header">
-		<a href="/">Your App Name</a>
-	</div>
+	<head>
+		<title>Register Below</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	</head>
 
-	<?php if(!empty($message)): ?>
-		<p><?= $message ?></p>
-	<?php endif; ?>
+	<body>
 
-	<h1>Register</h1>
-	<span>or <a href="login.php">login here</a></span>
+		<div class="header">
+			<a href="/">Your App Name</a>
+		</div>
 
-	<form action="register.php" method="POST">
-		
-		<input type="text" placeholder="name" name="name"><br>
-		<input type="text" placeholder="username" name="username"><br>
-		<input type="password" placeholder="password" name="password"><br>
-		<!--<input type="password" placeholder="confirm pw" name="confirm_password"><br>-->
-		<input type="text" placeholder="email" name="email"><br>
-		<input type="hidden" name="date" value="<?php echo time(); ?>" /><br><br>
-		<input type="submit">
+		<?php if(!empty($message)): ?>
+		<p>
+			<?= $message ?>
+		</p>
+		<?php endif; ?>
 
-	</form>
+		<h1>Register</h1>
+		<span>or <a href="login.php">login here</a></span>
 
-</body>
-</html>
+		<form action="register.php" method="POST">
+
+			<input type="text" placeholder="name" name="name"><br>
+			<input type="text" placeholder="username" name="username"><br>
+			<input type="password" placeholder="password" name="password"><br>
+			<!--<input type="password" placeholder="confirm pw" name="confirm_password"><br>-->
+			<input type="text" placeholder="email" name="email"><br>
+			<input type="hidden" name="date" value="<?php echo time(); ?>" /><br><br>
+			<input type="submit">
+
+		</form>
+
+	</body>
+
+	</html>

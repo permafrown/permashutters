@@ -13,7 +13,7 @@ class shuttLib
     {
         try {
             $db = DB();
-            $query = $db->prepare("INSERT INTO users(name, email, username, password) VALUES (:user_name,:user_email,:user_login,:user_pw)");
+            $query = $db->prepare("INSERT INTO shutt_users(name, email, username, password) VALUES (:user_name,:user_email,:user_login,:user_pw)");
             $query->bindParam("name", $name, PDO::PARAM_STR);
             $query->bindParam("email", $email, PDO::PARAM_STR);
             $query->bindParam("username", $username, PDO::PARAM_STR);
@@ -36,7 +36,7 @@ class shuttLib
     {
         try {
             $db = DB();
-            $query = $db->prepare("SELECT user_id FROM users WHERE username=:user_login");
+            $query = $db->prepare("SELECT user_ID FROM shutt_users WHERE username=:user_login");
             $query->bindParam("username", $username, PDO::PARAM_STR);
             $query->execute();
             if ($query->rowCount() > 0) {
@@ -59,7 +59,7 @@ class shuttLib
     {
         try {
             $db = DB();
-            $query = $db->prepare("SELECT user_ID FROM users WHERE email=:user_email");
+            $query = $db->prepare("SELECT user_ID FROM shutt_users WHERE email=:user_email");
             $query->bindParam("email", $email, PDO::PARAM_STR);
             $query->execute();
             if ($query->rowCount() > 0) {
@@ -82,7 +82,7 @@ class shuttLib
     {
         try {
             $db = DB();
-            $query = $db->prepare("SELECT user_id FROM users WHERE (username=:user_login OR email=:user_email) AND password=:user_pw");
+            $query = $db->prepare("SELECT user_ID FROM shutt_users WHERE (username=:user_login OR email=:user_email) AND password=:user_pw");
             $query->bindParam("username", $username, PDO::PARAM_STR);
             $enc_password = hash('sha256', $password);
             $query->bindParam("password", $enc_password, PDO::PARAM_STR);
@@ -108,7 +108,7 @@ class shuttLib
     {
         try {
             $db = DB();
-            $query = $db->prepare("SELECT user_ID, name, username, email FROM users WHERE user_id=:user_ID");
+            $query = $db->prepare("SELECT user_ID, name, username, email FROM shutt_users WHERE user_id=:user_ID");
             $query->bindParam("user_id", $user_id, PDO::PARAM_STR);
             $query->execute();
             if ($query->rowCount() > 0) {

@@ -13,11 +13,14 @@ $message = '';
 if(!empty($_POST['email']) && !empty($_POST['password'])):
 	
 	// Enter the new user in the database
-	$sql = "INSERT INTO users (email, password) VALUES (:user_email, :user_pw)";
+	$sql = "INSERT INTO users (name, username, password, email, reg) VALUES (:user_name, :user_login, :user_pw, :user_email, :user_reg)";
 	$stmt = $conn->prepare($sql);
 
-	$stmt->bindParam(':user_email', $_POST['email']);
+	$stmt->bindParam(':user_name', $_POST['name']);
+	$stmt->bindParam(':user_login', $_POST['username']);
 	$stmt->bindParam(':user_pw', password_hash($_POST['password'], PASSWORD_BCRYPT));
+	$stmt->bindParam(':user_email', $_POST['email']);
+	$stmt->bindParam(':user_reg', $_POST['date']);
 
 	if( $stmt->execute() ):
 		$message = 'Successfully created new user';
@@ -51,9 +54,12 @@ endif;
 
 	<form action="register.php" method="POST">
 		
-		<input type="text" placeholder="Enter your email" name="email">
-		<input type="password" placeholder="and password" name="password">
-		<input type="password" placeholder="confirm password" name="confirm_password">
+		<input type="text" placeholder="name" name="name"><br>
+		<input type="text" placeholder="username" name="username"><br>
+		<input type="password" placeholder="password" name="password"><br>
+		<input type="password" placeholder="confirm pw" name="confirm_password"><br>
+		<input type="text" placeholder="email" name="email"><br>
+		<input type="hidden" name="date" value="<?php echo time(); ?>" /><br><br>
 		<input type="submit">
 
 	</form>

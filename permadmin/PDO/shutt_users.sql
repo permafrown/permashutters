@@ -22,10 +22,10 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `shutt_users`
 --
 
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE IF NOT EXISTS `shutt_users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,

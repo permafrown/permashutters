@@ -57,7 +57,7 @@ endif;
 		<input type="text" placeholder="name" name="name"><br>
 		<input type="text" placeholder="username" name="username"><br>
 		<input type="password" placeholder="password" name="password"><br>
-		<input type="password" placeholder="confirm pw" name="confirm_password"><br>
+		<!--<input type="password" placeholder="confirm pw" name="confirm_password"><br>-->
 		<input type="text" placeholder="email" name="email"><br>
 		<input type="hidden" name="date" value="<?php echo time(); ?>" /><br><br>
 		<input type="submit">

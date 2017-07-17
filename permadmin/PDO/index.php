@@ -83,9 +83,6 @@ if (!empty($_POST['btnRegister'])) {
             </h2>
         </div>
     </div>
-    <div class="form-group">
-        Note: This is demo version from iTech Empires tutorials.
-    </div>
     <div class="row">
         <div class="col-md-5 well">
             <h4>Register</h4>

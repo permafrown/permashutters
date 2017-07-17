@@ -10,9 +10,9 @@ session_start();
 require __DIR__ . '/database.php';
 $db = DB();
 
-// Application library ( with DemoLib class )
+// Application library ( with shuttLib class )
 require __DIR__ . '/lib/library.php';
-$app = new DemoLib();
+$app = new shuttLib();
 
 $login_error_message = '';
 $register_error_message = '';

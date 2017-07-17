@@ -109,6 +109,9 @@ if (!empty($_POST['btnRegister'])) {
                     <input type="password" name="password" class="form-control"/>
                 </div>
                 <div class="form-group">
+                    input type="hidden" name="date" value="<?php echo time(); ?>" />
+                </div>
+                <div class="form-group">
                     <input type="submit" name="btnRegister" class="btn btn-primary" value="Register"/>
                 </div>
             </form>

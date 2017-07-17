@@ -1,33 +1,40 @@
 /*******START ABOUT PARALLAX
 ***************************/
+
 .para_page {
-  height: 100vh;
+    height: 100vh;
 }
+
 .para_page a {
-  color: #BBB;
+    color: #BBB;
 }
+
 .para_page h3 {
     padding: 10px 0 30px 0;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .para_page h3 {
         font-size: 6.5vmin;
     }
 }
+
 .para_bg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
+
 .about_para_content {
     position: relative;
     top: 20vh;
     margin: 0 auto;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .about_para_content {
         top: 0;
     }
@@ -35,69 +42,78 @@
         font-size: 3.5vmin;
     }
 }
+
 .para_content_wrapper {
     position: relative;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.5);
+    background-color: rgb(40, 40, 40);
+    background-color: rgba(40, 40, 40, 0.5);
     height: 25vh;
     width: 45vw;
     top: 37.5vh;
     left: 27.5vw;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .para_content_wrapper {
         height: 100vh;
         width: 100vw;
     }
 }
+
 .para_content {
     position: relative;
     margin: 0 auto;
     padding: 1vh 0;
     width: 33.33vw;
-    text-shadow: 4px 4px 2px rgb(10,10,10);
+    text-shadow: 4px 4px 2px rgb(10, 10, 10);
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .para_content {
         font-size: 5vmin;
         width: 90vw;
         left: 5vw;
     }
 }
+
 .para_content p {
     font-size: 1vw;
     font-family: 'Lato', sans-serif;
     color: #BBB;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .para_content p {
         font-size: 3.5vmin;
     }
 }
+
 .para_content img {
     margin-bottom: 2vh;
 }
-@media screen and (max-width: 768px){
 
-}
+@media screen and (max-width: 768px) {}
+
 #games_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 22vh;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.5);
+    background-color: rgb(40, 40, 40);
+    background-color: rgba(40, 40, 40, 0.5);
 }
+
 #games_para_content.para_content {
     position: relative;
     height: 100%;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     #games_para_content_wrapper.para_content_wrapper {
         left: 0;
         top: 0;
         height: 100vh;
-        background-color: rgb(40,40,40);
-        background-color: rgba(40,40,40,0.8);
+        background-color: rgb(40, 40, 40);
+        background-color: rgba(40, 40, 40, 0.8);
     }
     #games_para_content.para_content {
         position: absolute;
@@ -105,16 +121,19 @@
         width: 90vw;
     }
 }
+
 #fauna_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 27vh;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.8);
+    background-color: rgb(40, 40, 40);
+    background-color: rgba(40, 40, 40, 0.8);
 }
+
 #fauna_para_content.para_content {
     position: relative;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     #fauna_para_content_wrapper.para_content_wrapper {
         top: 0;
         left: 0;
@@ -125,17 +144,20 @@
         top: 18vh;
     }
 }
+
 #science_para_content_wrapper.para_content_wrapper {
     position: relative;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.8);
+    background-color: rgb(40, 40, 40);
+    background-color: rgba(40, 40, 40, 0.8);
     width: 25vw;
     left: 37.5vw;
 }
+
 #science_para_content.para_content {
     width: 24vw;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     #science_para_content_wrapper.para_content_wrapper {
         width: 100vw;
         height: 100vh;
@@ -148,19 +170,21 @@
         width: 90vw;
     }
 }
+
 #words_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 38.5vh;
     background-color: inherit;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     #words_para_content_wrapper.para_content_wrapper {
         position: relative;
         height: 100vh;
         top: 0;
         left: 0;
-        background-color: rgb(40,40,40);
-        background-color: rgba(40,40,40,0.5);
+        background-color: rgb(40, 40, 40);
+        background-color: rgba(40, 40, 40, 0.5);
     }
     #words_para_content.para_content {
         position: absolute;
@@ -170,47 +194,52 @@
         padding: 10px 0;
     }
 }
+
 #sundry_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 14vh;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.5);
+    background-color: rgb(40, 40, 40);
+    background-color: rgba(40, 40, 40, 0.5);
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     #sundry_para_content_wrapper.para_content_wrapper {
         top: 0;
         left: 0;
         height: 100vh;
-        background-color: rgb(40,40,40);
-        background-color: rgba(40,40,40,0.5);
+        background-color: rgb(40, 40, 40);
+        background-color: rgba(40, 40, 40, 0.5);
     }
     #sundry_para_content.para_content {
         position: absolute;
         top: 10vh;
     }
 }
+
 #media_para_content_wrapper.para_content_wrapper {
     position: relative;
     width: 22.5vw;
     height: 20vh;
     left: 35.5vw;
     top: 40vh;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.8);
+    background-color: rgb(40, 40, 40);
+    background-color: rgba(40, 40, 40, 0.8);
 }
+
 #media_para_content.para_content {
     position: absolute;
     left: -5.5vw;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     #media_para_content_wrapper.para_content_wrapper {
         position: relative;
         top: 0;
         left: 0vw;
         width: 100vw;
         height: 100vh;
-        background-color: rgb(40,40,40);
-        background-color: rgba(40,40,40,0.8);
+        background-color: rgb(40, 40, 40);
+        background-color: rgba(40, 40, 40, 0.8);
     }
     #media_para_content.para_content {
         position: absolute;
@@ -223,15 +252,39 @@
 
 /*******PARALLAX BACKGROUNDS
 ***************************/
-#about_para_bg {background-image:url('../img/para_about_bg_1440x1232.png');}
-#games_para_bg {background-image:url('../img/para_games_bg_1440x1232.png');}
-#fauna_para_bg {background-image:url('../img/para_fauna_bg_1440x1232.png');}
-#science_para_bg {background-image:url('../img/para_science_bg_1440x1232.png');}
-#words_para_bg {background-image:url('../img/para_words_bg_1440x1232.png');}
-#sundry_para_bg {background-image:url('../img/para_sundry_bg_1440x1232.png');}
-#media_para_bg {background-image:url('../img/para_media_bg_1440x1232.png');}
+
+#about_para_bg {
+    background-image: url('../img/para_about_bg_1440x1232.png');
+}
+
+#games_para_bg {
+    background-image: url('../img/para_games_bg_1440x1232.png');
+}
+
+#fauna_para_bg {
+    background-image: url('../img/para_fauna_bg_1440x1232.png');
+}
+
+#science_para_bg {
+    background-image: url('../img/para_science_bg_1440x1232.png');
+}
+
+#words_para_bg {
+    background-image: url('../img/para_words_bg_1440x1232.png');
+}
+
+#sundry_para_bg {
+    background-image: url('../img/para_sundry_bg_1440x1232.png');
+}
+
+#media_para_bg {
+    background-image: url('../img/para_media_bg_1440x1232.png');
+}
+
+
 /***END PARALLAX BACKGROUNDS
 ***************************/
+
 
 /*********END ABOUT PARALLAX
 ***************************/

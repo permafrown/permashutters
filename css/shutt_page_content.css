@@ -1,45 +1,57 @@
 /*******SHUTTER PAGE CONTENT
 ***************************/
+
 .shutt_page_content {
     margin: 0 auto;
     padding: 2vh 2vw;
 }
-.shutt_page_content p, a {
+
+.shutt_page_content p,
+a {
     color: #BBB;
     text-decoration: none;
 }
+
 .shutt_page_content img {
     width: 40vw;
     height: calc(40vw * (9/16));
 }
+
 .shutt_page_content a:hover {
     color: #888;
 }
+
 .shutt_page_content .shutt_butt {
     background-color: #333;
-    background-color: rgba(40,40,40,0.5);
+    background-color: rgba(40, 40, 40, 0.5);
     display: inline-block;
     text-align: center;
     justify-content: center;
     width: 40vw;
     height: calc(40vw * (9/16));
 }
+
 .row {
     display: flex;
 }
+
 .card {
     padding: 1vh 1vw;
     margin: 0 0.75vw;
     background-color: #888;
 }
-.card-header, .card-footer {
+
+.card-header,
+.card-footer {
     background-color: #BBB;
     color: #333;
     font-size: calc(16px + 1vw);
 }
+
 .card-block {
     background-color: inherit;
 }
+
 .card-title {
     padding: 1vh 0;
     background-color: inherit;
@@ -47,11 +59,13 @@
     font-family: 'Poiret One', cursive;
     font-weight: 700;
 }
+
 .card-text {
     font-size: 16px;
     font-size: 1vw;
     font-size: calc(8px + 1vw);
 }
+
 .card-link {
     font-family: 'Poiret One', cursive;
     font-size: calc(12px + 1vw);
@@ -61,7 +75,10 @@
     padding: 1vh 1vw;
     border-radius: 1vw 0.2vw;
 }
-.list-group, .list-group-flush, .list-group-item {
+
+.list-group,
+.list-group-flush,
+.list-group-item {
     background-color: #BBB;
     color: #333;
 }

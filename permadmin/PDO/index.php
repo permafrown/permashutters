@@ -53,9 +53,9 @@ if (!empty($_POST['btnRegister'])) {
         $register_error_message = 'invalid password';
     } else if (!filter_var($_POST['uemail'], FILTER_VALIDATE_EMAIL)) {
         $register_error_message = 'invalid email';
-    } else if ($app->isuemail($_POST['uemail'])) {
+    } else if ($app->isEmail($_POST['uemail'])) {
         $register_error_message = 'invalid email';
-    } else if ($app->isulogin($_POST['ulogin'])) {
+    } else if ($app->isUsername($_POST['ulogin'])) {
         $register_error_message = 'invalid username';
     } else {
         $user_id = $app->Register($_POST['uname'], $_POST['uemail'], $_POST['ulogin'], $_POST['upassword']);

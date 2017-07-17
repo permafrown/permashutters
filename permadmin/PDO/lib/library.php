@@ -9,14 +9,15 @@ class shuttLib
      * @param $name, $email, $username, $password
      * @return ID
      * */
-    public function Register($name, $email, $username, $password)
+    public function Register($name, $email, $username, $password, $userreg)
     {
         try {
             $db = DB();
-            $query = $db->prepare("INSERT INTO shutt_users(name, email, username, password) VALUES (:user_name,:user_email,:user_login,:user_pw)");
+            $query = $db->prepare("INSERT INTO shutt_users(name, email, username, password, date) VALUES (:user_name,:user_email,:user_login,:user_pw, :user_reg)");
             $query->bindParam("name", $name, PDO::PARAM_STR);
             $query->bindParam("email", $email, PDO::PARAM_STR);
             $query->bindParam("username", $username, PDO::PARAM_STR);
+            $query->bindParam("date", $userreg, PDO::PARAM_STR);
             $enc_password = hash('sha256', $password);
             $query->bindParam("password", $enc_password, PDO::PARAM_STR);
             $query->execute();
@@ -108,7 +109,7 @@ class shuttLib
     {
         try {
             $db = DB();
-            $query = $db->prepare("SELECT user_ID, name, username, email FROM shutt_users WHERE user_id=:user_ID");
+            $query = $db->prepare("SELECT user_id, name, username, email,  FROM shutt_users WHERE user_id=:user_ID");
             $query->bindParam("user_id", $user_id, PDO::PARAM_STR);
             $query->execute();
             if ($query->rowCount() > 0) {

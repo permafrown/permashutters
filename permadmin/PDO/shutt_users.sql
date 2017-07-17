@@ -27,10 +27,10 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 CREATE TABLE IF NOT EXISTS `shutt_users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(250) NOT NULL,
+  `user_name` varchar(50) NOT NULL,
+  `user_email` varchar(100) NOT NULL,
+  `user_login` varchar(50) NOT NULL,
+  `user_pw` varchar(250) NOT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 

@@ -20,7 +20,7 @@ $db = DB();
 
 // Application library ( with DemoLib class )
 require __DIR__ . '/lib/library.php';
-$app = new DemoLib();
+$app = new shuttLib();
 
 $user = $app->UserDetails($_SESSION['user_id']); // get user details
 
@@ -32,7 +32,7 @@ $user = $app->UserDetails($_SESSION['user_id']); // get user details
         <meta charset="UTF-8">
         <title>Profile</title>
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
     </head>
 
     <body>

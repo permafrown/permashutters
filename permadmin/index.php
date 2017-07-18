@@ -6,8 +6,7 @@
         echo 'not logged in, bruh';
         exit;
     }
-
-    echo 'You will only see this if you are logged in.';
+    echo "hiya " + $_SESSION['name'];
 ?>
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>

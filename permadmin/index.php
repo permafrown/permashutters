@@ -7,7 +7,7 @@
         exit;
     }
 
-    echo 'hiya ($_SESSION["name"])';
+    echo ('hiya' . $_SESSION['name']);
 ?>
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>

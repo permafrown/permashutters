@@ -31,7 +31,7 @@
 						$_SESSION['password'] = $data['password'];
 						$_SESSION['secretpin'] = $data['secretpin'];
 
-						header('Location: dashboard.php');
+						header('Location: ../index.php');
 						exit;
 					}
 					else

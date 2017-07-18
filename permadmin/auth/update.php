@@ -18,7 +18,7 @@
 		if($errMsg == '') {
 			try {
 		      $sql = "UPDATE pdo SET fullname = :fullname, password = :password, secretpin = :secretpin WHERE username = :username";
-		      $stmt = $connect->prepare($sql);                                  
+		      $stmt = $connect->prepare($sql);
 		      $stmt->execute(array(
 		        ':fullname' => $fullname,
 		        ':secretpin' => $secretpin,
@@ -41,22 +41,17 @@
 
 <html>
 <head><title>Update</title></head>
-	<style>
-	html, body {
-		margin: 1px;
-		border: 0;
-	}
-	</style>
+	<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/head.php");?>
 <body>
-	<div align="center">
-		<div style=" border: solid 1px #006D9C; " align="left">
+	<div>
+		<div>
 			<?php
 				if(isset($errMsg)){
-					echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
+					echo '<div>'.$errMsg.'</div>';
 				}
 			?>
-			<div style="background-color:#006D9C; color:#FFFFFF; padding:10px;"><b><?php echo $_SESSION['name'] ?></b></div>
-			<div style="margin: 15px">
+			<div><b><?php echo $_SESSION['name'] ?></b></div>
+			<div>
 				<form action="" method="post">
 					Fullname <br>
 					<input type="text" name="fullname" value="<?php echo $_SESSION['name']; ?>" autocomplete="off" class="box"/><br /><br />
@@ -74,5 +69,6 @@
 			</div>
 		</div>
 	</div>
+    <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/body_scripts.php");?>
 </body>
 </html>

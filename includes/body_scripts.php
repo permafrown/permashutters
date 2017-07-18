@@ -8,4 +8,4 @@
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <!-- <script src="js/skrollr.js"></script>
 <script src="js/enquire.min.js"></script> -->
-<script src="./js/_main.js"></script>
+<script src="/js/_main.js"></script>

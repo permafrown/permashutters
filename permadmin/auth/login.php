@@ -47,12 +47,7 @@
 
 <html>
 <head><title>Login</title></head>
-	<style>
-	html, body {
-		margin: 1px;
-		border: 0;
-	}
-	</style>
+	<?php require_once("../../../includes/head.php");?>
 <body>
 	<div align="center">
 		<div style=" border: solid 1px #006D9C; " align="left">
@@ -71,5 +66,6 @@
 			</div>
 		</div>
 	</div>
+    <?php require_once("../../../includes/body_scripts.php");?>
 </body>
 </html>

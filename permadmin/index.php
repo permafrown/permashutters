@@ -2,7 +2,7 @@
     session_start();
     if(empty($_SESSION['logged_in']))
     {
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . './auth/login.php');
+        header('Location: http://' . $_SERVER['HTTP_HOST'] . 'permadmin/auth/login.php');
         echo 'not logged in, bruh';
         exit;
     }

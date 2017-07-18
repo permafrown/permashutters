@@ -7,7 +7,7 @@
         exit;
     }
 
-    echo ('hiya' . $_SESSION['name']);
+    echo ('hiya ' . $_SESSION['name']);
 ?>
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>
@@ -24,7 +24,7 @@
 
 <!-- LARGE SCREEN SUBMENU -->
     <hr class="permahr hidden-sm-down">
-    <h2 class="submenu hidden-sm-down"><a href="../index.php">home</a> | <a href="../games.php">games</a> | <a href="../fauna.php">fauna</a> | <a href="../science.php">science</a> | <a href="../words.php">words</a> | <a href="../sundry.php">sundry</a> | <a href="../media.php">media</a> | <a href="../about.php">about</a></h2>
+    <h2 class="submenu hidden-sm-down"><a href="../index.php">home</a> | <a href="../games.php">games</a> | <a href="../fauna.php">fauna</a> | <a href="../science.php">science</a> | <a href="../words.php">words</a> | <a href="../sundry.php">sundry</a> | <a href="../media.php">media</a> | <a href="../about.php">about</a> | <a href="logout.php">logout</a></h2>
     <hr class="permahr hidden-sm-down">
 <!-- END LARGE SCREEN SUBMENU -->
 <!-- CMS -->

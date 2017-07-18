@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    if(empty($_SESSION['logged_in']))
+    {
+        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/login.php');
+        exit;
+    }
+
+    echo 'You will only see this if you are logged in.';
+?>
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>
 <html lang="en">
@@ -27,19 +37,24 @@
 <!-- END LARGE SCREEN SUBMENU -->
 <!-- CMS -->
 <h2 class="title_centered">
-<?php
-    if ( !empty ( $_GET )) {
-        $post = $_GET['p'];
-        $cat = $_GET['cat'];
-    }
-    if ( empty ( $post ) && empty ( $cat) ) {
-        echo 'home';
-    } elseif ( !empty ( $post )) {
-        echo 'single post page';
-    } elseif ( !empty ( $cat )) {
-        echo 'category page';
-    }
-?>
+    <?php
+        if(isset($errMsg)){
+            echo '<div style="color:#FF0000;text-align:center;font-size:18px;">'.$errMsg.'</div>';
+        }
+    ?>
+    <?php
+        if ( !empty ( $_GET )) {
+            $post = $_GET['p'];
+            $cat = $_GET['cat'];
+        }
+        if ( empty ( $post ) && empty ( $cat) ) {
+            echo 'home';
+        } elseif ( !empty ( $post )) {
+            echo 'single post page';
+        } elseif ( !empty ( $cat )) {
+            echo 'category page';
+        }
+    ?>
 </h2>
 
 <!-- END CMS -->

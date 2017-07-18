@@ -47,7 +47,7 @@
 
 <html>
 <head><title>Login</title></head>
-	<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/permadmin/includes/head.php");?>
+	<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/head.php");?>
 <body>
 	<div>
 		<div>
@@ -66,6 +66,6 @@
 			</div>
 		</div>
 	</div>
-    <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/permadmin/includes/body_scripts.php");?>
+    <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/body_scripts.php");?>
 </body>
 </html>

@@ -1,20 +1,20 @@
 <?php
 // Our database class
-if(!class_exists('JoombaDatabase')){
-	class JoombaDatabase {
-	
+if(!class_exists('shuttDatabase')){
+	class shuttDatabase {
+
 		/**
 		 * Connects to the database server and selects a database
 		 *
 		 * PHP4 compatibility layer for calling the PHP5 constructor.
 		 *
-		 * @uses JoombaDatabase::__construct()
+		 * @uses shuttDatabase::__construct()
 		 *
-		 */	
-		function JoombaDatabase() {
+		 */
+		function shuttDatabase() {
 			return $this->__construct();
 		}
-		
+
 		/**
 		 * Connects to the database server and selects a database
 		 *
@@ -25,12 +25,12 @@ if(!class_exists('JoombaDatabase')){
 		function __construct() {
 			$this->connect();
 		}
-	
+
 		/**
 		 * Connect to and select database
 		 *
 		 * @uses the constants defined in config.php
-		 */	
+		 */
 		function connect() {
 			$link = mysql_connect('localhost', DB_USER, DB_PASS);
 
@@ -44,7 +44,7 @@ if(!class_exists('JoombaDatabase')){
 				die('Can\'t use ' . DB_NAME . ': ' . mysql_error());
 			}
 		}
-		
+
 		/**
 		 * Clean the array using mysql_real_escape_string
 		 *
@@ -57,7 +57,7 @@ if(!class_exists('JoombaDatabase')){
 		function clean($array) {
 			return array_map('mysql_real_escape_string', $array);
 		}
-		
+
 		/**
 		 * Create a secure hash
 		 *
@@ -70,10 +70,10 @@ if(!class_exists('JoombaDatabase')){
 		 */
 		function hash_password($password, $nonce) {
 		  $secureHash = hash_hmac('sha512', $password . $nonce, SITE_KEY);
-		  
+
 		  return $secureHash;
 		}
-		
+
 		/**
 		 * Insert data into the database
 		 *
@@ -95,7 +95,7 @@ if(!class_exists('JoombaDatabase')){
 				return TRUE;
 			}
 		}
-		
+
 		/**
 		 * Select data from the database
 		 *
@@ -108,12 +108,12 @@ if(!class_exists('JoombaDatabase')){
 		 */
 		function select($sql) {
 			$results = mysql_query($sql);
-			
+
 			return $results;
 		}
 	}
 }
 
 //Instantiate our database class
-$jdb = new JoombaDatabase;
+$jdb = new shuttDatabase;
 ?>

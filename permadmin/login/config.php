@@ -2,23 +2,23 @@
 /* Configuration Info
  * Enter your configuration information below.
  */
- 
+
 //Database Information
 
 /* DB Name
  * Enter the name of your database below.
  */
-define('DB_NAME', 'YOUR DATABASE NAME HERE');
+define('DB_NAME', 'testshutters_DB');
 
 /* DB Username
  * Enter the username of the user with access to the database below.
  */
-define('DB_USER', 'YOUR DATABASE USER HERE');
+define('DB_USER', 'shutt_dbU');
 
 /* DB Password
  * Enter the above user's password below.
  */
-define('DB_PASS', 'YOUR DB PASSWORD HERE');
+define('DB_PASS', 'Joplin098*');
 
 //SALT Information
 

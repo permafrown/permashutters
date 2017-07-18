@@ -104,7 +104,7 @@ if(!class_exists('shuttDatabase')){
 			$values = implode("', '", $values);
 			$sql="INSERT INTO $table (id, $fields) VALUES ('', '$values')";
 
-			if (!$db->$query($sql)) {
+			if (!mysql_query($sql)) {
 				die('Error: ' . mysql_error());
 			} else {
 				return TRUE;
@@ -122,7 +122,7 @@ if(!class_exists('shuttDatabase')){
 		 * @param array $equals The value being searched for
 		 */
 		function select($sql) {
-			$results = $db->$query($sql);
+			$results = mysql_query($sql);
 
 			return $results;
 		}

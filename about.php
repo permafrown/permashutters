@@ -125,7 +125,7 @@
                             </div>
                         </div>
                         <hr class="perma_hr">
-                        <a href="index.php">home</a>
+                        <a href="index.php">home</a> | <a href="/permadmin/index.php">admin</a>
                     </div>
                 </div>
             </div>

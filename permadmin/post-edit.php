@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/shutters.css">
     <link rel="stylesheet" href="../css/shutt_page_content.css">
     <link rel="stylesheet" href="../css/main.css">
-    <title>ADMINTESTpermashutters</title>
+    <title>ADMINTESTshutters</title>
 </head>
 <body>
 
@@ -26,22 +26,28 @@
     <hr class="permahr hidden-sm-down">
 <!-- END LARGE SCREEN SUBMENU -->
 <!-- CMS -->
-<h2 class="title_centered">
-<?php
-    if ( !empty ( $_GET )) {
-        $post = $_GET['p'];
-        $cat = $_GET['cat'];
-    }
-    if ( empty ( $post ) && empty ( $cat) ) {
-        echo 'home';
-    } elseif ( !empty ( $post )) {
-        echo 'single post page';
-    } elseif ( !empty ( $cat )) {
-        echo 'category page';
-    }
-?>
-</h2>
+<!-- ADD POST -->
+    <form method="post">
+        <p>
+            <input type="text" name="post_title" />
+        </p>
+        <p>
+            <textarea name="post_content"></textarea>
+        </p>
+        <p>
+            <label for="post_category">Cat 1</label>
+            <input type="checkbox" name="post_category" value-"cat1" />
+        <br/>
+            <label for="post_category">Cat 2</label>
+            <input type="checkbox" name="post_category" value-"cat2" />
+        </p>
+        <p>
+            <input type="submit" value="submit" />
+        </p>
+    </form>
 
+
+<!-- END ADD POST -->
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->
     <hr class="permahr hidden-md-up">

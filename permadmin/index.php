@@ -26,6 +26,7 @@
     <hr class="permahr hidden-sm-down">
 <!-- END LARGE SCREEN SUBMENU -->
 <!-- CMS -->
+<h2 class="title_centered">
 <?php
     if ( !empty ( $_GET )) {
         $post = $_GET['p'];
@@ -39,6 +40,7 @@
         echo 'category page';
     }
 ?>
+</h2>
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->
     <hr class="permahr hidden-md-up">

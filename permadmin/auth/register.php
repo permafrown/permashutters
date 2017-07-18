@@ -8,6 +8,7 @@
 		$fullname = $_POST['fullname'];
 		$username = $_POST['username'];
 		$password = $_POST['password'];
+        //$hash = password_hash($password, PASSWORD_BCRYPT);
 		$secretpin = $_POST['secretpin'];
 
 		if($fullname == '')
@@ -25,7 +26,7 @@
 				$stmt->execute(array(
 					':fullname' => $fullname,
 					':username' => $username,
-					':password' => $password,
+					':password' => $password,//$hash,
 					':secretpin' => $secretpin
 					));
 				header('Location: register.php?action=joined');

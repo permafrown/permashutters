@@ -22,7 +22,7 @@
 			?>
 			<div style="background-color:#006D9C; color:#FFFFFF; padding:10px;"><b><?php echo $_SESSION['name']; ?></b></div>
 			<div style="margin: 15px">
-				Welcome <?php echo "hiya " + $_SESSION['name']; ?> <br>
+				<?php echo ('hiya ' . $_SESSION['name']);?> <br>
 				<a href="update.php">Update</a> <br>
 				<a href="logout.php">Logout</a>
 			</div>

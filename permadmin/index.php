@@ -2,9 +2,8 @@
     session_start();
     if(empty($_SESSION['logged_in']))
     {
-        echo "not logged in, bruh";
         //header('Location: http://' . $_SERVER['HTTP_HOST'] . '/login.php');
-        //exit;
+        exit;
     }
 
     echo 'You will only see this if you are logged in.';

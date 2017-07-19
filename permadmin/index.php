@@ -1,8 +1,8 @@
 <?php
-    session_start();
+    //session_start();
     if(empty($_SESSION['login']))
     {
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/auth/register.php');
+        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/auth/login.php');
         echo 'not logged in, bruh';
         exit;
     }

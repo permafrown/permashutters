@@ -1,13 +1,13 @@
 <?php
     session_start();
-    if(empty($_SESSION['name']))
+    if(empty($_SESSION['ulogin']))
     {
         header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/auth/login.php');
         echo 'not logged in, bruh';
         exit;
     }
 
-    echo ('hiya ' . $_SESSION['name']);
+    echo ('hiya ' . $_SESSION['ulogin']);
 ?>
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>

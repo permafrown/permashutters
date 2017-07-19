@@ -1,6 +1,8 @@
 <?php
 	require 'config.php';
 
+    date_default_timezone_set('America/Toronto');
+
 	if(isset($_POST['register'])) {
 		$errMsg = '';
 
@@ -54,7 +56,7 @@
 		<div>
 			<?php
 				if(isset($errMsg)){
-					echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
+					echo '<div>'.$errMsg.'</div>';
 				}
 			?>
 			<div><b>Register</b></div>

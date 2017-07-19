@@ -1,6 +1,8 @@
 <?php
 	require 'config.php';
 
+    date_default_timezone_set('America/Toronto');
+
 	if(isset($_POST['login'])) {
 		$errMsg = '';
 

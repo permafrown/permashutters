@@ -5,37 +5,37 @@
 		$errMsg = '';
 
 		// Get data from FORM
-		$username = $_POST['username'];
-		$password = $_POST['password'];
+		$ulogin = $_POST['ulogin'];
+		$upw = $_POST['upw'];
 
-		if($username == '')
-			$errMsg = 'Enter username';
-		if($password == '')
-			$errMsg = 'Enter password';
+		if($ulogin == '')
+			$errMsg = 'enter un';
+		if($upw == '')
+			$errMsg = 'enter pw';
 
 		if($errMsg == '') {
 			try {
-				$stmt = $connect->prepare('SELECT id, fullname, username, password, secretpin FROM shutt_users WHERE username = :username');
+				$stmt = $connect->prepare('SELECT user_name, user_login, user_pw, user_email FROM shutt_users WHERE user_login = :ulogin');
 				$stmt->execute(array(
-					':username' => $username
+					':ulogin' => $ulogin
 					));
 				$data = $stmt->fetch(PDO::FETCH_ASSOC);
 
 				if($data == false){
-					$errMsg = "User $username not found.";
+					$errMsg = "user $ulogin not found.";
 				}
 				else {
-					if($password == $data['password']) {
-						$_SESSION['name'] = $data['fullname'];
-						$_SESSION['username'] = $data['username'];
-						$_SESSION['password'] = $data['password'];
-						$_SESSION['secretpin'] = $data['secretpin'];
+					if($upw == $data['upw']) {
+						$_SESSION['uname'] = $data['uname'];
+						$_SESSION['ulogin'] = $data['ulogin'];
+						$_SESSION['upw'] = $data['upw'];
+						$_SESSION['uemail'] = $data['uemail'];
 
 						header('Location: ../index.php');
 						exit;
 					}
 					else
-						$errMsg = 'Password not match.';
+						$errMsg = 'pw no match.';
 				}
 			}
 			catch(PDOException $e) {
@@ -56,12 +56,11 @@
 					echo '<div>'.$errMsg.'</div>';
 				}
 			?>
-			<div><b>Login</b></div>
 			<div>
 				<form action="" method="post">
-					<input type="text" name="username" value="<?php if(isset($_POST['username'])) echo $_POST['username'] ?>" autocomplete="off" class="box"/><br /><br />
-					<input type="password" name="password" value="<?php if(isset($_POST['password'])) echo $_POST['password'] ?>" autocomplete="off" class="box" /><br/><br />
-					<input type="submit" name='login' value="Login" class='submit'/><br />
+					<input type="text" name="uname" value="<?php if(isset($_POST['uname'])) echo $_POST['uname'] ?>" autocomplete="off" class="box"/><br /><br />
+					<input type="password" name="upw" value="<?php if(isset($_POST['upw'])) echo $_POST['upw'] ?>" autocomplete="off" class="box" /><br/><br />
+					<input type="submit" name='login' value="login" class='submit'/><br />
 				</form>
 			</div>
 		</div>

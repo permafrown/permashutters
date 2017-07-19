@@ -60,9 +60,9 @@
 			?></p>
 			<div>
 				<form action="" method="post">
-					<input type="text" name="ulogin" value="<?php if(isset($_POST['ulogin'])) echo $_POST['ulogin'] ?>" autocomplete="off" class="box"/><br /><br />
-					<input type="password" name="upw" value="<?php if(isset($_POST['upw'])) echo $_POST['upw'] ?>" autocomplete="off" class="box" /><br/><br />
-					<input type="submit" name='login' value="login" class='submit'/><br />
+					<input type="text" name="ulogin" value="u/n<?php if(isset($_POST['ulogin'])) echo $_POST['ulogin'] ?>" autocomplete="off" class="box"/><br /><br />
+					<input type="password" name="upw" value="p/w<?php if(isset($_POST['upw'])) echo $_POST['upw'] ?>" autocomplete="off" class="box" /><br/><br />
+					<input type="submit" name='login' value="go" class='submit'/><br />
 				</form>
 			</div>
 		</div>

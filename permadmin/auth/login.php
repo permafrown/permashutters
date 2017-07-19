@@ -15,10 +15,9 @@
 
 		if($errMsg == '') {
 			try {
-				$stmt = $connect->prepare('SELECT user_name, user_login, user_pw, user_email FROM shutt_users WHERE user_login = :ulogin AND user_pw = :upw');
+				$stmt = $connect->prepare('SELECT user_name, user_login, user_pw, user_email FROM shutt_users WHERE user_login = :ulogin');
 				$stmt->execute(array(
-                    ':ulogin' => $ulogin,
-                    ':upw' => $upw
+                    ':ulogin' => $ulogin
 					));
 				$data = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -26,11 +25,11 @@
 					$errMsg = "user $ulogin not found.";
 				}
 				else {
-					if($upw == $data['upw']) {
-						$_SESSION['uname'] = $data['uname'];
+					if($upw == $data['user_password']) {
+						$_SESSION['uname'] = $data['user_name'];
 						$_SESSION['ulogin'] = $data['ulogin'];
-						$_SESSION['upw'] = $data['upw'];
-						$_SESSION['uemail'] = $data['uemail'];
+						$_SESSION['upw'] = $data['user_password'];
+						$_SESSION['uemail'] = $data['user_email'];
 
 						header('Location: ../index.php');
 						exit;

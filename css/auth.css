@@ -7,5 +7,5 @@
 .auth_page input {
     background-color: #555;
     color: #BBB;
-    border: none;
+    border-left: 1px solid #000;
 }

@@ -64,7 +64,7 @@
 					<input type="text" name="ulogin" placeholder="username" value="<?php if(isset($_POST['ulogin'])) echo $_POST['ulogin'] ?>" autocomplete="off" class="box"/><br /><br/>
 					<input type="password" name="upw" placeholder="password" value="<?php if(isset($_POST['upw'])) echo $_POST['upw'] ?>" class="box" /><br/><br />
                     <input type="email" name="uemail" placeholder="email" value="<?php if(isset($_POST['uemail'])) echo $_POST['uemail'] ?>" class="box" /><br/><br />
-                    <input type="hidden" name="ureg" value="<?php if(isset($_POST['ureg'])) echo time(); ?>" class="box" />
+                    <input type="hidden" name="ureg" value="<?php echo time(); ?>" class="box" />
 					<br /><br />
 					<input type="submit" name='register' value="register" class='submit'/><br />
 				</form>

@@ -48,6 +48,7 @@
         }
     ?>
 </h2>
+<p> <?php echo time(); ?> </p>
 
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->

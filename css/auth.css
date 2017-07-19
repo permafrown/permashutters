@@ -1,5 +1,7 @@
 .auth_page form {
     margin-top: 5vh;
+}
+.auth_page input {
     background-color: black;
     color: white;
 }

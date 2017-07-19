@@ -1,6 +1,6 @@
 <?php
     //session_start();
-    if(empty($_SESSION['login']))
+    if(empty($_SESSION['ulogin']))
     {
         header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/auth/login.php');
         echo 'not logged in, bruh';

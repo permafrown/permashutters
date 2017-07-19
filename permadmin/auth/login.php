@@ -15,7 +15,7 @@
 
 		if($errMsg == '') {
 			try {
-				$stmt = $connect->prepare('SELECT id, fullname, username, password, secretpin FROM pdo WHERE username = :username');
+				$stmt = $connect->prepare('SELECT id, fullname, username, password, secretpin FROM shutt_users WHERE username = :username');
 				$stmt->execute(array(
 					':username' => $username
 					));
@@ -53,7 +53,7 @@
 		<div>
 			<?php
 				if(isset($errMsg)){
-					echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
+					echo '<div>'.$errMsg.'</div>';
 				}
 			?>
 			<div><b>Login</b></div>

@@ -5,29 +5,32 @@
 		$errMsg = '';
 
 		// Get data from FROM
-		$fullname = $_POST['fullname'];
-		$username = $_POST['username'];
-		$password = $_POST['password'];
+		$uname = $_POST['uname'];
+		$ulogin = $_POST['ulogin'];
+		$upw = $_POST['upw'];
+        $uemail = $_POST['uemail'];
+        $ureg = $_POST['ureg'];
         //$hash = password_hash($password, PASSWORD_BCRYPT);
-		$secretpin = $_POST['secretpin'];
 
-		if($fullname == '')
-			$errMsg = 'Enter your fullname';
-		if($username == '')
-			$errMsg = 'Enter username';
-		if($password == '')
-			$errMsg = 'Enter password';
-		if($secretpin == '')
-			$errMsg = 'Enter a sercret pin number';
+		if($uname == '')
+			$errMsg = 'enter name';
+		if($ulogin == '')
+			$errMsg = 'enter un';
+		if($upw == '')
+			$errMsg = 'enter pw';
+        if($uemail == '')
+			$errMsg = 'enter email';
+
 
 		if($errMsg == ''){
 			try {
-				$stmt = $connect->prepare('INSERT INTO pdo (fullname, username, password, secretpin) VALUES (:fullname, :username, :password, :secretpin)');
+				$stmt = $connect->prepare('INSERT INTO shutt_users (user_name, user_login, user_pw, user_email, user_reg) VALUES (:uname, :ulogin, :upw, :uemail, :ureg)');
 				$stmt->execute(array(
-					':fullname' => $fullname,
-					':username' => $username,
-					':password' => $password,//$hash,
-					':secretpin' => $secretpin
+					':uname' => $uname,
+					':ulogin' => $ulogin,
+					':upw' => $upw,//$hash,
+                    ':uemail' => $uemail,
+                    ':ureg' => $ureg
 					));
 				header('Location: register.php?action=joined');
 				exit;
@@ -57,11 +60,13 @@
 			<div><b>Register</b></div>
 			<div>
 				<form action="" method="post">
-					<input type="text" name="fullname" placeholder="Fullname" value="<?php if(isset($_POST['fullname'])) echo $_POST['fullname'] ?>" autocomplete="off" class="box"/><br /><br />
-					<input type="text" name="username" placeholder="Username" value="<?php if(isset($_POST['username'])) echo $_POST['username'] ?>" autocomplete="off" class="box"/><br /><br />
-					<input type="password" name="password" placeholder="Password" value="<?php if(isset($_POST['password'])) echo $_POST['password'] ?>" class="box" /><br/><br />
-					<input type="text" name="secretpin" placeholder="Sercter Pin" value="<?php if(isset($_POST['secretpin'])) echo $_POST['secretpin'] ?>" autocomplete="off" class="box"/><br /><br />
-					<input type="submit" name='register' value="Register" class='submit'/><br />
+					<input type="text" name="uname" placeholder="name" value="<?php if(isset($_POST['uname'])) echo $_POST['uname'] ?>" autocomplete="off" class="box"/><br /><br />
+					<input type="text" name="ulogin" placeholder="username" value="<?php if(isset($_POST['ulogin'])) echo $_POST['ulogin'] ?>" autocomplete="off" class="box"/><br /><br/>
+					<input type="password" name="upw" placeholder="password" value="<?php if(isset($_POST['upw'])) echo $_POST['upw'] ?>" class="box" /><br/><br />
+                    <input type="email" name="uemail" placeholder="email" value="<?php if(isset($_POST['uemail'])) echo $_POST['uemail'] ?>" class="box" /><br/><br />
+                    <input type="hidden" name="ureg" value="<?php if(isset($_POST['ureg'])) echo time(); ?>" class="box" />
+					<br /><br />
+					<input type="submit" name='register' value="register" class='submit'/><br />
 				</form>
 			</div>
 		</div>

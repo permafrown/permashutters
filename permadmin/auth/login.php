@@ -15,9 +15,12 @@
 
 		if($errMsg == '') {
 			try {
-				$stmt = $connect->prepare('SELECT user_name, user_login, user_pw, user_email FROM shutt_users WHERE user_login = :ulogin');
+				$stmt = $connect->prepare('SELECT user_name, user_login, user_pw, user_email FROM shutt_users WHERE user_name = :uname AND user_login = :ulogin AND user_pw = :upw AND user_email = :uemail');
 				$stmt->execute(array(
-                    ':ulogin' => $ulogin
+                    ':uname' => $uname,
+                    ':ulogin' => $ulogin,
+                    ':upw' => $upw,
+                    ':uemail' => $uemail
 					));
 				$data = $stmt->fetch(PDO::FETCH_ASSOC);
 

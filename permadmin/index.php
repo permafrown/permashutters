@@ -50,7 +50,7 @@
     ?>
 </h2>
 <p class="submenu">UNIX time | <?php echo time(); ?> </p>
-<p class="submenu">current time RFC7231 | <?php echo date(DATE_RFC7231); ?> </p>
+<p class="submenu">current time | america/toronto | <?php echo date(DATE_RFC7231); ?> </p>
 
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->

@@ -1,7 +1,7 @@
 <?php
 	require 'config.php';
 
-	if(isset($_POST['ulogin'])) {
+	if(isset($_POST['login'])) {
 		$errMsg = '';
 
 		// Get data from FORM

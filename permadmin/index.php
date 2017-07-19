@@ -6,6 +6,7 @@
         echo 'not logged in, bruh';
         exit;
     }
+    date_default_timezone_set('America/Toronto');
 ?>
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>
@@ -49,9 +50,6 @@
     ?>
 </h2>
 <p class="submenu">UNIX time | <?php echo time(); ?> </p>
-<p class="submenu">current time RFC850 | <?php echo date(DATE_RFC850); ?> </p>
-<p class="submenu">current time RFC3339 | <?php echo date(DATE_RFC3339); ?> </p>
-<p class="submenu">current time RFC3339_EXTENDED | <?php echo date(DATE_RFC3339_EXTENDED); ?> </p>
 <p class="submenu">current time RFC7231 | <?php echo date(DATE_RFC7231); ?> </p>
 
 <!-- END CMS -->

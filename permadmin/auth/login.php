@@ -53,11 +53,11 @@
 <body>
 	<div class="auth_page">
 		<div>
-			<?php
+			<p><?php
 				if(isset($errMsg)){
 					echo '<div>'.$errMsg.'</div>';
 				}
-			?>
+			?></p>
 			<div>
 				<form action="" method="post">
 					<input type="text" name="ulogin" value="<?php if(isset($_POST['ulogin'])) echo $_POST['ulogin'] ?>" autocomplete="off" class="box"/><br /><br />

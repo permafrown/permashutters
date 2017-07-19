@@ -1,5 +1,5 @@
 <?php
-    //session_start();
+    session_start();
     if(empty($_SESSION['ulogin']))
     {
         header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/auth/login.php');

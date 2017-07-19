@@ -31,7 +31,7 @@
 						$_SESSION['upw'] = $data['user_pw'];
 						$_SESSION['uemail'] = $data['user_email'];
 
-						header('Location: ../index.php');
+						header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/index.php');
 						exit;
 					}
 					else

@@ -6,8 +6,6 @@
         echo 'not logged in, bruh';
         exit;
     }
-
-    echo ('hiya ' . $_SESSION['ulogin']);
 ?>
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>
@@ -50,7 +48,8 @@
         }
     ?>
 </h2>
-<p class="submenu"> <?php echo time(); ?> </p>
+<p class="submenu">UNIX time | <?php echo time(); ?> </p>
+<p class="submenu">current time | <?php echo date(); ?> </p>
 
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->

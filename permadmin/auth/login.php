@@ -25,10 +25,10 @@
 					$errMsg = "user $ulogin not found.";
 				}
 				else {
-					if($upw == $data['user_password']) {
+					if($upw == $data['user_pw']) {
 						$_SESSION['uname'] = $data['user_name'];
 						$_SESSION['ulogin'] = $data['ulogin'];
-						$_SESSION['upw'] = $data['user_password'];
+						$_SESSION['upw'] = $data['user_pw'];
 						$_SESSION['uemail'] = $data['user_email'];
 
 						header('Location: ../index.php');

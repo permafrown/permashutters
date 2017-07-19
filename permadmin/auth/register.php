@@ -52,7 +52,7 @@
 <head><title>Register</title></head>
 	<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/head.php");?>
 <body>
-	<div>
+	<div class="auth_page">
 		<div>
 			<?php
 				if(isset($errMsg)){

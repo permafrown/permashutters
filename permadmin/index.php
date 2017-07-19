@@ -25,7 +25,17 @@
 
 <h2 class="submenu">
     <?php
-    echo ($_SESSION['ulogin'] . ' | ' . date(DATE_RFC7231) . ' | america/toronto');
+    echo ($_SESSION['ulogin']);
+    ?>
+</h2>
+<h2 class="submenu">
+    <?php
+    echo date(DATE_RFC7231);
+    ?>
+</h2>
+<h2 class="submenu">
+    <?php
+    echo 'america/toronto';
     ?>
 </h2>
 <h2 class="submenu">

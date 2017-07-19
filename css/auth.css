@@ -9,6 +9,6 @@
     color: #BBB;
     text-align: center;
     border-width: thin;
-    border-style: none none none solid;
+    border-style: none none solid solid;
     border-color: #000;
 }

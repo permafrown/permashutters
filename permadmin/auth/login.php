@@ -51,7 +51,7 @@
 <head><title>Login</title></head>
 	<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/head.php");?>
 <body>
-	<div>
+	<div class="">
 		<div>
 			<?php
 				if(isset($errMsg)){

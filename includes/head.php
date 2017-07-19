@@ -9,6 +9,7 @@
     crossorigin="anonymous">
 <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
 <!--<link rel="stylesheet" href="css/animate-master/animate.css">-->
+<link rel="stylesheet" href="/css/auth.css">
 <link rel="stylesheet" href="/css/shutters.css">
 <link rel="stylesheet" href="/css/shutt_page_content.css">
 <link rel="stylesheet" href="/css/main.css">

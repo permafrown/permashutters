@@ -21,8 +21,15 @@
     <h1 class="title_centered" style="margin-top: 2.5%; color: #8e44ad;text-shadow: 4px 4px 2px rgba(0, 255, 0, 0.5);">permADMIN</h1>
 <!-- END MAIN TITLE -->
 
-<h2 class="submenu"><?php echo ('hiya ' . $_SESSION['ulogin']); ?></h2>
+<!-- WELCOME -->
 
+<h2 class="submenu">
+    <?php
+    echo ('| ' . $_SESSION['ulogin'] . ' | ' . date(DATE_RFC7231) . ' | america/toronto |');
+    ?>
+</h2>
+
+<!-- END WELCOME -->
 <!-- LARGE SCREEN SUBMENU -->
     <hr class="permahr hidden-sm-down">
     <h2 class="submenu hidden-sm-down"><a href="../index.php">home</a> | <a href="../games.php">games</a> | <a href="../fauna.php">fauna</a> | <a href="../science.php">science</a> | <a href="../words.php">words</a> | <a href="../sundry.php">sundry</a> | <a href="../media.php">media</a> | <a href="../about.php">about</a> | <a href="auth/logout.php">logout</a></h2>
@@ -50,7 +57,6 @@
     ?>
 </h2>
 <p class="submenu">UNIX time | <?php echo time(); ?> </p>
-<p class="submenu">current time | america/toronto | <?php echo date(DATE_RFC7231); ?> </p>
 
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->

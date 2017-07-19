@@ -53,14 +53,14 @@
 	<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/head.php");?>
 <body>
 	<div class="auth_page">
-		<div class="auth_page">
+		<div>
 			<?php
 				if(isset($errMsg)){
 					echo '<div>'.$errMsg.'</div>';
 				}
 			?>
 			<div><b>Register</b></div>
-			<div class="auth_page">
+			<div>
 				<form action="" method="post">
 					<input type="text" name="uname" placeholder="name" value="<?php if(isset($_POST['uname'])) echo $_POST['uname'] ?>" autocomplete="off" class="box"/><br /><br />
 					<input type="text" name="ulogin" placeholder="username" value="<?php if(isset($_POST['ulogin'])) echo $_POST['ulogin'] ?>" autocomplete="off" class="box"/><br /><br/>

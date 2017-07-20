@@ -34,30 +34,6 @@
     <h1 class="title_centered" style="margin-top: 2.5%; color: #8e44ad;text-shadow: 4px 4px 2px rgba(0, 255, 0, 0.5);">permADMIN</h1>
 <!-- END MAIN TITLE -->
 
-<!-- WELCOME -->
-
-<h2 class="submenu">
-    <?php
-    echo ($_SESSION['ulogin']);
-    ?>
-</h2>
-<h2 class="submenu">
-    <?php
-    echo date(DATE_RFC7231);
-    ?>
-</h2>
-<h2 class="submenu">
-    <?php
-    echo 'america/toronto';
-    ?>
-</h2>
-<h2 class="submenu">
-    <?php
-    echo time();
-    ?>
-</h2>
-
-<!-- END WELCOME -->
 <!-- LARGE SCREEN SUBMENU -->
     <hr class="permahr hidden-sm-down">
     <h2 class="submenu hidden-sm-down"><a href="../index.php">home</a> | <a href="../games.php">games</a> | <a href="../fauna.php">fauna</a> | <a href="../science.php">science</a> | <a href="../words.php">words</a> | <a href="../sundry.php">sundry</a> | <a href="../media.php">media</a> | <a href="../about.php">about</a> | <a href="auth/logout.php">logout</a></h2>
@@ -84,7 +60,7 @@
         }
     ?>
 </h2>
-<div class="authmenu" id=menu-wrapper>
+<div class="admin_menu" id=menu_wrapper>
     <?php include_once("menu.php");?>
     <?php
     //show message from add / edit page
@@ -92,7 +68,7 @@
             echo '<h3>Post '.$_GET['action'].'.</h3>';
         }
     ?>
-    <table>
+    <table class="admin_table">
         <tr>
             <th>title</th>
             <th>date</th>
@@ -132,6 +108,13 @@
     <h2 class="submenu hidden-md-up"><a href="auth/logout.php">logout</a></h2>
     <hr class="permahr hidden-md-up">
 <!-- END SMALL SCREEN SUBMENU -->
+
+<!-- RANDOM STATS-->
+<h2 class="submenu"><?php echo ($_SESSION['ulogin']);?></h2>
+<h2 class="submenu"><?php echo date(DATE_RFC7231);?></h2>
+<h2 class="submenu"><?php echo 'america/toronto';?></h2>
+<h2 class="submenu"><?php echo time();?></h2>
+<!-- END RANDOM STATS -->
 
 <!-- SCRIPTS -->
 <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/body_scripts.php");?>

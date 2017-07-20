@@ -1,17 +1,30 @@
+<!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <?php
     session_start();
+
+//verify user logged in
     if(empty($_SESSION['ulogin']))
     {
         header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/auth/login.php');
         echo 'not logged in, bruh';
         exit;
     }
+
+//show message from add / edit page
+    if(isset($_GET['delpost'])){
+
+    	$stmt = $db->prepare('DELETE FROM blog_posts WHERE postID = :postID') ;
+    	$stmt->execute(array(':postID' => $_GET['delpost']));
+
+    	header('Location: index.php?action=deleted');
+    	exit;
+    }
 ?>
-<!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/head.php");?>
+<?php include_once("js/delpost.js");?>
     <title>ADMINTESTpermashutters</title>
 </head>
 <body>
@@ -70,16 +83,43 @@
         }
     ?>
 </h2>
+<div id=menu-wrapper>
+    <?php include_once("menu.php");?>
+    <?php
+    //show message from add / edit page
+        if(isset($_GET['action'])){
+            echo '<h3>Post '.$_GET['action'].'.</h3>';
+        }
+    ?>
+    <table>
+        <tr>
+            <th>title</th>
+            <th>date</th>
+            <th>action</th>
+        </tr>
+        <?php
+            try {
+                $stmt = $db->query('SELECT postID, postTitle, postDate FROM shutt_posts ORDER BY postID DESC');
+                while($row = $stmt->fetch()){
+                    echo '<tr>';
+                    echo '<td>'.$row['postTitle'].'</td>';
+                    echo '<td>'.date('jS M Y', strtotime($row['postDate'])).'</td>';
+                    ?>
+                    <td>
+                        <a href="edit-post.php?id=<?php echo $row['postID'];?>">edit</a> |
+                        <a href="javascript:delpost('<?php echo row['postID'];?>','<?php echo $row['postTitle'];?>')">delete</a>
+                    </td>
+                    <?php
+                    echo '</tr>';
+            }
+        } catch(PDOException $e) {
+            echo $e->getMessage();
+        }
+        ?>
+    </table>
 
-<h1>admin menu</h1>
-<ul id='adminmenu'>
-	<li><a href='index.php'>menu</a></li>
-	<li><a href='users.php'>users</a></li>
-	<li><a href="../" target="_blank">site</a></li>
-	<li><a href='logout.php'>logout</a></li>
-</ul>
-<div class='clear'></div>
-<hr />
+    <p><a href='add-post.php'>add post</a></p>
+</div>
 
 <p class="submenu">UNIX time | <?php echo time(); ?> </p>
 

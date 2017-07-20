@@ -20,6 +20,7 @@
     	exit;
     }
 ?>
+<?php include_once('/config.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

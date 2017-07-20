@@ -60,7 +60,7 @@
         }
     ?>
 </h2>
-<div class="admin_menu" id=menu_wrapper>
+<div class="admin_edit_menu" id=menu_wrapper>
     <?php include_once("menu.php");?>
     <?php
     //show message from add / edit page
@@ -68,7 +68,7 @@
             echo '<h3>Post '.$_GET['action'].'.</h3>';
         }
     ?>
-    <table class="admin_table">
+    <table class="admin_edit_table">
         <tr>
             <th>title</th>
             <th>date</th>

@@ -20,7 +20,7 @@
     	exit;
     }
 ?>
-<?php include_once('/config.php');?>
+<?php include_once('auth/config.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

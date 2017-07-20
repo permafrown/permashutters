@@ -16,7 +16,7 @@
     margin: auto;
     max-width: 75vw;
 }
-.adminmenu ul {
+.adminmenu {
     display: inline-block;
     list-style-type: none;
 }

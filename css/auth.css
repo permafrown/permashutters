@@ -16,12 +16,15 @@
     margin: auto;
     max-width: 75vw;
 }
-.adminmenu {
-    display: inline;
-
+.adminmenu ul {
+    display: inline-block;
+    list-style-type: none;
 }
-.adminmenu li:hover {
-    color: inherit;
+.adminmenu li {
+    float: left;
+}
+.adminmenu li a:hover {
+    color: #BBB;
     text-decoration: none;
 }
 .clear {

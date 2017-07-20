@@ -84,7 +84,7 @@
         }
     ?>
 </h2>
-<div id=menu-wrapper>
+<div class="authmenu" id=menu-wrapper>
     <?php include_once("menu.php");?>
     <?php
     //show message from add / edit page

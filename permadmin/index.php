@@ -99,7 +99,7 @@
         </tr>
         <?php
             try {
-                $stmt = $db->query('SELECT postID, postTitle, postDate FROM shutt_posts ORDER BY postID DESC');
+                $stmt = $connect->query('SELECT postID, postTitle, postDate FROM shutt_posts ORDER BY postID DESC');
                 while($row = $stmt->fetch()){
                     echo '<tr>';
                     echo '<td>'.$row['postTitle'].'</td>';

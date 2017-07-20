@@ -6,7 +6,6 @@
         echo 'not logged in, bruh';
         exit;
     }
-    date_default_timezone_set('America/Toronto');
 ?>
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <!DOCTYPE html>

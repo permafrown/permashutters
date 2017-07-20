@@ -12,11 +12,11 @@
     border-style: none none solid solid;
     border-color: #000;
 }
-.admin_edit_menu#menu-wrapper {
+.authmenu#menu-wrapper {
     margin: auto;
     max-width: 75vw;
 }
-.admin_edit_menu {
+.adminmenu {
     display: inline-flex;
     list-style-type: none;
     -webkit-margin-before: 0px;
@@ -25,10 +25,10 @@
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
-.admin_edit_menu li {
+.adminmenu li {
     float: left;
 }
-.admin_edit_menu li a:hover {
+.adminmenu li a:hover {
     color: #BBB;
     text-decoration: none;
 }

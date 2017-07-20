@@ -17,7 +17,7 @@
     max-width: 75vw;
 }
 .adminmenu {
-    display: inline-block;
+    display: inline-flex;
     list-style-type: none;
 }
 .adminmenu li {

@@ -114,7 +114,7 @@ if(empty($_SESSION['ulogin']))
 
 	?>
 
-	<form action='' method='post'>
+	<form class="shutt_post_form" action='' method='post'>
 		<input type='hidden' name='postID' value='<?php echo $row['postID'];?>'>
 
 		<p><label>Title</label><br />

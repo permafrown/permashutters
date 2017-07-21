@@ -12,6 +12,10 @@
     border-style: none none solid solid;
     border-color: #000;
 }
+.action_message {
+    background-color: #BBB;
+    color: #555;
+}
 .admin_menu#menu-wrapper {
     margin: auto;
     max-width: 50vw;

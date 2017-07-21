@@ -54,6 +54,11 @@
 .admin_menu table tr td {border:1px solid #DDDDDD; padding:5px 6px;}
 .admin_menu table tr.alt td {background-color:#E2E2E2;}
 .admin_menu table tr:hover {background-color:#F0F0F0; color:#000;}*/
+
+.shutt_post_form textarea {
+    max-width: 75vw;
+}
+
 /*form input {
 	border: 1px solid #999999;
 	border-bottom-color: #cccccc;

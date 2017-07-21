@@ -16,8 +16,10 @@ if(empty($_SESSION['ulogin']))
 <html lang="en">
 <head>
     <?php include_once('../includes/head.php');?>
-    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-    <script>
+    <link href="//cdn.quilljs.com/1.3.0/quill.snow.css" rel="stylesheet">
+    <script src="//cdn.quilljs.com/1.3.0/quill.min.js"></script>
+  <!-- <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+  <script>
           tinymce.init({
               selector: "textarea",
               plugins: [
@@ -27,7 +29,7 @@ if(empty($_SESSION['ulogin']))
               ],
               toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
           });
-    </script>
+  </script> -->
 </head>
 <body>
 

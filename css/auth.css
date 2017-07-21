@@ -14,9 +14,9 @@
 }
 .authmenu#menu-wrapper {
     margin: auto;
-    max-width: 75vw;
+    max-width: 50vw;
 }
-.adminmenu {
+.admin_nav_menu {
     display: inline-flex;
     list-style-type: none;
     -webkit-margin-before: 0px;
@@ -25,10 +25,10 @@
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;
 }
-.adminmenu li {
+.admin_nav_menu li {
     float: left;
 }
-.adminmenu li a:hover {
+.admin_nav_menu li a:hover {
     color: #BBB;
     text-decoration: none;
 }

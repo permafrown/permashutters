@@ -119,5 +119,10 @@ if(empty($_SESSION['ulogin']))
 
 </div>
     <?php include_once('../includes/body_scripts.php');?>
+    <script>
+        var quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+    </script>
 </body>
 </html>

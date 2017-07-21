@@ -1,4 +1,5 @@
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
+<?php include_once('auth/config.php');?>
 <?php
     session_start();
 
@@ -20,7 +21,6 @@
     	exit;
     }
 ?>
-<?php include_once('auth/config.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

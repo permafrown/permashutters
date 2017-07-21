@@ -15,7 +15,6 @@ if(empty($_SESSION['ulogin']))
 <!doctype html>
 <html lang="en">
 <head>
-    <?php include_once('../includes/head.php');?>
   <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
   <script>
           tinymce.init({
@@ -28,6 +27,7 @@ if(empty($_SESSION['ulogin']))
               toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
           });
   </script>
+  <?php include_once('../includes/head.php');?>
 </head>
 <body>
 

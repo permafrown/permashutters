@@ -20,6 +20,7 @@ if(empty($_SESSION['ulogin']))
   <script>
           tinymce.init({
               selector: "textarea",
+              max-width: 75vw,
               plugins: [
                   "advlist autolink lists link image charmap print preview anchor",
                   "searchreplace visualblocks code fullscreen",

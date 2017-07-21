@@ -2,17 +2,14 @@
 require_once('../includes/config.php');
 
 //if not logged in redirect to login page
-if(!$user->is_logged_in()){ header('Location: login.php'); }
+if(!$user->is_logged_in()){ header('Location: auth/login.php'); }
 ?>
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Admin - Edit Post</title>
-  <link rel="stylesheet" href="../style/normalize.css">
-  <link rel="stylesheet" href="../style/main.css">
-  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-  <script>
+    <?php include_once('../includes/head.php');?>
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script>
           tinymce.init({
               selector: "textarea",
               plugins: [
@@ -22,7 +19,7 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
               ],
               toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
           });
-  </script>
+    </script>
 </head>
 <body>
 
@@ -66,7 +63,7 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 			try {
 
 				//insert into database
-				$stmt = $db->prepare('UPDATE blog_posts SET postTitle = :postTitle, postDesc = :postDesc, postCont = :postCont WHERE postID = :postID') ;
+				$stmt = $connect->prepare('UPDATE shutt_posts SET postTitle = :postTitle, postDesc = :postDesc, postCont = :postCont WHERE postID = :postID') ;
 				$stmt->execute(array(
 					':postTitle' => $postTitle,
 					':postDesc' => $postDesc,
@@ -99,7 +96,7 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 
 		try {
 
-			$stmt = $db->prepare('SELECT postID, postTitle, postDesc, postCont FROM blog_posts WHERE postID = :postID') ;
+			$stmt = $connect->prepare('SELECT postID, postTitle, postDesc, postCont FROM shutt_posts WHERE postID = :postID') ;
 			$stmt->execute(array(':postID' => $_GET['id']));
 			$row = $stmt->fetch();
 
@@ -126,6 +123,6 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 	</form>
 
 </div>
-
+    <?php include_once('../includes/body_scripts.php');?>
 </body>
 </html>

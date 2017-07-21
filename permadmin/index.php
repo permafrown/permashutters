@@ -60,7 +60,7 @@
     <?php
     //show message from add / edit page
         if(isset($_GET['action'])){
-            echo '<h3>Post '.$_GET['action'].'.</h3>';
+            echo '<h2 class="submenu action_message">Post '.$_GET['action'].'.</h2>';
         }
     ?>
     <table>

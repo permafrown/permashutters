@@ -79,7 +79,7 @@
                     ?>
                     <td>
                         <a href="edit-post.php?id=<?php echo $row['postID'];?>">edit</a> |
-                        <a href="javascript:delpost('<?php echo row['postID'];?>','<?php echo $row['postTitle'];?>')">delete</a>
+                        <a href="javascript:delpost('<?php echo $row['postID'];?>','<?php echo $row['postTitle'];?>')">delete</a>
                     </td>
                     <?php
                     echo '</tr>';

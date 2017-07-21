@@ -55,8 +55,9 @@
 .admin_menu table tr.alt td {background-color:#E2E2E2;}
 .admin_menu table tr:hover {background-color:#F0F0F0; color:#000;}*/
 
-#mceu_51.mce-tinymce.mce-container.mce-panel {
-    width: 75%;
+.mce-container {
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 /*form input {

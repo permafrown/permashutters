@@ -100,7 +100,7 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
 
 		<p><label>Description</label><br />
-		<textarea name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>
+		<textarea name='postDesc' cols='10' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>
 
 		<p><label>Content</label><br />
 		<textarea name='postCont' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postCont'];}?></textarea></p>

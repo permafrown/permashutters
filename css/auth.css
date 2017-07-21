@@ -55,7 +55,7 @@
 .admin_menu table tr.alt td {background-color:#E2E2E2;}
 .admin_menu table tr:hover {background-color:#F0F0F0; color:#000;}*/
 
-.shutt_post_form textarea {
+.mce-container {
     max-width: 75vw;
 }
 

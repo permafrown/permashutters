@@ -25,7 +25,15 @@
 <html lang="en">
 <head>
 <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/head.php");?>
-<?php include_once("js/delpost.js");?>
+<script language="JavaScript" type="text/javascript">
+  function delpost(id, title)
+  {
+	  if (confirm("delete '" + title + "'?"))
+	  {
+	  	window.location.href = 'index.php?delpost=' + id;
+	  }
+  }
+  </script>
     <title>ADMINTESTpermashutters</title>
 </head>
 <body>

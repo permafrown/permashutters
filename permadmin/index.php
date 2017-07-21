@@ -85,8 +85,6 @@
     <p><a href='add-post.php'>add post</a></p>
 </div>
 
-<p class="submenu">UNIX time | <?php echo time(); ?> </p>
-
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->
     <hr class="permahr hidden-md-up">
@@ -97,6 +95,7 @@
 <!-- END SMALL SCREEN SUBMENU -->
 
 <!-- RANDOM STATS-->
+<hr class="permahr">
 <h2 class="submenu"><?php echo ($_SESSION['ulogin']);?></h2>
 <h2 class="submenu"><?php echo date(DATE_RFC7231);?></h2>
 <h2 class="submenu"><?php echo 'america/toronto';?></h2>

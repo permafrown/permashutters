@@ -1,16 +1,13 @@
 <?php //include config
-require_once('../includes/config.php');
+require_once('auth/config.php');
 
 //if not logged in redirect to login page
-if(!$user->is_logged_in()){ header('Location: login.php'); }
+if(!$user->is_logged_in()){ header('Location: auth/login.php'); }
 ?>
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Admin - Add Post</title>
-  <link rel="stylesheet" href="../style/normalize.css">
-  <link rel="stylesheet" href="../style/main.css">
+    <?php include_once('../includes/head.php');?>
   <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
   <script>
           tinymce.init({
@@ -61,7 +58,7 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 			try {
 
 				//insert into database
-				$stmt = $db->prepare('INSERT INTO blog_posts (postTitle,postDesc,postCont,postDate) VALUES (:postTitle, :postDesc, :postCont, :postDate)') ;
+				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postDesc,postCont,postDate) VALUES (:postTitle, :postDesc, :postCont, :postDate)') ;
 				$stmt->execute(array(
 					':postTitle' => $postTitle,
 					':postDesc' => $postDesc,
@@ -105,3 +102,6 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 	</form>
 
 </div>
+    <?php include_once('../includes/body_scripts.php');?>
+</body>
+</html>

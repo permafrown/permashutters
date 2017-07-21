@@ -46,19 +46,6 @@
             echo '<div style="color:#FF0000;text-align:center;font-size:18px;">'.$errMsg.'</div>';
         }
     ?>
-    <?php
-        if ( !empty ( $_GET )) {
-            $post = $_GET['p'];
-            $cat = $_GET['cat'];
-        }
-        if ( empty ( $post ) && empty ( $cat) ) {
-            echo 'home';
-        } elseif ( !empty ( $post )) {
-            echo 'single post page';
-        } elseif ( !empty ( $cat )) {
-            echo 'category page';
-        }
-    ?>
 </h2>
 <div class="authmenu" id=menu-wrapper>
     <?php include_once("menu.php");?>
@@ -114,7 +101,23 @@
 <h2 class="submenu"><?php echo date(DATE_RFC7231);?></h2>
 <h2 class="submenu"><?php echo 'america/toronto';?></h2>
 <h2 class="submenu"><?php echo time();?></h2>
+<h2 class="submenu"><?php
+    if ( !empty ( $_GET )) {
+        $post = $_GET['p'];
+        $cat = $_GET['cat'];
+    }
+    if ( empty ( $post ) && empty ( $cat) ) {
+        echo 'home';
+    } elseif ( !empty ( $post )) {
+        echo 'single post page';
+    } elseif ( !empty ( $cat )) {
+        echo 'category page';
+    }
+    ?></h2>
 <!-- END RANDOM STATS -->
+
+
+
 
 <!-- SCRIPTS -->
 <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/body_scripts.php");?>

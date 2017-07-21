@@ -14,7 +14,7 @@
 //show message from add / edit page
     if(isset($_GET['delpost'])){
 
-    	$stmt = $connect->prepare('DELETE FROM blog_posts WHERE postID = :postID') ;
+    	$stmt = $connect->prepare('DELETE FROM shutt_posts WHERE postID = :postID') ;
     	$stmt->execute(array(':postID' => $_GET['delpost']));
 
     	header('Location: index.php?action=deleted');

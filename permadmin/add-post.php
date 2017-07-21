@@ -96,7 +96,13 @@ if(empty($_SESSION['ulogin']))
 	}
 	?>
 
-	<form action='' method='post'>
+    <div id="editor">
+      <p>Hello World!</p>
+      <p>Some initial <strong>bold</strong> text</p>
+      <p><br></p>
+    </div>
+
+	<!-- <form action='' method='post'>
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
@@ -109,7 +115,7 @@ if(empty($_SESSION['ulogin']))
 
 		<p><input type='submit' name='submit' value='Submit'></p>
 
-	</form>
+	</form> -->
 
 </div>
     <?php include_once('../includes/body_scripts.php');?>

@@ -16,9 +16,7 @@ if(empty($_SESSION['ulogin']))
 <html lang="en">
 <head>
     <?php include_once('../includes/head.php');?>
-    <link href="//cdn.quilljs.com/1.3.0/quill.snow.css" rel="stylesheet">
-    <script src="//cdn.quilljs.com/1.3.0/quill.min.js"></script>
-  <!-- <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
   <script>
           tinymce.init({
               selector: "textarea",
@@ -29,7 +27,7 @@ if(empty($_SESSION['ulogin']))
               ],
               toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
           });
-  </script> -->
+  </script>
 </head>
 <body>
 
@@ -96,13 +94,7 @@ if(empty($_SESSION['ulogin']))
 	}
 	?>
 
-    <div id="editor">
-      <p>Hello World!</p>
-      <p>Some initial <strong>bold</strong> text</p>
-      <p><br></p>
-    </div>
-
-	<!-- <form action='' method='post'>
+	<form action='' method='post'>
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
@@ -115,14 +107,9 @@ if(empty($_SESSION['ulogin']))
 
 		<p><input type='submit' name='submit' value='Submit'></p>
 
-	</form> -->
+	</form>
 
 </div>
     <?php include_once('../includes/body_scripts.php');?>
-    <script>
-        var quill = new Quill('#editor', {
-            theme: 'snow'
-        });
-    </script>
 </body>
 </html>

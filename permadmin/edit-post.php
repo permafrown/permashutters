@@ -1,8 +1,16 @@
 <?php //include config
 require_once('auth/config.php');
 
-//if not logged in redirect to login page
-if(!$user->is_logged_in()){ header('Location: auth/login.php'); }
+session_start();
+
+//verify user logged in
+if(empty($_SESSION['ulogin']))
+{
+    header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/auth/login.php');
+    echo 'not logged in, bruh';
+    exit;
+}
+
 ?>
 <!doctype html>
 <html lang="en">

@@ -28,7 +28,31 @@
             </a>
         </div> -->
 
+        <?php
+          try {
 
+            $stmt = $connect->query('SELECT postID, postTitle, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
+            while($row = $stmt->fetch()){
+
+              echo '<div class="row justify-content-center align-items-center">';
+                echo '<div class="col-xs-5">';
+                  echo '<div class="card">';
+                    echo '<div class="card-header">perma-featured</div>';
+                      echo '<img class="card-img-top" src="" alt="'.$row['postTitle'].' image" />';
+                      echo '<div class="card-block">';
+                        echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h3>';
+                echo '<h1><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h1>';
+                echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
+                echo '<p>'.$row['postDesc'].'</p>';
+                echo '<p><a href="viewpost.php?id='.$row['postID'].'">Read More</a></p>';
+              echo '</div>';
+
+            }
+
+          } catch(PDOException $e) {
+              echo $e->getMessage();
+          }
+        ?>
 
         <?php
         echo '<div class="row justify-content-center align-items-center">';

@@ -4,6 +4,7 @@
 
 <head>
     <?php include_once 'includes/head.php';?>
+    <?php include_once 'permadmin/auth/config.php'; ?>
     <title>games | permashutters</title>
 </head>
 
@@ -26,27 +27,50 @@
                 <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
             </a>
         </div> -->
-        <div class="row justify-content-center align-items-center">
-            <div class="col-xs-5">
-                <div class="card">
-                    <div class="card-header">perma-featured</div>
-                    <img class="card-img-top" src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 Announce Trailer" />
-                    <div class="card-block">
-                        <h3 class="card-title">far cry 5 announce trailer</h3>
-                        <p class="card-text">can't wait for this game</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">item 001</li>
-                        <li class="list-group-item">item 002</li>
-                        <li class="list-group-item">item 003</li>
-                    </ul>
-                    <div class="card-block">
-                        <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso" class="card-link">trailer</a>
-                        <a href="#" class="card-link">un autre link</a>
-                    </div>
-                    <div class="card-footer text-muted">this has been perma-featured</div>
-                </div>
-            </div>
+
+        <?php
+          try {
+
+            $stmt = $connect->query('SELECT postID, postTitle, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
+            while($row = $stmt->fetch()){
+
+              echo '<div>';
+                echo '<h1><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h1>';
+                echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
+                echo '<p>'.$row['postDesc'].'</p>';
+                echo '<p><a href="viewpost.php?id='.$row['postID'].'">Read More</a></p>';
+              echo '</div>';
+
+            }
+
+          } catch(PDOException $e) {
+              echo $e->getMessage();
+          }
+        ?>
+
+        <?php
+        echo '<div class="row justify-content-center align-items-center">';
+            echo '<div class="col-xs-5">';
+                echo '<div class="card">';
+                    echo '<div class="card-header">perma-featured</div>';
+                    echo '<img class="card-img-top" src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 Announce Trailer" />';
+                    echo '<div class="card-block">';
+                        echo '<h3 class="card-title">far cry 5 announce trailer</h3>';
+                        echo '<p class="card-text">can\'t wait for this game</p>';
+                    echo '</div>';
+                    echo '<ul class="list-group list-group-flush">';
+                        echo '<li class="list-group-item">item 001</li>';
+                        echo '<li class="list-group-item">item 002</li>';
+                        echo '<li class="list-group-item">item 003</li>';
+                    echo '</ul>';
+                    echo '<div class="card-block">';
+                        echo '<a href="https://www.youtube.com/watch?v=Kdaoe4hbMso" class="card-link">trailer</a>';
+                        echo '<a href="#" class="card-link">un autre link</a>';
+                    echo '</div>';
+                    echo '<div class="card-footer text-muted">this has been perma-featured</div>';
+                echo '</div>';
+            echo '</div>';
+            ?>
             <div class="col-xs-5">
                 <div class="card shutt_card">
                     <div class="card-header">perma-featured</div>

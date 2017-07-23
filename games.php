@@ -41,14 +41,16 @@
                       echo '<img class="card-img-top" src="" alt="'.$row['postTitle'].' image" />';
                       echo '<div class="card-block">';
                         echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h3>';
-                echo '<h1><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h1>';
-                echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
-                echo '<p>'.$row['postDesc'].'</p>';
-                echo '<p><a href="viewpost.php?id='.$row['postID'].'">Read More</a></p>';
+                        echo '<p class="card-text">'.$row['postDesc'].'</p>';
+                      echo '</div>';
+                echo '<div class="card-block">';
+                  echo '<a href="#" class="card-link">'.$row['postTitle'].'</a>';
+                  echo '<a href="#" class="card-link">'.$row['postID'].'</a>';
+                echo '</div>';
+                echo '<div class="card-footer text-muted">this has been perma-featured</div>';
+                echo '</div>';
               echo '</div>';
-
             }
-
           } catch(PDOException $e) {
               echo $e->getMessage();
           }
@@ -101,6 +103,23 @@
         </div>
     </div>
     <hr class="perma_hr">
+
+    <?php
+      try {
+
+        $stmt = $connect->query('SELECT postID, postTitle, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
+        while($row = $stmt->fetch()){
+
+    echo '<h1><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h1>';
+      echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
+      echo '<p>'.$row['postDesc'].'</p>';
+      echo '<p><a href="viewpost.php?id='.$row['postID'].'">Read More</a></p>';
+    echo '</div>';}
+  } catch(PDOException $e) {
+      echo $e->getMessage();
+  }
+
+  ?>
     <?php include_once 'includes/shutter_menu.php';?>
     <?php include_once 'includes/body_scripts.php';?>
 </body>

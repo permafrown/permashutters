@@ -17,16 +17,6 @@
     </div>
     <hr class="perma_hr">
     <div class="container-fluid d-inline-flex shutt_page_content">
-        <!-- <div class="button shutt_butt" id="button001">
-            <a href="https://www.youtube.com/watch?v=Kdaoe4hbMso">
-                <img src="https://i.ytimg.com/vi/PI-1KTy0pOA/maxresdefault.jpg" alt="FC5 announce trailer"/>
-            </a>
-        </div>
-        <div class="button shutt_butt" id="button002">
-            <a href="https://far-cry.ubisoft.com/game/en-ca/home/">
-                <img src="https://ubistatic19-a.akamaihd.net/ubicomstatic/en-us/global/search-thumbnail/fc5-wideart-table-search_thumnail_290060.jpg" alt="FC5 Official Site"/>
-            </a>
-        </div> -->
 
         <?php
           try {
@@ -104,22 +94,6 @@
     </div>
     <hr class="perma_hr">
 
-    <?php
-      try {
-
-        $stmt = $connect->query('SELECT postID, postTitle, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
-        while($row = $stmt->fetch()){
-
-    echo '<h1><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h1>';
-      echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
-      echo '<p>'.$row['postDesc'].'</p>';
-      echo '<p><a href="viewpost.php?id='.$row['postID'].'">Read More</a></p>';
-    echo '</div>';}
-  } catch(PDOException $e) {
-      echo $e->getMessage();
-  }
-
-  ?>
     <?php include_once 'includes/shutter_menu.php';?>
     <?php include_once 'includes/body_scripts.php';?>
 </body>

@@ -21,15 +21,14 @@
         <?php
           try {
 
-            $stmt = $connect->query('SELECT postID, postTitle, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
+            $stmt = $connect->query('SELECT postID, postTitle, postImg, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
             while($row = $stmt->fetch()){
 
               echo '<div class="row justify-content-center align-items-center">';
                 echo '<div class="col-xs-5">';
                   echo '<div class="card">';
                     echo '<div class="card-header">perma-featured</div>';
-                    if(get_field('postImg') !=""){
-                    echo '<img class="card-img-top" src="" alt="'.$row['postTitle'].' image" />';}
+                    echo '<img class="card-img-top" src="" alt="'.$row['postTitle'].' image" />';
                       echo '<div class="card-block">';
                         echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h3>';
                         echo '<p class="card-text">'.$row['postDesc'].'</p>';

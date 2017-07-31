@@ -50,6 +50,7 @@ a {
     color: #333;
     font-size: calc(16px + 1vw);
     max-width: 30vw;
+    margin: 0 auto;
 }
 
 .card-block {

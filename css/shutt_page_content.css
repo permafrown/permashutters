@@ -55,6 +55,7 @@ a {
 
 .card-block {
     background-color: inherit;
+    max-width: 30vw;
 }
 
 .card-title {

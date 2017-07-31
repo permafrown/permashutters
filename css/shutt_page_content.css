@@ -15,6 +15,7 @@ a {
 .shutt_page_content img {
     width: 35vw;
     height: calc(35vw * (9/16));
+    margin: 0 auto;
 }
 
 .shutt_page_content a:hover {

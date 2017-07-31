@@ -13,8 +13,8 @@ a {
 }
 
 .shutt_page_content img {
-    width: 35vw;
-    height: calc(35vw * (9/16));
+    width: 30vw;
+    height: calc(30vw * (9/16));
     margin: 0 auto;
 }
 
@@ -28,8 +28,8 @@ a {
     display: inline-block;
     text-align: center;
     justify-content: center;
-    width: 40vw;
-    height: calc(40vw * (9/16));
+    width: 35vw;
+    height: calc(35vw * (9/16));
 }
 
 .row {
@@ -41,7 +41,7 @@ a {
     margin: 0 0.75vw;
     background-color: #8080007f;
     background-color: rgba(128,0,128,0.5);
-    max-width: 40vw;
+    max-width: 35vw;
 }
 
 .card-header,
@@ -67,7 +67,7 @@ a {
     font-size: 16px;
     font-size: 1vw;
     font-size: calc(8px + 1vw);
-    max-width: 35vw;
+    max-width: 30vw;
 }
 
 .card-link {

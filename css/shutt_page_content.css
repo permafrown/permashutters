@@ -64,6 +64,7 @@ a {
     font-size: 16px;
     font-size: 1vw;
     font-size: calc(8px + 1vw);
+    max-width: 35vw;
 }
 
 .card-link {

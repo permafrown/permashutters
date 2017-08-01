@@ -123,11 +123,7 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postCat' value='<?php echo $_POST['postCat'];?>'></p>
 
         <p><label>category</label><br />
-        <?php
-
-            try
-            {
-                echo '<select name="postCat"  id="postCat" class="form-control" >';
+            <?php echo '<select name="postCat"  id="postCat" class="form-control" >';
 
                 while ( $row = $connect->fetch() )
                 {
@@ -135,12 +131,8 @@ if(empty($_SESSION['ulogin']))
                 }
 
                 echo '</select>';
-            }
-            catch (PDOException $e)
-            {
-                die("Some problem getting data from database !!!" . $e->getMessage());
-            }
-            ?></p>
+            ?>
+        </p>
 
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>

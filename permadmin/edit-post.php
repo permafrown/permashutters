@@ -123,7 +123,7 @@ if(empty($_SESSION['ulogin']))
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
 
-		<p><label>Description</label><br />
+		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php echo $row['postDesc'];?></textarea></p>
 
 		<p><label>Content</label><br />

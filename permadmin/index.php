@@ -68,6 +68,7 @@
             <th>id</th>
             <th>title</th>
             <th>date</th>
+            <th>category</th>
             <th>action</th>
         </tr>
         <?php

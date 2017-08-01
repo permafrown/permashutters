@@ -62,15 +62,13 @@ a {
     color: #333;
     font-family: 'Poiret One', cursive;
     font-weight: 700;
+    font-size: calc(5px + 1.8vw);
 }
 
 .card-text {
     font-size: 16px;
     font-size: 1vw;
     max-width: 40vw;
-    /*overflow: hidden;
-    white-space: nowrap;*/
-    text-overflow: ellipsis;
 }
 
 .card-link {

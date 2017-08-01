@@ -3,7 +3,7 @@
 
 .shutt_page_content {
     margin: 0 auto;
-    padding: 2vh 2vw;
+    /*padding: 2vh 2vw;*/
 }
 
 .shutt_page_content p,
@@ -50,6 +50,7 @@ a {
     font-size: calc(16px + 1vw);
     max-width: 30vw;
     margin: 0 auto;
+    border-radius: 0.2vw 1vw;
 }
 
 .card-block {

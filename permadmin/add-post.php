@@ -123,11 +123,13 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postCat' value='<?php echo $_POST['postCat'];?>'></p>
 
         <p><label>category</label><br />
-            <?php echo '<select name="postCat"  id="postCat" class="form-control" >';
+        <select name="postCat" id="postCat" class="form-control">
+            <!-- NEED FIX HERE -->
+        </select>
 
                 while ( $row = $connect->fetch() )
                 {
-                   echo '<option value="'.$connect['postCat'].'">'.$connect['postCat'].'</option>';
+                   echo '<option value="'.$row['postCat'].'">'.$row['postCat'].'</option>';
                 }
 
                 echo '</select>';

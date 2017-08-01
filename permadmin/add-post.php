@@ -122,11 +122,25 @@ if(empty($_SESSION['ulogin']))
         <p><label>Category</label><br />
 		<input type='text' name='postCat' value='<?php echo $_POST['postCat'];?>'></p>
 
-        <p><label>cat</label><br />
-        <select name="postCat">
-            <?php foreach($postCats as $postcat): ?>
-                <option value="<?php echo $postcat['postCat'] ?>"><?php echo $_POST['$postCat'] ?></<option>
-        </select>
+        <p><label>category</label><br />
+        <?php
+
+            try
+            {
+                echo '<select name="postCat"  id="postCat" class="form-control" >';
+
+                while ( $row = $connect->fetch() )
+                {
+                   echo '<option value="'.$row['postCat'].'">'.$row['postCat'].'</option>';
+                }
+
+                echo '</select>';
+            }
+            catch (PDOException $e)
+            {
+                die("Some problem getting data from database !!!" . $e->getMessage());
+            }
+            ?></p>
 
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>

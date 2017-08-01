@@ -65,6 +65,7 @@
     ?>
     <table>
         <tr>
+            <th>id</th>
             <th>title</th>
             <th>date</th>
             <th>action</th>

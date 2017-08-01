@@ -127,7 +127,7 @@ if(empty($_SESSION['ulogin']))
 
                 while ( $row = $connect->fetch() )
                 {
-                   echo '<option value="'.$row['postCat'].'">'.$row['postCat'].'</option>';
+                   echo '<option value="'.$connect['postCat'].'">'.$connect['postCat'].'</option>';
                 }
 
                 echo '</select>';

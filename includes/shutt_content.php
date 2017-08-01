@@ -14,7 +14,6 @@
                   echo '</div>';
             echo '<div class="card-block">';
               echo '<a href="#" class="card-link">'.$row['postTitle'].'</a>';
-              echo '<a href="#" class="card-link">'.$row['postID'].'</a>';
             echo '</div>';
             echo '<div class="card-footer text-muted">this has been perma-featured</div>';
             echo '</div>';

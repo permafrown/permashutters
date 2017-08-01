@@ -69,9 +69,14 @@ if(empty($_SESSION['ulogin']))
 			try {
 
 				//insert into database
-				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postDesc,postCont,postDate) VALUES (:postTitle, :postDesc, :postCont, :postDate)') ;
+				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
 				$stmt->execute(array(
 					':postTitle' => $postTitle,
+                    ':postImg' => $postImg,
+                    ':postLink' => $postLink,
+                    ':postLinkText' => $postLinkText,
+                    ':postFeat' => $postFeat,
+                    ':postCat' => $postCat,
 					':postDesc' => $postDesc,
 					':postCont' => $postCont,
 					':postDate' => date('Y-m-d H:i:s')
@@ -101,6 +106,21 @@ if(empty($_SESSION['ulogin']))
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
+
+        <p><label>Image</label><br />
+		<input type='text' name='postImg' value='<?php echo $_POST['postImg'];?>'></p>
+
+        <p><label>Link</label><br />
+		<input type='text' name='postLink' value='<?php echo $_POST['postLink'];?>'></p>
+
+        <p><label>Link Text</label><br />
+		<input type='text' name='postLinkText' value='<?php echo $_POST['postLinkText'];?>'></p>
+
+        <p><label>Featured?</label><br />
+		<input type='text' name='postFeat' value='<?php echo $_POST['postFeat'];?>'></p>
+
+        <p><label>Category</label><br />
+		<input type='text' name='postCat' value='<?php echo $_POST['postCat'];?>'></p>
 
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>

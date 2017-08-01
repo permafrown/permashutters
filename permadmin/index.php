@@ -71,11 +71,13 @@
         </tr>
         <?php
             try {
-                $stmt = $connect->query('SELECT postID, postTitle, postDate FROM shutt_posts ORDER BY postID DESC');
+                $stmt = $connect->query('SELECT postID, postTitle, postDate, postCat FROM shutt_posts ORDER BY postID DESC');
                 while($row = $stmt->fetch()){
                     echo '<tr>';
+                    echo '<td>'.$row['postID'].'</td>';
                     echo '<td>'.$row['postTitle'].'</td>';
                     echo '<td>'.date('jS M Y', strtotime($row['postDate'])).'</td>';
+                    echo '<td>'.$row['postCat'].'</td>';
                     ?>
                     <td>
                         <a href="edit-post.php?id=<?php echo $row['postID'];?>">edit</a> |

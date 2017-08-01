@@ -74,12 +74,17 @@ if(empty($_SESSION['ulogin']))
 			try {
 
 				//insert into database
-				$stmt = $connect->prepare('UPDATE shutt_posts SET postTitle = :postTitle, postDesc = :postDesc, postCont = :postCont WHERE postID = :postID') ;
+                $stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
 				$stmt->execute(array(
 					':postTitle' => $postTitle,
+                    ':postImg' => $postImg,
+                    ':postLink' => $postLink,
+                    ':postLinkText' => $postLinkText,
+                    ':postFeat' => $postFeat,
+                    ':postCat' => $postCat,
 					':postDesc' => $postDesc,
 					':postCont' => $postCont,
-					':postID' => $postID
+					':postDate' => date('Y-m-d H:i:s')
 				));
 
 				//redirect to index page
@@ -122,6 +127,21 @@ if(empty($_SESSION['ulogin']))
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
+
+        <p><label>Image</label><br />
+        <input type='text' name='postImg' value='<?php echo $row['postImg'];?>'></p>
+
+        <p><label>Link</label><br />
+        <input type='text' name='postLink' value='<?php echo $row['postLink'];?>'></p>
+
+        <p><label>Link Text</label><br />
+        <input type='text' name='postLinkText' value='<?php echo $row['postLinkText'];?>'></p>
+
+        <p><label>Featured?</label><br />
+        <input type='text' name='postFeat' value='<?php echo $row['postFeat'];?>'></p>
+
+        <p><label>Category</label><br />
+        <input type='text' name='postCat' value='<?php echo $row['postCat'];?>'></p>
 
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php echo $row['postDesc'];?></textarea></p>

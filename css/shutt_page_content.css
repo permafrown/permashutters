@@ -13,8 +13,8 @@ a {
 }
 
 .shutt_page_content img {
-    width: 40vw;
-    height: calc(40vw * (9/16));
+    width: 35vw;
+    height: calc(35vw * (9/16));
     margin: 0 auto;
 }
 
@@ -40,7 +40,7 @@ a {
     margin: 0 0.75vw;
     background-color: #80007f;
     background-color: rgba(128,0,128,0.5);
-    max-width: 45vw;
+    max-width: 40vw;
 }
 
 .card-header,
@@ -48,7 +48,7 @@ a {
     background-color: #BBB;
     color: #333;
     font-size: calc(16px + 1vw);
-    max-width: 35vw;
+    max-width: 30vw;
     margin: 0 auto;
 }
 

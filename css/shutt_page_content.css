@@ -13,8 +13,8 @@ a {
 }
 
 .shutt_page_content img {
-    width: 30vw;
-    height: calc(30vw * (9/16));
+    width: 40vw;
+    height: calc(40vw * (9/16));
     margin: 0 auto;
 }
 
@@ -22,15 +22,14 @@ a {
     color: #888;
 }
 
-.shutt_page_content .shutt_butt {
+/*.shutt_page_content {
     background-color: #333;
     background-color: rgba(40, 40, 40, 0.5);
     display: inline-block;
     text-align: center;
     justify-content: center;
-    width: 35vw;
-    height: calc(35vw * (9/16));
-}
+    height: calc(40vw * (9/16));
+}*/
 
 .row {
     display: flex;
@@ -41,7 +40,7 @@ a {
     margin: 0 0.75vw;
     background-color: #80007f;
     background-color: rgba(128,0,128,0.5);
-    max-width: 35vw;
+    max-width: 45vw;
 }
 
 .card-header,
@@ -49,13 +48,12 @@ a {
     background-color: #BBB;
     color: #333;
     font-size: calc(16px + 1vw);
-    max-width: 30vw;
+    max-width: 35vw;
     margin: 0 auto;
 }
 
 .card-block {
     background-color: inherit;
-    max-width: 30vw;
 }
 
 .card-title {
@@ -70,7 +68,7 @@ a {
     font-size: 16px;
     font-size: 1vw;
     font-size: calc(8px + 1vw);
-    max-width: 30vw;
+    max-width: 35vw;
 }
 
 .card-link {

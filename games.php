@@ -17,7 +17,8 @@
     </div>
     <hr class="perma_hr">
     <div class="container-fluid d-inline-flex shutt_page_content">
-        <div class="row justify-content-center align-items-center">
+        <div class="row">
+        <!-- <div class="row justify-content-center align-items-center"> -->
             <div class="col-xs-5">
 
             <?php

@@ -17,7 +17,7 @@
     </div>
     <hr class="perma_hr">
     <div class="container-fluid shutt_page_content">
-
+        <?php include 'includes/shutt_content.php';?>
     </div>
     <hr class="perma_hr">
 

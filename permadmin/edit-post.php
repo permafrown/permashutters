@@ -18,9 +18,9 @@ if(empty($_SESSION['ulogin']))
   <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
   <script>
           tinymce.init({
-              forced_root_block: "",
-              force_br_newlines: TRUE,
-              force_p_newlines: FALSE,
+              forced_root_block_attrs: {
+                  'class': 'card-text',
+              },
               selector: "textarea",
               plugins: [
                   "advlist autolink lists link image charmap print preview anchor",

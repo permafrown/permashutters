@@ -113,8 +113,7 @@ if(empty($_SESSION['ulogin']))
         <p><label>Link</label><br />
 		<input type='url' name='postLink' value='<?php
     if(!empty('postLink')) {
-      echo $_POST['postLink'];?>'></p>
-    }
+      echo $_POST['postLink'];?>'>};</p>
         <p><label>Link Text</label><br />
 		<input type='text' name='postLinkText' value='<?php echo $_POST['postLinkText'];?>'></p>
 

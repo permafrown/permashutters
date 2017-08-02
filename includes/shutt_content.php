@@ -11,8 +11,7 @@
           'postFeat' => $postFeat,
           'postCat' => $postCat,
           'postDesc' => $postDesc,
-          'postCont' => $postCont,
-          'postDate' => date('Y-m-d H:i:s');
+          'postCont' => $postCont;
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';

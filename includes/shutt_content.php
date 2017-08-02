@@ -12,7 +12,8 @@
           'postCat' => $postCat,
           'postDesc' => $postDesc,
           'postCont' => $postCont,
-          'postDate' => date('Y-m-d H:i:s')));
+          // 'postDate' => date('Y-m-d H:i:s')));
+          'postDate' => date('DATE_RFC850')));
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';

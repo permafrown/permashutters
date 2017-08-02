@@ -72,11 +72,11 @@ if(empty($_SESSION['ulogin']))
 				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
 				$stmt->execute(array(
 					':postTitle' => $postTitle,
-                    ':postImg' => $postImg,
-                    ':postLink' => $postLink,
-                    ':postLinkText' => $postLinkText,
-                    ':postFeat' => $postFeat,
-                    ':postCat' => $postCat,
+          ':postImg' => $postImg,
+          ':postLink' => $postLink,
+          ':postLinkText' => $postLinkText,
+          ':postFeat' => $postFeat,
+          ':postCat' => $postCat,
 					':postDesc' => $postDesc,
 					':postCont' => $postCont,
 					':postDate' => date('Y-m-d H:i:s')

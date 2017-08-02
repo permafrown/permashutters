@@ -135,7 +135,7 @@ if(empty($_SESSION['ulogin']))
         <input type='url' name='postLink' value='<?php if(!empty('postLink')) {echo $row['postLink'];};?>'></p>
 
         <p><label>Link Text</label><br />
-        <input type='text' name='postLinkText' value='<?php if(!empty('postLinkText')) {echo $row['postLinkText'];};?>'></p>
+        <input type='text' name='postLinkText' value='<?php if(!empty('postLink')) {echo $row['postLinkText'];};?>'></p>
 
         <p><label>Featured?</label><br />
         <input type='text' name='postFeat' value='<?php echo $row['postFeat'];?>'></p>

@@ -114,7 +114,7 @@ if(empty($_SESSION['ulogin']))
 		<input type='url' name='postLink' value='<?php if(!empty('postLink')) {echo $_POST['postLink'];};?>'></p>
 
     <p><label>Link Text</label><br />
-		<input type='text' name='postLinkText' value='<?php if(!empty('postLinkText')) {echo $_POST['postLinkText'];};?>'></p>
+		<input type='text' name='postLinkText' value='<?php if(!empty('postLink')) {echo $_POST['postLinkText'];};?>'></p>
 
     <p><label>Featured?</label><br />
 		<input type='text' name='postFeat' value='<?php echo $_POST['postFeat'];?>'></p>

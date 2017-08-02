@@ -2,7 +2,7 @@
     <?php
       try {
 
-        $stmt = $connect->query('SELECT postID, postTitle, postImg, postLing, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
+        $stmt = $connect->query('SELECT postID, postTitle, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';
@@ -13,7 +13,7 @@
                     echo '<p class="card-text">'.$row['postDesc'].'</p>';
                   echo '</div>';
             echo '<div class="card-block">';
-              echo '<a href="#" class="card-link">'.$row['postTitle'].'</a>';
+              echo '<a href="'.$row['postLink'].'" class="card-link">'.$row['postLinkText'].'</a>';
             echo '</div>';
             echo '<div class="card-footer text-muted">this has been perma-featured</div>';
             echo '</div>';

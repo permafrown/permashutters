@@ -129,13 +129,13 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
 
         <p><label>Image</label><br />
-        <input type='url' name='postImg' value='<?php echo $row['postImg'];?>'></p>
+        <input type='url' name='postImg' value='<?php if(!empty('postImg')) {echo $row['postImg'];};?>'></p>
 
         <p><label>Link</label><br />
-        <input type='url' name='postLink' value='<?php echo $row['postLink'];?>'></p>
+        <input type='url' name='postLink' value='<?php if(!empty('postLink')) {echo $row['postLink'];};?>'></p>
 
         <p><label>Link Text</label><br />
-        <input type='text' name='postLinkText' value='<?php echo $row['postLinkText'];?>'></p>
+        <input type='text' name='postLinkText' value='<?php if(!empty('postLinkText')) {echo $row['postLinkText'];};?>'></p>
 
         <p><label>Featured?</label><br />
         <input type='text' name='postFeat' value='<?php echo $row['postFeat'];?>'></p>

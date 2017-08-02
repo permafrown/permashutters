@@ -3,18 +3,29 @@
       try {
 
         $stmt = $connect->query('SELECT postID, postTitle, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts ORDER BY postID DESC');
+        $stmt->execute(array(
+          'postTitle' => $postTitle,
+          'postImg' => $postImg,
+          'postLink' => $postLink,
+          'postLinkText' => $postLinkText,
+          'postFeat' => $postFeat,
+          'postCat' => $postCat,
+          'postDesc' => $postDesc,
+          'postCont' => $postCont,
+          'postDate' => date('Y-m-d H:i:s');
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';
                 echo '<div class="card-header">perma-featured</div>';
-                if (null !== ('postImg')) {
+                echo '<p>'.date('jS M Y', strtotime($row['postDate'])).'</p>';
+                if (isset($postImg)) {
                 echo '<img class="card-img-top" src="'.$row['postImg'].'" alt="'.$row['postTitle'].' image" />';
               } else {echo '<div></div>';}
                   echo '<div class="card-block">';
                     echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h3>';
                     echo '<p class="card-text">'.$row['postDesc'].'</p>';
                   echo '</div>';
-                    if (null !== ('postLink')) {
+                    if (isset($postLink)) {
                       echo '<div class="card-block">';
                         echo '<a href="'.$row['postLink'].'" class="card-link" target="_blank">'.$row['postLinkText'].'</a>';
                       echo '</div>';

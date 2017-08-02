@@ -7,8 +7,7 @@
             echo '<div class="col">';
                 echo '<div class="card">';
                 echo '<div class="card-header">perma-featured</div>';
-                // echo '<p>'.date('jS M Y', strtotime($row['postDate'])).'</p>';
-                echo '<p>'.date('DATE_RFC850', strtotime($row['postDate'])).'</p>';
+                echo '<p>'.date('jS M Y', strtotime($row['postDate'])).'</p>';
                 if (isset($postImg)) {
                 echo '<img class="card-img-top" src="'.$row['postImg'].'" alt="'.$row['postTitle'].' image" />';
               } else {echo '<div></div>';}

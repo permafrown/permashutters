@@ -111,8 +111,10 @@ if(empty($_SESSION['ulogin']))
 		<input type='url' name='postImg' value='<?php echo $_POST['postImg'];?>'></p>
 
         <p><label>Link</label><br />
-		<input type='url' name='postLink' value='<?php echo $_POST['postLink'];?>'></p>
-
+		<input type='url' name='postLink' value='<?php
+    if(!empty('postLink')) {
+      echo $_POST['postLink'];?>'></p>
+    }
         <p><label>Link Text</label><br />
 		<input type='text' name='postLinkText' value='<?php echo $_POST['postLinkText'];?>'></p>
 

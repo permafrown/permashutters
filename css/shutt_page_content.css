@@ -36,8 +36,8 @@ a {
 }
 
 .card {
-    padding: 1vh 1vw;
-    margin: 1vh 0.75vw;
+    padding: 0.25vh 0.25vw;
+    margin: 1vh 0.5vw;
     background-color: #80007f;
     background-color: rgba(128,0,128,0.5);
     min-width: 25vw;

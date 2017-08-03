@@ -113,7 +113,7 @@ if(empty($_SESSION['ulogin']))
 
 		try {
 
-			$stmt = $connect->prepare('SELECT postID, postTitle, postDesc, postCont FROM shutt_posts WHERE postID = :postID') ;
+			$stmt = $connect->prepare('SELECT postID, postTitle, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postCont FROM shutt_posts WHERE postID = :postID') ;
 			$stmt->execute(array(':postID' => $_GET['id']));
 			$row = $stmt->fetch();
 
@@ -130,10 +130,10 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
 
         <p><label>Image</label><br />
-        <input type='url' name='postImg' value='<?php echo $row['postImg'];?>'></p>
+        <input type='text' name='postImg' value='<?php echo $row['postImg'];?>'></p>
 
         <p><label>Link</label><br />
-        <input type='url' name='postLink' value='<?php echo $row['postLink'];?>'></p>
+        <input type='text' name='postLink' value='<?php echo $row['postLink'];?>'></p>
 
         <p><label>Link Text</label><br />
         <input type='text' name='postLinkText' value='<?php echo $row['postLinkText'];?>'></p>

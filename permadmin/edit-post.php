@@ -37,7 +37,7 @@ if(empty($_SESSION['ulogin']))
 <div id="wrapper">
 
 	<?php include('menu.php');?>
-	<p><a href="./">Blog Admin Index</a></p>
+	<p><a href="./">home</a></p>
 
 	<h2>Edit Post</h2>
 

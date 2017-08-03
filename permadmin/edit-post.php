@@ -139,7 +139,7 @@ if(empty($_SESSION['ulogin']))
         <input type='text' name='postLinkText' value='<?php echo $row['postLinkText'];?>'></p>
 
         <p><label>Featured?</label><br />
-        <input type='text' name='postFeat' value='<?php echo $row['postFeat'];?>'></p>
+        <input type='checkbox' name='postFeat' value='<?php echo $row['postFeat'];?>'></p>
 
         <p><label>Category</label><br />
         <input type='text' name='postCat' value='<?php echo $row['postCat'];?>'></p>

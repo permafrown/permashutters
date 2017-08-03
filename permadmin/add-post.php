@@ -64,8 +64,8 @@ if(empty($_SESSION['ulogin']))
 			$error[] = 'Please enter the content.';
 		}
 
-        if(isset($_POST['postFeat']) && $_POST['postFeat'] == '1') {
-            $_POST['postFeat' = 1];
+        if($_POST['postFeat'] == '1') {
+            $_POST['postFeat'];
         } else {$_POST['postFeat' = 0];}
 
 		if(!isset($error)){

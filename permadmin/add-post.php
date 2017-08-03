@@ -65,7 +65,7 @@ if(empty($_SESSION['ulogin']))
 		}
         if('postFeat' == 1) {
             $_POST('postFeat');
-        } else {;}
+        } else {$_POST('postFeat') = 0;}
 
 		if(!isset($error)){
 

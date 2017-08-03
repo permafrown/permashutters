@@ -112,19 +112,6 @@
 <h2 class="submenu"><?php echo date(DATE_RFC7231);?></h2>
 <h2 class="submenu"><?php echo 'america/toronto';?></h2>
 <h2 class="submenu"><?php echo time();?></h2>
-<h2 class="submenu"><?php
-    if ( !empty ( $_GET )) {
-        $post = $_GET['p'];
-        $cat = $_GET['cat'];
-    }
-    if ( empty ( $post ) && empty ( $cat) ) {
-        echo 'home';
-    } elseif ( !empty ( $post )) {
-        echo 'single post page';
-    } elseif ( !empty ( $cat )) {
-        echo 'category page';
-    }
-    ?></h2>
 <!-- END RANDOM STATS -->
 
 

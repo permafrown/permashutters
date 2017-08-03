@@ -27,7 +27,7 @@ if($row['postID'] == ''){
 
 
 		<?php
-			echo '<div shutt_page_content>';
+			echo '<div class='shutt_page_content'>';
 				echo '<h1>'.$row['postTitle'].'</h1>';
 				echo '<p>Posted on '.date('jS M Y', strtotime($row['postDate'])).'</p>';
 				echo '<p>'.$row['postCont'].'</p>';

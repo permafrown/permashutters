@@ -64,10 +64,6 @@ if(empty($_SESSION['ulogin']))
 			$error[] = 'Please enter the content.';
 		}
 
-        if($_POST['postFeat'] == '1') {
-            $_POST['postFeat'];
-        } else {$_POST['postFeat' = 0];}
-
 		if(!isset($error)){
 
 			try {
@@ -121,7 +117,7 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postLinkText' value='<?php if(!empty('postLink')) {echo $_POST['postLinkText'];};?>'></p>
 
     <p><label>Featured?</label><br />
-		<input type='checkbox' name='postFeat' value='1'></p>
+		<input type='checkbox' name='postFeat' value='<?php {echo $_POST['postFeat'];};?>'></p>
 
     <p><label>Category</label><br />
 		<input type='text' name='postCat' value='<?php echo $_POST['postCat'];?>'></p>

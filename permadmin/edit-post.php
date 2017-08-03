@@ -74,7 +74,7 @@ if(empty($_SESSION['ulogin']))
 			try {
 
 				//insert into database
-                $stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
+                $stmt = $connect->prepare('UPDATE shutt_posts SET postTitle = :postTitle, postImg = :postImg, postLink = :postLink, postLinkText = :postLinkText, postFeat = :postFeat, postCat = :postCat, postDesc = :postDesc, postCont = :postCont, postDate = :postDate');
 				$stmt->execute(array(
 					':postTitle' => $postTitle,
                     ':postImg' => $postImg,
@@ -129,10 +129,10 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
 
         <p><label>Image</label><br />
-        <input type='text' name='postImg' value='<?php echo $row['postImg'];?>'></p>
+        <input type='url' name='postImg' value='<?php echo $row['postImg'];?>'></p>
 
         <p><label>Link</label><br />
-        <input type='text' name='postLink' value='<?php echo $row['postLink'];?>'></p>
+        <input type='url' name='postLink' value='<?php echo $row['postLink'];?>'></p>
 
         <p><label>Link Text</label><br />
         <input type='text' name='postLinkText' value='<?php echo $row['postLinkText'];?>'></p>

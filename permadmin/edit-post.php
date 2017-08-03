@@ -74,8 +74,9 @@ if(empty($_SESSION['ulogin']))
 			try {
 
 				//insert into database
-                $stmt = $connect->prepare('UPDATE shutt_posts SET postTitle = :postTitle, postImg = :postImg, postLink = :postLink, postLinkText = :postLinkText, postFeat = :postFeat, postCat = :postCat, postDesc = :postDesc, postCont = :postCont, postDate = :postDate');
+                $stmt = $connect->prepare('UPDATE shutt_posts SET postTitle = :postTitle, postImg = :postImg, postLink = :postLink, postLinkText = :postLinkText, postFeat = :postFeat, postCat = :postCat, postDesc = :postDesc, postCont = :postCont, postDate = :postDate WHERE postID = :postID');
 				$stmt->execute(array(
+                    ':postID' => $postID,
 					':postTitle' => $postTitle,
                     ':postImg' => $postImg,
                     ':postLink' => $postLink,

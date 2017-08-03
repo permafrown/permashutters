@@ -9,7 +9,7 @@
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-header">perma-featured</div>';
                         } else {echo '<div></div>';}
-                    echo '<p>'.date('Y-m-d', strtotime($row['postDate'])).'</p>';
+                    echo '<p>'.date('Y-m-d', strtotime($row['postDate'])).' in '.$row['postCat'].'</p>';
                     if (!empty($row['postImg'])) {
                             echo '<img class="card-img-top" src="'.$row['postImg'].'" alt="'.$row['postTitle'].' image" />';
                         } else {echo '<div></div>';}

@@ -63,7 +63,7 @@ if(empty($_SESSION['ulogin']))
 		if($postCont ==''){
 			$error[] = 'Please enter the content.';
 		}
-        if('postFeat' = 1) {
+        if('postFeat' == 1) {
             $_POST('postFeat') = 1;
         } else {$_POST('postFeat') = 0;}
 

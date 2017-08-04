@@ -9,7 +9,7 @@
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-header">perma-featured</div>';
                         } else {echo '<div></div>';}
-                        echo '<p>Posted on '.date('Y-m-d', strtotime($row['postDate'])).' in ';
+                        echo '<p>'.date('Y-m-d @ H:i:s', strtotime($row['postDate'])).' in ';
 
                             $stmt2 = $connect->prepare('SELECT catTitle, catSlug FROM shutt_cats, shutt_post_cats WHERE shutt_cats.catID = shutt_post_cats.catID AND shutt_post_cats.postID = :postID');
                             $stmt2->execute(array(':postID' => $row['postID']));

@@ -129,6 +129,7 @@ if(empty($_SESSION['ulogin']))
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
+        <input type='hidden' name='postSlug' value='<?php {echo $_POST['postSlug'];}?>'>
 
         <p><label>Image</label><br />
         <input type='text' name='postImg' value='<?php echo $row['postImg'];?>'></p>

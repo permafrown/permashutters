@@ -5,7 +5,7 @@ $stmt->execute(array(':postSlug' => $_GET['id']));
 $row = $stmt->fetch();
 
 //if post does not exists redirect user.
-if($row['postID'] == ''){
+if($row['postSlug'] == ''){
 	header('Location: ./');
 	exit;
 }

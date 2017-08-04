@@ -69,14 +69,15 @@ if(empty($_SESSION['ulogin']))
 			try {
 
 				//insert into database
-				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
+				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postSlug,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postSlug, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
 				$stmt->execute(array(
 					':postTitle' => $postTitle,
-          ':postImg' => $postImg,
-          ':postLink' => $postLink,
-          ':postLinkText' => $postLinkText,
-          ':postFeat' => $postFeat,
-          ':postCat' => $postCat,
+                    ':postSlug' => $postSlug,
+                    ':postImg' => $postImg,
+                    ':postLink' => $postLink,
+                    ':postLinkText' => $postLinkText,
+                    ':postFeat' => $postFeat,
+                    ':postCat' => $postCat,
 					':postDesc' => $postDesc,
 					':postCont' => $postCont,
 					':postDate' => date('Y-m-d H:i:s')

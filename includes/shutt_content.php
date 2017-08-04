@@ -9,20 +9,19 @@
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-header">perma-featured</div>';
                         } else {echo '<div></div>';}
-                        echo '<p>'.date('Y-m-d @ H:i:s', strtotime($row['postDate'])).' in ';
+                    echo '<p>Posted on '.date('Y-m-d @ H:i:s', strtotime($row['postDate'])).' in ';
 
-                            $stmt2 = $connect->prepare('SELECT catTitle, catSlug FROM shutt_cats, shutt_post_cats WHERE shutt_cats.catID = shutt_post_cats.catID AND shutt_post_cats.postID = :postID');
-                            $stmt2->execute(array(':postID' => $row['postID']));
+                    $stmt2 = $connect->prepare('SELECT catTitle, catSlug    FROM shutt_cats, shutt_post_cats WHERE shutt_cats.catID = shutt_post_cats.catID AND shutt_post_cats.postID = :postID');
+                    $stmt2->execute(array(':postID' => $row['postID']));
 
-                            $catRow = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-                            $links = array();
-                            foreach ($catRow as $cat){
-                                 $links[] = "<a href='c-".$cat['catTitle']."'>".$cat['catTitle']."</a>";
-                            }
-                            echo implode(", ", $links);
+                    $catRow = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+                    $links = array();
+                    foreach ($catRow as $cat){
+                         $links[] = "<a href='c-".$cat['catSlug']."'>".$cat['catTitle']."</a>";
+                    }
+                    echo implode(", ", $links);
 
-                            echo '</p>';
-
+                    echo '</p>';
                     if (!empty($row['postImg'])) {
                             echo '<img class="card-img-top" src="'.$row['postImg'].'" alt="'.$row['postTitle'].' image" />';
                         } else {echo '<div></div>';}

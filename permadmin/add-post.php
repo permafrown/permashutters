@@ -107,6 +107,7 @@ if(empty($_SESSION['ulogin']))
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
+        <input type='hidden' name='postSlug' value='<?php {echo $_POST['postSlug'];}?>'>
 
     <p><label>Image</label><br />
 		<input type='url' name='postImg' value='<?php if(!empty('postImg')) {echo $_POST['postImg'];};?>'></p>
@@ -118,7 +119,7 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postLinkText' value='<?php if(!empty('postLink')) {echo $_POST['postLinkText'];};?>'></p>
 
     <p><label>Featured?</label><br />
-        <input type='hidden' name='postFeat' value='<?php echo $_POST['postFeat'] = 0;?>'></p>
+        <input type='hidden' name='postFeat' value='<?php echo $_POST['postFeat'] = 0;?>'>
         <input type='checkbox' name='postFeat' value='<?php echo $_POST['postFeat'] = 1;?>'></p>
 
     <p><label>Category</label><br />

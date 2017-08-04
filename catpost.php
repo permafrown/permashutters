@@ -1,4 +1,4 @@
-<?php require('includes/config.php');
+<?php require('permadmin/auth/config.php');
 
 
 $stmt = $connect->prepare('SELECT catID,catTitle FROM shutt_cats WHERE catSlug = :catSlug');
@@ -15,10 +15,7 @@ if($row['catID'] == ''){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Blog - <?php echo $row['catTitle'];?></title>
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/main.css">
+<?php include_once('includes/head.php');
 </head>
 <body>
 
@@ -34,12 +31,12 @@ if($row['catID'] == ''){
 
             $stmt = $connect->prepare('
                 SELECT
-                    shutt_posts_seo.postID, shutt_posts_seo.postTitle, shutt_posts_seo.postSlug, shutt_posts_seo.postDesc, shutt_posts_seo.postDate
+                    shutt_posts.postID, shutt_posts.postTitle, shutt_posts.postSlug, shutt_posts.postDesc, shutt_posts.postDate
                 FROM
-                    shutt_posts_seo,
+                    shutt_posts,
                     shutt_post_cats
                 WHERE
-                     shutt_posts_seo.postID = shutt_post_cats.postID
+                     shutt_posts.postID = shutt_post_cats.postID
                      AND shutt_post_cats.catID = :catID
                 ORDER BY
                     postID DESC
@@ -78,6 +75,6 @@ if($row['catID'] == ''){
 
     </div>
 
-
+<?php include_once('includes/body_scripts.php');
 </body>
 </html>

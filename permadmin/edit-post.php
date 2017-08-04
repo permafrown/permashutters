@@ -89,6 +89,20 @@ if(empty($_SESSION['ulogin']))
 					':postDate' => date('Y-m-d H:i:s')
 				));
 
+                // delete all items with the current postID
+                $stmt = $connect->prepare('DELETE FROM shutt_post_cats WHERE postID = :postID');
+                $stmt->execute(array(':postID' => $postID));
+
+                if(is_array($catID)){
+                    foreach($_POST['catID'] as $catID){
+                        $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID, catID) VALUES (:postID, :catID)');
+                        $stmt->execute(array(
+                            ':postID' => $postID,
+                            ':catID' => $catID
+                        ));
+                    }
+                }
+
 				//redirect to index page
 				header('Location: index.php?action=updated');
 				exit;
@@ -146,6 +160,31 @@ if(empty($_SESSION['ulogin']))
 
         <p><label>Category</label><br />
         <input type='text' name='postCat' value='<?php echo $row['postCat'];?>'></p>
+
+        <fieldset>
+            <legend>Categories</legend>
+
+            <?php
+
+            $stmt2 = $connect->query('SELECT catID, catTitle FROM shutt_cats ORDER BY catTitle');
+            while($row2 = $stmt2->fetch()){
+
+                $stmt3 = $db->prepare('SELECT catID FROM shutt_post_cats WHERE catID = :catID AND postID = :postID') ;
+                $stmt3->execute(array(':catID' => $row2['catID'], ':postID' => $row['postID']));
+                $row3 = $stmt3->fetch();
+
+                if($row3['catID'] == $row2['catID']){
+                    $checked = 'checked=checked';
+                } else {
+                    $checked = null;
+                }
+
+                echo "<input type='checkbox' name='catID[]' value='".$row2['catID']."' $checked> ".$row2['catTitle']."<br />";
+            }
+
+            ?>
+
+        </fieldset>
 
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php echo $row['postDesc'];?></textarea></p>

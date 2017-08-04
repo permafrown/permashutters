@@ -50,7 +50,7 @@ if(empty($_SESSION['ulogin']))
 
             try {
 
-                $catSlug = slug($catTitle);
+                // $catSlug = slug($catTitle);
 
                 //insert into database
                 $stmt = $connect->prepare('UPDATE shutt_cats SET catTitle = :catTitle, catSlug = :catSlug WHERE catID = :catID') ;

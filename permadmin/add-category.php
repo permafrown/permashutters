@@ -45,7 +45,7 @@ if(empty($_SESSION['ulogin']))
 
             try {
 
-                $catSlug = slug($catTitle);
+                // $catSlug = slug($catTitle);
 
                 //insert into database
                 $stmt = $connect->prepare('INSERT INTO shutt_cats (catTitle,catSlug) VALUES (:catTitle, :catSlug)') ;

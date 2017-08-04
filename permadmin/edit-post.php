@@ -169,7 +169,7 @@ if(empty($_SESSION['ulogin']))
             $stmt2 = $connect->query('SELECT catID, catTitle FROM shutt_cats ORDER BY catTitle');
             while($row2 = $stmt2->fetch()){
 
-                $stmt3 = $db->prepare('SELECT catID FROM shutt_post_cats WHERE catID = :catID AND postID = :postID') ;
+                $stmt3 = $connect->prepare('SELECT catID FROM shutt_post_cats WHERE catID = :catID AND postID = :postID') ;
                 $stmt3->execute(array(':catID' => $row2['catID'], ':postID' => $row['postID']));
                 $row3 = $stmt3->fetch();
 

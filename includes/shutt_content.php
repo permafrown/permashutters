@@ -17,7 +17,7 @@
                             $catRow = $stmt2->fetchAll(PDO::FETCH_ASSOC);
                             $links = array();
                             foreach ($catRow as $cat){
-                                 $links[] = "<a href='c-".$cat['catSlug']."'>".$cat['catTitle']."</a>";
+                                 $links[] = "<a href='c-".$cat['catTitle']."'>".$cat['catTitle']."</a>";
                             }
                             echo implode(", ", $links);
 

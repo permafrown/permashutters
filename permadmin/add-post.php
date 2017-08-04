@@ -83,6 +83,19 @@ if(empty($_SESSION['ulogin']))
 					':postDate' => date('Y-m-d H:i:s')
 				));
 
+                $postID = $connect->lastInsertID();
+
+                // add categories
+                if(is_array($catID)){
+                    foreach($_POST['catID'] as $catID){
+                        $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID,catID) VALUES (:postID, :catID)');
+                        $stmt->execute(array(
+                            ':postID' => $postID,
+                            ':catID' => $catID
+                        ));
+                    }
+                }
+
 				//redirect to index page
 				header('Location: index.php?action=added');
 				exit;
@@ -129,7 +142,27 @@ if(empty($_SESSION['ulogin']))
         <select name="postCat" id="postCat" class="form-control">
             <!-- NEED FIX HERE -->
         </select>
+        <fieldset>
+            <legend>categories</legend>
+            <?php
+            $stmt2 = $connect->query('SELECT catID, catTitle FROM shutt_cats ORDER BY catTitle');
+            while($row2 = $stmt2->fetch()){
 
+                if(isset($_POST['catID'])){
+
+                    if(in_array($row2['catID'], $_POST['catID'])){
+                        $checked="checked='checked'";
+                    }else{
+                        $checked = null;
+                    }
+                }
+
+                echo "<input type='checkbox' name='catID[]' value='".$row2['catID']."' $checked> ".$row2['catTitle']."<br />";
+            }
+
+             ?>
+        </fieldset>
+        
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>
 

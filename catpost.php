@@ -15,7 +15,7 @@ if($row['catID'] == ''){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include_once('includes/head.php');
+<?php include_once('includes/head.php');?>
 </head>
 <body>
 
@@ -75,6 +75,6 @@ if($row['catID'] == ''){
 
     </div>
 
-<?php include_once('includes/body_scripts.php');
+<?php include_once('includes/body_scripts.php');?>
 </body>
 </html>

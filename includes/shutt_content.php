@@ -4,7 +4,7 @@
     try {
         $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts ORDER BY postDate DESC');
         $stmt->bindValue(':postCatSel', $postCatSel, PDO::PARAM_STR);
-        // $stmt->execute();
+        $stmt->execute();
         while($row = $stmt->fetch()){
             echo $postCatSel;
             echo '<div class="col">';

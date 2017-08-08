@@ -1,4 +1,4 @@
-<?php print_r($_POST); ?>
+<pre><?php print_r($_POST); ?></pre>
 
 <html>
 <head>

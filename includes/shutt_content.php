@@ -3,7 +3,7 @@
     $postCatSel = games;
     try {
         $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts WHERE postCat = ":postCatSel" ORDER BY postDate DESC');
-        $sth->bindValue(':postCatSel', $postCatSel, PDO::PARAM_STR);
+        $stmt->bindValue(':postCatSel', $postCatSel, PDO::PARAM_STR);
         $stmt->execute();
         while($row = $stmt->fetch()){
             echo '<div>postCatSel</div>';

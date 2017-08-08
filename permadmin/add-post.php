@@ -83,18 +83,18 @@ if(empty($_SESSION['ulogin']))
 					':postDate' => date('Y-m-d H:i:s')
 				));
 
-                $postID = $connect->lastInsertID();
-
-                // add categories
-                if(is_array($catID)){
-                    foreach($_POST['catID'] as $catID){
-                        $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID,catID) VALUES (:postID, :catID)');
-                        $stmt->execute(array(
-                            ':postID' => $postID,
-                            ':catID' => $catID
-                        ));
-                    }
-                }
+                // $postID = $connect->lastInsertID();
+                //
+                // // add categories
+                // if(is_array($catID)){
+                //     foreach($_POST['catID'] as $catID){
+                //         $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID,catID) VALUES (:postID, :catID)');
+                //         $stmt->execute(array(
+                //             ':postID' => $postID,
+                //             ':catID' => $catID
+                //         ));
+                //     }
+                // }
 
 				//redirect to index page
 				header('Location: index.php?action=added');
@@ -116,60 +116,49 @@ if(empty($_SESSION['ulogin']))
 	}
 	?>
 
-	<form class="shutt_post_form" action='' method='post'>
+	<form class="shutt_post_form form-group" action='' method='post'>
 
 		<p><label>Title</label><br />
-		<input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
-        <input type='hidden' name='postSlug' value='<?php {echo $_POST['postSlug'];}?>'>
+		    <input class="form-control" type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
+            <input class="form-control" type='hidden' name='postSlug' value='<?php {echo $_POST['postSlug'];}?>'>
 
-    <p><label>Image</label><br />
-		<input type='url' name='postImg' value='<?php if(!empty('postImg')) {echo $_POST['postImg'];};?>'></p>
+        <p><label>Image</label><br />
+		    <input class="form-control" type='url' name='postImg' value='<?php if(!empty('postImg')) {echo $_POST['postImg'];};?>'>
+        </p>
 
-    <p><label>Link</label><br />
-		<input type='url' name='postLink' value='<?php if(!empty('postLink')) {echo $_POST['postLink'];};?>'></p>
+        <p><label>Link</label><br />
+    		<input class="form-control" type='url' name='postLink' value='<?php if(!empty('postLink')) {echo $_POST['postLink'];};?>'>
+        </p>
 
-    <p><label>Link Text</label><br />
-		<input type='text' name='postLinkText' value='<?php if(!empty('postLink')) {echo $_POST['postLinkText'];};?>'></p>
+        <p><label>Link Text</label><br />
+    		<input class="form-control" type='text' name='postLinkText' value='<?php if(!empty('postLink')) {echo $_POST['postLinkText'];};?>'>
+        </p>
 
-    <p><label>Featured?</label><br />
-        <input type='hidden' name='postFeat' value='<?php echo $_POST['postFeat'] = 0;?>'>
-        <input type='checkbox' name='postFeat' value='<?php echo $_POST['postFeat'] = 1;?>'></p>
+        <p><label>Featured?</label><br />
+            <input class="form-control" type='hidden' name='postFeat' value='<?php echo $_POST['postFeat'] = 0;?>'>
+            <input class="form-control" type='checkbox' name='postFeat' value='<?php echo $_POST['postFeat'] = 1;?>'>
+        </p>
 
-    <p><label>Category</label><br />
-		<input type='text' name='postCat' value='<?php echo $_POST['postCat'];?>'></p>
+        <p><label for "postCat">category | </label>
+            <select class="form-control" name="postCat" id="postCat" class="form-control">
+                <option value='games' <?php echo ($_POST['postCat'] == 'games')? "selected":""; ?>>games</option>
+                <option value='fauna' <?php echo ($_POST['postCat'] == 'fauna')? "selected":""; ?>>fauna</option>
+                <option value='science' <?php echo ($_POST['postCat'] == 'science')? "selected":""; ?>>science</option>
+                <option value='words' <?php echo ($_POST['postCat'] == 'words')? "selected":""; ?>>words</option>
+                <option value='sundry' <?php echo ($_POST['postCat'] == 'sundry')? "selected":""; ?>>sundry</option>
+                <option value='media' <?php echo ($_POST['postCat'] == 'media')? "selected":""; ?>>media</option>
+            </select>
+        </p>
 
-    <p><label>category</label></p>
-        <select name="postCat" id="postCat" class="form-control">
-            <!-- NEED FIX HERE -->
-        </select>
-        <fieldset>
-            <legend>categories</legend>
-            <?php
-            $stmt2 = $connect->query('SELECT catID, catTitle FROM shutt_cats ORDER BY catTitle');
-            while($row2 = $stmt2->fetch()){
-
-                if(isset($_POST['catID'])){
-
-                    if(in_array($row2['catID'], $_POST['catID'])){
-                        $checked="checked='checked'";
-                    }else{
-                        $checked = null;
-                    }
-                }
-
-                echo "<input type='checkbox' name='catID[]' value='".$row2['catID']."' $checked> ".$row2['catTitle']."<br />";
-            }
-
-             ?>
-        </fieldset>
-        
 		<p><label>Brief Description | 300 words</label><br />
-		<textarea name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>
+		    <textarea class="form-control" name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea>
+        </p>
 
 		<p><label>Content</label><br />
-		<textarea name='postCont' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postCont'];}?></textarea></p>
+	        <textarea class="form-control" name='postCont' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postCont'];}?></textarea>
+        </p>
 
-		<p><input type='submit' name='submit' value='Submit'></p>
+		<p><input class="form-control btn btn-default" type='submit' name='submit' value='Submit'></p>
 
 	</form>
 

@@ -89,19 +89,19 @@ if(empty($_SESSION['ulogin']))
 					':postDate' => date('Y-m-d H:i:s')
 				));
 
-                // delete all items with the current postID
-                $stmt = $connect->prepare('DELETE FROM shutt_post_cats WHERE postID = :postID');
-                $stmt->execute(array(':postID' => $postID));
-
-                if(is_array($catID)){
-                    foreach($_POST['catID'] as $catID){
-                        $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID, catID) VALUES (:postID, :catID)');
-                        $stmt->execute(array(
-                            ':postID' => $postID,
-                            ':catID' => $catID
-                        ));
-                    }
-                }
+                // // delete all items with the current postID
+                // $stmt = $connect->prepare('DELETE FROM shutt_post_cats WHERE postID = :postID');
+                // $stmt->execute(array(':postID' => $postID));
+                //
+                // if(is_array($catID)){
+                //     foreach($_POST['catID'] as $catID){
+                //         $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID, catID) VALUES (:postID, :catID)');
+                //         $stmt->execute(array(
+                //             ':postID' => $postID,
+                //             ':catID' => $catID
+                //         ));
+                //     }
+                // }
 
 				//redirect to index page
 				header('Location: index.php?action=updated');
@@ -143,7 +143,7 @@ if(empty($_SESSION['ulogin']))
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
-        <input type='hidden' name='postSlug' value='<?php {echo $_POST['postSlug'];}?>'>
+        <input type='hidden' name='postSlug' value='<?php {echo $row['postSlug'];}?>'>
 
         <p><label>Image</label><br />
         <input type='text' name='postImg' value='<?php echo $row['postImg'];?>'></p>
@@ -158,33 +158,17 @@ if(empty($_SESSION['ulogin']))
         <input type='hidden' name='postFeat' value='<?php echo $row['postFeat'] = 0;?>'></p>
         <input type='checkbox' name='postFeat' value='<?php echo $row['postFeat'] = 1;?>'></p>
 
-        <p><label>Category</label><br />
-        <input type='text' name='postCat' value='<?php echo $row['postCat'];?>'></p>
-
-        <fieldset>
-            <legend>Categories</legend>
-
-            <?php
-
-            $stmt2 = $connect->query('SELECT catID, catTitle FROM shutt_cats ORDER BY catTitle');
-            while($row2 = $stmt2->fetch()){
-
-                $stmt3 = $connect->prepare('SELECT catID FROM shutt_post_cats WHERE catID = :catID AND postID = :postID') ;
-                $stmt3->execute(array(':catID' => $row2['catID'], ':postID' => $row['postID']));
-                $row3 = $stmt3->fetch();
-
-                if($row3['catID'] == $row2['catID']){
-                    $checked = 'checked=checked';
-                } else {
-                    $checked = null;
-                }
-
-                echo "<input type='checkbox' name='catID[]' value='".$row2['catID']."' $checked> ".$row2['catTitle']."<br />";
-            }
-
-            ?>
-
-        </fieldset>
+        <p><label for "postCat">category | </label>
+            <select class="form-control" name="postCat" id="postCat" class="form-control">
+                <option value='games' <?php echo ($_POST['postCat'] == 'games')? "selected":""; ?>>games</option>
+                <option value='fauna' <?php echo ($_POST['postCat'] == 'fauna')? "selected":""; ?>>fauna</option>
+                <option value='science' <?php echo ($_POST['postCat'] == 'science')? "selected":""; ?>>science</option>
+                <option value='words' <?php echo ($_POST['postCat'] == 'words')? "selected":""; ?>>words</option>
+                <option value='sundry' <?php echo ($_POST['postCat'] == 'sundry')? "selected":""; ?>>sundry</option>
+                <option value='media' <?php echo ($_POST['postCat'] == 'media')? "selected":""; ?>>media</option>
+            </select>
+            <?php echo " | current category = " .$row['postCat'].?>
+        </p>
 
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php echo $row['postDesc'];?></textarea></p>

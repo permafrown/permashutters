@@ -66,7 +66,7 @@ if(empty($_SESSION['ulogin']))
 		}
 
 		if(!isset($error)){
-            $postSlug = slug($postTitle);
+            $postSlug = $postTitle + 'gerbil';
 			try {
 				//insert into database
 				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postSlug,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postSlug, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;

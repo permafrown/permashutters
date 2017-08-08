@@ -67,20 +67,34 @@ if(empty($_SESSION['ulogin']))
 		if(!isset($error)){
 
 			try {
-
+                // $postSlug = slug($postTitle);
 				//insert into database
-				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
+				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postSlug,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postSlug, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
 				$stmt->execute(array(
 					':postTitle' => $postTitle,
-          ':postImg' => $postImg,
-          ':postLink' => $postLink,
-          ':postLinkText' => $postLinkText,
-          ':postFeat' => $postFeat,
-          ':postCat' => $postCat,
+                    ':postSlug' => $postSlug,
+                    ':postImg' => $postImg,
+                    ':postLink' => $postLink,
+                    ':postLinkText' => $postLinkText,
+                    ':postFeat' => $postFeat,
+                    ':postCat' => $postCat,
 					':postDesc' => $postDesc,
 					':postCont' => $postCont,
 					':postDate' => date('Y-m-d H:i:s')
 				));
+
+                $postID = $connect->lastInsertID();
+
+                // add categories
+                if(is_array($catID)){
+                    foreach($_POST['catID'] as $catID){
+                        $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID,catID) VALUES (:postID, :catID)');
+                        $stmt->execute(array(
+                            ':postID' => $postID,
+                            ':catID' => $catID
+                        ));
+                    }
+                }
 
 				//redirect to index page
 				header('Location: index.php?action=added');
@@ -106,6 +120,7 @@ if(empty($_SESSION['ulogin']))
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
+        <input type='hidden' name='postSlug' value='<?php {echo $_POST['postSlug'];}?>'>
 
     <p><label>Image</label><br />
 		<input type='url' name='postImg' value='<?php if(!empty('postImg')) {echo $_POST['postImg'];};?>'></p>
@@ -117,7 +132,8 @@ if(empty($_SESSION['ulogin']))
 		<input type='text' name='postLinkText' value='<?php if(!empty('postLink')) {echo $_POST['postLinkText'];};?>'></p>
 
     <p><label>Featured?</label><br />
-		<input type='text' name='postFeat' value='<?php echo $_POST['postFeat'];?>'></p>
+        <input type='hidden' name='postFeat' value='<?php echo $_POST['postFeat'] = 0;?>'>
+        <input type='checkbox' name='postFeat' value='<?php echo $_POST['postFeat'] = 1;?>'></p>
 
     <p><label>Category</label><br />
 		<input type='text' name='postCat' value='<?php echo $_POST['postCat'];?>'></p>
@@ -126,7 +142,27 @@ if(empty($_SESSION['ulogin']))
         <select name="postCat" id="postCat" class="form-control">
             <!-- NEED FIX HERE -->
         </select>
+        <fieldset>
+            <legend>categories</legend>
+            <?php
+            $stmt2 = $connect->query('SELECT catID, catTitle FROM shutt_cats ORDER BY catTitle');
+            while($row2 = $stmt2->fetch()){
 
+                if(isset($_POST['catID'])){
+
+                    if(in_array($row2['catID'], $_POST['catID'])){
+                        $checked="checked='checked'";
+                    }else{
+                        $checked = null;
+                    }
+                }
+
+                echo "<input type='checkbox' name='catID[]' value='".$row2['catID']."' $checked> ".$row2['catTitle']."<br />";
+            }
+
+             ?>
+        </fieldset>
+        
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postDesc'];}?></textarea></p>
 

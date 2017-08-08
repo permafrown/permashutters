@@ -167,7 +167,7 @@ if(empty($_SESSION['ulogin']))
                 <option value='sundry' <?php echo ($_POST['postCat'] == 'sundry')? "selected":""; ?>>sundry</option>
                 <option value='media' <?php echo ($_POST['postCat'] == 'media')? "selected":""; ?>>media</option>
             </select>
-            <?php echo " | current category = " $row['postCat']; ?>
+            <?php echo " | current category \= " $row['postCat']; ?>
         </p>
 
 		<p><label>Brief Description | 300 words</label><br />

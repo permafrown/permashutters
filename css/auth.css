@@ -60,6 +60,11 @@
     margin: 0 auto;
 }
 
+.mce-panel {
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
 .form-control {
     max-width: 40vw;
     margin: 0 auto;

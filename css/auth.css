@@ -55,18 +55,16 @@
 .admin_menu table tr.alt td {background-color:#E2E2E2;}
 .admin_menu table tr:hover {background-color:#F0F0F0; color:#000;}*/
 
-.mce-container {
-    max-width: 75%;
+.mce-container-body {
+    max-width: 40vw;
     margin: 0 auto;
-}
-
-.form_group {
-    max-width: 50%;
 }
 
 .form-control {
-    max-width: 50%;
+    max-width: 40vw;
     margin: 0 auto;
+    justify-content: center;
+    text-align: center;
 }
 
 /*form input {

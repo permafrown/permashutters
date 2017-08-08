@@ -22,6 +22,7 @@ if(empty($_SESSION['ulogin']))
                   'class': 'card-text',
               },
               selector: "textarea",
+              max_width: 40%,
               plugins: [
                   "advlist autolink lists link image charmap print preview anchor",
                   "searchreplace visualblocks code fullscreen",

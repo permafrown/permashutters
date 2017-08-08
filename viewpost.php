@@ -1,7 +1,7 @@
 <?php require('permadmin/auth/config.php');
 
-$stmt = $connect->prepare('SELECT postID, postTitle, postSlug, postCont, postDate, postCat, postFeat, postLink, postLinkText, postDesc FROM shutt_posts WHERE postID = :postID');
-$stmt->execute(array(':postID' => $_GET['id']));
+$stmt = $connect->prepare('SELECT postID, postTitle, postSlug, postCont, postDate, postCat, postFeat, postLink, postLinkText, postDesc FROM shutt_posts WHERE postSlug = :postSlug');
+$stmt->execute(array(':postSlug' => $_GET['id']));
 $row = $stmt->fetch();
 
 //if post does not exists redirect user.

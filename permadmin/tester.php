@@ -17,7 +17,7 @@
         </p>
         <p>
             <label>category | </label>
-            <select>
+            <select name="post_category">
                 <option value='games'>games</option>
                 <option value='fauna'>fauna</option>
                 <option value='science'>science</option>

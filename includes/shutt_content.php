@@ -11,7 +11,7 @@
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';
-                    echo '<div>' . $row_['postCatSel'] . '</div>';
+                    echo '<div>' . $row['postCatSel'] . '</div>';
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-header">perma-featured</div>';
                         } else {echo '<div></div>';}

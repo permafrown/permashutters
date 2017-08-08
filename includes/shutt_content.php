@@ -7,7 +7,7 @@
         'WHERE postCat = :postCatSel ' .
         'ORDER BY postDate DESC');
         $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
-        $stmt->execute('postCatSel' => $postCatSel);
+        $stmt->execute(['postCatSel' => $postCatSel]);
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';

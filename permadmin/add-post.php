@@ -108,7 +108,7 @@ if(empty($_SESSION['ulogin']))
 
 		<p><label>Title</label><br />
 		    <input class="form-control" type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
-            <input class="form-control" type='hidden' name='postSlug' value='<?php {echo $_POST['postSlug'];}?>'>
+            <input class="form-control" type='hidden' name='postSlug' value='<?php if(isset($postTitle)) {echo $_POST['postSlug'];}?>'>
 
         <p><label>Image</label><br />
 		    <input class="form-control" type='url' name='postImg' value='<?php if(!empty('postImg')) {echo $_POST['postImg'];};?>'>

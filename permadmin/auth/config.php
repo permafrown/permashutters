@@ -18,4 +18,6 @@ catch(PDOException $e) {
 
 date_default_timezone_set('American/Toronto');
 
+// include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/functions.php");
+
 ?>

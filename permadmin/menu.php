@@ -2,6 +2,7 @@
 <ul class='admin_nav_menu'>
 	<li><a href='index.php'>menu</a></li>
 	<!--<li><a href='users.php'>users</a></li>-->
+    <li><a href='categories.php'>cats</a></li>
 	<li><a href="../" target="_blank">site</a></li>
 	<li><a href='auth/logout.php'>logout</a></li>
 </ul>

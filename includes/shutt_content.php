@@ -1,17 +1,17 @@
 <div class="row d-inline-flex">
     <?php
-    $postCatSel = "games";
+    $postCatSel = games;
     try {
         $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate ' .
         'FROM shutt_posts ' .
-        'WHERE postCat = :postCatSel ' .
+        // 'WHERE postCat = :postCatSel ' .
         'ORDER BY postDate DESC');
-        $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
-        $stmt->execute(array('postCatSel' => $postCatSel));
+        // $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
+        // $stmt->execute(array('postCatSel' => $postCatSel));
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';
-                    echo '<div>' . $row[':postCatSel'] . '</div>';
+                    echo '<div>' . $postCatSel . '</div>';
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-header">perma-featured</div>';
                         } else {echo '<div></div>';}

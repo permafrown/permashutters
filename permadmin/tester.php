@@ -1,4 +1,4 @@
-<pre><?php print_r($_POST); ?></pre>
+<pre style="color: #BBB; font-size: 2em;"><?php print_r($_POST); ?></pre>
 <?php
     require_once('auth/config.php');
      ?>

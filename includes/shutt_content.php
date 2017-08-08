@@ -29,9 +29,11 @@
                         } else {echo '<div></div>';}
                 echo '</div>';
             echo '</div>';
+            echo $postCatSel;
         }
       } catch(PDOException $e) {
           echo $e->getMessage();
       }
+
     ?>
 </div>

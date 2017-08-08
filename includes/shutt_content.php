@@ -33,6 +33,6 @@
       } catch(PDOException $e) {
           echo $e->getMessage();
       }
-
+      echo $postCatSel;
     ?>
 </div>

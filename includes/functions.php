@@ -2,8 +2,8 @@
 function slug($text){
 
     // // replace non letter or digits with _
-    // $text = preg_replace('~[^pLd]+~u', '_', $text);
-    //
+    $text = preg_replace('~[^pLd]+~u', '_', $text);
+
     // // trim
     // $text = trim($text, '_');
     //

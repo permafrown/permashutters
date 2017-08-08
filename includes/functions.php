@@ -1,25 +1,25 @@
 <?php
-function slug($text){
+function slug($postTitle){
 
     // replace non letter or digits with _
-    $text = preg_replace('~[^pLd]+~u', '_', $text);
+    $postTitle = preg_replace('~[^pLd]+~u', '_', $postTitle);
 
     // trim
-    $text = trim($text, '_');
+    $postTitle = trim($postTitle, '_');
 
     // transliterate
-    $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+    $postTitle = iconv('utf-8', 'us-ascii//TRANSLIT', $postTitle);
 
     // lowercase
-    $text = strtolower($text);
+    $postTitle = strtolower($postTitle);
 
     // remove unwanted characters
-    $text = preg_replace('~[^-w]+~', '', $text);
+    $postTitle = preg_replace('~[^-w]+~', '', $postTitle);
 
-    if (empty($text)) {
+    if (empty($postTitle)) {
         return 'n-a';
     }
 
-    return $text;
+    return $postTitle;
 }
  ?>

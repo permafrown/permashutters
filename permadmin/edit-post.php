@@ -73,7 +73,7 @@ if(empty($_SESSION['ulogin']))
 		if(!isset($error)){
 
 			try {
-                // $postSlug = slug($postTitle);
+                $postSlug = slug($postTitle);
 				//insert into database
                 $stmt = $connect->prepare('UPDATE shutt_posts SET postTitle = :postTitle, postSlug = :postSlug, postImg = :postImg, postLink = :postLink, postLinkText = :postLinkText, postFeat = :postFeat, postCat = :postCat, postDesc = :postDesc, postCont = :postCont, postDate = :postDate WHERE postID = :postID');
 				$stmt->execute(array(
@@ -89,20 +89,6 @@ if(empty($_SESSION['ulogin']))
 					':postCont' => $postCont,
 					':postDate' => date('Y-m-d H:i:s')
 				));
-
-                // // delete all items with the current postID
-                // $stmt = $connect->prepare('DELETE FROM shutt_post_cats WHERE postID = :postID');
-                // $stmt->execute(array(':postID' => $postID));
-                //
-                // if(is_array($catID)){
-                //     foreach($_POST['catID'] as $catID){
-                //         $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID, catID) VALUES (:postID, :catID)');
-                //         $stmt->execute(array(
-                //             ':postID' => $postID,
-                //             ':catID' => $catID
-                //         ));
-                //     }
-                // }
 
 				//redirect to index page
 				header('Location: index.php?action=updated');

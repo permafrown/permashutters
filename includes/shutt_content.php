@@ -2,7 +2,7 @@
     <?php
     $postCatSel = "games";
     try {
-        $stmt = $connect->prepare('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate ' .
+        $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate ' .
         'FROM shutt_posts ' .
         // 'WHERE postCat = :postCatSel ' .
         'ORDER BY postDate DESC');

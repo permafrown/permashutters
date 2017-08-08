@@ -71,9 +71,8 @@ if(empty($_SESSION['ulogin']))
 		}
 
 		if(!isset($error)){
-
+            $postSlug = slug($postTitle);
 			try {
-                $postSlug = slug($postTitle);
 				//insert into database
                 $stmt = $connect->prepare('UPDATE shutt_posts SET postTitle = :postTitle, postSlug = :postSlug, postImg = :postImg, postLink = :postLink, postLinkText = :postLinkText, postFeat = :postFeat, postCat = :postCat, postDesc = :postDesc, postCont = :postCont, postDate = :postDate WHERE postID = :postID');
 				$stmt->execute(array(

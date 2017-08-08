@@ -17,9 +17,9 @@
         </p>
         <p>
             <label for="post_category">cat1</label>
-            <input type="checkbox" name="post_category" value="cat1" />
+            <input type="checkbox" name="post_category[games]" value="games" />
             <label for="post_category">cat2</label>
-            <input type="checkbox" name="post_category" value="cat2" />
+            <input type="checkbox" name="post_category[fauna]" value="fauna" />
         </p>
         <p>
             <input type="submit" value="submit" />

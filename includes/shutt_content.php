@@ -6,8 +6,8 @@
         'FROM shutt_posts ' .
         // 'WHERE postCat = :postCatSel ' .
         'ORDER BY postDate DESC');
-        // $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
-        // $stmt->execute(array('postCatSel' => $postCatSel));
+        $stmt = $pdo->prepare($connect);
+        $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';

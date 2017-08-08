@@ -138,27 +138,27 @@ if(empty($_SESSION['ulogin']))
 
 	?>
 
-	<form class="shutt_post_form" action='' method='post'>
+	<form class="shutt_post_form form-group" action='' method='post'>
 		<input type='hidden' name='postID' value='<?php echo $row['postID'];?>'>
 
-		<p><label>Title</label><br />
-		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
-        <input type='hidden' name='postSlug' value='<?php {echo $row['postSlug'];}?>'>
+		<p><label>title</label><br />
+		<input class="form-control" type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
+        <input class="form-control" type='hidden' name='postSlug' value='<?php {echo $row['postSlug'];}?>'>
 
-        <p><label>Image</label><br />
-        <input type='text' name='postImg' value='<?php echo $row['postImg'];?>'></p>
+        <p><label>image</label><br />
+        <input class="form-control" type='text' name='postImg' value='<?php echo $row['postImg'];?>'></p>
 
-        <p><label>Link</label><br />
-        <input type='text' name='postLink' value='<?php echo $row['postLink'];?>'></p>
+        <p><label>link</label><br />
+        <input class="form-control" type='text' name='postLink' value='<?php echo $row['postLink'];?>'></p>
 
-        <p><label>Link Text</label><br />
-        <input type='text' name='postLinkText' value='<?php echo $row['postLinkText'];?>'></p>
+        <p><label>link text</label><br />
+        <input class="form-control" type='text' name='postLinkText' value='<?php echo $row['postLinkText'];?>'></p>
 
-        <p><label>Featured?</label><br />
-        <input type='hidden' name='postFeat' value='<?php echo $row['postFeat'] = 0;?>'></p>
-        <input type='checkbox' name='postFeat' value='<?php echo $row['postFeat'] = 1;?>'></p>
+        <p><label>featured?</label><br />
+        <input class="form-control" type='hidden' name='postFeat' value='<?php echo $row['postFeat'] = 0;?>'></p>
+        <input class="form-control" type='checkbox' name='postFeat' value='<?php echo $row['postFeat'] = 1;?>'></p>
 
-        <p><label for "postCat">category | </label>
+        <p><label for "postCat">category</label>
             <select class="form-control" name="postCat" id="postCat" class="form-control">
                 <option value='games' <?php echo ($_POST['postCat'] == 'games')? "selected":""; ?>>games</option>
                 <option value='fauna' <?php echo ($_POST['postCat'] == 'fauna')? "selected":""; ?>>fauna</option>
@@ -167,16 +167,16 @@ if(empty($_SESSION['ulogin']))
                 <option value='sundry' <?php echo ($_POST['postCat'] == 'sundry')? "selected":""; ?>>sundry</option>
                 <option value='media' <?php echo ($_POST['postCat'] == 'media')? "selected":""; ?>>media</option>
             </select>
-        </br>current category is | <?php echo $row['postCat'];?>
+        </br>current category is === <?php echo $row['postCat'];?>
         </p>
 
-		<p><label>Brief Description | 300 words</label><br />
-		<textarea name='postDesc' cols='60' rows='10'><?php echo $row['postDesc'];?></textarea></p>
+		<p><label>brief description | 300 words</label><br />
+		<textarea class="form-control" name='postDesc' cols='60' rows='10'><?php echo $row['postDesc'];?></textarea></p>
 
-		<p><label>Content</label><br />
-		<textarea name='postCont' cols='60' rows='10'><?php echo $row['postCont'];?></textarea></p>
+		<p><label>content</label><br />
+		<textarea class="form-control" name='postCont' cols='60' rows='10'><?php echo $row['postCont'];?></textarea></p>
 
-		<p><input type='submit' name='submit' value='update'></p>
+		<p><input class="form-control" type='submit' name='submit' value='update'></p>
 
 	</form>
 

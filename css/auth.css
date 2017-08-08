@@ -60,6 +60,14 @@
     margin: 0 auto;
 }
 
+.form_group {
+    max-width: 50%;
+}
+
+/*.form-control {
+    max-width: 75%
+}*/
+
 /*form input {
 	border: 1px solid #999999;
 	border-bottom-color: #cccccc;

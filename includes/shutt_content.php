@@ -1,7 +1,6 @@
 <div class="row d-inline-flex">
     <?php
-    $postCatSel = :postCatSel;
-    :postCatSel = games;
+    $postCatSel = games;
     try {
         $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate ' .
         'FROM shutt_posts ' .

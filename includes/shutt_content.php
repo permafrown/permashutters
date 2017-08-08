@@ -6,7 +6,7 @@
         'FROM shutt_posts ' .
         'WHERE postCat LIKE ":postCatSel" ' .
         'ORDER BY postDate DESC');
-        $postCatSel = 'games';
+        $postCatSel = games;
         $stmt->bindValue(':postCatSel', $postCatSel, PDO::PARAM_STR);
         $stmt->execute();
         while($row = $stmt->fetch()){

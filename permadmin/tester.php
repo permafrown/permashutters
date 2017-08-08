@@ -25,6 +25,8 @@
                 <option value='sundry'>sundry</option>
                 <option value='media'>media</option>
             </select>
+        </p>
+        <p>
             <label>categories | </label>
             <label for="post_category">games</label>
             <input type="checkbox" name="post_category[games]" value="games" />

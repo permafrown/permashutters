@@ -16,9 +16,10 @@
             <textarea name="post_content"></textarea>
         </p>
         <p>
-            <label for="post_category">cat1</label>
+            <label>categories</label>
+            <label for="post_category">games</label>
             <input type="checkbox" name="post_category[games]" value="games" />
-            <label for="post_category">cat2</label>
+            <label for="post_category">fauna</label>
             <input type="checkbox" name="post_category[fauna]" value="fauna" />
         </p>
         <p>

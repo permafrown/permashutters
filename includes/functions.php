@@ -1,5 +1,5 @@
 <?php
-function slug($postTitle){
+function slug(){
 
     // replace non letter or digits with _
     $postTitle = preg_replace('~[^pLd]+~u', '_', $postTitle);

@@ -14,7 +14,7 @@
                             echo '<img class="card-img-top" src="'.$row['postImg'].'" alt="'.$row['postTitle'].' image" />';
                         } else {echo '<div></div>';}
                     echo '<div class="card-block">';
-                        echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postID'].'">'.$row['postTitle'].'</a></h3>';
+                        echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postSlug'].'">'.$row['postTitle'].'</a></h3>';
                         echo '<p class="card-text">'.$row['postDesc'].'</p>';
                     echo '</div>';
                     if (!empty($row['postLink'])) {

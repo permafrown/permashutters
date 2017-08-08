@@ -16,9 +16,9 @@ function slug($postTitle){
     // remove unwanted characters
     $postTitle = preg_replace('~[^-w]+~', '', $postTitle);
 
-    if (empty($postTitle)) {
-        return 'n-a';
-    }
+    // if (empty($postTitle)) {
+    //     return 'n-a';
+    // }
 
     return $postTitle;
 }

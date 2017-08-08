@@ -1,6 +1,6 @@
 <?php require('permadmin/auth/config.php');
 
-$stmt = $connect->prepare('SELECT postID, postTitle, postCont, postDate FROM shutt_posts WHERE postID = :postID');
+$stmt = $connect->prepare('SELECT postID, postTitle, postSlug, postCont, postDate, postCat, postFeat, postLink, postLinkText, postDesc FROM shutt_posts WHERE postID = :postID');
 $stmt->execute(array(':postID' => $_GET['id']));
 $row = $stmt->fetch();
 
@@ -15,21 +15,21 @@ if($row['postID'] == ''){
 <html lang="en">
 <head>
     <?php require_once('includes/head.php'); ?>
-    <title>Blog - <?php echo $row['postTitle'];?></title>
+    <title>games | <?php echo $row['postTitle'];?></title>
 </head>
 <body>
 
 	<div id="wrapper">
 
-		<h1>Blog</h1>
-		<hr />
-		<p><a href="./">Blog Index</a></p>
+		<h1><?php echo $row['postCat'];?></h1>
+		<hr class="permahr"/>
+		<p><a href="./">home</a></p>
 
 
 		<?php
-			echo '<div>';
+			echo '<div class="shutt_page_content">';
 				echo '<h1>'.$row['postTitle'].'</h1>';
-				echo '<p>Posted on '.date('jS M Y', strtotime($row['postDate'])).'</p>';
+				echo '<p>Posted on '.date('Y-m-d @ H:i:s', strtotime($row['postDate'])).'</p>';
 				echo '<p>'.$row['postCont'].'</p>';
 			echo '</div>';
 		?>

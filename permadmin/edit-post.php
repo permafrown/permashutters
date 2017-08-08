@@ -167,7 +167,7 @@ if(empty($_SESSION['ulogin']))
                 <option value='sundry' <?php echo ($_POST['postCat'] == 'sundry')? "selected":""; ?>>sundry</option>
                 <option value='media' <?php echo ($_POST['postCat'] == 'media')? "selected":""; ?>>media</option>
             </select>
-            <?php echo " | current category \= " .$row['postCat'].; ?>
+        </br>current category is | <?php echo $row['postCat'];?>
         </p>
 
 		<p><label>Brief Description | 300 words</label><br />
@@ -176,7 +176,7 @@ if(empty($_SESSION['ulogin']))
 		<p><label>Content</label><br />
 		<textarea name='postCont' cols='60' rows='10'><?php echo $row['postCont'];?></textarea></p>
 
-		<p><input type='submit' name='submit' value='Update'></p>
+		<p><input type='submit' name='submit' value='update'></p>
 
 	</form>
 

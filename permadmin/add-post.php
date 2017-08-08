@@ -68,7 +68,7 @@ if(empty($_SESSION['ulogin']))
 		if(!isset($error)){
 
 			try {
-                // $postSlug = slug($postTitle);
+                $postSlug = slug($postTitle);
 				//insert into database
 				$stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postSlug,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postSlug, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
 				$stmt->execute(array(
@@ -83,19 +83,6 @@ if(empty($_SESSION['ulogin']))
 					':postCont' => $postCont,
 					':postDate' => date('Y-m-d H:i:s')
 				));
-
-                // $postID = $connect->lastInsertID();
-                //
-                // // add categories
-                // if(is_array($catID)){
-                //     foreach($_POST['catID'] as $catID){
-                //         $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID,catID) VALUES (:postID, :catID)');
-                //         $stmt->execute(array(
-                //             ':postID' => $postID,
-                //             ':catID' => $catID
-                //         ));
-                //     }
-                // }
 
 				//redirect to index page
 				header('Location: index.php?action=added');

@@ -2,7 +2,7 @@
     <?php
       try {
 
-        $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts ORDER BY postDate DESC');
+        $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts WHERE postCat LIKE "games" ORDER BY postDate DESC');
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';

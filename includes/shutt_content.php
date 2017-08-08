@@ -6,9 +6,9 @@
         $stmt->bindValue(':postCatSel', $postCatSel, PDO::PARAM_STR);
         $stmt->execute();
         while($row = $stmt->fetch()){
-            echo '<div>' . $postCatSel . '</div>';
             echo '<div class="col">';
                 echo '<div class="card">';
+                    echo '<div>' . $postCatSel . '</div>';
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-header">perma-featured</div>';
                         } else {echo '<div></div>';}

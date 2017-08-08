@@ -4,7 +4,7 @@
     try {
         $stmt = $connect->query("SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate " .
         "FROM shutt_posts " .
-        "WHERE postCat LIKE ":postCatSel" " .
+        "WHERE postCat LIKE "games" " .
         "ORDER BY postDate DESC");
         $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
         // $stmt->execute();

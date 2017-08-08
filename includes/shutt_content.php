@@ -1,9 +1,10 @@
 <div class="row d-inline-flex">
     <?php
+    $postCatSel = 'games';
     try {
         $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts WHERE postCat LIKE ":postCatSel" ORDER BY postDate DESC');
         $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
-        $postCatSel = 'games';
+        $stmt->execute();
         while($row = $stmt->fetch()){
             echo '<div>postCatSel</div>';
             echo '<div class="col">';
@@ -33,6 +34,5 @@
       } catch(PDOException $e) {
           echo $e->getMessage();
       }
-      echo $postCatSel;
     ?>
 </div>

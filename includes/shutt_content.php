@@ -6,7 +6,7 @@
         'FROM shutt_posts ' .
         'WHERE postCat = ":postCatSel" ' .
         'ORDER BY postDate DESC');
-        $stmt->bindParam('postCatSel', 'games', PDO::PARAM_STR);
+        $stmt->bindParam(':postCatSel', 'games', PDO::PARAM_STR);
         // $stmt->execute();
         while($row = $stmt->fetch()){
             echo '<div class="col">';

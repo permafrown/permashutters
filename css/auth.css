@@ -64,9 +64,10 @@
     max-width: 50%;
 }
 
-/*.form-control {
-    max-width: 75%
-}*/
+.form-control {
+    max-width: 50%;
+    margin: 0 auto;
+}
 
 /*form input {
 	border: 1px solid #999999;

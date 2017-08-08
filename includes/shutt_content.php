@@ -6,7 +6,7 @@
         // $stmt->bindValue(':postCatSel', $postCatSel, PDO::PARAM_STR);
         // $stmt->execute();
         while($row = $stmt->fetch()){
-            echo '<div>$postCatSel</div>';
+            echo $postCatSel;
             echo '<div class="col">';
                 echo '<div class="card">';
                     if (($row['postFeat']) != 0) {

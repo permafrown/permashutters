@@ -5,7 +5,7 @@
 <html>
 <head>
     <?php include_once('../includes/head.php');?>
-    <title>tester input</title>
+    <title>test input</title>
 </head>
 <body>
     <form method="post">

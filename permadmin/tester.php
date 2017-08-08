@@ -1,7 +1,10 @@
 <pre><?php print_r($_POST); ?></pre>
-
+<?php
+    require_once('auth/config.php');
+     ?>
 <html>
 <head>
+    <?php include_once('../includes/head.php');?>
     <title>tester input</title>
 </head>
 <body>
@@ -22,5 +25,6 @@
             <input type="submit" value="submit" />
         </p>
     </form>
+    <?php include_once('../includes/body_scripts.php');?>
 </body>
 </html>

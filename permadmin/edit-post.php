@@ -37,7 +37,7 @@ if(empty($_SESSION['ulogin']))
 <div id="wrapper">
 
 	<?php include('menu.php');?>
-	<p><a href="./">Blog Admin Index</a></p>
+	<p><a href="./">home</a></p>
 
 	<h2>Edit Post</h2>
 
@@ -72,20 +72,36 @@ if(empty($_SESSION['ulogin']))
 		if(!isset($error)){
 
 			try {
-
+                // $postSlug = slug($postTitle);
 				//insert into database
-        $stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
+                $stmt = $connect->prepare('UPDATE shutt_posts SET postTitle = :postTitle, postSlug = :postSlug, postImg = :postImg, postLink = :postLink, postLinkText = :postLinkText, postFeat = :postFeat, postCat = :postCat, postDesc = :postDesc, postCont = :postCont, postDate = :postDate WHERE postID = :postID');
 				$stmt->execute(array(
+                    ':postID' => $postID,
 					':postTitle' => $postTitle,
-          ':postImg' => $postImg,
-          ':postLink' => $postLink,
-          ':postLinkText' => $postLinkText,
-          ':postFeat' => $postFeat,
-          ':postCat' => $postCat,
+                    ':postSlug' => $postSlug,
+                    ':postImg' => $postImg,
+                    ':postLink' => $postLink,
+                    ':postLinkText' => $postLinkText,
+                    ':postFeat' => $postFeat,
+                    ':postCat' => $postCat,
 					':postDesc' => $postDesc,
 					':postCont' => $postCont,
 					':postDate' => date('Y-m-d H:i:s')
 				));
+
+                // delete all items with the current postID
+                $stmt = $connect->prepare('DELETE FROM shutt_post_cats WHERE postID = :postID');
+                $stmt->execute(array(':postID' => $postID));
+
+                if(is_array($catID)){
+                    foreach($_POST['catID'] as $catID){
+                        $stmt = $connect->prepare('INSERT INTO shutt_post_cats (postID, catID) VALUES (:postID, :catID)');
+                        $stmt->execute(array(
+                            ':postID' => $postID,
+                            ':catID' => $catID
+                        ));
+                    }
+                }
 
 				//redirect to index page
 				header('Location: index.php?action=updated');
@@ -112,7 +128,7 @@ if(empty($_SESSION['ulogin']))
 
 		try {
 
-			$stmt = $connect->prepare('SELECT postID, postTitle, postDesc, postCont FROM shutt_posts WHERE postID = :postID') ;
+			$stmt = $connect->prepare('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postCont FROM shutt_posts WHERE postID = :postID') ;
 			$stmt->execute(array(':postID' => $_GET['id']));
 			$row = $stmt->fetch();
 
@@ -127,21 +143,48 @@ if(empty($_SESSION['ulogin']))
 
 		<p><label>Title</label><br />
 		<input type='text' name='postTitle' value='<?php echo $row['postTitle'];?>'></p>
+        <input type='hidden' name='postSlug' value='<?php {echo $_POST['postSlug'];}?>'>
 
         <p><label>Image</label><br />
-        <input type='url' name='postImg' value='<?php if(!empty('postImg')) {echo $row['postImg'];};?>'></p>
+        <input type='text' name='postImg' value='<?php echo $row['postImg'];?>'></p>
 
         <p><label>Link</label><br />
-        <input type='url' name='postLink' value='<?php if(!empty('postLink')) {echo $row['postLink'];};?>'></p>
+        <input type='text' name='postLink' value='<?php echo $row['postLink'];?>'></p>
 
         <p><label>Link Text</label><br />
-        <input type='text' name='postLinkText' value='<?php if(!empty('postLink')) {echo $row['postLinkText'];};?>'></p>
+        <input type='text' name='postLinkText' value='<?php echo $row['postLinkText'];?>'></p>
 
         <p><label>Featured?</label><br />
-        <input type='text' name='postFeat' value='<?php echo $row['postFeat'];?>'></p>
+        <input type='hidden' name='postFeat' value='<?php echo $row['postFeat'] = 0;?>'></p>
+        <input type='checkbox' name='postFeat' value='<?php echo $row['postFeat'] = 1;?>'></p>
 
         <p><label>Category</label><br />
         <input type='text' name='postCat' value='<?php echo $row['postCat'];?>'></p>
+
+        <fieldset>
+            <legend>Categories</legend>
+
+            <?php
+
+            $stmt2 = $connect->query('SELECT catID, catTitle FROM shutt_cats ORDER BY catTitle');
+            while($row2 = $stmt2->fetch()){
+
+                $stmt3 = $connect->prepare('SELECT catID FROM shutt_post_cats WHERE catID = :catID AND postID = :postID') ;
+                $stmt3->execute(array(':catID' => $row2['catID'], ':postID' => $row['postID']));
+                $row3 = $stmt3->fetch();
+
+                if($row3['catID'] == $row2['catID']){
+                    $checked = 'checked=checked';
+                } else {
+                    $checked = null;
+                }
+
+                echo "<input type='checkbox' name='catID[]' value='".$row2['catID']."' $checked> ".$row2['catTitle']."<br />";
+            }
+
+            ?>
+
+        </fieldset>
 
 		<p><label>Brief Description | 300 words</label><br />
 		<textarea name='postDesc' cols='60' rows='10'><?php echo $row['postDesc'];?></textarea></p>

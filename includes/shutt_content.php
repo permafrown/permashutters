@@ -2,7 +2,7 @@
     <?php
     try {
         $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts WHERE postCat LIKE ":postCatSel" ORDER BY postDate DESC');
-        $postCatSel = 'sundry';
+        $postCatSel = 'games';
         echo $postCatSel;
         $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
         while($row = $stmt->fetch()){

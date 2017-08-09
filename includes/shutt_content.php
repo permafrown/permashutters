@@ -4,10 +4,9 @@
     try {
         $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate ' .
         'FROM shutt_posts ' .
-        'WHERE postCat < ":postCatSel" ' .
+        'WHERE postCat = ":postCatSel" ' .
         'ORDER BY postDate DESC');
         $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
-        $stmt->exectute();
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';

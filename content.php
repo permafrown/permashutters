@@ -21,9 +21,13 @@
         <?php
         echo "<div>$postCatSel</div>";
             if (($postCatSel === "") OR $postCatSel = "all") {
+                echo "<div>$postCatSel</div>";
+                echo "<div>from blank or all</div>";
                 include_once 'includes/all_content.php';
             } elseif (!empty($postCatSel)) {
                 include_once 'includes/shutt_content.php';
+                echo "<div>$postCatSel</div>";
+                echo "<div>from not empty</div>";
             } else {echo "<div>select a category, bruh</div>";
             }
         ?>

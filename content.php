@@ -24,7 +24,7 @@
         <?php
             if (empty($postCatSel) OR $postCatSel = all) {
                 include 'includes/all_content.php';
-            } else {
+            } elseif (!empty($postCatSel)) {
                 include 'includes/shutt_content.php';
             }
         ?>

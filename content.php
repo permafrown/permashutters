@@ -21,8 +21,6 @@
         <?php
         echo "<div>$postCatSel</div>";
             if (($postCatSel === "") OR ($postCatSel === "all")) {
-                echo "<div>$postCatSel</div>";
-                echo "<div>from blank or all</div>";
                 include_once 'includes/all_content.php';
             } elseif (($postCatSel === "games") OR
                     ($postCatSel === "fauna") OR
@@ -30,10 +28,9 @@
                     ($postCatSel === "words") OR
                     ($postCatSel === "sundry") OR
                     ($postCatSel === "media")) {
-                echo "<div>$postCatSel</div>";
-                echo "<div>from not empty</div>";
                 include_once 'includes/shutt_content.php';
-            } else {echo "<h3>$postCatSel hain't a category, bruh</h3>";
+            } else {
+                echo "<h3>$postCatSel hain't a category, bruh</h3>";
             }
         ?>
     </div>

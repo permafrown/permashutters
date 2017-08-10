@@ -14,7 +14,7 @@
   <!-- END MAIN TITLE -->
 
   <!-- LARGE SCREEN SUBMENU -->
-  <h2 class="submenu hidden-sm-down"><a href="games.php">games</a> | <a href="fauna.php">fauna</a> | <a href="science.php">science</a> | <a href="words.php">words</a>    | <a href="sundry.php">sundry</a> | <a href="media.php">media</a> | <a href="about.php">about</a></h2>
+  <h2 class="submenu hidden-sm-down"><a href="content.php?cat=all">all</a> | <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a>    | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a> | <a href="about.php">about</a></h2>
   <!-- END LARGE SCREEN SUBMENU -->
 
   <!-- SHUTTER MENU -->
@@ -26,7 +26,6 @@
   <h2 class="submenu subtext hidden-sm-down">a collection of things i find interesting</h2>
   <hr class="perma_hr">
   <div class="column shutters">
-    <a class="shutt col-xs-2 all_shutt" href="content.php?cat=all"><span class="hidden-sm-down">all</span></a>
     <a class="shutt col-xs-2 games_shutt" href="content.php?cat=games"><span class="hidden-sm-down">games</span></a>
     <a class="shutt col-xs-2 fauna_shutt" href="content.php?cat=fauna"><span class="hidden-sm-down">fauna</span></a>
     <a class="shutt col-xs-2 science_shutt" href="content.php?cat=science"><span class="hidden-sm-down">science</span></a>

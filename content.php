@@ -45,7 +45,7 @@
                     ($postCatSel === "media")) {
                 include_once 'includes/shutt_content.php';
             } else {
-                echo "<h3>$postCatSel hain't a category, bruh</h3><br/>
+                echo "<h3>$postCatSel hain't a category, bruh</h3>
                 <h3>choose one below</h3>";
             }
         ?>

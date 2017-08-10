@@ -5,14 +5,11 @@
 <head>
     <?php include_once 'includes/head.php';?>
     <?php include_once 'permadmin/auth/config.php'; ?>
-    <title>games | permashutters</title>
+    <?php $postCatSel = $_GET['cat']; ?>
+    <title><?php echo $postCatSel ?> | permashutters</title>
 </head>
 
 <body>
-    <?php
-    // $postCatSel = "fauna";
-    $postCatSel = $_GET['cat'];
-    ?>
     <h1 class="title_centered" style="margin-top: 10%; color: #0F0;"><small>permashutters</small><?php echo $postCatSel ?></h1>
     <div class="container-fluid">
         <div class="col-xs-12">

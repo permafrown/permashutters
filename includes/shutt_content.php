@@ -1,6 +1,5 @@
 <div class="row d-inline-flex">
     <?php
-    $postCatSel = "games";
     try {
         $sql = "SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate " .
         "FROM shutt_posts " .
@@ -12,7 +11,6 @@
         while($row = $stmt->fetch()){
             echo '<div class="col">';
                 echo '<div class="card">';
-                    echo '<div>' . $postCatSel . '</div>';
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-header">perma-featured</div>';
                         } else {echo '<div></div>';}

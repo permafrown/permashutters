@@ -11,7 +11,7 @@
         if ($postCatSel === "") {
             echo "permashutters";
         } else {
-            echo "'$postCatSel' . ' | permashutters'";
+            echo "$postCatSel | permashutters'";
         }
         ?>
     </title>

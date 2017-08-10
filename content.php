@@ -20,7 +20,7 @@
     <div class="container-fluid shutt_page_content">
         <?php
             if (empty($postCatSel) OR $postCatSel = "all") {
-                include 'includes/all_content.php';
+                include 'includes/shutt_content.php';
             } elseif (!empty($postCatSel)) {
                 include 'includes/shutt_content.php';
             } else {echo "<div>select a category, bruh</div>";

@@ -16,10 +16,10 @@
     </div>
   </div>
   <hr class="perma_hr">
+  <?php $postCatSel = "fauna"; ?>
   <div class="container-fluid shutt_page_content">
       <div class="row d-inline-flex">
           <?php
-          $postCatSel = "fauna";
           try {
               $sql = "SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate " .
               "FROM shutt_posts " .

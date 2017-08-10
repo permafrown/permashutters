@@ -125,11 +125,11 @@
                             </div>
                         </div>
                         <hr class="perma_hr">
-                        <a href="index.php">home</a> | <a href="/permadmin/index.php">admin</a><br/>
-                        <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a><br/>
-                        <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a><br/>
-                        <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a><br/>
-                        <a href="content.php?cat=all">all</a>
+                        <p><a href="index.php">home</a> | <a href="/permadmin/index.php">admin</a></p>
+                        <p><a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a></p>
+                        <p><a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a></p>
+                        <p><a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a></p>
+                        <p><a href="content.php?cat=all">all</p>
                     </div>
                 </div>
             </div>

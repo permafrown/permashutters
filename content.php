@@ -24,11 +24,16 @@
                 echo "<div>$postCatSel</div>";
                 echo "<div>from blank or all</div>";
                 include_once 'includes/all_content.php';
-            } elseif (!empty($postCatSel)) {
+            } elseif (($postCatSel === "games") OR
+                    ($postCatSel === "fauna") OR
+                    ($postCatSel === "science") OR
+                    ($postCatSel === "words") OR
+                    ($postCatSel === "sundry") OR
+                    ($postCatSel === "media")) {
                 echo "<div>$postCatSel</div>";
                 echo "<div>from not empty</div>";
                 include_once 'includes/shutt_content.php';
-            } else {echo "<div>select a category, bruh</div>";
+            } else {echo "<div>$postCatSel hain't category, bruh</div>";
             }
         ?>
     </div>

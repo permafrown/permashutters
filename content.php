@@ -6,7 +6,15 @@
     <?php include_once 'includes/head.php';?>
     <?php include_once 'permadmin/auth/config.php'; ?>
     <?php $postCatSel = $_GET['cat']; ?>
-    <title><?php echo $postCatSel; ?> | permashutters</title>
+    <title>
+        <?php
+        if ($postCatSel === "") {
+            echo "permashutters";
+        } else {
+            echo "'$postCatSel' . ' | permashutters'";
+        }
+        ?>
+    </title>
 </head>
 
 <body>

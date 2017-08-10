@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <?php $postCatSel = "games"; ?>
     <h1 class="title_centered" style="margin-top: 10%; color: #0F0;"><small>permashutters</small>games</h1>
     <div class="container-fluid">
         <div class="col-xs-12">

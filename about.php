@@ -32,14 +32,14 @@
     <section class="para_page" id="games_para_page">
         <div class="para_bg" id="games_para_bg" data-bottom-top="opacity: 0;" data-center-top="opacity: 1;" data-100-top="opacity: 1;"
             data-top-bottom="opacity: 0;" data-anchor-target="#games_para_page">
-            <a href="content.php?cat=games"><div class="para_content_wrapper" id="games_para_content_wrapper" data-bottom-top="display: none;" data-center-top="display: block; opacity: 1;"
+            <div class="para_content_wrapper" id="games_para_content_wrapper" data-bottom-top="display: none;" data-center-top="display: block; opacity: 1;"
                 data-anchor-target="#games_para_content">
                 <div class="para_content" id="games_para_content">
-                    <h3>games </h3>
-                    <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>
-                    <p>starting with tabletop games, then from nintendo to playstation to pc, including everything from
-                        FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</p>
-                </div></a>
+                    <h3><a href="content.php?cat=games">games </h3>
+              <img class="avatar" src="img/games_icon.png" alt="games" style="width:48px;height:48px;"/></a>
+                        <p>starting with tabletop games, then from nintendo to playstation to pc, including everything from
+                            FPS to RPG to sports and side-scrollers, my tastes for gaming run wide and far...</p>
+                </div>
             </div>
         </div>
     </section>

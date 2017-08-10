@@ -21,7 +21,13 @@
     </div>
     <hr class="perma_hr">
     <div class="container-fluid shutt_page_content">
-        <?php include 'includes/shutt_content.php';?>
+        <?php
+            if ($postCatSel = 'all') {
+                include 'includes/all_content.php';
+            }else {
+                include 'includes/shutt_content.php';
+            }
+        ?>
     </div>
     <hr class="perma_hr">
 

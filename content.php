@@ -22,7 +22,7 @@
     <hr class="perma_hr">
     <div class="container-fluid shutt_page_content">
         <?php
-            if ($postCatSel = all) {
+            if (!empty($postCatSel) OR $postCatSel = all) {
                 include 'includes/all_content.php';
             } else {
                 include 'includes/shutt_content.php';

@@ -25,9 +25,9 @@
                 echo "<div>from blank or all</div>";
                 include_once 'includes/all_content.php';
             } elseif (!empty($postCatSel)) {
-                include_once 'includes/shutt_content.php';
                 echo "<div>$postCatSel</div>";
                 echo "<div>from not empty</div>";
+                include_once 'includes/shutt_content.php';
             } else {echo "<div>select a category, bruh</div>";
             }
         ?>

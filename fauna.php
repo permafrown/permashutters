@@ -21,7 +21,9 @@
           <?php
           $postCatSel = "games";
           try {
-              $stmt = $connect->query('SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts WHERE postCat = :postCatSel ORDER BY postDate DESC');
+              $sql = "SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate FROM shutt_posts WHERE postCat = :postCatSel ORDER BY postDate DESC";
+              $stmt = $connect->prepare($sql);
+              $stmt->execute();
               // $stmt->bindParam(':postCatSel', $postCatSel, PDO::PARAM_STR);
               while($row = $stmt->fetch()){
                   echo '<div class="col">';

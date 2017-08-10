@@ -19,7 +19,6 @@
     <hr class="perma_hr">
     <div class="container-fluid shutt_page_content">
         <?php
-        echo "<div>$postCatSel</div>";
             if (($postCatSel === "") OR ($postCatSel === "all")) {
                 include_once 'includes/all_content.php';
             } elseif (($postCatSel === "games") OR

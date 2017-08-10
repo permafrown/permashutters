@@ -19,9 +19,9 @@
   <div class="container-fluid shutt_page_content">
       <div class="row d-inline-flex">
           <?php
-          $postCatSel = "games";
+          $postCatSel = "fauna";
           try {
-              $sql = "SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate " . 
+              $sql = "SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate " .
               "FROM shutt_posts " .
               "WHERE postCat = :postCatSel " .
               "ORDER BY postDate DESC";

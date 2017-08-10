@@ -125,7 +125,8 @@
                             </div>
                         </div>
                         <hr class="perma_hr">
-                        <p><a href="index.php">home</a> | <a href="/permadmin/index.php">admin</a> | <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a> | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a>
+                        <p><a href="index.php">home</a> | <a href="/permadmin/index.php">admin</a></p>
+                        <p><a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a> | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a>
                         </p>
                         <p><a href="content.php?cat=all">all</p>
                     </div>

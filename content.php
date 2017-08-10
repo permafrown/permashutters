@@ -33,7 +33,7 @@
                 echo "<div>$postCatSel</div>";
                 echo "<div>from not empty</div>";
                 include_once 'includes/shutt_content.php';
-            } else {echo "<div>$postCatSel hain't category, bruh</div>";
+            } else {echo "<h3>$postCatSel hain't category, bruh</h3>";
             }
         ?>
     </div>

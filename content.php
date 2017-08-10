@@ -26,7 +26,8 @@
                 include 'includes/all_content.php';
             } elseif (!empty($postCatSel)) {
                 include 'includes/shutt_content.php';
-            } else {echo "<div>select a category, bruh</div>";}
+            } else {echo "<div>select a category, bruh</div>";
+            }
         ?>
     </div>
     <hr class="perma_hr">

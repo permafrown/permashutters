@@ -42,17 +42,12 @@ a {
     padding: 0.25vh 0.25vw;
     margin: 1vh 0.5vw;
     background-color: #500050;
-    background-color: rgba(80,0,80,0.5);
     min-width: 25vw;
     max-width: 45vw;
-}
-.card div {
-    background-color: inherit;
 }
 
 .card-header,
 .card-footer {
-    background-color: inherit;
     color: #333;
     font-size: calc(16px + 1vw);
     max-width: 35vw;

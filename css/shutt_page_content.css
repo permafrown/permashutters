@@ -46,6 +46,9 @@ a {
     min-width: 25vw;
     max-width: 45vw;
 }
+.card div {
+    background-color: inherit;
+}
 
 .card-header,
 .card-footer {

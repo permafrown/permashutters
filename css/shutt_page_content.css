@@ -41,12 +41,12 @@ a {
 .card {
     padding: 0.25vh 0.25vw;
     margin: 1vh 0.5vw;
-    /* PROD   
+    /* PROD
     background-color: #3d3d3d;
     */
     background-color: #500050;
-    min-width: 25vw;
-    max-width: 45vw;
+    min-width: 30vw;
+    max-width: 40vw;
 }
 
 .card-header,

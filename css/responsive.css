@@ -97,6 +97,7 @@ RESPONSIVE DESIGN
         left: 0;
         top: 0;
         height: 100vh;
+        width: 100vw;
         background-color: rgb(40, 40, 40);
         background-color: rgba(40, 40, 40, 0.8);
     }
@@ -109,6 +110,7 @@ RESPONSIVE DESIGN
         top: 0;
         left: 0;
         height: 100vh;
+        width: 100vw;
     }
     #fauna_para_content.para_content {
         position: absolute;
@@ -128,6 +130,7 @@ RESPONSIVE DESIGN
     #words_para_content_wrapper.para_content_wrapper {
         position: relative;
         height: 100vh;
+        width: 100vw;
         top: 0;
         left: 0;
         background-color: rgb(40, 40, 40);
@@ -144,6 +147,7 @@ RESPONSIVE DESIGN
         top: 0;
         left: 0;
         height: 100vh;
+        width: 100vw;
         background-color: rgb(40, 40, 40);
         background-color: rgba(40, 40, 40, 0.5);
     }

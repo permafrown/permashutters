@@ -11,7 +11,7 @@ RESPONSIVE DESIGN
     }
     .title_centered {
         font-size: 22px;
-        font-size: calc(12px + 2.2vw);
+        font-size: calc(24px + 2.2vw);
     }
     ul.topnav li:not(:nth-last-child(2)) {
         display: none;
@@ -28,6 +28,9 @@ RESPONSIVE DESIGN
         margin-top: 0;
         margin-bottom: 0;
         border-radius: 0;
+    }
+    .submenu {
+        font-size: calc(16px + 1vw);
     }
 }
 

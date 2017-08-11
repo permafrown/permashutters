@@ -41,7 +41,7 @@ a {
 .card {
     padding: 0.25vh 0.25vw;
     margin: 1vh 0.5vw;
-    background-color: #80500050;
+    background-color: #500050;
     min-width: 25vw;
     max-width: 45vw;
 }

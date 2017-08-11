@@ -13,9 +13,9 @@
   <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;">permashutters</h1>
   <!-- END MAIN TITLE -->
 
-  <!-- LARGE SCREEN SUBMENU -->
+  <!-- MED SCREEN SUBMENU -->
   <h2 class="submenu hidden-sm-down"><a href="content.php?cat=all">all</a> | <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a>    | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a> | <a href="about.php">about</a></h2>
-  <!-- END LARGE SCREEN SUBMENU -->
+  <!-- END MED SCREEN SUBMENU -->
 
   <!-- SHUTTER MENU -->
   <div class="container-fluid hidden-sm-down">

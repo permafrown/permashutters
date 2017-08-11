@@ -2,8 +2,8 @@
 RESPONSIVE DESIGN
 ***************************/
 
-/*PHONE-ONLY*/
-@media (max-width: 599px) {
+/* PHONE-ONLY | BOOTSTRAP = XS (DEFAULT) */
+@media (max-width: 767px) {
     body,
     html {
         font-size: 12px;
@@ -34,8 +34,8 @@ RESPONSIVE DESIGN
     }
 }
 
-/*TABLET-PORTRAIT-UP*/
-@media (min-width: 600px) and (max-width: 899px) {
+/* TABLET-PORTRAIT-UP | BOOTSTRAP = SM */
+@media (min-width: 768px) {
     body,
     html {
         font-size: 14px;
@@ -170,13 +170,13 @@ RESPONSIVE DESIGN
     ************************************/
 }
 
-/*TABLET-LANDSCAPE-UP*/
-@media (min-width: 900px) and (max-width: 1199px) {
+/* TABLET-LANDSCAPE-UP | BOOTSTRAP = MD */
+@media (min-width: 992px) {
 
 }
 
-/*DESKTOP-UP*/
-@media (min-width: 1200px) and (max-width: 1799px) {
+/* DESKTOP-UP | BOOTSTRAP = LG */
+@media (min-width: 1200px) {
 
 }
 

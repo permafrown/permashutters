@@ -8,6 +8,7 @@
 
 .shutt_page_content p,
 a {
+    background-color: inherit;
     margin-top: 1vh;
     color: #BBB;
     text-decoration: none;

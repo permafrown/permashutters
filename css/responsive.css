@@ -79,7 +79,7 @@ RESPONSIVE DESIGN
         top: 0;
     }
     .about_para_content p {
-        font-size: 3.5vmin;
+        font-size: calc(10px + 1vmin);
     }
     .para_content_wrapper {
         height: 100vh;

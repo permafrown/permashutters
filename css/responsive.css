@@ -10,8 +10,8 @@ RESPONSIVE DESIGN
         font-size: calc(12px + 0.1vw);
     }
     .title_centered {
-        font-size: 32px;
-        font-size: calc(32px + 2.2vw);
+        font-size: 22px;
+        font-size: calc(12px + 2.2vw);
     }
     ul.topnav li:not(:nth-last-child(2)) {
         display: none;

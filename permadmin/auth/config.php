@@ -4,7 +4,7 @@ session_start();
 // Define database
 define('dbhost', 'localhost');
 define('dbuser', 'shutt_dbU');
-define('dbpass', 'Joplin098*');
+define('dbpass', '*********');
 define('dbname', 'testshutters_DB');
 
 // Connecting database

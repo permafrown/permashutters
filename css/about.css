@@ -3,6 +3,7 @@
 
 .para_page {
     height: 100vh;
+    margin: 0 auto;
 }
 
 .para_page a {
@@ -14,6 +15,7 @@
 }
 
 .para_bg {
+    margin: 0 auto;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

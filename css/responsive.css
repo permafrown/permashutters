@@ -1,22 +1,18 @@
 /*****************
-PROPER RESPONSIVE
+RESPONSIVE DESIGN
 ***************************/
 
-
-
-
-
-/*****************
-END PROPER RESPONSIVE
-***************************/
-
-
-
-
-/*****************RESPONSIVE
-***************************/
-
-@media screen and (max-width: 600px) {
+/*PHONE-ONLY*/
+@media (max-width: 599px) {
+    body,
+    html {
+        font-size: 12px;
+        font-size: calc(12px + 0.1vw);
+    }
+    .title_centered {
+        font-size: 32px;
+        font-size: calc(32px + 2.2vw);
+    }
     ul.topnav li:not(:nth-last-child(2)) {
         display: none;
     }
@@ -35,7 +31,8 @@ END PROPER RESPONSIVE
     }
 }
 
-@media screen and (max-width: 768px) {
+/*TABLET-PORTRAIT-UP*/
+@media (min-width: 600px) {
     body,
     html {
         font-size: 14px;
@@ -70,28 +67,21 @@ END PROPER RESPONSIVE
     }
 }
 
-@media screen and (max-width: 640px) {
-    body,
-    html {
-        font-size: 12px;
-        font-size: calc(10px + 0.2vw);
-    }
-    .title_centered {
-        font-size: 32px;
-        font-size: calc(32px + 2.2vw);
-    }
+/*TABLET-LANDSCAPE-UP*/
+@media (min-width: 900px) {
+
 }
 
-@media screen and (max-width: 400px) {}
+/*DESKTOP-UP*/
+@media (min-width: 1200px) {
 
-@media screen and (max-width: 320px) {
-    body,
-    html {
-        font-size: 10px;
-        font-size: calc(10px + 0.1vw);
-    }
 }
 
+/*BIG-DESKTOP-UP*/
+@media (min-width: 1800px) {
 
-/*************END RESPONSIVE
+}
+
+/*****************
+END RESPONSIVE DESIGN
 ***************************/

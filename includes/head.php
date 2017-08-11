@@ -11,5 +11,5 @@
 <link rel="stylesheet" href="/css/auth.css">
 <link rel="stylesheet" href="/css/shutters.css">
 <link rel="stylesheet" href="/css/shutt_page_content.css">
-<link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/responsive.css">
+<link rel="stylesheet" href="/css/main.css">

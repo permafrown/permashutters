@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section class="para_page" id="about_para_page">
+    <div class="para_page" id="about_para_page">
         <div class="para_bg" id="about_para_bg">
             <div class="about_para_content" id="about_para_content">
                 <h1 class="title_centered" style="color: #0F0;"><small>permashutters</small>about</h1>
@@ -27,9 +27,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="para_page" id="games_para_page">
+    <div class="para_page" id="games_para_page">
         <div class="para_bg" id="games_para_bg" data-bottom-top="opacity: 0;" data-center-top="opacity: 1;" data-100-top="opacity: 1;"
             data-top-bottom="opacity: 0;" data-anchor-target="#games_para_page">
             <div class="para_content_wrapper" id="games_para_content_wrapper" data-bottom-top="display: none;" data-center-top="display: block; opacity: 1;"
@@ -42,9 +42,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="para_page" id="fauna_para_page">
+    <div class="para_page" id="fauna_para_page">
         <div class="para_bg" id="fauna_para_bg" data-bottom-top="opacity: 0;" data-center-top="opacity: 1;" data-100-top="opacity: 1;"
             data-top-bottom="opacity: 0;" data-anchor-target="#fauna_para_content">
             <div class="para_content_wrapper" id="fauna_para_content_wrapper">
@@ -56,9 +56,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="para_page" id="science_para_page">
+    <div class="para_page" id="science_para_page">
         <div class="para_bg" id="science_para_bg" data-bottom-top="opacity: 0;" data-center-top="opacity: 1;" data-100-top="opacity: 1;"
             data-top-bottom="opacity: 0;" data-anchor-target="#science_para_content">
             <div class="para_content_wrapper" id="science_para_content_wrapper">
@@ -69,9 +69,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="para_page" id="words_para_page">
+    <div class="para_page" id="words_para_page">
         <div class="para_bg" id="words_para_bg" data-bottom-top="opacity: 0;" data-center-top="opacity: 1;" data-100-top="opacity: 1;"
             data-top-bottom="opacity: 0;" data-anchor-target="#words_para_content">
             <div class="para_content_wrapper" id="words_para_content_wrapper">
@@ -82,9 +82,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="para_page" id="sundry_para_page">
+    <div class="para_page" id="sundry_para_page">
         <div class="para_bg" id="sundry_para_bg" data-bottom-top="opacity: 0;" data-center-top="opacity: 1;" data-100-top="opacity: 1;"
             data-top-bottom="opacity: 0;" data-anchor-target="#sundry_para_content">
             <div class="para_content_wrapper" id="sundry_para_content_wrapper">
@@ -95,9 +95,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="para_page" id="media_para_page">
+    <div class="para_page" id="media_para_page">
         <div class="para_bg" id="media_para_bg" data-bottom-top="opacity: 0;" data-center-top="opacity: 1;" data-100-top="opacity: 1;"
             data-top-bottom="opacity: 0;" data-anchor-target="#media_para_content">
             <div class="para_content_wrapper" id="media_para_content_wrapper">
@@ -108,9 +108,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="para_page" id="tail_para_page">
+    <div class="para_page" id="tail_para_page">
         <div class="para_bg" id="tail_para_bg">
             <div class="about_para_content_wrapper" id="tail_para_content_wrapper">
                 <div class="about_para_content" id="tail_para_content">
@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </div>
-    </section>
+    </div>
 
 
     <?php include_once 'includes/body_scripts.php';?>

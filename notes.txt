@@ -7,9 +7,6 @@ Far Cry 5 Announce Trailer | https://www.youtube.com/watch?v=Kdaoe4hbMso
 Far Cry 5 Site | https://far-cry.ubisoft.com/game/en-ca/home/
 
 
-blarg
-
-
 ================================================================================
 REQUIRED DATABASE FIELDS FOR SHUTT_CARDS |
 _________________________________________
@@ -27,4 +24,195 @@ postDate | date/time | backend;
 
 
 ================================================================================
-asdf
+
+
+/*****************
+RESPONSIVE DESIGN
+***************************/
+
+/*PHONE-ONLY*/
+@media (max-width: 599px) {
+    body,
+    html {
+        font-size: 12px;
+        font-size: calc(12px + 0.1vw);
+    }
+    .title_centered {
+        font-size: 22px;
+        font-size: calc(24px + 2.2vw);
+    }
+    ul.topnav li:not(:nth-last-child(2)) {
+        display: none;
+    }
+    ul.topnav li:nth-last-child(2) {
+        float: left;
+        display: block;
+    }
+    ul.topnav icon {
+        float: right;
+        display: block;
+    }
+    ul.topnav li a:hover {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .submenu {
+        font-size: calc(16px + 1vw);
+    }
+}
+
+/*TABLET-PORTRAIT-UP*/
+@media (min-width: 600px) and (max-width: 899px) {
+    body,
+    html {
+        font-size: 14px;
+        font-size: calc(12px + 0.1vw);
+    }
+    .games_shutt,
+    .science_shutt,
+    .sundry_shutt {
+        height: 30em;
+    }
+    .fauna_shutt,
+    .words_shutt,
+    .media_shutt {
+        height: auto;
+    }
+    .games_shutt:hover,
+    .science_shutt:hover,
+    .sundry_shutt:hover,
+    .fauna_shutt:hover,
+    .words_shutt:hover,
+    .media_shutt:hover {
+        transition: .5s;
+        min-width: 40%;
+    }
+    .submenu {
+        font-size: 5vmin;
+        color: #BBB;
+        font-family: 'Cinzel', serif;
+    }
+    /*****************************
+    ABOUT PAGE PARALLAX MEDIA QUERIES
+    *********************************/
+    .para_page h3 {
+        font-size: 6.5vmin;
+    }
+    .about_content {
+        font-size: 5vmin;
+    }
+    .about_para_content {
+        top: 0;
+    }
+    .about_para_content p {
+        font-size: 3.5vmin;
+    }
+    .para_content_wrapper {
+        height: 100vh;
+        width: 100vw;
+    }
+    .para_content {
+        font-size: 5vmin;
+        width: 90vw;
+        left: 5vw;
+    }
+    .para_content p {
+        font-size: 3.5vmin;
+    }
+    #games_para_content_wrapper.para_content_wrapper {
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background-color: rgb(40, 40, 40);
+        background-color: rgba(40, 40, 40, 0.8);
+    }
+    #games_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+        width: 90vw;
+    }
+    #fauna_para_content_wrapper.para_content_wrapper {
+        top: 0;
+        left: 0;
+        height: 100vh;
+    }
+    #fauna_para_content.para_content {
+        position: absolute;
+        top: 18vh;
+    }
+    #science_para_content_wrapper.para_content_wrapper {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+    #science_para_content.para_content {
+        position: absolute;
+        top: 33vh;
+        width: 90vw;
+    }
+    #words_para_content_wrapper.para_content_wrapper {
+        position: relative;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgb(40, 40, 40);
+        background-color: rgba(40, 40, 40, 0.5);
+    }
+    #words_para_content.para_content {
+        position: absolute;
+        top: 35vh;
+    }
+    #words_para_content h3 {
+        padding: 10px 0;
+    }
+    #sundry_para_content_wrapper.para_content_wrapper {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgb(40, 40, 40);
+        background-color: rgba(40, 40, 40, 0.5);
+    }
+    #sundry_para_content.para_content {
+        position: absolute;
+        top: 10vh;
+    }
+    #media_para_content_wrapper.para_content_wrapper {
+        position: relative;
+        top: 0;
+        left: 0vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(40, 40, 40);
+        background-color: rgba(40, 40, 40, 0.8);
+    }
+    #media_para_content.para_content {
+        position: absolute;
+        top: 35vh;
+        left: 7.5vw;
+        width: 90vw;
+    }
+    /*****************************
+    END ABOUT PAGE PARALLAX MEDIA QUERIES
+    ************************************/
+}
+
+/*TABLET-LANDSCAPE-UP*/
+@media (min-width: 900px) and (max-width: 1199px) {
+
+}
+
+/*DESKTOP-UP*/
+@media (min-width: 1200px) and (max-width: 1799px) {
+
+}
+
+/*BIG-DESKTOP-UP*/
+@media (min-width: 1800px) {
+
+}
+
+/*****************
+END RESPONSIVE DESIGN
+***************************/

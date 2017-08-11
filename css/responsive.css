@@ -2,8 +2,8 @@
 RESPONSIVE DESIGN
 ***************************/
 
-/* PHONE-ONLY | BOOTSTRAP XS */
-@media (max-width: 767px) {
+/*PHONE-ONLY*/
+@media (max-width: 599px) {
     body,
     html {
         font-size: 12px;
@@ -34,8 +34,8 @@ RESPONSIVE DESIGN
     }
 }
 
-/* TABLET-PORTRAIT-UP | BOOTSTRAP SM */
-@media (min-width: 768px) {
+/*TABLET-PORTRAIT-UP*/
+@media (min-width: 600px) and (max-width: 899px) {
     body,
     html {
         font-size: 14px;
@@ -170,13 +170,18 @@ RESPONSIVE DESIGN
     ************************************/
 }
 
-/* TABLET-LANDSCAPE-UP | BOOTSTRAP MD */
-@media (min-width: 992px) {
+/*TABLET-LANDSCAPE-UP*/
+@media (min-width: 900px) and (max-width: 1199px) {
 
 }
 
-/* DESKTOP-UP | BOOTSTRAP LG */
-@media (min-width: 1200px) {
+/*DESKTOP-UP*/
+@media (min-width: 1200px) and (max-width: 1799px) {
+
+}
+
+/*BIG-DESKTOP-UP*/
+@media (min-width: 1800px) {
 
 }
 

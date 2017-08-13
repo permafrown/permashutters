@@ -3,9 +3,9 @@ session_start();
 
 // Define database
 define('dbhost', 'localhost');
-define('dbuser', 'shutt_dbU');
-define('dbpass', '*********');
-define('dbname', 'testshutters_DB');
+define('dbuser', '');
+define('dbpass', '');
+define('dbname', '');
 
 // Connecting database
 try {

@@ -1,11 +1,7 @@
 <?php
 session_start();
 
-// Define variables
-$DB_HOST = 'localhost';
-$DB_UN = '';
-$DB_PW = '';
-$DB_NAME = '';
+require_once($_SERVER["DOCUMENT_ROOT"] . "/permadmin/auth/cred.php");
 
 // Define database
 define('dbhost', $DB_HOST);

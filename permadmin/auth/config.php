@@ -1,11 +1,17 @@
 <?php
 session_start();
 
+// Define variables
+$DB_HOST = 'localhost';
+$DB_UN = '';
+$DB_PW = '';
+$DB_NAME = '';
+
 // Define database
-define('dbhost', 'localhost');
-define('dbuser', 'shutt_dbU');
-define('dbpass', '*********');
-define('dbname', 'testshutters_DB');
+define('dbhost', $DB_HOST);
+define('dbuser', $DB_UW);
+define('dbpass', $DB_PW);
+define('dbname', $DB_NAME);
 
 // Connecting database
 try {

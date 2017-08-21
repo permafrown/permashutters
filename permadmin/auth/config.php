@@ -1,11 +1,13 @@
 <?php
 session_start();
 
+include_once("cred.php");
+
 // Define database
-define('dbhost', 'localhost');
-define('dbuser', 'shutt_dbU');
-define('dbpass', 'Joplin098*');
-define('dbname', 'testshutters_DB');
+define('dbhost', $DB_HOST);
+define('dbuser', $DB_UN);
+define('dbpass', $DB_PW);
+define('dbname', $DB_NAME);
 
 // Connecting database
 try {

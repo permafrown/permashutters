@@ -73,19 +73,13 @@ a span:hover {
     }
 
     .shutt {
-        height: 20vh;
+        height: 12.5vh;
         width: 100vw;
     }
 
     .shutt:hover {
         transition: .5s;
         width: 100vw;
-        height: 40vh;
-    }
-    .shutt {
-        font-size: 28px;
-        font-size: calc(28px + 1.8vw);
-        justify-content: flex-start;
-        text-align: left;
+        height: 25vh;
     }
 }

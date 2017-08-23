@@ -69,7 +69,7 @@ a span:hover {
 
 @media (max-width: 767px) {
     .shutters {
-        display: flex;
+        display: grid;
     }
 
     .shutt {

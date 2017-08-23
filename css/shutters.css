@@ -79,7 +79,7 @@ a span:hover {
 
     .shutt:hover {
         transition: .5s;
+        height: 12.5vh;
         width: 100vw;
-        height: 25vh;
     }
 }

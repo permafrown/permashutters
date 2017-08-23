@@ -82,8 +82,7 @@ a span:hover {
         width: 100vw;
         height: 40vh;
     }
-    .shutt a,
-    a span {
+    .shutt {
         font-size: 28px;
         font-size: calc(28px + 1.8vw);
     }

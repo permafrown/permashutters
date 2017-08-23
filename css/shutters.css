@@ -85,5 +85,7 @@ a span:hover {
     .shutt {
         font-size: 28px;
         font-size: calc(28px + 1.8vw);
+        justify-content: flex-start;
+        text-align: left;
     }
 }

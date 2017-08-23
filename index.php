@@ -55,8 +55,4 @@
 
 </body>
 
-<footer>
-  <?php include_once 'includes/botnav.php';?>
-</footer>
-
 </html>

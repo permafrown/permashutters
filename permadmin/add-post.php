@@ -18,19 +18,23 @@ if(empty($_SESSION['ulogin']))
     <?php include_once('../includes/head.php');?>
   <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
   <script>
-          tinymce.init({
-              forced_root_block_attrs: {
-                  'class': 'card-text',
-              },
-              selector: "textarea",
-              max_width: 40%,
-              plugins: {
-                  "advlist autolink lists link image charmap print preview anchor",
-                  "searchreplace visualblocks code fullscreen",
-                  "insertdatetime media table contextmenu paste"
-              },
-              toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
-          });
+  tinymce.init({
+      selector: 'textarea',
+      height: 500,
+      theme: 'modern',
+      plugins: [
+        'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+        'searchreplace wordcount visualblocks visualchars code fullscreen',
+        'insertdatetime media nonbreaking save table contextmenu directionality',
+        'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
+      ],
+      toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+      toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
+      image_advtab: true,
+      content_css: [
+        '//www.tinymce.com/css/codepen.min.css'
+      ]
+     });
   </script>
 </head>
 <body>

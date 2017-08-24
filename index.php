@@ -33,7 +33,7 @@
   <!-- END SHUTTER MENU -->
 
   <!-- SMALL SCREEN SUBMENU -->
-  <h2 class="submenu hidden-md-up"><a href="about.php">about</a></h2>
+  <h2 class="submenu hidden-md-up"><a href="about.php">about</a> | <a href="content.php?cat=all">all</a></h2>
   <!-- END SMALL SCREEN SUBMENU -->
 
   <!-- MED SCREEN SUBMENU -->

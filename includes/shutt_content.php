@@ -14,12 +14,13 @@
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-header">perma-featured</div>';
                         } else {echo '<div></div>';}
-                    echo '<p>Posted on '.date('Y-m-d @ H:i:s', strtotime($row['postDate'])).' in ' .$row['postCat'].'</p>';
+                    echo '<div class="card-block">';
+                        echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postSlug'].'">'.$row['postTitle'].'</a></h3>';
+                    echo '</div>';
                     if (!empty($row['postImg'])) {
                             echo '<img class="card-img-top" src="'.$row['postImg'].'" alt="'.$row['postTitle'].' image" />';
                         } else {echo '<div></div>';}
                     echo '<div class="card-block">';
-                        echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postSlug'].'">'.$row['postTitle'].'</a></h3>';
                         echo '<p class="card-text">'.$row['postDesc'].'</p>';
                     echo '</div>';
                     if (!empty($row['postLink'])) {
@@ -27,6 +28,7 @@
                                 echo '<a href="'.$row['postLink'].'" class="card-link" target="_blank">'.$row['postLinkText'].'</a>';
                             echo '</div>';
                         } else {echo '<div></div>';}
+                    echo '<p>Posted on '.date('Y-m-d @ H:i:s', strtotime($row['postDate'])).' in ' .$row['postCat'].'</p>';
                     if (($row['postFeat']) != 0) {
                             echo '<div class="card-footer text-muted">this has been perma-featured</div>';
                         } else {echo '<div></div>';}

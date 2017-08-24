@@ -63,6 +63,9 @@
             echo '<h2 class="submenu action_message">Post '.$_GET['action'].'.</h2>';
         }
     ?>
+
+    <p><a href='add-post.php'>add post</a></p>
+
     <table>
         <tr>
             <th>id</th>
@@ -93,8 +96,6 @@
         }
         ?>
     </table>
-
-    <p><a href='add-post.php'>add post</a></p>
 </div>
 
 <!-- END CMS -->

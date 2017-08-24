@@ -9,9 +9,9 @@
 
 <body>
 
-<!-- MAIN TITLE -->
-  <h1 class="title_centered" style="margin-top: 2.5%;">permashutters</h1>
-<!-- END MAIN TITLE -->
+  <!-- MAIN TITLE -->
+  <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;">permashutters</h1>
+  <!-- END MAIN TITLE -->
 
   <!-- SHUTTER MENU -->
   <div class="container-fluid hidden-sm-down">

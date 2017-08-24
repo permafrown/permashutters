@@ -14,11 +14,6 @@
   <!-- END MAIN TITLE -->
 
   <!-- SHUTTER MENU -->
-  <div class="container-fluid hidden-sm-down">
-    <div class="col-xs-12">
-      <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
-    </div>
-  </div>
   <h2 class="submenu subtext hidden-sm-down">a collection of things i find interesting</h2>
   <hr class="perma_hr">
   <div class="column shutters">
@@ -39,6 +34,14 @@
   <!-- MED SCREEN SUBMENU -->
   <h2 class="submenu hidden-sm-down"><a href="content.php?cat=all">all</a> | <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a>    | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a> | <a href="about.php">about</a></h2>
   <!-- END MED SCREEN SUBMENU -->
+
+  <!-- AVATAR -->
+  <div class="container-fluid hidden-sm-down">
+    <div class="col-xs-12">
+      <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
+    </div>
+  </div>
+  <!-- END AVATAR -->
 
   <!-- SCRIPTS -->
   <script src="js/jquery-3.1.1.min.js"></script>

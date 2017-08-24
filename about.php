@@ -5,16 +5,16 @@
 <head>
     <?php include_once 'includes/head.php';?>
     <link rel="stylesheet" href="css/about.css">
-    <title>about | TESTpermashutters</title>
+    <title>about | permashutters</title>
 </head>
 
 <body>
     <div class="para_page" id="about_para_page">
         <div class="para_bg" id="about_para_bg">
             <div class="about_para_content" id="about_para_content">
-                <h1 class="title_centered" style="color: #0F0;"><small>permashutters</small>about</h1>
+                <h1 class="title_centered"><small>permashutters</small>about</h1>
                 <div class="container-fluid about_content">
-                    <p>a TESTING place for everything</p>
+                    <p>a place for everything</p>
                     <p>and everything in its place</p>
                     <hr class="perma_hr">
                     <div class="container-fluid">

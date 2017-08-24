@@ -4,13 +4,13 @@
 
 <head>
   <?php include_once 'includes/head.php';?>
-  <title>TESTpermashutters</title>
+  <title>permashutters</title>
 </head>
 
 <body>
 
   <!-- MAIN TITLE -->
-  <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;">permashutters</h1>
+  <h1 class="title_centered" style="margin-top: 2.5%;">permashutters</h1>
   <!-- END MAIN TITLE -->
 
   <!-- SHUTTER MENU -->

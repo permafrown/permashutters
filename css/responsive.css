@@ -1,0 +1,103 @@
+/*****************
+RESPONSIVE DESIGN
+***************************/
+
+/* PHONE-ONLY | BOOTSTRAP = XS (DEFAULT) */
+@media (max-width: 767px) {
+    body,
+    html {
+        font-size: 12px;
+        font-size: calc(12px + 0.1vw);
+    }
+    .title_centered {
+        font-size: 22px;
+        font-size: calc(24px + 2.2vw);
+    }
+    ul.topnav li:not(:nth-last-child(2)) {
+        display: none;
+    }
+    ul.topnav li:nth-last-child(2) {
+        float: left;
+        display: block;
+    }
+    ul.topnav icon {
+        float: right;
+        display: block;
+    }
+    ul.topnav li a:hover {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .submenu {
+        font-size: calc(16px + 1vw);
+        font-family: inherit;
+    }
+}
+
+/* TABLET-PORTRAIT-UP | BOOTSTRAP = SM */
+@media (min-width: 768px) {
+    body,
+    html {
+        font-size: 14px;
+        font-size: calc(12px + 0.1vw);
+    }
+    .games_shutt,
+    .science_shutt,
+    .sundry_shutt {
+        height: 30em;
+    }
+    .fauna_shutt,
+    .words_shutt,
+    .media_shutt {
+        height: auto;
+    }
+    .games_shutt:hover,
+    .science_shutt:hover,
+    .sundry_shutt:hover,
+    .fauna_shutt:hover,
+    .words_shutt:hover,
+    .media_shutt:hover {
+        transition: .5s;
+        min-width: 40%;
+    }
+    .submenu {
+        font-size: 3.5vmin;
+        color: #BBB;
+        font-family: inherit;
+    }
+}
+
+/* TABLET-LANDSCAPE-UP | BOOTSTRAP = MD */
+@media (min-width: 992px) {
+    .submenu {
+        font-size: inherit;
+        font-size: calc(10px + 1vw);
+    }
+
+    .submenu a {
+        color: inherit;
+    }
+
+    .subtext {
+        color: #BBB;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 2.5vh;
+        text-shadow: 4px 4px 2px rgb(10, 10, 10);
+        text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+    }
+}
+
+/* DESKTOP-UP | BOOTSTRAP = LG */
+@media (min-width: 1200px) {
+
+}
+
+/*BIG-DESKTOP-UP*/
+@media (min-width: 1800px) {
+
+}
+
+/*****************
+END RESPONSIVE DESIGN
+***************************/

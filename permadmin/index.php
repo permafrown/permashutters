@@ -1,60 +1,124 @@
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
+<?php include_once('auth/config.php');?>
+<?php
+    session_start();
+
+//verify user logged in
+    if(empty($_SESSION['ulogin']))
+    {
+        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/permadmin/auth/login.php');
+        echo 'not logged in, bruh';
+        exit;
+    }
+
+//show message from add / edit page
+    if(isset($_GET['delpost'])){
+
+    	$stmt = $connect->prepare('DELETE FROM shutt_posts WHERE postID = :postID') ;
+    	$stmt->execute(array(':postID' => $_GET['delpost']));
+
+    	header('Location: index.php?action=deleted');
+    	exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Bevan|Cinzel|Cinzel+Decorative|EB+Garamond|Lato|Libre+Baskerville|Montserrat|Overlock|Overlock+SC|Poiret+One|Roboto+Condensed|Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro|Tangerine" rel="stylesheet">
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/animate-master/animate.css">
-    <link rel="stylesheet" href="../css/shutters.css">
-    <link rel="stylesheet" href="../css/shutt_page_content.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <title>TESTpermashuttersADMIN</title>
+<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/head.php");?>
+<script language="JavaScript" type="text/javascript">
+  function delpost(id, title)
+  {
+	  if (confirm("delete '" + title + "'?"))
+	  {
+	  	window.location.href = 'index.php?delpost=' + id;
+	  }
+  }
+  </script>
+    <title>ADMINTESTpermashutters</title>
 </head>
 <body>
 
 <!-- MAIN TITLE -->
-    <h1 class="title_centered" style="margin-top: 2.5%; color: #0F0;">permADMIN</h1>
+    <h1 class="title_centered" style="margin-top: 2.5%; color: #8e44ad;text-shadow: 4px 4px 2px rgba(0, 255, 0, 0.5);">permADMIN</h1>
 <!-- END MAIN TITLE -->
 
 <!-- LARGE SCREEN SUBMENU -->
     <hr class="permahr hidden-sm-down">
-    <h2 class="submenu hidden-sm-down"><a href="../index.php">home</a> | <a href="../games.php">games</a> | <a href="../fauna.php">fauna</a> | <a href="../science.php">science</a> | <a href="../words.php">words</a> | <a href="../sundry.php">sundry</a> | <a href="../media.php">media</a> | <a href="../about.php">about</a></h2>
+    <h2 class="submenu hidden-sm-down"><a href="../index.php">home</a> | <a href="../games.php">games</a> | <a href="../fauna.php">fauna</a> | <a href="../science.php">science</a> | <a href="../words.php">words</a> | <a href="../sundry.php">sundry</a> | <a href="../media.php">media</a> | <a href="../about.php">about</a> | <a href="auth/logout.php">logout</a></h2>
     <hr class="permahr hidden-sm-down">
 <!-- END LARGE SCREEN SUBMENU -->
 <!-- CMS -->
-<?php
-    if ( !empty ( $_GET )) {
-        $post = $_GET['p'];
-        $cat = $_GET['cat'];
-    }
-    if ( empty ( $post ) && empty ( $cat) ) {
-        echo 'home';
-    } elseif ( !empty ( $post )) {
-        echo 'single post page';
-    } elseif ( !empty ( $cat )) {
-        echo 'category page';
-    }
-?>
+<h2 class="title_centered">
+    <?php
+        if(isset($errMsg)){
+            echo '<div style="color:#FF0000;text-align:center;font-size:18px;">'.$errMsg.'</div>';
+        }
+    ?>
+</h2>
+<div class="admin_menu" id=menu-wrapper>
+    <?php include_once("menu.php");?>
+    <?php
+    //show message from add / edit page
+        if(isset($_GET['action'])){
+            echo '<h2 class="submenu action_message">Post '.$_GET['action'].'.</h2>';
+        }
+    ?>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>date</th>
+            <th>category</th>
+            <th>action</th>
+        </tr>
+        <?php
+            try {
+                $stmt = $connect->query('SELECT postID, postTitle, postDate, postCat FROM shutt_posts ORDER BY postID DESC');
+                while($row = $stmt->fetch()){
+                    echo '<tr>';
+                    echo '<td>'.$row['postID'].'</td>';
+                    echo '<td>'.$row['postTitle'].'</td>';
+                    echo '<td>'.date('jS M Y', strtotime($row['postDate'])).'</td>';
+                    echo '<td>'.$row['postCat'].'</td>';
+                    ?>
+                    <td>
+                        <a href="edit-post.php?id=<?php echo $row['postID'];?>">edit</a> |
+                        <a href="javascript:delpost('<?php echo $row['postID'];?>','<?php echo $row['postTitle'];?>')">delete</a>
+                    </td>
+                    <?php
+                    echo '</tr>';
+            }
+        } catch(PDOException $e) {
+            echo $e->getMessage();
+        }
+        ?>
+    </table>
+
+    <p><a href='add-post.php'>add post</a></p>
+</div>
+
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->
     <hr class="permahr hidden-md-up">
     <h2 class="submenu hidden-md-up"><a href="../index.php">home</a></h2>
     <h2 class="submenu hidden-md-up"><a href="../about.php">about</a></h2>
+    <h2 class="submenu hidden-md-up"><a href="auth/logout.php">logout</a></h2>
     <hr class="permahr hidden-md-up">
 <!-- END SMALL SCREEN SUBMENU -->
 
+<!-- RANDOM STATS-->
+<hr class="permahr">
+<h2 class="submenu"><?php echo ($_SESSION['ulogin']);?></h2>
+<h2 class="submenu"><?php echo date(DATE_RFC7231);?></h2>
+<h2 class="submenu"><?php echo 'america/toronto';?></h2>
+<h2 class="submenu"><?php echo time();?></h2>
+<!-- END RANDOM STATS -->
+
+
+
+
 <!-- SCRIPTS -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script src="../js/_main.js"></script>
+<?php include_once($_SERVER["DOCUMENT_ROOT"] . "/includes/body_scripts.php");?>
 
 <!-- END SCRIPTS -->
 

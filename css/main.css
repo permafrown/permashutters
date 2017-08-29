@@ -49,15 +49,12 @@ pre {
 /****************MAIN TITLE
 ***************************/
 .main_title {
-    display: inline;
-    text-align: left;
-    justify-content: left;
+    display: flex;
     margin-bottom: 50px;
     color: #BBB;
     font-family: 'Poiret One', cursive;
-    /*text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);*/
-    font-size: 24px;
-    font-size: calc(22px + 1.8vw);
+    font-size: 20px;
+    font-size: calc(18px + 1.8vw);
 }
 
 /*************END MAIN TITLE

@@ -155,7 +155,7 @@ shutt a {
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
 .title_centered {
-    margin-bottom: 50px;
+    margin: 2vmin;
     color: #BBB;
     font-family: 'Poiret One', cursive;
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);

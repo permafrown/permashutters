@@ -20,9 +20,6 @@
 
   <!-- SHUTTER MENU -->
   <hr class="perma_hr">
-  <!-- END SUB TITLE -->
-
-  <!-- SHUTTER MENU -->
   <div class="column shutters">
     <a class="shutt col-xs-2 games_shutt" href="content.php?cat=games"><span class="hidden-sm-down">games</span></a>
     <a class="shutt col-xs-2 fauna_shutt" href="content.php?cat=fauna"><span class="hidden-sm-down">fauna</span></a>

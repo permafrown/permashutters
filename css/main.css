@@ -56,6 +56,11 @@ pre {
     font-size: 20px;
     font-size: calc(18px + 1.8vw);
 }
+.main_title h2 {
+    font-size: 16px;
+    font-size: calc(14px + 1.8vw);
+    margin-left: 20px;
+}
 
 /*************END MAIN TITLE
 ***************************/

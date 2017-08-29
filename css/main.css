@@ -70,6 +70,7 @@ pre {
 .submenu {
     font-size: inherit;
     font-size: calc(10px + 1vw);
+    font-family: 'Poiret One', cursive;
 }
 .submenu a {
     color: inherit;

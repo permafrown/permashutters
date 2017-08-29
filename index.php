@@ -11,7 +11,7 @@
 
   <!-- MAIN TITLE -->
   <h1 class="main_title" style="margin-top: 2.5%;"> <span style="color: #0F0;">permashutters</span></h1>
-  <h2>a collection of things i find interesting</small></h2>
+  <h2 class="main_title"><small>a collection of things i find interesting</small></h2>
   <!-- END MAIN TITLE -->
 
   <!-- SUBTITLE -->

@@ -14,7 +14,7 @@
   <!-- END MAIN TITLE -->
 
   <!-- SUBTITLE -->
-  <h2 class="submenu subtext hidden-sm-down">a collection of things i find interesting</h2>
+  <!-- <h2 class="submenu subtext hidden-sm-down">a collection of things i find interesting</h2> -->
   <!-- END SUBTITLE -->
 
   <!-- SHUTTER MENU -->

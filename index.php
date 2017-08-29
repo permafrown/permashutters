@@ -10,11 +10,15 @@
 <body>
 
   <!-- MAIN TITLE -->
-  <h1 class="title_centered" style="margin-top: 2.5%;">permashutters</h1>
+  <h1 class="main_title"> permashutters</h1>
+  <h2 class="main_title tag_line">a collection of things i find interesting</h2>
   <!-- END MAIN TITLE -->
 
-  <!-- SUB TITLE -->
-  <h2 class="submenu subtext hidden-sm-down">a collection of things i find interesting</h2>
+  <!-- SUBTITLE -->
+  <!-- <h2 class="submenu subtext hidden-sm-down">a collection of things i find interesting</h2> -->
+  <!-- END SUBTITLE -->
+
+  <!-- SHUTTER MENU -->
   <hr class="perma_hr">
   <!-- END SUB TITLE -->
 

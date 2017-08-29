@@ -49,7 +49,7 @@ pre {
 /****************MAIN TITLE
 ***************************/
 .main_title {
-    display: flex;
+    display: inline;
     margin-bottom: 50px;
     color: #BBB;
     font-family: 'Poiret One', cursive;

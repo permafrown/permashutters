@@ -31,8 +31,6 @@ RESPONSIVE DESIGN
     }
     .submenu {
         font-size: calc(16px + 1vw);
-        font-family: inherit;
-        font-family: 'Poiret One', cursive;
     }
 }
 
@@ -65,8 +63,6 @@ RESPONSIVE DESIGN
     .submenu {
         font-size: 3.5vmin;
         color: #BBB;
-        font-family: inherit;
-        font-family: 'Poiret One', cursive;
     }
 }
 
@@ -75,7 +71,6 @@ RESPONSIVE DESIGN
     .submenu {
         font-size: inherit;
         font-size: calc(10px + 1vw);
-        font-family: inherit;
     }
 
     .submenu a {

@@ -75,6 +75,7 @@ RESPONSIVE DESIGN
     .submenu {
         font-size: inherit;
         font-size: calc(10px + 1vw);
+        font-family: inherit;
     }
 
     .submenu a {

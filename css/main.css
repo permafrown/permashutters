@@ -57,8 +57,8 @@ pre {
     font-size: calc(18px + 1.8vw);
 }
 .tag_line {
-    font-size: 16px;
-    font-size: calc(14px + 1.8vw);
+    font-size: 30px;
+    font-size: calc(6px + 1.8vw);
     margin-left: 20px;
 }
 

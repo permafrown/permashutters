@@ -10,7 +10,7 @@
 <body>
 
   <!-- MAIN TITLE -->
-  <h1 class="main_title" style="margin-top: 2.5%;"> <span style="color: #0F0;">permashutters</span></h1>
+  <h1 class="main_title"> <span style="color: #0F0;">permashutters</span></h1>
   <h2 class="main_title tag_line">a collection of things i find interesting</h2>
   <!-- END MAIN TITLE -->
 

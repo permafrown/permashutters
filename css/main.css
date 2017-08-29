@@ -49,10 +49,8 @@ pre {
 /****************MAIN TITLE
 ***************************/
 .main_title {
-    display: inline;
-    margin: 2vh auto;
-    /*margin-top: 2vh;
-    margin-bottom: 2vh;*/
+    display: inline-flex;
+    margin: 1vh;
     color: #BBB;
     font-family: 'Poiret One', cursive;
     font-size: 20px;

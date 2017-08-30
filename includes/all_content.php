@@ -20,6 +20,11 @@
                         echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postSlug'].'">'.$row['postTitle'].'</a></h3>';
                         echo '<p class="card-text">'.$row['postDesc'].'</p>';
                     echo '</div>';
+                    if (!empty($row['postSlug'])) {
+                          echo '<div class="card-block">';
+                            echo '<a href="viewpost.php?id='.$row['postSlug'].'">more...</a>';
+                          echo '</div>';
+                        } else {echo '<div></div>';}
                     if (!empty($row['postLink'])) {
                             echo '<div class="card-block">';
                                 echo '<a href="'.$row['postLink'].'" class="card-link" target="_blank">'.$row['postLinkText'].'</a>';

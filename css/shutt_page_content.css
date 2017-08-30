@@ -52,9 +52,7 @@ a {
 .card-header,
 .card-footer {
     color: #333;
-    font-size: calc(16px + 1vw);
-    max-width: 35vw;
-    margin: 0 auto;
+    font-size: calc(10px + 1vw);
 }
 
 .card-block {

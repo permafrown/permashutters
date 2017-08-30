@@ -12,7 +12,7 @@
             echo '<div class="col">';
                 echo '<div class="card">';
                     if (($row['postFeat']) != 0) {
-                            echo '<div class="card-header">perma-featured</div>';
+                            echo '<div class="card-header">featured</div>';
                         } else {echo '<div></div>';}
                     echo '<div class="card-block">';
                         echo '<h3 class="card-title"><a href="viewpost.php?id='.$row['postSlug'].'">'.$row['postTitle'].'</a></h3>';
@@ -34,9 +34,6 @@
                             echo '</div>';
                         } else {echo '<div></div>';}
                     echo '<p>Posted on '.date('Y-m-d @ H:i:s', strtotime($row['postDate'])).' in ' .$row['postCat'].'</p>';
-                    if (($row['postFeat']) != 0) {
-                            echo '<div class="card-footer text-muted">this has been perma-featured</div>';
-                        } else {echo '<div></div>';}
                 echo '</div>';
             echo '</div>';
         }

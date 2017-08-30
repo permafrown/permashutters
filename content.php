@@ -10,6 +10,8 @@
         <?php
         if ($postCatSel === "") {
             echo "permashutters";
+        } elseif ($postCatSel === "feat") {
+            echo "featured | permashutters";
         } else {
             echo "$postCatSel | permashutters";
         }
@@ -18,10 +20,12 @@
 </head>
 
 <body>
-    <h1 class="title_centered">
+    <h1 class="title_centered" style="color: #0F0;">
         <?php
             if (($postCatSel === "") OR ($postCatSel === "all")) {
                 echo "<small>permashutters</small>";
+            } elseif ($postCatSel ==="feat") {
+                echo "<small>permashutters</small>featured";
             } else {
                 echo "<small>permashutters</small>$postCatSel";
             }
@@ -32,6 +36,8 @@
         <?php
             if (($postCatSel === "") OR ($postCatSel === "all")) {
                 include_once 'includes/all_content.php';
+            } elseif ($postCatSel === "feat") {
+                include_once 'includes/feat_content.php';
             } elseif (($postCatSel === "games") OR
                     ($postCatSel === "fauna") OR
                     ($postCatSel === "science") OR

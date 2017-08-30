@@ -32,9 +32,6 @@
                                 echo '<a href="'.$row['postLink'].'" class="card-link" target="_blank">'.$row['postLinkText'].'</a>';
                             echo '</div>';
                         } else {echo '<div></div>';}
-                    if (($row['postFeat']) != 0) {
-                            echo '<div class="card-footer text-muted">this has been perma-featured</div>';
-                        } else {echo '<div></div>';}
                 echo '</div>';
             echo '</div>';
         }

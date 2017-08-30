@@ -4,7 +4,7 @@
 
 <head>
   <?php include_once 'includes/head.php';?>
-  <title>TESTpermashutters</title>
+  <title>permashutters</title>
 </head>
 
 <body>

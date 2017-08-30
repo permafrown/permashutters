@@ -36,7 +36,7 @@
   <!-- END SMALL SCREEN SUBMENU -->
 
   <!-- MED SCREEN SUBMENU -->
-  <h2 class="submenu hidden-sm-down"><a href="content.php?cat=all">all</a> | <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a>    | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a> | <a href="about.php">about</a> | <a href="content.php?cat=feat>featured"</a></h2>
+  <h2 class="submenu hidden-sm-down"><a href="content.php?cat=all">all</a> | <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a>    | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a> | <a href="about.php">about</a> | <a href="content.php?cat=feat">featured</a></h2>
   <!-- END MED SCREEN SUBMENU -->
 
   <!-- AVATAR -->

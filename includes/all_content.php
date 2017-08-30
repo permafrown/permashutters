@@ -1,7 +1,7 @@
 <div class="row d-inline-flex">
     <?php
     try {
-        $sql = "SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postDate " .
+        $sql = "SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postCont, postDate " .
         "FROM shutt_posts " .
         "ORDER BY postDate DESC";
         $stmt = $connect->prepare($sql);
@@ -21,6 +21,11 @@
                     echo '<div class="card-block">';
                         echo '<p class="card-text">'.$row['postDesc'].'</p>';
                     echo '</div>';
+                    if (!empty($row['postCont'])) {
+                          echo '<div class="card-block">';
+                            echo '<a href="viewpost.php?id='.$row['postSlug'].'">more...</a>';
+                          echo '</div>';
+                        } else {echo '<div></div>';}
                     if (!empty($row['postLink'])) {
                             echo '<div class="card-block">';
                                 echo '<a href="'.$row['postLink'].'" class="card-link" target="_blank">'.$row['postLinkText'].'</a>';

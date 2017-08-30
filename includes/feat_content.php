@@ -3,7 +3,7 @@
     try {
         $sql = "SELECT postID, postTitle, postSlug, postImg, postLink, postLinkText, postFeat, postCat, postDesc, postCont, postDate " .
         "FROM shutt_posts " .
-        "WHERE postFeat === 0 " .
+        "WHERE postFeat != 0 " .
         "ORDER BY postDate DESC";
         $stmt = $connect->prepare($sql);
         $stmt->execute();

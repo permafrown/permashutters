@@ -1,7 +1,4 @@
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
-<?php
-echo 'gerbils are neat';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -15,7 +12,7 @@ echo 'gerbils are neat';
   <hr class="permahr">
   <div class="container-fluid">
       <div class="col-xs-12">
-          <a href="index.php"><img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="http://bit.ly/permavatar" alt="avatar" /></a>
+          <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="http://bit.ly/permavatar" alt="avatar" /></a>
       </div>
   </div>
   <hr class="permahr">

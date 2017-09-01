@@ -11,7 +11,7 @@ echo 'gerbils are neat';
   <title>gerbil | permashutters</title>
 </head>
 <body>
-
+  <h1 class="title-centered">gerbil | permashutters</h1>
   <hr class="permahr">
   <div class="container-fluid">
       <div class="col-xs-12">

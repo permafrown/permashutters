@@ -46,7 +46,8 @@ a {
     */
     background-color: #500050;
     min-width: 25vw;
-    max-width: 45vw;
+    /*max-width: 45vw;*/
+    max-width: 75vw;
 }
 
 .card-header,

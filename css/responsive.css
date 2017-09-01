@@ -40,10 +40,11 @@ RESPONSIVE DESIGN
       height: calc(80vw * (9/16));
     }
     .card {
-        width: 100vw;
+      min-width: 90vw;
+      max-width: 90vw;
       }
     .card-text {
-      width: 85vw;
+      max-width: 85vw;
     }
 
 }

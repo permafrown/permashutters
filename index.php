@@ -42,7 +42,7 @@
   <!-- AVATAR -->
   <div class="container-fluid hidden-sm-down">
     <div class="col-xs-12">
-      <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="http://bit.ly/shutt_avatar" alt="avatar" /></a>
+      <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://www.dropbox.com/s/dny82aii9hsxblx/permafrown_avatar_kingdom_come_spectre.png?dl=0" alt="avatar" /></a>
     </div>
   </div>
   <!-- END AVATAR -->

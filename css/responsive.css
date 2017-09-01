@@ -32,6 +32,13 @@ RESPONSIVE DESIGN
     .submenu {
         font-size: calc(16px + 1vw);
     }
+    .card {
+        width: 100vw;
+      }
+    .shutt_page_content img {
+        width: 80vw;
+        height: calc(80vw * (9/16));
+      }
 }
 
 /* TABLET-PORTRAIT-UP | BOOTSTRAP = SM */

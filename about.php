@@ -19,7 +19,7 @@
                     <hr class="perma_hr">
                     <div class="container-fluid">
                         <div class="col-xs-12">
-                            <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
+                            <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="http://bit.ly/shutt_avatar" alt="avatar" /></a>
                         </div>
                     </div>
                     <hr class="perma_hr">
@@ -121,7 +121,7 @@
                         <hr class="perma_hr">
                         <div class="container-fluid">
                             <div class="col-xs-12">
-                                <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://dl.dropboxusercontent.com/u/5650853/permafrown_avatar_kingdom_come_spectre.png" alt="avatar" /></a>
+                                <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="http://bit.ly/shutt_avatar" alt="avatar" /></a>
                             </div>
                         </div>
                         <hr class="perma_hr">

@@ -19,7 +19,7 @@
                     <hr class="perma_hr">
                     <div class="container-fluid">
                         <div class="col-xs-12">
-                            <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://www.dropbox.com/s/dny82aii9hsxblx/permafrown_avatar_kingdom_come_spectre.png?dl=0" alt="avatar" /></a>
+                            <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://photos-2.dropbox.com/t/2/AAC8zKS4D_LZLlB-xIds-glY7ZB6VwgGvxWoyIGP6Lj0-g/12/5650853/png/32x32/1/_/1/2/permafrown_avatar_kingdom_come_spectre.png/ENi_nQQY7ZUYIAcoBw/SReTLUErmNh7cxJq6t66JP4i5VrxSg0b2F-imRZro94" alt="avatar" /></a>
                         </div>
                     </div>
                     <hr class="perma_hr">
@@ -121,7 +121,7 @@
                         <hr class="perma_hr">
                         <div class="container-fluid">
                             <div class="col-xs-12">
-                                <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://www.dropbox.com/s/dny82aii9hsxblx/permafrown_avatar_kingdom_come_spectre.png?dl=0" alt="avatar" /></a>
+                                <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="https://photos-2.dropbox.com/t/2/AAC8zKS4D_LZLlB-xIds-glY7ZB6VwgGvxWoyIGP6Lj0-g/12/5650853/png/32x32/1/_/1/2/permafrown_avatar_kingdom_come_spectre.png/ENi_nQQY7ZUYIAcoBw/SReTLUErmNh7cxJq6t66JP4i5VrxSg0b2F-imRZro94" alt="avatar" /></a>
                             </div>
                         </div>
                         <hr class="perma_hr">

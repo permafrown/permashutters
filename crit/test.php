@@ -3,8 +3,8 @@
 <html lang="en">
 <html>
 <head>
-  <?php include_once 'includes/head.php';?>
-  <?php include_once 'permadmin/auth/config.php'; ?>
+  <?php include_once '../includes/head.php';?>
+  <?php include_once '../permadmin/auth/config.php'; ?>
   <title>test | permashutters</title>
 </head>
 <body>

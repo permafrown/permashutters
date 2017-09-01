@@ -46,7 +46,27 @@ RESPONSIVE DESIGN
     .card-text {
       max-width: 85vw;
     }
+}
 
+/* PIXEL QUERY | MAYBE?? */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:portrait) {
+  .submenu {
+      font-size: calc(16px + 1vw);
+  }
+  .shutt_page_content {
+    margin: 0 auto;
+  }
+  .shutt_page_content img {
+    width: 80vw;
+    height: calc(80vw * (9/16));
+  }
+  .card {
+    min-width: 90vw;
+    max-width: 90vw;
+    }
+  .card-text {
+    max-width: 85vw;
+  }
 }
 
 /* TABLET-PORTRAIT-UP | BOOTSTRAP = SM */

@@ -39,10 +39,10 @@
             } elseif ($postCatSel === "feat") {
                 include_once 'includes/feat_content.php';
             } elseif ($postCatSel === "gerbil") {
-                header('Location: http://' . $_SERVER['HTTP_HOST'] . '/gerbil.php');
+                header('Location: http://' . $_SERVER['HTTP_HOST'] . '/crit/gerbil.php');
                 exit;
             } elseif ($postCatSel === "test") {
-                header('Location: http://' . $_SERVER['HTTP_HOST'] . '/test.php');
+                header('Location: http://' . $_SERVER['HTTP_HOST'] . '/crit/test.php');
                 exit;
             } elseif (($postCatSel === "games") OR
                     ($postCatSel === "fauna") OR

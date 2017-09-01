@@ -17,6 +17,6 @@
   </div>
   <hr class="permahr">
 
-  <?php include_once "includes/body_scripts.php"; ?>
+  <?php include_once "../includes/body_scripts.php"; ?>
 </body>
 </html>

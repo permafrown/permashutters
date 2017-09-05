@@ -15,7 +15,7 @@ if($row['postID'] == ''){
 <html lang="en">
 <head>
     <?php require_once('includes/head.php'); ?>
-    <title>permashutters | <?php echo $row['postCat'], " | ", $row['postTitle'];?></title>
+    <title><?php echo $row['postCat'], " | ", $row['postTitle'];?></title>
 </head>
 <body>
 
@@ -23,7 +23,7 @@ if($row['postID'] == ''){
 
 		<h1><?php echo $row['postCat'];?></h1>
 		<hr class="permahr"/>
-		<p><a href="./">home</a></p>
+		<p><a href="./">home</a> | <a href="./content.php?cat=<?php echo $row['postCat'];?>>back</a></p>
 
 
 		<?php

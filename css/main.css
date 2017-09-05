@@ -97,6 +97,9 @@ pre {
     width: 100%;
     font-family: 'Overlock', cursive;
 }
+.bot_nav.row {
+    display: inline-flex;
+}
 .foot_nav {
     list-style-type: none;
     margin: 0;

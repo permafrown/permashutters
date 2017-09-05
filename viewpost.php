@@ -18,14 +18,9 @@ if($row['postID'] == ''){
     <title><?php echo $row['postCat'], " | ", $row['postTitle'];?></title>
 </head>
 <body>
-
+	<p><a href="./">home</a> | <a href="content.php?cat=<?php echo $row['postCat'];?>">back</a></p>
+	<hr class="perma_hr">
 	<div id="wrapper">
-
-		<h1><?php echo $row['postCat'], " | ", $row['postTitle'];?></h1>
-		<hr class="permahr"/>
-		<p><a href="./">home</a> | <a href="content.php?cat=<?php echo $row['postCat'];?>">back</a></p>
-
-
 		<?php
 			echo '<div class="shutt_page_content">';
 				echo '<h1>'.$row['postTitle'].'</h1>';
@@ -33,8 +28,8 @@ if($row['postID'] == ''){
 				echo '<p>'.$row['postCont'].'</p>';
 			echo '</div>';
 		?>
-
 	</div>
+	<hr class="perma_hr">
   <?php include_once('includes/body_scripts.php'); ?>
 </body>
 

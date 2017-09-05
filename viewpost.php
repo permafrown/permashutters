@@ -18,12 +18,12 @@ if($row['postID'] == ''){
     <title><?php echo $row['postCat'], " | ", $row['postTitle'];?></title>
 </head>
 <body>
+	<h1><?php echo $row['postCat'], " | ", $row['postTitle'];?></h1>
 	<p><a href="./">home</a> | <a href="content.php?cat=<?php echo $row['postCat'];?>">back</a></p>
 	<hr class="perma_hr">
 	<div id="wrapper">
 		<?php
 			echo '<div class="shutt_page_content">';
-				echo '<h1>'.$row['postTitle'].'</h1>';
 				echo '<p>Posted on '.date('Y-m-d @ H:i:s', strtotime($row['postDate'])).'</p>';
 				echo '<p>'.$row['postCont'].'</p>';
 			echo '</div>';

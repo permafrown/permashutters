@@ -97,6 +97,9 @@ pre {
     width: 100%;
     font-family: 'Overlock', cursive;
 }
+.bot_row {
+    display: inline-flex;
+}
 .foot_nav {
     list-style-type: none;
     margin: 0;
@@ -155,7 +158,7 @@ shutt a {
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 }
 .title_centered {
-    margin: 2vmin;
+    margin-bottom: 50px;
     color: #BBB;
     font-family: 'Poiret One', cursive;
     text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
@@ -180,8 +183,8 @@ h3 a:hover {
     text-shadow: 4px 4px 2px rgba(230, 230, 230, 1);
 }
 .avatar {
-    margin-top: 2vh;
-    margin-bottom: 1vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 50%;
     max-height: 150px;
 }

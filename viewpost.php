@@ -21,7 +21,7 @@ if($row['postID'] == ''){
 
 	<div id="wrapper">
 
-		<h1><?php echo $row['postCat'];?></h1>
+		<h1><?php echo $row['postCat'], " | ", $row['postTitle'];?></h1>
 		<hr class="permahr"/>
 		<p><a href="./">home</a> | <a href="content.php?cat=<?php echo $row['postCat'];?>">back</a></p>
 

@@ -30,6 +30,7 @@ if($row['postID'] == ''){
 		?>
 	</div>
 	<hr class="perma_hr">
+	<?php include_once('includes/avatar.php'); ?>
   <?php include_once('includes/body_scripts.php'); ?>
 </body>
 

@@ -17,11 +17,7 @@
                     <p>a place for everything</p>
                     <p>and everything in its place</p>
                     <hr class="perma_hr">
-                    <div class="container-fluid">
-                        <div class="col-xs-12">
-                            <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="img/permavatar.png" alt="avatar" /></a>
-                        </div>
-                    </div>
+                      <?php include_once('includes/avatar.php'); ?>
                     <hr class="perma_hr">
                     <h2 class="submenu"><a href="#games_para_page">games</a> | <a href="#fauna_para_page">fauna</a> | <a href="#science_para_page">science</a>                        | <a href="#words_para_page">words</a> | <a href="#sundry_para_page">sundry</a> | <a href="#media_para_page">media</a></h2>
                 </div>
@@ -119,11 +115,7 @@
                         <p>that's it for the descriptions</p>
                         <p>now get in there and check it out</p>
                         <hr class="perma_hr">
-                        <div class="container-fluid">
-                            <div class="col-xs-12">
-                                <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="img/permavatar.png" alt="avatar" /></a>
-                            </div>
-                        </div>
+                          <?php include_once('includes/avatar.php'); ?>
                         <hr class="perma_hr">
                         <p><a href="index.php">home</a> | <a href="/permadmin/index.php">admin</a></p>
                         <p><a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a> | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a>

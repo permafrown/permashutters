@@ -62,11 +62,7 @@
 
     <?php include_once 'includes/shutter_menu.php';?>
 
-    <div class="container-fluid">
-        <div class="col-xs-12">
-            <a href="index.php"><img style="margin-bottom: 5%;" class="img-responsive avatar center-block title-centered" src="img/permavatar.png" alt="avatar" /></a>
-        </div>
-    </div>
+    <?php include_once('includes/avatar.php'); ?>
 
     <?php include_once 'includes/body_scripts.php';?>
 </body>

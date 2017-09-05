@@ -15,7 +15,7 @@ if($row['postID'] == ''){
 <html lang="en">
 <head>
     <?php require_once('includes/head.php'); ?>
-    <title>games | <?php echo $row['postTitle'];?></title>
+    <title>permashutters | <?php echo $row['postCat'], " | ", $row['postTitle'];?></title>
 </head>
 <body>
 

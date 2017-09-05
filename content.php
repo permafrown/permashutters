@@ -31,6 +31,7 @@
             }
         ?>
     </h1>
+    <p><a href="./">home</a> | <a href="about.php">about</a></p>
     <hr class="perma_hr">
     <div class="container-fluid shutt_page_content">
         <?php

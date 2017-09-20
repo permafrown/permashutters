@@ -1,7 +1,7 @@
 <div class="container">
-  <nav class="navbar fixed-bottom navbar-expand-md navbar-dark" style="background-color: #BBB;">
+  <nav class="navbar fixed-bottom navbar-expand-md navbar-dark" style="background-color: inherit;">
     <!-- <a class="navbar-brand "href="#">perma<i class="fa fa-circle-o-notch" aria-hidden="true"></i>frown</a> -->
-    <a class="navbar-brand "href="./index.php">perma<img src="./img/permavatar.png" width="30" height="30" class="d-inline-block align-top" alt="permavatar">shutters</i></a>
+    <a class="navbar-brand "href="./index.php">perma<img src="./img/permavatar.png" width="30" height="30" class="d-inline-block align-top" alt="permavatar" style="border-radius: 50%;">shutters</i></a>
     <!-- <a class="navbar-brand "href="./index.php">perma<i class="fa fa-ravelry" aria-hidden="true">shutters</i></a> -->
     <button class="navbar-toggler" type="button" name="button" data-toggle="collapse" data-target="#hamburg" aria-controls="hamburg" aria-expanded="false" aria-label="toggle nav">
       <span class="navbar-toggler-icon"></span>

@@ -43,6 +43,11 @@
   <?php include_once 'includes/avatar.php';?>
   <!-- END AVATAR -->
 
+  <!-- START NAV -->
+  <?php include_once 'includes/nav/php';?>
+  <!-- END NAV -->
+
+
   <!-- SCRIPTS -->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script>

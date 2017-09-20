@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container main_nav">
   <nav class="navbar fixed-bottom navbar-expand-md navbar-dark" style="background-color: inherit;">
     <!-- <a class="navbar-brand "href="#">perma<i class="fa fa-circle-o-notch" aria-hidden="true"></i>frown</a> -->
     <a class="navbar-brand "href="./index.php">perma<img src="./img/permavatar.png" width="25" height="30" class="d-inline-block align-top" alt="permavatar" style="border-radius: 50%;">shutters</i></a>

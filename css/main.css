@@ -111,6 +111,9 @@ pre {
 
 /*******************NAV LINX
 ***************************/
+.main_nav {
+  max-width: 75%;
+}
 li a,
 button.btn a,
 shutt a {

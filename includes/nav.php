@@ -1,7 +1,7 @@
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- <a class="navbar-brand "href="#">perma<i class="fa fa-circle-o-notch" aria-hidden="true"></i>frown</a> -->
-    <a class="navbar-brand "href="./index.php"><img class="img-responsive" src="./img/permavatar.png" alt="avatar" /></a>
+    <a class="navbar-brand "href="./index.php">perma<i class="fa fa-ravelry" aria-hidden="true"></i></a>
     <button class="navbar-toggler" type="button" name="button" data-toggle="collapse" data-target="#hamburg" aria-controls="hamburg" aria-expanded="false" aria-label="toggle nav">
       <span class="navbar-toggler-icon"></span>
     </button>

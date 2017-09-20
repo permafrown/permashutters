@@ -9,6 +9,10 @@
 
 <body>
 
+  <!-- START NAV -->
+  <?php include_once 'includes/nav.php';?>
+  <!-- END NAV -->
+
   <!-- MAIN TITLE -->
   <h1 class="main_title"> <span style="color: #0F0;">permashutters</span></h1>
   <h2 class="main_title tag_line">a collection of things i find interesting</h2>
@@ -30,11 +34,6 @@
   <!-- AVATAR -->
   <?php include_once 'includes/avatar.php';?>
   <!-- END AVATAR -->
-
-  <!-- START NAV -->
-  <?php include_once 'includes/nav.php';?>
-  <!-- END NAV -->
-
 
   <!-- SCRIPTS -->
   <script src="js/jquery-3.1.1.min.js"></script>

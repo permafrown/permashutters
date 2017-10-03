@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <h1 class="title_centered">
+    <h1 class="title_centered" style="color: #0F0;">
         <?php
             if (($postCatSel === "") OR ($postCatSel === "all")) {
                 echo "<small>permashutters</small>";
@@ -31,7 +31,12 @@
             }
         ?>
     </h1>
-    <p><a href="./">home</a> | <a href="about.php">about</a></p>
+    <p><a href="./">home</a> | <a href="about.php">about</a>
+      <?php if ($postCatSel === "games") {
+        echo ' | <a href="./crit/colourGame.php">play games</a>';
+      }
+      ?>
+    </p>
     <hr class="perma_hr">
     <div class="container-fluid shutt_page_content">
         <?php
@@ -62,7 +67,7 @@
 
     <?php include_once 'includes/shutter_menu.php';?>
 
-    <?php include_once('includes/avatar.php'); ?>
+    <?php include_once 'includes/avatar.php';?>
 
     <?php include_once 'includes/body_scripts.php';?>
 </body>

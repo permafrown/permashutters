@@ -45,6 +45,11 @@ h3 {
   width: 20%;
 }
 
+#spacer {
+  display: inline-block;
+  width: 10%;
+}
+
 #container {
   justify-content: center;
   margin: 2vh auto;

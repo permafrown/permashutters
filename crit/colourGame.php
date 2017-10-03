@@ -18,6 +18,7 @@
       <h3>Guess Which Colour Is:</h3>
       <h3><span id="colourDisplay"></span></h3>
         <div id="stripe">
+					<button id="back" type="button" name="button"><a href="../../content.php?cat=games">Back</a></button>
           <button id="reset" type="button" name="button">New Colours?</button>
           <span id="message"></span>
           <button class="mode" type="button" name="button">Easy</button>

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <h1 class="title_centered" style="color: #0F0;">
+    <h1 class="title_centered">
         <?php
             if (($postCatSel === "") OR ($postCatSel === "all")) {
                 echo "<small>permashutters</small>";

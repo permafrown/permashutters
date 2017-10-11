@@ -19,7 +19,9 @@
 }
 
 .shutt:hover {
+    transition: all 0.5 linear;
     width: 40%;
+    text-decoration: none;
 }
 
 .shutt a,

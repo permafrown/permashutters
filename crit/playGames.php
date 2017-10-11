@@ -3,20 +3,9 @@
 <html lang="en">
 
 <head>
-    <?php include_once 'includes/head.php';?>
-    <?php include_once 'permadmin/auth/config.php'; ?>
-    <?php $postCatSel = $_GET['cat']; ?>
-    <title>
-        <?php
-        if ($postCatSel === "") {
-            echo "permashutters";
-        } elseif ($postCatSel === "feat") {
-            echo "featured | permashutters";
-        } else {
-            echo "$postCatSel | permashutters";
-        }
-        ?>
-    </title>
+    <?php include_once './includes/head.php';?>
+    <?php include_once './permadmin/auth/config.php'; ?>
+    <title>permaGames</title>
 </head>
 
 <body>
@@ -26,11 +15,11 @@
     <p><a href="colourGame.php">colour game</a> | <a href="circles.php">circles</a></p>
     <hr class="perma_hr">
 
-    <?php include_once 'includes/shutter_menu.php';?>
+    <?php include_once './includes/shutter_menu.php';?>
 
-    <?php include_once 'includes/avatar.php';?>
+    <?php include_once './includes/avatar.php';?>
 
-    <?php include_once 'includes/body_scripts.php';?>
+    <?php include_once './includes/body_scripts.php';?>
 </body>
 
 </html>

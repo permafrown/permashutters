@@ -6,8 +6,3 @@ function hamburg() {
         x.className = "topnav";
     }
 }
-
-$('img.avatar').on("mouseover", function() {
-  $(this).css("transform", "rotate(180deg);");
-  console.log('moused over avatar');
-});

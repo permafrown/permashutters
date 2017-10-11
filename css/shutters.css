@@ -15,11 +15,13 @@
     width: 16.66vw;
     text-align: center;
     text-decoration: none;
-    transition: all 0.5s linear;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .shutt:hover {
-    transition: all 0.5 linear;
     width: 40%;
     text-decoration: none;
 }

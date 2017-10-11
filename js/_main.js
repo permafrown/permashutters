@@ -8,6 +8,6 @@ function hamburg() {
 }
 
 $('img.avatar').on("mouseover", function() {
-  // $(this).css("transform", "rotate(180deg);");
+  $(this).css("transform", "rotate(180deg);");
   console.log('moused over avatar');
 });

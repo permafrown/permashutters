@@ -14,12 +14,12 @@
     height: 40vh;
     width: 16.66vw;
     text-align: center;
-    transition: width 0.5s ease;
+    text-decoration: none;
+    transition: all 0.5s linear;
 }
 
 .shutt:hover {
     width: 40%;
-    text-decoration: none;
 }
 
 .shutt a,

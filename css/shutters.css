@@ -21,7 +21,7 @@
     -o-transition: width 0.5s ease;
 }
 
-.shutt:hover {
+.shutt:hover .shutt:focus {
     width: 40%;
     text-decoration: none;
 }

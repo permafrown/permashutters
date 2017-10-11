@@ -33,7 +33,7 @@
     </h1>
     <p><a href="./">home</a> | <a href="about.php">about</a>
       <?php if ($postCatSel === "games") {
-        echo ' | <a href="./crit/colourGame.php">play games</a>';
+        echo ' | <a href="./crit/playGames.php">play games</a>';
       }
       ?>
     </p>

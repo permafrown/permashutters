@@ -129,9 +129,4 @@
 
     <?php include_once 'includes/body_scripts.php';?>
 </body>
-
-<footer>
-    <?php include_once 'includes/botnav.php';?>
-</footer>
-
 </html>

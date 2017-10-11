@@ -210,9 +210,9 @@
 
         <div class="collapse navbar-collapse" id="hamburg">
           <ul class="navbar-nav mr-auto">
-						<li class="nav-item active"><a class="nav-link" href="./content.php?cat=games">back to games</a></li>
-            <li class="nav-item"><a class="nav-link" href="./index.php">home <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="./about.php">about</a></li>
+						<li class="nav-item active"><a class="nav-link" href="../content.php?cat=games">back to games</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.php">home <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../about.php">about</a></li>
           </ul>
           <!-- <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#">sign up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>

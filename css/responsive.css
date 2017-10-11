@@ -82,6 +82,7 @@ RESPONSIVE DESIGN
     .fauna_shutt,
     .words_shutt,
     .media_shutt {
+        height: 30vh;
         width: 16.66%;
         transition: width .5s ease;
         -webkit-transition: width .5s ease;
@@ -95,7 +96,7 @@ RESPONSIVE DESIGN
     .fauna_shutt:hover,
     .words_shutt:hover,
     .media_shutt:hover {
-        min-width: 40%;
+        width: 40%;
     }
     .submenu {
         font-size: 3.5vmin;

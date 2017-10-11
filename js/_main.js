@@ -7,6 +7,6 @@ function hamburg() {
     }
 }
 
-$('img.avatar a').on("click", function() {
+$('img.avatar a').on("mouseover", function() {
   $(this).css("transform", "rotate(180deg);");
 });

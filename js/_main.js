@@ -7,7 +7,7 @@ function hamburg() {
     }
 }
 
-$('img.avatar a').on("mouseover", function() {
+$('img.avatar').on("mouseover", function() {
   // $(this).css("transform", "rotate(180deg);");
   console.log('moused over avatar');
 });

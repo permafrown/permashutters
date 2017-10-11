@@ -82,7 +82,7 @@ RESPONSIVE DESIGN
     .fauna_shutt,
     .words_shutt,
     .media_shutt {
-        height: 30em;
+        width: 16.66%;
         transition: width .5s ease;
         -webkit-transition: width .5s ease;
         -moz-transition: width .5s ease;

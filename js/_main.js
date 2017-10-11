@@ -7,45 +7,9 @@ function hamburg() {
     }
 }
 
-$('.games_shutt').css("background", "../img/games_bg.jpg");
-
-
-// .fauna_shutt {
-//     background-image: url("../img/fauna_bg_04.jpg");
-//     transition: 0.5s ease;
-//     -webkit-transition: 0.5s ease;
-//     -moz-transition: 0.5s ease;
-//     -o-transition: 0.5s ease;
-// }
-//
-// .science_shutt {
-//     background-image: url("../img/science_bg.jpg");
-//     transition: 0.5s ease;
-//     -webkit-transition: 0.5s ease;
-//     -moz-transition: 0.5s ease;
-//     -o-transition: 0.5s ease;
-// }
-//
-// .words_shutt {
-//     background-image: url("../img/words_bg.jpg");
-//     transition: 0.5s ease;
-//     -webkit-transition: 0.5s ease;
-//     -moz-transition: 0.5s ease;
-//     -o-transition: 0.5s ease;
-// }
-//
-// .sundry_shutt {
-//     background-image: url("../img/sundry_bg.jpg");
-//     transition: 0.5s ease;
-//     -webkit-transition: 0.5s ease;
-//     -moz-transition: 0.5s ease;
-//     -o-transition: 0.5s ease;
-// }
-//
-// .media_shutt {
-//     background-image: url("../img/media_bg_02.jpg");
-//     transition: 0.5s ease;
-//     -webkit-transition: 0.5s ease;
-//     -moz-transition: 0.5s ease;
-//     -o-transition: 0.5s ease;
-// }
+$('.games_shutt').css("background", "url(../img/games_bg.jpg)");
+$('.fauna_shutt').css("background", "url(../img/fauna_bg_04.jpg)");
+$('.science_shutt').css("background", "url(../img/science_bg.jpg)");
+$('.words_shutt').css("background", "url(../img/words_bg.jpg)");
+$('.sundry_shutt').css("background", "url(../img/sundry_bg.jpg)");
+$('.media_shutt').css("background", "url(../img/media_bg_02.jpg)");

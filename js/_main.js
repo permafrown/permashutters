@@ -7,7 +7,7 @@ function hamburg() {
     }
 }
 
-$('.games_shutt').css("background-image", "../img/games_bg.jpg");
+$('.games_shutt').css("background", "../img/games_bg.jpg");
 
 
 // .fauna_shutt {

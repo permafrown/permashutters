@@ -23,10 +23,6 @@
 
 .shutt:hover {
     text-decoration: none;
-    transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
     width: 40%;
 }
 

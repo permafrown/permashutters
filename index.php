@@ -26,7 +26,7 @@
     <a class="shutt col-xs-2 science_shutt" href="content.php?cat=science"><span class="hidden-sm-down">science</span></a>
     <a class="shutt col-xs-2 words_shutt" href="content.php?cat=words"><span class="hidden-sm-down">words</span></a>
     <a class="shutt col-xs-2 sundry_shutt" href="content.php?cat=sundry"><span class="hidden-sm-down">sundry</span></a>
-    <a class="shutt col-xs-2" href="content.php?cat=media"><span class="hidden-sm-down">media</span></a>
+    <a class="shutt col-xs-2 media_shutt" href="content.php?cat=media"><span class="hidden-sm-down">media</span></a>
   </div>
   <hr class="perma_hr">
   <!-- END SHUTTER MENU -->

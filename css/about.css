@@ -82,8 +82,8 @@
 #games_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 22vh;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.8);
+    background-color: rgb(20,20,20);
+    background-color: rgba(20,20,20,0.9);
 }
 #games_para_content.para_content {
     position: relative;
@@ -106,8 +106,8 @@
 #fauna_para_content_wrapper.para_content_wrapper {
     position: relative;
     top: 27vh;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.8);
+    background-color: rgb(30,30,30);
+    background-color: rgba(30,30,30,0.9);
 }
 #fauna_para_content.para_content {
     position: relative;
@@ -125,8 +125,8 @@
 }
 #science_para_content_wrapper.para_content_wrapper {
     position: relative;
-    background-color: rgb(40,40,40);
-    background-color: rgba(40,40,40,0.8);
+    background-color: rgb(10,10,10);
+    background-color: rgba(10,10,10,1);
     width: 25vw;
     left: 37.5vw;
 }
@@ -190,7 +190,7 @@
 #media_para_content_wrapper.para_content_wrapper {
     position: relative;
     width: 22.5vw;
-    height: 20vh;
+    height: 21vh;
     left: 35.5vw;
     top: 40vh;
     background-color: rgb(40,40,40);

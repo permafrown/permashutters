@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+<link href="https://file.myfontastic.com/SnuoyfFoAap2SLbczhrj5b/icons.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/auth.css">
 <link rel="stylesheet" href="/css/shutters.css">
 <link rel="stylesheet" href="/css/shutt_page_content.css">

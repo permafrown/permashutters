@@ -24,6 +24,7 @@
           <span id="message"></span>
           <button class="mode" type="button" name="button">Easy</button>
           <button class="mode selected" type="button" name="button">Hard</button>
+          <button class="mode" type="button" name="button">Kids</button>
         </div>
     </div>
 

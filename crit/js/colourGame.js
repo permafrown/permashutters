@@ -6,6 +6,7 @@ var colourDisplay = document.getElementById("colourDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var titleBox = document.querySelector("#titlebox");
+var titleBoxH3 = document.querySelector("#titlebox h3");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 
@@ -23,6 +24,7 @@ function setUpModeButtons() {
     modeButtons[i].addEventListener("click", function() {
       modeButtons[0].classList.remove("selected");
       modeButtons[1].classList.remove("selected");
+      modeButtons[2].classList.remove("selected");
       this.classList.add("selected");
       //decide how many squares to show (ternary operator)
       this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
@@ -72,30 +74,18 @@ function reset(){
     }
   };
   //update page content
-  titleBox.style.backgroundColor = "steelblue";
+  if (modeButtons[2].classList.contains("selected")) {
+    titleBoxH3.textContent = "Which one matches this colour?";
+    titleBox.style.backgroundColor = pickedColour;
+  } else {
+    titleBoxH3.textContent = "Guess which colour is:";
+    titleBox.style.backgroundColor = "steelblue";
+  };
   messageDisplay.textContent = "";
   resetButton.textContent = "new colours?";
 }
 
 resetButton.addEventListener("click", reset);
-
-// for (var i = 0; i < squares.length; i++) {
-//   //add click listeners to squares
-//   squares[i].addEventListener("click", function() {
-//     //grab colour of clicked square
-//     var clickedColour = this.style.backgroundColor;
-//     //compare to pickedColour
-//     if (clickedColour === pickedColour) {
-//       messageDisplay.textContent = "Correct!!";
-//       changeColours(clickedColour);
-//       titleBox.style.backgroundColor = pickedColour;
-//       resetButton.textContent = "Play Again?"
-//     } else {
-//       this.style.backgroundColor = "#333";
-//       messageDisplay.textContent = "Try Again, bruh...";
-//     }
-//   });
-// };
 
 function changeColours(colour){
   //loop through all squares

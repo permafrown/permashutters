@@ -2,6 +2,7 @@ var numSquares = 6;
 var colours = [];
 var pickedColour;
 var squares = document.querySelectorAll(".square");
+var kidSquare = squares[0];
 var colourDisplay = document.getElementById("colourDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
@@ -77,14 +78,13 @@ function reset(){
   if (modeButtons[2].classList.contains("selected")) {
     titleBoxH3.textContent = "Which two colours are the same?";
     titleBox.style.backgroundColor = "steelblue";
-
-    var random = Math.floor(Math.random() * squares.length);
-    var kidSquare = squares[random];
-    kidSquare.style.backgroundColor = "#080";
-    // if (kidSquare.style.backgroundColor === pickedColour) {
-
-    // }
-    // kidSquare.style.backgroundColor = pickedColour;
+    setKidSquare();
+    if(kidSquare.style.backgroundColor === pickedColour) {
+      setKidSquare();
+      kidSquare.style.backgroundColor = pickedColour;
+    } else {
+      kidSquare.style.backgroundColor = pickedColour;
+    }
   } else {
     titleBoxH3.textContent = "Guess which colour is:";
     titleBox.style.backgroundColor = "steelblue";
@@ -94,6 +94,12 @@ function reset(){
 }
 
 resetButton.addEventListener("click", reset);
+
+function setKidSquare() {
+  var random = Math.floor(Math.random() * squares.length);
+  var kidSquare = squares[random];
+  console.log(kidSquare);
+}
 
 function changeColours(colour){
   //loop through all squares

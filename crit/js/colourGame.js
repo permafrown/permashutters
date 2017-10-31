@@ -80,7 +80,7 @@ function reset(){
 
     var random = Math.floor(Math.random() * squares.length);
     var kidSquare = squares[random];
-    kidSquare.style.backgroundColor === #080;
+    kidSquare.style.backgroundColor = #080;
     // if (kidSquare.style.backgroundColor === pickedColour) {
 
     // }

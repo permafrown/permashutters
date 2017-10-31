@@ -79,12 +79,7 @@ function reset(){
     titleBoxH3.textContent = "Which two colours are the same?";
     titleBox.style.backgroundColor = "steelblue";
     setKidSquare();
-    if(kidSquare.style.backgroundColor === pickedColour) {
-      setKidSquare();
-      kidSquare.style.backgroundColor = pickedColour;
-    } else {
-      kidSquare.style.backgroundColor = pickedColour;
-    }
+    kidSquare.style.backgroundColor = pickedColour;
   } else {
     titleBoxH3.textContent = "Guess which colour is:";
     titleBox.style.backgroundColor = "steelblue";

@@ -49,7 +49,7 @@ function setUpSquares() {
         resetButton.textContent = "Play Again?"
       } else {
         this.style.backgroundColor = "#333";
-        messageDisplay.textContent = "Try Again, bruh...";
+        messageDisplay.textContent = "Try Again ...";
       }
     });
   };

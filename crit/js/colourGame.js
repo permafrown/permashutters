@@ -77,9 +77,14 @@ function reset(){
   if (modeButtons[2].classList.contains("selected")) {
     titleBoxH3.textContent = "Which two colours are the same?";
     titleBox.style.backgroundColor = "steelblue";
+
     var random = Math.floor(Math.random() * squares.length);
     var kidSquare = squares[random];
-    kidSquare.style.backgroundColor = pickedColour;
+    kidSquare.style.backgroundColor === #080;
+    // if (kidSquare.style.backgroundColor === pickedColour) {
+
+    // }
+    // kidSquare.style.backgroundColor = pickedColour;
   } else {
     titleBoxH3.textContent = "Guess which colour is:";
     titleBox.style.backgroundColor = "steelblue";

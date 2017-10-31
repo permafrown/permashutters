@@ -49,7 +49,7 @@ function setUpSquares() {
         resetButton.textContent = "Play Again?"
       } else {
         this.style.backgroundColor = "#333";
-        messageDisplay.textContent = "Try Again ...";
+        messageDisplay.textContent = "Nope! Try Again ...";
       }
     });
   };
@@ -75,8 +75,11 @@ function reset(){
   };
   //update page content
   if (modeButtons[2].classList.contains("selected")) {
-    titleBoxH3.textContent = "Which one matches this colour?";
-    titleBox.style.backgroundColor = pickedColour;
+    titleBoxH3.textContent = "Which two colours are the same?";
+    titleBox.style.backgroundColor = "steelblue";
+    var random = Math.floor(Math.random() * squares.length);
+    var kidSquare = squares[random];
+    kidSquare.style.backgroundColor = pickedColour;
   } else {
     titleBoxH3.textContent = "Guess which colour is:";
     titleBox.style.backgroundColor = "steelblue";

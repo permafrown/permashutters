@@ -5,10 +5,10 @@
 <head>
   <?php include_once '../includes/head.php';?>
     <?php include_once '../permadmin/auth/config.php'; ?>
-  <title>gerbil | permashutters</title>
+  <title>weather | permashutters</title>
 </head>
 <body>
-  <h1 class="title-centered">gerbil | permashutters</h1>
+  <h1 class="title-centered">weather | permashutters</h1>
   <hr class="permahr">
   <div class="container-fluid">
       <div class="col-xs-12">

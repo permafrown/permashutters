@@ -6,7 +6,7 @@ if ($_GET['cityName']) {
       $nextPageArray = explode('</span></span></span>', $pageArray[1]);
       $output = $nextPageArray[0];
 } else {
-    echo '<style type="text/css"> .alert {display: none;}</style>';
+    echo '<style type="text/css"> .jumbotron {display: none;}</style>';
 }
 ?>
 <!DOCTYPE html>
@@ -30,9 +30,12 @@ if ($_GET['cityName']) {
       </div>
       <button type="submit" class="btn btn-primary">check</button>
     </form>
-    <div class="alert alert-info" role="alert">
-        <?php echo $output ?>
-    </div>
+      <div class="jumbotron">
+        <h2 class="title-centered">Right now, the weather in <?php echo $_GET['cityName'] ?> is...</h2>
+        <div class="alert alert-info" role="alert">
+            <?php echo $output ?>
+        </div>
+      </div>
     </div>
   </div>
 

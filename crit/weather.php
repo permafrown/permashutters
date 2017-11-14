@@ -10,13 +10,8 @@
 <body>
   <h1 class="title-centered">weather | permashutters</h1>
   <hr class="permahr">
-  <div class="container-fluid">
-      <div class="col-xs-12">
-          <a href="index.php"><img class="img-responsive avatar center-block title-centered" src="http://bit.ly/permavatar" alt="avatar" /></a>
-      </div>
-  </div>
-  <hr class="permahr">
 
+  <hr class="permahr">
     <?php include_once "includes/body_scripts.php"; ?>
 </body>
 </html>

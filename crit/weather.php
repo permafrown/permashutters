@@ -1,8 +1,7 @@
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <?php
 if ($_GET['cityName']) {
-    $forecastPage = fire_get_contents("https://www.weather-forecast.com/locations/Toronto/forecasts/latest");
-    echo $forecastPage;
+    $forecastPage = file_get_contents("https://www.weather-forecast.com/locations/".$_GET['cityName']."/forecasts/latest");
 }
 
 ?>
@@ -28,7 +27,7 @@ if ($_GET['cityName']) {
       <button type="submit" class="btn btn-primary">check</button>
     </form>
     <div class="jumbotron">
-      <p>content</p>
+        <?php $forecastPage ?>
     </div>
   </div>
 

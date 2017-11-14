@@ -5,6 +5,8 @@ if ($_GET['cityName']) {
       $pageArray = explode('3 Day Weather Forecast Summary:</b><span class="read-more-small"><span class="read-more-content"> <span class="phrase">', $forecastPage);
       $nextPageArray = explode('</span></span></span>', $pageArray[1]);
       $output = $nextPageArray[0];
+} else {
+    echo '<style type="text/css"> .alert {display: none;}</style>';
 }
 ?>
 <!DOCTYPE html>
@@ -28,7 +30,7 @@ if ($_GET['cityName']) {
       </div>
       <button type="submit" class="btn btn-primary">check</button>
     </form>
-    <div class="alert alert-info" role="alert" style="display: none">
+    <div class="alert alert-info" role="alert">
         <?php echo $output ?>
     </div>
     </div>

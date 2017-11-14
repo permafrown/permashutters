@@ -11,7 +11,7 @@
 <body>
   <h1 class="title-centered">weather | permashutters</h1>
   <hr class="permahr">
-  <div class="container">
+  <div class="container title-centered">
     <div class="row">
       <h2 class="title-centered">what's the weather?</h2>
     </div>

@@ -1,9 +1,10 @@
 .container {
   margin: 0 auto;
+  max-width: 25vw;
 }
 .row {
   justify-content: center;
 }
 #cityName {
-  max-width: 25vw;
+  max-width: 20vw;
 }

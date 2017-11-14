@@ -11,12 +11,21 @@
   <h1 class="title-centered">weather | permashutters</h1>
   <hr class="permahr">
   <div class="container">
-    <h2 class="title-centered">what's the weather?</h2>
-    <p>enter your city name</p>
-    <form action="#" method="POST">
-      <input type="text" name="cityName" placeholder="city"></input>
-      <input type="submit" name="submit">check</input>
-    </form>
+    <div class="row">
+      <h2 class="title-centered">what's the weather?</h2>
+    </div>
+    <div class="row">
+      <p>enter your city name</p>
+    </div>
+    <div class="row">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <input type="text" class="form-control" id="cityName" name="cityName" placeholder="city"></input>
+        </div>
+        <button type="submit" class="btn btn-primary" name="submit">check</button>
+      </form>
+    </div>
+    <div class=""
   </div>
 
   <hr class="permahr">

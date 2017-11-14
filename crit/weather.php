@@ -35,6 +35,7 @@ if ($_GET['cityName']) {
   </div>
 
   <hr class="permahr">
+  <script type="text/javascript" src="js/weather.js"></script>
     <?php include_once "includes/body_scripts.php"; ?>
 </body>
 </html>

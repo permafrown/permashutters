@@ -1,6 +1,7 @@
 <!-- Copyright 2016. GoodLife Music Ltd.. All Rights Reserved. -->
 <?php
 if ($_GET['cityName']) {
+    $properName = ucwords($_GET['cityName']);
     $forecastPage = file_get_contents("https://www.weather-forecast.com/locations/".$_GET['cityName']."/forecasts/latest");
       $pageArray = explode('3 Day Weather Forecast Summary:</b><span class="read-more-small"><span class="read-more-content"> <span class="phrase">', $forecastPage);
       $nextPageArray = explode('</span></span></span>', $pageArray[1]);
@@ -31,7 +32,7 @@ if ($_GET['cityName']) {
       <button type="submit" class="btn btn-primary">check</button>
     </form>
       <div class="jumbotron">
-        <h2 class="title-centered">Right now, the weather in <?php echo $_GET['cityName'] ?> is...</h2>
+        <h2 class="title-centered">Right now, the weather in <?php echo $properName ?> is...</h2>
         <div class="alert alert-info" role="alert">
             <?php echo $output ?>
         </div>

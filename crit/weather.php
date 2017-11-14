@@ -2,6 +2,9 @@
 <?php
 if ($_GET['cityName']) {
     $forecastPage = file_get_contents("https://www.weather-forecast.com/locations/".$_GET['cityName']."/forecasts/latest");
+      $pageArray = explode('3 Day Weather Forecast Summary:</b><span class="read-more-small"><span class="read-more-content"> <span class="phrase">', $forecastPage);
+      $nextPageArray = explode('</span></span></span>', $pageArray[1]);
+      $output = $nextPageArray[0];
 }
 ?>
 <!DOCTYPE html>
@@ -26,7 +29,7 @@ if ($_GET['cityName']) {
       <button type="submit" class="btn btn-primary">check</button>
     </form>
     <div class="jumbotron">
-        <?php echo $forecastPage ?>
+        <?php echo $output ?>
     </div>
   </div>
 

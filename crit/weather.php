@@ -5,6 +5,7 @@
 <head>
   <?php include_once '../includes/head.php';?>
     <?php include_once '../permadmin/auth/config.php'; ?>
+    <link rel="stylesheet" type="text/css" href="css/weather.css" />
   <title>weather | permashutters</title>
 </head>
 <body>
@@ -25,7 +26,11 @@
         <button type="submit" class="btn btn-primary" name="submit">check</button>
       </form>
     </div>
-    <div class=""
+    <div class="row">
+      <div class="jumbotron">
+        <p>content</p>
+      </div>
+    </div>
   </div>
 
   <hr class="permahr">

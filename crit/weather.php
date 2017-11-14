@@ -28,10 +28,9 @@ if ($_GET['cityName']) {
       </div>
       <button type="submit" class="btn btn-primary">check</button>
     </form>
-    <div class="jumbotron">
-      <div class="alert alert-info" role="alert">
+    <div class="alert alert-info" role="alert">
         <?php echo $output ?>
-      </div>
+    </div>
     </div>
   </div>
 

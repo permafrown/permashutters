@@ -4,3 +4,6 @@
 .row {
   justify-content: center;
 }
+#cityName {
+  max-width: 25vw;
+}

@@ -1,6 +1,4 @@
-alert("connected");
-
-var weather = document.getElementsByClass("alert");
+var weather = document.getElementsByClassName('alert');
 
 if ($_GET['cityName']) {
   weather.css("display", "inline-block");

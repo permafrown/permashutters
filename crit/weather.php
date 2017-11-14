@@ -3,7 +3,7 @@
 if ($_GET['cityName']) {
     $forecastPage = file_get_contents("https://www.weather-forecast.com/locations/".$_GET['cityName']."/forecasts/latest");
 }
-
+ echo $forecastPage;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@ if ($_GET['cityName']) {
   <hr class="permahr">
   <div class="container">
     <h2 class="title-centered">what's the weather?</h2>
-    <form action="#" method="GET">
+    <form method="GET">
       <div class="form-group">
         <label for="cityName">enter a city</label>
         <input type="text" class="form-control" id="cityName" name="cityName" placeholder="city"></input>

@@ -3,7 +3,6 @@
 if ($_GET['cityName']) {
     $forecastPage = file_get_contents("https://www.weather-forecast.com/locations/".$_GET['cityName']."/forecasts/latest");
 }
- echo $forecastPage;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +26,7 @@ if ($_GET['cityName']) {
       <button type="submit" class="btn btn-primary">check</button>
     </form>
     <div class="jumbotron">
-        <?php $forecastPage ?>
+        <?php echo $forecastPage ?>
     </div>
   </div>
 

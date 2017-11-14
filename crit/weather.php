@@ -37,7 +37,7 @@ if ($_GET['cityName']) {
       <div class="jumbotron">
         <h2 class="title-centered">Right now, the weather in <?php echo $newName ?> is...</h2>
         <div class="alert alert-info" role="alert">
-            <?php echo $output
+            <?php
             if ($output != "") {
                 echo $output;
             } else {

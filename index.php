@@ -32,7 +32,7 @@
   <!-- END SHUTTER MENU -->
 
   <!-- SMALL SCREEN SUBMENU -->
-  <h2 class="submenu d-none d-xs-block d-md-none"><a href="about.php">about</a> | <a href="content.php?cat=all">all</a> | <a href="content.php?cat=feat">featured</a></h2>
+  <h2 class="submenu d-none d-xs-block d-sm-block d-md-none"><a href="about.php">about</a> | <a href="content.php?cat=all">all</a> | <a href="content.php?cat=feat">featured</a></h2>
   <!-- END SMALL SCREEN SUBMENU -->
 
   <!-- MED SCREEN SUBMENU -->

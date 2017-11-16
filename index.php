@@ -10,7 +10,7 @@
 <body>
 
   <!-- MAIN TITLE -->
-  <h1 class="main_title">permashutters</h1>
+  <h1 class="main_title"><a href="/">permashutters</a></h1>
   <h2 class="main_title tag_line">a collection of things i find interesting</h2>
   <!-- END MAIN TITLE -->
 

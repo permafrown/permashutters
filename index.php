@@ -10,7 +10,7 @@
 <body>
 
   <!-- MAIN TITLE -->
-  <h1 class="main_title"><a href="/">permashutters</a></h1>
+  <h1 class="main_title">permashutters</h1>
   <h2 class="main_title tag_line">a collection of things i find interesting</h2>
   <!-- END MAIN TITLE -->
 
@@ -32,11 +32,11 @@
   <!-- END SHUTTER MENU -->
 
   <!-- SMALL SCREEN SUBMENU -->
-  <h2 class="submenu hidden-md-up"><a href="about.php">about</a> | <a href="content.php?cat=all">all</a> | <a href="content.php?cat=feat">featured</a></h2>
+  <h2 class="submenu d-none d-xs-block d-md-none"><a href="about.php">about</a> | <a href="content.php?cat=all">all</a> | <a href="content.php?cat=feat">featured</a></h2>
   <!-- END SMALL SCREEN SUBMENU -->
 
   <!-- MED SCREEN SUBMENU -->
-  <h2 class="submenu hidden-sm-down"><a href="content.php?cat=all">all</a> | <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a>    | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a> | <a href="about.php">about</a> | <a href="content.php?cat=feat">featured</a></h2>
+  <h2 class="submenu d-none d-md-block"><a href="content.php?cat=all">all</a> | <a href="content.php?cat=games">games</a> | <a href="content.php?cat=fauna">fauna</a> | <a href="content.php?cat=science">science</a> | <a href="content.php?cat=words">words</a>    | <a href="content.php?cat=sundry">sundry</a> | <a href="content.php?cat=media">media</a> | <a href="about.php">about</a> | <a href="content.php?cat=feat">featured</a></h2>
   <!-- END MED SCREEN SUBMENU -->
 
   <!-- AVATAR -->

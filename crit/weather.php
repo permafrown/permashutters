@@ -38,15 +38,10 @@ if ($_GET['cityName']) {
             <?php
             if ($weatherArray != "") {
                 echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']."</p>";
-
-
-                echo "Longitude: ".$weatherArray['coord']['lon']." degrees longitude\n";
-                echo "Latitude: ".$weatherArray['coord']['lat']." degrees latitude\n";
-                echo "ID: ".$weatherArray['weather'][0]['id']."\n<br />";
+                echo "<p>Located at: ".$weatherArray['coord']['lon']." lon :".$weatherArray['coord']['lat']." lat</p>";
+                echo "<hr />";
                 echo "Main: ".$weatherArray['weather'][0]['main']."\n";
                 echo "Description: ".$weatherArray['weather'][0]['description']."\n<br />";
-                echo "Icon: ".$weatherArray['weather'][0]['icon']."\n";
-                echo "Base: ".$weatherArray['base']."\n<br />";
                 echo "Temp: ".$weatherArray['main']['temp']." C\n";
                 echo "Pressure: ".$weatherArray['main']['pressure']." hPa at ground level\n";
                 echo "Humidity: ".$weatherArray['main']['humidity']."%\n";
@@ -57,11 +52,8 @@ if ($_GET['cityName']) {
                 echo "Wind Degrees: ".$weatherArray['wind']['deg']." m/s\n<br />";
                 echo "Clouds: ".$weatherArray['clouds']['all']."%\n";
                 echo "UNIX DateTime of Calculation: ".$weatherArray['dt']."\n<br />";
-                echo "Country Code: ".$weatherArray['sys']['country']." \n";
                 echo "UNIX Sunrise: ".$weatherArray['sys']['sunrise']." UTC\n";
                 echo "UNIX Sunset: ".$weatherArray['sys']['sunset']." UTC\n<br />";
-                echo "City ID: ".$weatherArray['id']." \n<br />";
-                echo "City Name: ".$weatherArray['name']." \n<br />";
 
             } else {
                 echo "Not Available";

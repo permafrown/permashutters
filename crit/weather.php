@@ -37,7 +37,7 @@ if ($_GET['cityName']) {
         <div class="alert alert-info" role="alert">
             <?php
             if ($weatherArray != "") {
-                echo "<p>".$weatherArray['name'].", ".$weatherArray['country']."</p>";
+                echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']."</p>";
 
 
                 echo "Longitude: ".$weatherArray['coord']['lon']." degrees longitude\n";

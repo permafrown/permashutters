@@ -39,10 +39,10 @@ if ($_GET['cityName']) {
             if ($weatherArray != "") {
                 echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']."</p>";
                 echo "<p>Located at: ".$weatherArray['coord']['lon']." lon :".$weatherArray['coord']['lat']." lat</p>";
-                echo "<hr />";
                 $dt = new DateTime();
                 $dt->setTimestamp($weatherArray['dt']);
-                echo "<p>As of ".$dt->format('l, F d, o @ G:i:s:v e P')."</p>";
+                echo "<p>".$dt->format('l, F d, o @ G:i:s e P')."</p>";
+                echo "<hr />";
 
                 echo "<p>".$weatherArray['weather'][0]['main']."</p>";
                 echo "<p>".$weatherArray['weather'][0]['description']."</p>";

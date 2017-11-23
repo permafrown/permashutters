@@ -37,14 +37,29 @@ if ($_GET['cityName']) {
         <div class="alert alert-info" role="alert">
             <?php
             if ($weatherArray != "") {
-                echo "Longitude: ".$weatherArray['coord']['lon']."\n";
-                echo "Latitude: ".$weatherArray['coord']['lat']."\n";
+                echo "Longitude: ".$weatherArray['coord']['lon']." degrees longitude\n";
+                echo "Latitude: ".$weatherArray['coord']['lat']." degrees latitude\n";
                 echo "ID: ".$weatherArray['weather'][0]['id']."\n<br />";
                 echo "Main: ".$weatherArray['weather'][0]['main']."\n";
-                echo "Description: ".$weatherArray['weather'][0]['description']."\n";
+                echo "Description: ".$weatherArray['weather'][0]['description']."\n<br />";
                 echo "Icon: ".$weatherArray['weather'][0]['icon']."\n";
                 echo "Base: ".$weatherArray['base']."\n<br />";
                 echo "Temp: ".$weatherArray['main']['temp']." Kelvin\n";
+                echo "Pressure: ".$weatherArray['main']['pressure']." hPa at ground level\n";
+                echo "Humidity: ".$weatherArray['main']['humidity']."%\n";
+                echo "Min Temp: ".$weatherArray['main']['temp_min']." Kelvin\n";
+                echo "Max Temp: ".$weatherArray['main']['temp_max']." Kelvin\n<br />";
+                echo "Visibility: ".$weatherArray['visiblity']." metres\n";
+                echo "Wind Speed: ".$weatherArray['wind']['speed']." m/s\n";
+                echo "Wind Degrees: ".$weatherArray['wind']['deg']." m/s\n<br />";
+                echo "Clouds: ".$weatherArray['clouds']['all']."%\n";
+                echo "UNIX DateTime of Calculation: ".$weatherArray['dt']."\n<br />";
+                echo "Country Code: ".$weatherArray['sys']['country']." \n";
+                echo "UNIX Sunrise: ".$weatherArray['sys']['sunrise']." UTC\n";
+                echo "UNIX Sunset: ".$weatherArray['sys']['sunset']." UTC\n<br />";
+                echo "City ID: ".$weatherArray['id']." \n<br />";
+                echo "City Name: ".$weatherArray['name']." \n<br />";
+                
             } else {
                 echo "Not Available";
             }

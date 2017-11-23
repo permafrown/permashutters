@@ -40,7 +40,7 @@ if ($_GET['cityName']) {
                 echo "<p>".$weatherArray['weather'][0]['main']."</p>";
                 echo "<p>".$weatherArray['weather'][0]['description']."</p>";
                 echo "<p>Currently: ".$weatherArray['main']['temp']." &deg;C</p>";
-                echo "<p>High: ".$weatherArray['main']['temp_max']." &deg;C  Low: ".$weatherArray['main']['temp_min']." &#8451;C</p>";
+                echo "<p>High: ".$weatherArray['main']['temp_max']." &deg;C  Low: ".$weatherArray['main']['temp_min']." &deg;C</p>";
                 echo "<p>Relative Humidity: ".$weatherArray['main']['humidity']."%</p>";
                 echo "<hr />";
                 echo "<p>Barometric Pressure: ".$weatherArray['main']['pressure']." hPa at ground level</p>";

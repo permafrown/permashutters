@@ -5,7 +5,7 @@ if ($_GET['cityName']) {
     $pattern = '/\s*/m';
     $replace = '';
     $properName = preg_replace($pattern, $replace, $newName);
-    $forecastPage = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".$properName."&appid=4765ce9620b638f468ca87597fa0cc6f");
+    $forecastPage = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".$properName."&units=metric&appid=4765ce9620b638f468ca87597fa0cc6f");
     $weatherArray = json_decode($forecastPage, true);
 } else {
     echo '<style type="text/css"> .jumbotron {display: none;}</style>';
@@ -59,7 +59,7 @@ if ($_GET['cityName']) {
                 echo "UNIX Sunset: ".$weatherArray['sys']['sunset']." UTC\n<br />";
                 echo "City ID: ".$weatherArray['id']." \n<br />";
                 echo "City Name: ".$weatherArray['name']." \n<br />";
-                
+
             } else {
                 echo "Not Available";
             }

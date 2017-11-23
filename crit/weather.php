@@ -48,7 +48,7 @@ if ($_GET['cityName']) {
                 echo "<p>Wind: ".$weatherArray['wind']['deg']." deg @ ".$weatherArray['wind']['speed']." m/s</p>";
                 echo "<p>Cloud Coverage: ".$weatherArray['clouds']['all']."%</p>";
                 echo "<hr />";
-                echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']." | ".$weatherArray['coord']['lon']." N ".$weatherArray['coord']['lat']." W</p>";
+                // echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']." | ".$weatherArray['coord']['lon']." N ".$weatherArray['coord']['lat']." W</p>";
                 $sunriseDT = new DateTime();
                 $sunriseDT->setTimestamp($weatherArray['sys']['sunrise']);
                 echo "<p>Sunrise ".$sunriseDT->format('@ G:i:s e P')."</p>";

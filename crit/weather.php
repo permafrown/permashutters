@@ -5,10 +5,8 @@ if ($_GET['cityName']) {
     $pattern = '/\s*/m';
     $replace = '';
     $properName = preg_replace($pattern, $replace, $newName);
-    $forecastPage = file_get_contents("https://www.weather-forecast.com/locations/".$properName."/forecasts/latest");
-      $pageArray = explode('3 Day Weather Forecast Summary:</b><span class="read-more-small"><span class="read-more-content"> <span class="phrase">', $forecastPage);
-      $nextPageArray = explode('</span></span></span>', $pageArray[1]);
-      $output = $nextPageArray[0];
+    $forecastPage = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".$properName."&appid=4765ce9620b638f468ca87597fa0cc6f");
+    $weatherArray = json_decode($forecastPage, true);
 } else {
     echo '<style type="text/css"> .jumbotron {display: none;}</style>';
 }
@@ -38,8 +36,8 @@ if ($_GET['cityName']) {
         <h2 class="title-centered">Right now, the weather in <?php echo $newName ?> is...</h2>
         <div class="alert alert-info" role="alert">
             <?php
-            if ($output != "") {
-                echo $output;
+            if ($weatherArray != "") {
+                echo $weatherArray['weather'][0]['description'];
             } else {
                 echo "Not Available";
             }

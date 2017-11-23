@@ -39,16 +39,16 @@ if ($_GET['cityName']) {
             if ($weatherArray != "") {
                 echo "<p>".$weatherArray['weather'][0]['main']."</p>";
                 echo "<p>".$weatherArray['weather'][0]['description']."</p>";
-                echo "<p>Currently: ".$weatherArray['main']['temp']." C</p>";
-                echo "<p>High: ".$weatherArray['main']['temp_max']." C  Low: ".$weatherArray['main']['temp_min']." C</p>";
+                echo "<p>Currently: ".$weatherArray['main']['temp']." &deg;C</p>";
+                echo "<p>High: ".$weatherArray['main']['temp_max']." &deg;C  Low: ".$weatherArray['main']['temp_min']." &#8451;C</p>";
                 echo "<p>Relative Humidity: ".$weatherArray['main']['humidity']."%</p>";
                 echo "<hr />";
                 echo "<p>Barometric Pressure: ".$weatherArray['main']['pressure']." hPa at ground level</p>";
                 echo "<p>Visibility: ".$weatherArray['visibility']." metres</p>";
-                echo "<p>Wind: ".$weatherArray['wind']['deg']." deg @ ".$weatherArray['wind']['speed']." m/s</p>";
+                echo "<p>Wind: ".$weatherArray['wind']['deg']."&deg; @ ".$weatherArray['wind']['speed']." m/s</p>";
                 echo "<p>Cloud Coverage: ".$weatherArray['clouds']['all']."%</p>";
                 echo "<hr />";
-                echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']." | ".$weatherArray['coord']['lon']." N ".$weatherArray['coord']['lat']." W</p>";
+                echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']." | ".$weatherArray['coord']['lon']."&deg; N ".$weatherArray['coord']['lat']."&deg; W</p>";
                 $sunriseDT = new DateTime();
                 $sunriseDT->setTimestamp($weatherArray['sys']['sunrise']);
                 echo "<p>Sunrise ".$sunriseDT->format('@ G:i:s e P')."</p>";

@@ -37,29 +37,28 @@ if ($_GET['cityName']) {
         <div class="alert alert-info" role="alert">
             <?php
             if ($weatherArray != "") {
-                echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']."</p>";
-                echo "<p>Located at: ".$weatherArray['coord']['lon']." lon :".$weatherArray['coord']['lat']." lat</p>";
-                $dt = new DateTime();
-                $dt->setTimestamp($weatherArray['dt']);
-                echo "<p>".$dt->format('l, F d, o @ G:i:s e P')."</p>";
-                echo "<hr />";
-
                 echo "<p>".$weatherArray['weather'][0]['main']."</p>";
                 echo "<p>".$weatherArray['weather'][0]['description']."</p>";
+                echo "<p>Currently: ".$weatherArray['main']['temp']." C</p>";
+                echo "<p>High of: ".$weatherArray['main']['temp_max']." | Low of: ".$weatherArray['main']['temp_min']."</p>";
+                echo "<p>Relative Humidity: ".$weatherArray['main']['humidity']."%</p>";
                 echo "<hr />";
-                echo "Temp: ".$weatherArray['main']['temp']." C\n";
-                echo "Pressure: ".$weatherArray['main']['pressure']." hPa at ground level\n";
-                echo "Humidity: ".$weatherArray['main']['humidity']."%\n";
-                echo "Min Temp: ".$weatherArray['main']['temp_min']." C\n";
-                echo "Max Temp: ".$weatherArray['main']['temp_max']." C\n<br />";
-                echo "Visibility: ".$weatherArray['visiblity']." metres\n";
-                echo "Wind Speed: ".$weatherArray['wind']['speed']." m/s\n";
-                echo "Wind Degrees: ".$weatherArray['wind']['deg']." m/s\n<br />";
-                echo "Clouds: ".$weatherArray['clouds']['all']."%\n";
-                echo "UNIX DateTime of Calculation: ".$weatherArray['dt']."\n<br />";
-                echo "UNIX Sunrise: ".$weatherArray['sys']['sunrise']." UTC\n";
-                echo "UNIX Sunset: ".$weatherArray['sys']['sunset']." UTC\n<br />";
-
+                echo "<p>Barometric Pressure: ".$weatherArray['main']['pressure']." hPa at ground level</p>";
+                echo "<p>Visibility: ".$weatherArray['visiblity']." metres</p>";
+                echo "<p>Wind: ".$weatherArray['wind']['speed']." m/s ".$weatherArray['wind']['deg']." degrees</p>";
+                echo "<p>Clouds: ".$weatherArray['clouds']['all']."%</p>";
+                echo "<hr />";
+                echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']."</p>";
+                echo "<p>".$weatherArray['coord']['lon']." degrees longitude :".$weatherArray['coord']['lat']." degrees latitude</p>";
+                $checkDT = new DateTime();
+                $checkDT->setTimestamp($weatherArray['dt']);
+                echo "<p>".$checkDT->format('l, o-m-d @ G:i:s e P')."</p>";
+                $sunriseDT = new DateTime();
+                $sunriseDT->setTimestamp($weatherArray['sys']['sunrise']);
+                echo "<p>Sunrise ".$sunriseDT->format('@ G:i:s e P')."</p>";
+                $sunsetDT = new DateTime();
+                $sunsetDT->setTimestamp($weatherArray['sys']['sunset']);
+                echo "<p>Sunset ".$sunsetDT->format('@ G:i:s e P')."</p>";
             } else {
                 echo "Not Available";
             }

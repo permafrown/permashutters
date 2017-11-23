@@ -56,10 +56,10 @@ if ($_GET['cityName']) {
                 $sunsetDT->setTimestamp($weatherArray['sys']['sunset']);
                 echo "<p>Sunset ".$sunsetDT->format('@ G:i:s e P')."</p>";
                 echo "<hr />"
-                echo "<p>Snapshot taken:</p>"
-                $checkDT = new DateTime();
-                $checkDT->setTimestamp($weatherArray['dt']);
-                echo "<p>".$checkDT->format('l, o-m-d @ G:i:s e P')."</p>";
+                // echo "<p>Snapshot taken:</p>"
+                // $checkDT = new DateTime();
+                // $checkDT->setTimestamp($weatherArray['dt']);
+                // echo "<p>".$checkDT->format('l, o-m-d @ G:i:s e P')."</p>";
             } else {
                 echo "Not Available";
             }

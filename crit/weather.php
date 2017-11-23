@@ -40,8 +40,10 @@ if ($_GET['cityName']) {
                 echo "<p>".$weatherArray['name'].", ".$weatherArray['sys']['country']."</p>";
                 echo "<p>Located at: ".$weatherArray['coord']['lon']." lon :".$weatherArray['coord']['lat']." lat</p>";
                 echo "<hr />";
-                echo "Main: ".$weatherArray['weather'][0]['main']."\n";
-                echo "Description: ".$weatherArray['weather'][0]['description']."\n<br />";
+                echo "<p>As of ".date('jS M Y', strtotime($weatherArray['dt']))."</p>"
+                echo "<p>".$weatherArray['weather'][0]['main']."</p>";
+                echo "<p></p>".$weatherArray['weather'][0]['description']."</p>";
+                echo "<hr />";
                 echo "Temp: ".$weatherArray['main']['temp']." C\n";
                 echo "Pressure: ".$weatherArray['main']['pressure']." hPa at ground level\n";
                 echo "Humidity: ".$weatherArray['main']['humidity']."%\n";

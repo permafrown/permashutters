@@ -42,7 +42,7 @@ if ($_GET['cityName']) {
                 echo "<hr />";
                 $dt = new DateTime();
                 $dt->setTimestamp($weatherArray['dt']);
-                echo "<p>As of ".$dt->format('jS-M-Y @ G:i:s')."</p>";
+                echo "<p>As of ".$dt->format('l, F d, o @ G:i:s:v e P')."</p>";
 
                 echo "<p>".$weatherArray['weather'][0]['main']."</p>";
                 echo "<p>".$weatherArray['weather'][0]['description']."</p>";

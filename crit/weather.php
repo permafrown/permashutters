@@ -37,14 +37,14 @@ if ($_GET['cityName']) {
         <div class="alert alert-info" role="alert">
             <?php
             if ($weatherArray != "") {
-                echo $weatherArray['coord']['lon'];
-                echo $weatherArray['coord']['lat'];
-                echo $weatherArray['weather'][0]['id'];
-                echo $weatherArray['weather'][0]['main'];
-                echo $weatherArray['weather'][0]['description'];
-                echo $weatherArray['weather'][0]['icon'];
-                echo $weatherArray['base'];
-                echo $weatherArray['main']['temp'];
+                echo "Longitude: ".$weatherArray['coord']['lon']."\n";
+                echo "Latitude: ".$weatherArray['coord']['lat']."\n";
+                echo "ID: ".$weatherArray['weather'][0]['id']."\n";
+                echo "Main: ".$weatherArray['weather'][0]['main']."\n";
+                echo "Description: ".$weatherArray['weather'][0]['description']."\n";
+                echo "Icon: ".$weatherArray['weather'][0]['icon']."\n";
+                echo "Base: ".$weatherArray['base']."\n";
+                echo "Temp: ".$weatherArray['main']['temp']." Kelvin\n";
             } else {
                 echo "Not Available";
             }

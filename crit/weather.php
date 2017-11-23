@@ -39,11 +39,11 @@ if ($_GET['cityName']) {
             if ($weatherArray != "") {
                 echo "Longitude: ".$weatherArray['coord']['lon']."\n";
                 echo "Latitude: ".$weatherArray['coord']['lat']."\n";
-                echo "ID: ".$weatherArray['weather'][0]['id']."\n";
+                echo "ID: ".$weatherArray['weather'][0]['id']."\n<br />";
                 echo "Main: ".$weatherArray['weather'][0]['main']."\n";
                 echo "Description: ".$weatherArray['weather'][0]['description']."\n";
                 echo "Icon: ".$weatherArray['weather'][0]['icon']."\n";
-                echo "Base: ".$weatherArray['base']."\n";
+                echo "Base: ".$weatherArray['base']."\n<br />";
                 echo "Temp: ".$weatherArray['main']['temp']." Kelvin\n";
             } else {
                 echo "Not Available";

@@ -37,6 +37,9 @@ if ($_GET['cityName']) {
         <div class="alert alert-info" role="alert">
             <?php
             if ($weatherArray != "") {
+                echo "<p>".$weatherArray['name'].", ".$weatherArray['country']."</p>";
+
+
                 echo "Longitude: ".$weatherArray['coord']['lon']." degrees longitude\n";
                 echo "Latitude: ".$weatherArray['coord']['lat']." degrees latitude\n";
                 echo "ID: ".$weatherArray['weather'][0]['id']."\n<br />";
@@ -44,11 +47,11 @@ if ($_GET['cityName']) {
                 echo "Description: ".$weatherArray['weather'][0]['description']."\n<br />";
                 echo "Icon: ".$weatherArray['weather'][0]['icon']."\n";
                 echo "Base: ".$weatherArray['base']."\n<br />";
-                echo "Temp: ".$weatherArray['main']['temp']." Kelvin\n";
+                echo "Temp: ".$weatherArray['main']['temp']." C\n";
                 echo "Pressure: ".$weatherArray['main']['pressure']." hPa at ground level\n";
                 echo "Humidity: ".$weatherArray['main']['humidity']."%\n";
-                echo "Min Temp: ".$weatherArray['main']['temp_min']." Kelvin\n";
-                echo "Max Temp: ".$weatherArray['main']['temp_max']." Kelvin\n<br />";
+                echo "Min Temp: ".$weatherArray['main']['temp_min']." C\n";
+                echo "Max Temp: ".$weatherArray['main']['temp_max']." C\n<br />";
                 echo "Visibility: ".$weatherArray['visiblity']." metres\n";
                 echo "Wind Speed: ".$weatherArray['wind']['speed']." m/s\n";
                 echo "Wind Degrees: ".$weatherArray['wind']['deg']." m/s\n<br />";

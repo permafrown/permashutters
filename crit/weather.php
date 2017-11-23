@@ -27,8 +27,7 @@ if ($_GET['cityName']) {
     <h2 class="title-centered">what's the weather?</h2>
     <form method="GET">
       <div class="form-group">
-        <label for="cityName">enter a city</label>
-        <input type="text" class="form-control" id="cityName" name="cityName" placeholder="city"></input>
+        <input type="text" class="form-control" id="cityName" name="cityName" placeholder="enter a city"></input>
       </div>
       <button type="submit" class="btn btn-primary">check</button>
     </form>

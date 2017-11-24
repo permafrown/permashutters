@@ -25,11 +25,14 @@
 #weatherData {
     /*flex: 0 0 auto;*/
     grid-area: data;
+    max-width: 45vw;
 }
 
 #Map {
     /*flex: 0 0 auto;*/
     grid-area: map;
+    height: 40vh;
+    max-width: 45vw;
 }
 
 #cityName {

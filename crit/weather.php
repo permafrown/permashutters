@@ -91,7 +91,7 @@ if ($_GET['cityName']) {
 
   <hr class="permahr">
   <script type="text/javascript" src="js/weather.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbR0TOMMHuzQFYlIAZsEA1TaqgYG526k4&callback=initMap" async defer></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXUg7be7krVpJMvpOZE9lJaiQbsbtqXSc&callback=initMap" async defer></script>
   <?php include_once "includes/body_scripts.php"; ?>
 </body>
 </html>

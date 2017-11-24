@@ -35,9 +35,9 @@ if ($_GET['cityName']) {
           </form>
       </div>
       <div class="container-flex" id="weatherTrons">
-            <div class="jumbotron" id="weatherData">
-                <h2 class="title-centered">Right now, the weather in <?php echo $newName ?> is...</h2>
-                <div class="alert alert-info" role="alert">
+            <!-- <div class="container" id="weatherData"> -->
+                <!-- <h2 class="title-centered">Right now, the weather in <?php echo $newName ?> is...</h2> -->
+                <div id="weatherData" class="alert alert-info" role="alert">
                     <?php
                     if ($weatherArray != "") {
                         echo "<p>".$weatherArray['weather'][0]['main']."</p>";
@@ -68,8 +68,8 @@ if ($_GET['cityName']) {
                     }
                     ?>
                 </div>
-            </div>
-            <div class="jumbotron" id="weatherMap">
+            <!-- </div> -->
+            <!-- <div class="container" id="weatherMap"> -->
                 <div id="map"></div>
                 <script>
                     var map;
@@ -102,7 +102,7 @@ if ($_GET['cityName']) {
                       });
                     }
                 </script>
-            </div>
+            <!-- </div> -->
         </div>
       </div>
     </div>

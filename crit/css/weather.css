@@ -12,10 +12,8 @@
     display: -webkit-flex;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
-
-    max-width: 75vw;
 }
 
 /*.jumbotron {
@@ -35,5 +33,5 @@
 }
 
 #map {
-    height: 25vw;
+    height: 25vh;
 }

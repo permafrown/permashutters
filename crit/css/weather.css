@@ -9,7 +9,7 @@
 }
 
 #weatherTrons {
-    grid:   [row1-start] "data map " 40vw [row1-end]
+    grid:   [row1-start] "data map" 40vw [row1-end]
             / auto 40vh auto;
     /*display: -webkit-flex;
     display: flex;

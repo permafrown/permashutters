@@ -34,7 +34,7 @@ if ($_GET['cityName']) {
             <button type="submit" class="btn btn-primary">check</button>
           </form>
       </div>
-      <div class="container-flex" id="weatherTrons">
+      <div class="container" id="weatherTrons">
             <!-- <div class="container" id="weatherData"> -->
                 <!-- <h2 class="title-centered">Right now, the weather in <?php echo $newName ?> is...</h2> -->
                 <div id="weatherData" class="alert alert-info" role="alert">

@@ -9,8 +9,8 @@
 }
 
 #weatherTrons {
-    grid:   [row1-start] "data map" 40vw [row1-end]
-            / auto 40vh auto;
+    /*grid:   [row1-start] "data map" 40vw [row1-end]
+            / auto 40vh auto;*/
     /*display: -webkit-flex;
     display: flex;
     flex-flow: row nowrap;
@@ -24,13 +24,13 @@
 
 #weatherData {
     /*flex: 0 0 auto;*/
-    grid-area: data;
+    /*grid-area: data;*/
     max-width: 45vw;
 }
 
 #map {
     /*flex: 0 0 auto;*/
-    grid-area: map;
+    /*grid-area: map;*/
     height: 40vh;
     max-width: 45vw;
 }

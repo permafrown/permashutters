@@ -69,11 +69,11 @@ if ($_GET['cityName']) {
             <div id="map"></div>
             <script>
                     var map;
-                    var lon = $weatherArray['coord']['lon'];
+                    var lon =
                     var lat = $weatherArray['coord']['lat'];
                     function initMap() {
                       map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: $lat, lng: $long},
+                        center: {lat: <?php echo $weatherArray['coord']['lat']; ?>, lng: <?php echo $weatherArray['coord']['lon']; ?>},
                         zoom: 8
                       });
                     }

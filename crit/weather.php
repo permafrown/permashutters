@@ -24,8 +24,8 @@ if ($_GET['cityName']) {
 <body>
   <h1 class="title-centered">weather | permashutters</h1>
   <hr class="permahr">
-  <div class="container">
-      <div class="container-flex">
+  <div class="container" id="weatherPage">
+      <div class="container-flex" id="weatherForm">
           <h2 class="title-centered">what's the weather?</h2>
           <form method="GET">
             <div class="form-group">
@@ -34,8 +34,8 @@ if ($_GET['cityName']) {
             <button type="submit" class="btn btn-primary">check</button>
           </form>
       </div>
-      <div class="container-flex">
-            <div class="jumbotron">
+      <div class="container-flex" id="weatherTrons">
+            <div class="jumbotron" id="weatherData">
                 <h2 class="title-centered">Right now, the weather in <?php echo $newName ?> is...</h2>
                 <div class="alert alert-info" role="alert">
                     <?php
@@ -69,7 +69,7 @@ if ($_GET['cityName']) {
                     ?>
                 </div>
             </div>
-            <div class="jumbotron">
+            <div class="jumbotron" id="weatherMap">
                 <div id="map"></div>
                 <script>
                     var map;

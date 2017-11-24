@@ -9,11 +9,13 @@
 }
 
 #weatherTrons {
-    display: -webkit-flex;
+    grid:   [row1-start] "data data . map map" 20vw [row1-end]
+            / auto 20vw auto;
+    /*display: -webkit-flex;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: flex-start;*/
 }
 
 /*.jumbotron {
@@ -21,11 +23,13 @@
 }*/
 
 #weatherData {
-    flex: 0 0 auto;
+    /*flex: 0 0 auto;*/
+    grid-area: data;
 }
 
 #weatherMap {
-    flex: 0 0 auto;
+    /*flex: 0 0 auto;*/
+    grid-area: map;
 }
 
 #cityName {

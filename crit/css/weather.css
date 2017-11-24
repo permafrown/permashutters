@@ -23,11 +23,11 @@
 }*/
 
 #weatherData {
-    flex-grow: 1;
+    flex: 0 0 auto;
 }
 
 #weatherMap {
-    flex-grow: 2;
+    flex: 0 0 auto;
 }
 
 #cityName {

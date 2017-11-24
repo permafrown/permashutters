@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 100vw;
+  max-width: 75vw;
 }
 
 #weatherForm {
@@ -10,7 +10,7 @@
 
 #weatherTrons {
     display: grid;
-    grid:   [row1-start] "data map map" 40vw [row1-end]
+    grid:   [row1-start] "data map map map" 40vw [row1-end]
             / auto 25vw auto;
 }
 

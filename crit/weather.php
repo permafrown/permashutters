@@ -66,15 +66,15 @@ if ($_GET['cityName']) {
             ?>
         </div>
         <!-- <div class="jumbotron"> -->
-            <div id="map"></div>
+        <div id="map"></div>
             <script>
-                var map;
-                function initMap() {
-                    map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: 10, lng: 10},
-                        zoom: 8
-                    });
-                }
+              var map;
+              function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: -34.397, lng: 150.644},
+                  zoom: 8
+                });
+              }
             </script>
             <?php
             // if ($weatherArray != "") {

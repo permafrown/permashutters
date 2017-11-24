@@ -65,7 +65,7 @@ if ($_GET['cityName']) {
             }
             ?>
         </div>
-        <div class="jumbotron">
+        <!-- <div class="jumbotron"> -->
             <div id="map"></div>
             <script>
                 var map;
@@ -84,7 +84,7 @@ if ($_GET['cityName']) {
             // }
              ?>
 
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>

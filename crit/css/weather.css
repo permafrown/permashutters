@@ -27,7 +27,7 @@
     grid-area: data;
 }
 
-#weatherMap {
+#Map {
     /*flex: 0 0 auto;*/
     grid-area: map;
 }
@@ -36,6 +36,6 @@
   max-width: 20vw;
 }
 
-#map {
+/*#map {
     height: 25vh;
-}
+}*/

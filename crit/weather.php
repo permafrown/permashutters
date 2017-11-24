@@ -25,13 +25,15 @@ if ($_GET['cityName']) {
   <h1 class="title-centered">weather | permashutters</h1>
   <hr class="permahr">
   <div class="container">
-    <h2 class="title-centered">what's the weather?</h2>
-    <form method="GET">
-      <div class="form-group">
-        <input type="text" class="form-control" id="cityName" name="cityName" placeholder="enter a place"></input>
+      <div class="jumbotron">
+          <h2 class="title-centered">what's the weather?</h2>
+          <form method="GET">
+            <div class="form-group">
+              <input type="text" class="form-control" id="cityName" name="cityName" placeholder="enter a place"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">check</button>
+          </form>
       </div>
-      <button type="submit" class="btn btn-primary">check</button>
-    </form>
         <div class="jumbotron">
             <h2 class="title-centered">Right now, the weather in <?php echo $newName ?> is...</h2>
             <div class="alert alert-info" role="alert">

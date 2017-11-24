@@ -71,7 +71,7 @@ if ($_GET['cityName']) {
                     var map;
                     function initMap() {
                       map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: -34.397, lng: 150.644},
+                        center: {lat: <?php $weatherArray['coord']['lat'] ?>, lng: <?php $weatherArray['coord']['lon'] ?>},
                         zoom: 8
                       });
                     }

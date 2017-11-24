@@ -66,12 +66,22 @@ if ($_GET['cityName']) {
             ?>
         </div>
         <div class="jumbotron">
+            <div id="map"></div>
+            <script>
+                var map;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: <?php echo $weatherArray['coord']['lat'] ?>, lng: <?php echo $weatherArray['coord']['lon'] ?> },
+                        zoom: 8
+                    });
+                }
+            </script>
             <?php
-            if ($weatherArray != "") {
-                echo "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/place?key=AIzaSyDbR0TOMMHuzQFYlIAZsEA1TaqgYG526k4&q=".$weatherArray['name']."+".$weatherArray['sys']['country']."\" allowfullscreen></iframe>";
-            } else {
-                echo "";
-            }
+            // if ($weatherArray != "") {
+            //     echo "<iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/place?key=AIzaSyDbR0TOMMHuzQFYlIAZsEA1TaqgYG526k4&q=".$weatherArray['name']."+".$weatherArray['sys']['country']."\" allowfullscreen></iframe>";
+            // } else {
+            //     echo "";
+            // }
              ?>
 
         </div>
@@ -81,6 +91,7 @@ if ($_GET['cityName']) {
 
   <hr class="permahr">
   <script type="text/javascript" src="js/weather.js"></script>
-    <?php include_once "includes/body_scripts.php"; ?>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbR0TOMMHuzQFYlIAZsEA1TaqgYG526k4&callback=initMap" async defer></script>
+  <?php include_once "includes/body_scripts.php"; ?>
 </body>
 </html>

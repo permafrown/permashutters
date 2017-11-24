@@ -73,6 +73,15 @@ if ($_GET['cityName']) {
   </div>
 
   <hr class="permahr">
+  <script>
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+            });
+          }
+    </script>
   <script type="text/javascript" src="js/weather.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXUg7be7krVpJMvpOZE9lJaiQbsbtqXSc&callback=initMap" async defer></script>
   <?php include_once "includes/body_scripts.php"; ?>

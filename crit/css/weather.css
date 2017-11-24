@@ -4,15 +4,30 @@
 }
 
 #weatherForm {
+    margin: 0 auto;
     max-width: 50vw;
 }
 
 #weatherTrons {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
     max-width: 75vw;
 }
 
-.jumbotron {
+/*.jumbotron {
     max-width: 22vw;
+}*/
+
+#weatherData {
+    flex-grow: 1;
+}
+
+#weatherMap {
+    flex-grow: 2;
 }
 
 #cityName {

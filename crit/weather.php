@@ -25,7 +25,7 @@ if ($_GET['cityName']) {
   <h1 class="title-centered">weather | permashutters</h1>
   <hr class="permahr">
   <div class="container">
-      <div class="jumbotron">
+      <div class="container-flex">
           <h2 class="title-centered">what's the weather?</h2>
           <form method="GET">
             <div class="form-group">

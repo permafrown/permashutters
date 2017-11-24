@@ -6,9 +6,10 @@ if ($_GET['cityName']) {
     $replace = '';
     $properName = preg_replace($pattern, $replace, $newName);
     $forecastPage = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".urlencode($_GET['cityName'])."&units=metric&appid=4765ce9620b638f468ca87597fa0cc6f");
+    // $forecastPage = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".$properName."&units=metric&appid=4765ce9620b638f468ca87597fa0cc6f");
     $weatherArray = json_decode($forecastPage, true);
 } else {
-    echo '<style type="text/css"> #weatherTrons {display: none;}</style>';
+    echo '<style type="text/css"> .jumbotron {display: none;}</style>';
 }
 ?>
 <!DOCTYPE html>
@@ -65,6 +66,7 @@ if ($_GET['cityName']) {
                     }
                     ?>
                 </div>
+            <!-- <div class="container" id="weatherMap"> -->
                 <div id="map"></div>
                 <script>
                     var map;
@@ -97,6 +99,7 @@ if ($_GET['cityName']) {
                       });
                     }
                 </script>
+            <!-- </div> -->
         </div>
       </div>
     </div>

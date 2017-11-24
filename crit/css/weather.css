@@ -31,7 +31,7 @@
 #map {
     /*flex: 0 0 auto;*/
     grid-area: map;
-    /*height: 40vh;*/
+    height: 40vh;
     max-width: 45vw;
 }
 

@@ -26,48 +26,50 @@
     // }
 
     if($_GET['action'] == 'loginSignup') {
-        $error = '';
-
-        $un = $_POST['email'];
-        $pw = $_POST['password'];
-
-        if($un == '')
-            $error = 'enter email';
-        if($pw == '')
-            $error = 'enter pw';
-
-        if($error == ''){
-            if ($_POST['loginActive'] == "0") {
-                console.log("tried to sign up");
-                // $query = $connect->prepare("SELECT * FROM tw_users WHERE tw_un = ?");
-                // $query->bindValue(1, $un);
-                // $query->execute();
-                //
-                // if($query->rowCount() > 0) {
-                //     $error = 'user exists...';
-                //     exit();
-                // } else {
-                //     try {
-                //         $stmt = $connect->prepare('INSERT INTO tw_users (tw_un, tw_pw) VALUES (:un, :pw)');
-                //         $stmt->execute(array(
-                //             ':un' => $un,
-                //             ':pw' => $pw,
-                //             ));
-                //         header('Location: /index.php');
-                //         exit();
-                //     }
-                //     catch(PDOException $e) {
-                //         echo $e->getMessage();
-                //     }
-                // }
-            } else if ($_POST['loginActive'] == "1") {
-                console.log("tried to log in");
-            }
-        } else {
-            echo $error;
-            echo "something went wrong...";
-            exit();
-        }
+        print_r($POST);
+        // $error = '';
+        //
+        // $un = $_POST['email'];
+        // $pw = $_POST['password'];
+        // $lA = $_POST['loginActive'];
+        //
+        // if($un == '')
+        //     $error = 'enter email';
+        // if($pw == '')
+        //     $error = 'enter pw';
+        //
+        // if($error == ''){
+        //     if ($lA == "0") {
+        //         console.log("tried to sign up");
+        //         // $query = $connect->prepare("SELECT * FROM tw_users WHERE tw_un = ?");
+        //         // $query->bindValue(1, $un);
+        //         // $query->execute();
+        //         //
+        //         // if($query->rowCount() > 0) {
+        //         //     $error = 'user exists...';
+        //         //     exit();
+        //         // } else {
+        //         //     try {
+        //         //         $stmt = $connect->prepare('INSERT INTO tw_users (tw_un, tw_pw) VALUES (:un, :pw)');
+        //         //         $stmt->execute(array(
+        //         //             ':un' => $un,
+        //         //             ':pw' => $pw,
+        //         //             ));
+        //         //         header('Location: /index.php');
+        //         //         exit();
+        //         //     }
+        //         //     catch(PDOException $e) {
+        //         //         echo $e->getMessage();
+        //         //     }
+        //         // }
+        //     } else if ($lA == "1") {
+        //         console.log("tried to log in");
+        //     }
+        // } else {
+        //     echo $error;
+        //     echo "something went wrong...";
+        //     exit();
+        // }
     }
 
 

@@ -62,9 +62,11 @@
                 $.ajax({
                     type: "POST",
                     url: "actions.php?action=loginSignup",
-                    data: "email=" + $("#email").val() + "&password=" + $("#password").val() + "&loginActive=" + $("#loginActive").val(),
+                    data: "email=" + $("#email").val()
+                     + "&password=" + $("#password").val()
+                      + "&loginActive=" + $("#loginActive").val(),
                     success: function(result) {
-                        console.log(result);
+                        console.log(result)
                         }
                 });
             })

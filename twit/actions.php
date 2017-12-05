@@ -1,5 +1,5 @@
 <?php
-
+    require_once("../permadmin/auth/config.php");
     include("functions.php");
 
     if ($_GET['action'] == 'loginSignup') {

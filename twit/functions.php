@@ -2,7 +2,7 @@
 
     require_once("../permadmin/auth/config.php");
 
-    	if(isset($_POST['signup'])) {
+    	if($_POST['loginActive'] == "0") {
     		$errMsg = '';
 
     		$un = $_POST['email'];
@@ -28,9 +28,5 @@
     			}
     		}
     	}
-
-    	// if(isset($_GET['action']) && $_GET['action'] == 'joined') {
-    	// 	$errMsg = 'Registration successfull. Now you can <a href="login.php">login</a>';
-    	// }
 
  ?>

@@ -14,12 +14,28 @@
             $error = "Not a valid email address...";
         }
 
+        if ($_POST['loginActive'] == "0") {
+            try {
+                $stmt = $query->prepare("SELECT * FROM tw_users WHERE tw_un = '". mysqli_real_escape_string($connect, $_POST['email'].)"' LIMIT 1");
+                $stmt->execute(array(
+                    ':un' => $un
+                    ));
+                $result = mysqli_query($connect, $query);
+                if (mysqli_num_rows($result) > 0) {
+                    $error = "That email address already exists..."
+                }
+                exit;
+            }
+            catch(PDOException $e) {
+                echo $e->getMessage();
+            }
+        };
+
         if ($error != "") {
             echo $error;
+            exit()
         }
 
-        if ($_POST['loginActive'] == "0");
-            echo "Sign user up";
     }
 
  ?>

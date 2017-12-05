@@ -1,6 +1,6 @@
 <?php
-    include("functions.php")
-    include("views/head.php")
-    include("views/home.php")
-    include("views/foot.php")
+    include_once("functions.php")
+    include_once("views/head.php")
+    include_once("views/home.php")
+    include_once("views/foot.php")
  ?>

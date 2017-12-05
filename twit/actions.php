@@ -51,8 +51,8 @@
                         ':un' => $un,
                         ':pw' => $pw,
                         ));
-                    header('Location: index.php');
-                    exit;
+                    header('Location: /index.php');
+                    exit();
                 }
                 catch(PDOException $e) {
                     echo $e->getMessage();

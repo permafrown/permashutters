@@ -4,7 +4,7 @@
     </div>
 </footer>
 
-<div class="modal fade" id="credModal" tabindex="-1" role="dialog" aria-labelledby="credModal" aria-hidden="true">
+<div class="modal fade" id="credModal" tabindex="-1" role="dialog" aria-labelledby="credModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

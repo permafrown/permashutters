@@ -58,6 +58,10 @@
                 }
             })
 
+            $("#loginSignupButton").click(function() {
+                console.log("clicked");
+            })
+
         </script>
 
     </body>

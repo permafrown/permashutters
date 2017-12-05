@@ -29,9 +29,9 @@
           </form>
       </div>
       <div class="modal-footer">
-          <a class="btn btn-outline-dark" id="toggleLogin">Sign Up?</a>
+          <a class="btn btn-outline-dark ml-auto" id="toggleLogin">Sign Up?</a>
         <button type="button" class="btn btn-outline-dark mr-auto" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-dark">Login</button>
+        <button type="button" class="btn btn-dark ml-auto">Login</button>
       </div>
     </div>
   </div>

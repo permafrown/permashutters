@@ -1,28 +1,60 @@
 <?php
-    require_once("../permadmin/auth/config.php");
+    // require_once("../permadmin/auth/config.php");
     include("functions.php");
 
-    if ($_GET['action'] == 'loginSignup') {
+    // if ($_GET['action'] == 'loginSignup') {
+    //
+    //     $error = "";
+    //
+    //     if (!$_POST['email']) {
+    //         $error = "email required...";
+    //     } else if (!$_POST['password']) {
+    //         $error = "password required...";
+    //     } else if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false) {
+    //         $error = "Not a valid email address...";
+    //     }
+    //
+    //     if ($_POST['loginActive'] == "0") {
+    //         console.log("login Active");
+    //     };
+    //
+    //     if ($error != "") {
+    //         echo $error;
+    //         exit()
+    //     }
+    //
+    // }
 
-        $error = "";
+    if($_GET['action'] == 'loginSignup') {
+        $error = '';
 
-        if (!$_POST['email']) {
-            $error = "email required...";
-        } else if (!$_POST['password']) {
-            $error = "password required...";
-        } else if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false) {
-            $error = "Not a valid email address...";
-        }
+        $un = $_POST['email'];
+        $pw = $_POST['password'];
 
-        if ($_POST['loginActive'] == "0") {
-            console.log("login Active");
-        };
+        if($un == '')
+            $error = 'enter email';
+        if($pw == '')
+            $error = 'enter pw';
 
-        if ($error != "") {
+        if($error == ''){
+            try {
+                $stmt = $connect->prepare('INSERT INTO tw_users (tw_un, tw_pw) VALUES (:un, :pw)');
+                $stmt->execute(array(
+                    ':un' => $un,
+                    ':pw' => $pw,
+                    ));
+                header('Location: index.php');
+                exit;
+            }
+            catch(PDOException $e) {
+                echo $e->getMessage();
+            }
+        } else {
             echo $error;
-            exit()
+            exit();
         }
-
     }
+
+
 
  ?>

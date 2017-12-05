@@ -16,7 +16,7 @@
       <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="email">Email address</label>
+              <label for="email">Email Address</label>
               <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
@@ -24,13 +24,13 @@
               <label for="password">Password</label>
               <input type="password" class="form-control" id="password" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-outline-dark">Submit</button>
+            <!-- <button type="submit" class="btn btn-outline-dark">Login</button> -->
           </form>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-dark">Login</button>
+      </div>
     </div>
   </div>
 </div>

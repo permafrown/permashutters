@@ -49,7 +49,12 @@
                     $("#loginActive").val() == "0";
                     $("#credModalTitle").html("Sign Up");
                     $("#loginSignupButton").html("Sign Up");
-                    $("#toggleLogin").html("Login");
+                    $("#toggleLogin").html("Login?");
+                } else {
+                    $("#loginActive").val() == "1";
+                    $("#credModalTitle").html("Login");
+                    $("#loginSignupButton").html("Login");
+                    $("#toggleLogin").html("Sign Up?");
                 }
             })
 

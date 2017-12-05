@@ -8,7 +8,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="credModalLabel">Login</h5>
+        <h5 class="modal-title" id="credModalTitle">Login</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -32,7 +32,7 @@
           <!-- <a class="btn btn-outline-dark" id="toggleLogin">Sign Up?</a> -->
         <button type="button" class="btn btn-outline-dark mr-auto" data-dismiss="modal">Close</button>
         <button type="button" id="toggleLogin" class="btn btn-outline-dark">SignUp?</button>
-        <button type="button" class="btn btn-dark">Login</button>
+        <button type="button" id="loginSignupButton" class="btn btn-dark">Login</button>
       </div>
     </div>
   </div>
@@ -46,7 +46,10 @@
 
             $("#toggleLogin").click(function() {
                 if ($("#loginActive").val() == "1") {
-                    console.log("in login mode");
+                    $("#loginActive").val() == "0";
+                    $("#credModalTitle").html("Sign Up");
+                    $("#loginSignupButton").html("Sign Up");
+                    $("#toggleLogin").html("Login");
                 }
             })
 

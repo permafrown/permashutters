@@ -37,18 +37,28 @@
             $error = 'enter pw';
 
         if($error == ''){
-            try {
-                $stmt = $connect->prepare('INSERT INTO tw_users (tw_un, tw_pw) VALUES (:un, :pw)');
-                $stmt->execute(array(
-                    ':un' => $un,
-                    ':pw' => $pw,
-                    ));
-                header('Location: index.php');
-                exit;
+            $query = $con->prepare("SELECT * FROM tw_users WHERE tw_un = ?");
+            $query->bindValue(1, $un);
+            $query->execute();
+
+            if($query->rowCount() > 0) {
+                $error = 'user exists...';
+                exit();
+            } else {
+                echo 'email OK!!';
             }
-            catch(PDOException $e) {
-                echo $e->getMessage();
-            }
+            // try {
+            //     $stmt = $connect->prepare('INSERT INTO tw_users (tw_un, tw_pw) VALUES (:un, :pw)');
+            //     $stmt->execute(array(
+            //         ':un' => $un,
+            //         ':pw' => $pw,
+            //         ));
+            //     header('Location: index.php');
+            //     exit;
+            // }
+            // catch(PDOException $e) {
+            //     echo $e->getMessage();
+            // }
         } else {
             echo $error;
             exit();

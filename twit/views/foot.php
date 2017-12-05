@@ -64,7 +64,7 @@
                     url: "actions.php?action=loginSignup",
                     data: "email=" + $("#email").val() + "&password=" + $("#password").val() + "&loginActive=" + $("#loginActive").val(),
                     success: function(result) {
-                        console.log("successfully signed up...");
+                        console.log(result);
                     }
                 });
             })

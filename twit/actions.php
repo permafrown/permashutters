@@ -45,20 +45,19 @@
                 $error = 'user exists...';
                 exit();
             } else {
-                echo 'email OK!!';
+                try {
+                    $stmt = $connect->prepare('INSERT INTO tw_users (tw_un, tw_pw) VALUES (:un, :pw)');
+                    $stmt->execute(array(
+                        ':un' => $un,
+                        ':pw' => $pw,
+                        ));
+                    header('Location: index.php');
+                    exit;
+                }
+                catch(PDOException $e) {
+                    echo $e->getMessage();
+                }
             }
-            // try {
-            //     $stmt = $connect->prepare('INSERT INTO tw_users (tw_un, tw_pw) VALUES (:un, :pw)');
-            //     $stmt->execute(array(
-            //         ':un' => $un,
-            //         ':pw' => $pw,
-            //         ));
-            //     header('Location: index.php');
-            //     exit;
-            // }
-            // catch(PDOException $e) {
-            //     echo $e->getMessage();
-            // }
         } else {
             echo $error;
             exit();

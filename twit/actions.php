@@ -37,7 +37,7 @@
             $error = 'enter pw';
 
         if($error == ''){
-            $query = $con->prepare("SELECT * FROM tw_users WHERE tw_un = ?");
+            $query = $connect->prepare("SELECT * FROM tw_users WHERE tw_un = ?");
             $query->bindValue(1, $un);
             $query->execute();
 

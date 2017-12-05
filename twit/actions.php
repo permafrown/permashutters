@@ -60,6 +60,7 @@
             }
         } else {
             echo $error;
+            echo "something went wrong...";
             exit();
         }
     }

@@ -66,7 +66,7 @@
                      + "&password=" + $("#password").val()
                       + "&loginActive=" + $("#loginActive").val(),
                     success: function(result) {
-                        console.log(result)
+                        alert(result)
                         }
                 });
             })

@@ -3,7 +3,8 @@
     include("functions.php");
 
     if ($_GET['action'] == 'loginSignup') {
-        print_r($_POST);
+        if ($_POST['loginActive'] == "0");
+            echo "Sign user up";
     }
 
  ?>

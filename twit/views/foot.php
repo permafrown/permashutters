@@ -64,10 +64,7 @@
                     url: "actions.php?action=loginSignup",
                     data: "email=" + $("#email").val() + "&password=" + $("#password").val() + "&loginActive=" + $("#loginActive").val(),
                     success: function(result) {
-                        if (result == "1") {
-                            console.log("result equals 1");
-                        } else {
-                            console.log("result equals 2");
+                        console.log(result);
                         }
                     }
                 });

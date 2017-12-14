@@ -86,7 +86,7 @@ if(empty($_SESSION['ulogin']))
 
       try {
           $stmt = $connect->prepare('SELECT pj_id, pj_date, pj_mins, pj_notes FROM prayer_journal WHERE pj_id = :pj_id') ;
-          $stmt->execute(array(':pj_id' => $_GET[pj_id]));
+          $stmt->execute(array(':pj_id' => $_GET['id']));
           $row = $stmt->fetch();
 
       } catch(PDOException $e) {
@@ -101,16 +101,16 @@ if(empty($_SESSION['ulogin']))
         <div class="form-group">
             <label for="pj_date_input">Date for new Entry</label>
             <input type="datetime" class="form-control" id="pj_date_input" name="pj_date" placeholder="<?php echo date('Y-m-d H:i:s') ?>"
-                value="<?php echo $row[pj_date] ?>" required>
+                value="<?php echo $row['pj_date'] ?>" required>
         </div>
         <div class="form-group">
             <label for="pj_mins_input">Number of Minutes Spent</label>
-            <input type="number" class="form-control" id="pj_mins_input" name="pj_mins" placeholder="20" value="<?php echo $row[pj_mins] ?>" required />
+            <input type="number" class="form-control" id="pj_mins_input" name="pj_mins" placeholder="20" value="<?php echo $row['pj_mins'] ?>" required />
         </div>
         <div class="form-group">
             <label for="pj_notes_input">Notes</label>
             <textarea class="form-control" id="pj_notes_input" rows="3" name="pj_notes" placeholder="Please add notes here..." required>
-                <?php echo $row[pj_notes]; ?>
+                <?php echo $row['pj_notes']; ?>
             </textarea>
         </div>
         <button type="submit" class="btn btn-outline-light" name="pj_submit" value="submit">submit</button>

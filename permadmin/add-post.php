@@ -110,12 +110,6 @@ if(empty($_SESSION['ulogin']))
 	}
 	?>
 
-    <?php
-        if(action="added") {
-            echo '<p class="error">New entry successfully added!</p>';
-        }
-     ?>
-
 	<form class="shutt_post_form form-group" action='' method='post'>
 
 		<p><label>Title</label><br />

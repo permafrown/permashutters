@@ -59,12 +59,15 @@ if(isset($_GET['delpost'])) {
    ?>
 
   <div class="container">
-      <table class="pj_table">
-          <tr>
-              <th>date</th>
-              <th>time</th>
-              <th>notes</th>
-          </tr>
+      <table class="table">
+      <!-- <table class="pj_table"> -->
+        <thead>
+            <tr>
+                <th scope="col">date</th>
+                <th scope="col">time</th>
+                <th scope="col">notes</th>
+            </tr>
+        </thead>
           <?php
               try {
                   $stmt = $connect->query('SELECT pj_id, pj_date, pj_mins, pj_notes FROM prayer_journal ORDER BY pj_id DESC');

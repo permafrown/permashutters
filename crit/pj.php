@@ -52,14 +52,20 @@ if(isset($_GET['delpost'])) {
 
   <?php
       if($_GET['action'] == "added") {
-          echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-          New entry successfully added!
-          <button type="button" class="close" data-dismiss="alert" aria-label="close"></button>
+          echo '
+          <div class="container">
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                New entry successfully added!
+                <button type="button" class="close" data-dismiss="alert" aria-label="close"></button>
+              </div>
           </div>';
       } elseif ($_GET['action'] == "deleted") {
-          echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-          Entry deleted...
-          <button type="button" class="close" data-dismiss="alert" aria-label="close"></button>
+          echo '
+          <div class="container">
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                Entry deleted...
+                <button type="button" class="close" data-dismiss="alert" aria-label="close"></button>
+              </div>
           </div>';
       }
    ?>

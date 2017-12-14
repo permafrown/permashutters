@@ -51,7 +51,7 @@ if(empty($_SESSION['ulogin']))
           </tr>
           <?php
               try {
-                  $stmt = $connect->query('SELECT pj_date, pj_mins, pj_notes FROM prayer_journal ORDER BY pj_id DESC');
+                  $stmt = $connect->query('SELECT pj_id, pj_date, pj_mins, pj_notes FROM prayer_journal ORDER BY pj_id DESC');
                   while($row = $stmt->fetch()){
                       echo '<tr>';
                       echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
@@ -59,7 +59,7 @@ if(empty($_SESSION['ulogin']))
                       echo '<td>'.$row['pj_notes'].'</td>';
                       ?>
                       <td>
-                          <a href="pj_edit.php?id=<?php $row['pj_id'];?>">edit</a> |
+                          <a href="pj_edit.php?id=<?php echo $row['pj_id'];?>">edit</a> |
                       </td>
                       <?php
                       echo '</tr>';

@@ -14,8 +14,8 @@ if(empty($_SESSION['ulogin']))
 
 if(isset($_GET['delpost'])) {
     try {
-        $stmt = $connect->prepare("DELETE FROM prayer_journal WHERE id= :id");
-        $stmt->execute(array(':id' => $_GET['delpost']));
+        $stmt = $connect->prepare("DELETE FROM prayer_journal WHERE pj_id= :pj_id");
+        $stmt->execute(array(':pj_id' => $_GET['delpost']));
 
         header('Location: pj.php?action=deleted');
         exit;

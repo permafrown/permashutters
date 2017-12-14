@@ -63,6 +63,8 @@ if(isset($_GET['delpost'])) {
       <!-- <table class="pj_table"> -->
         <thead>
             <tr>
+                <th scope="col">id</th>
+                <th scope="col">action</th>
                 <th scope="col">date</th>
                 <th scope="col">time</th>
                 <th scope="col">notes</th>

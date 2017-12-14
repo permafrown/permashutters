@@ -48,13 +48,18 @@ if(empty($_SESSION['ulogin']))
           $error[] = 'Please enter the number of minutes.';
       }
 
+      if($pj_date == ''){
+          $error[] = "Please enter the date.";
+      }
+
       if(!isset($error)){
 
           try {
 
               //insert into database
-              $stmt = $connect->prepare('INSERT INTO prayer_journal (pj_date, pj_mins, pj_notes) VALUES (:pj_date, :pj_mins, :pj_notes)') ;
+              $stmt = $connect->prepare('UPDATE prayer_journal SET pj_date = :pj_date, pj_mins = :pj_mins, pj_notes = :pj_notes WHERE pj_id = :pj_id') ;
               $stmt->execute(array(
+                  ':pj_id' => $pj_id;
                   ':pj_date' => date('Y-m-d H:i:s'),
                   ':pj_mins' => $pj_mins,
                   ':pj_notes' => $pj_notes,
@@ -80,7 +85,7 @@ if(empty($_SESSION['ulogin']))
   }
 
       try {
-          $stmt = $connect->prepare('SELECT pj_date, pj_mins, pj_notes FROM prayer_journal WHERE pj_id = :pj_id') ;
+          $stmt = $connect->prepare('SELECT pj_id, pj_date, pj_mins, pj_notes FROM prayer_journal WHERE pj_id = :pj_id') ;
           $stmt->execute(array(':pj_id' => $_GET[pj_id]));
           $row = $stmt->fetch();
 
@@ -90,8 +95,9 @@ if(empty($_SESSION['ulogin']))
       }
 
   ?>
-<p><?php if(!empty($row){print_r($row);})  ?></p>
+
     <form action="" method="POST">
+        <input type='hidden' name='pj_id' value='<?php echo $row['pj_id'];?>'>
         <div class="form-group">
             <label for="pj_date_input">Date for new Entry</label>
             <input type="datetime" class="form-control" id="pj_date_input" name="pj_date" placeholder="<?php echo date('Y-m-d H:i:s') ?>"

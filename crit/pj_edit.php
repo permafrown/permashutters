@@ -90,8 +90,7 @@ if(empty($_SESSION['ulogin']))
       }
 
   ?>
-
-
+<p><?php if(!empty($row){print_r($row);})  ?></p>
     <form action="" method="POST">
         <div class="form-group">
             <label for="pj_date_input">Date for new Entry</label>

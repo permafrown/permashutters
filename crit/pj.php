@@ -43,7 +43,7 @@ if(empty($_SESSION['ulogin']))
   <hr class="permahr">
 
   <div class="container">
-      <table>
+      <table class="pj_table">
           <tr>
               <th>date</th>
               <th>time</th>

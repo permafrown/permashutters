@@ -80,6 +80,14 @@ if(empty($_SESSION['ulogin']))
       }
   }
   ?>
+    <p>
+        <?php
+        if (!empty($_POST)) {
+            print_r($_POST);
+        }
+
+         ?>
+    </p>
 
     <form action="" method="POST">
         <div class="form-group">

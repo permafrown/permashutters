@@ -50,6 +50,14 @@ if(isset($_GET['delpost'])) {
   <a class="btn btn-outline-light" id="pj_addNew" href="pj_new.php">Add New</a>
   <hr class="permahr">
 
+  <?php
+      if($_GET['action'] == "added") {
+          echo '<p class="error">New entry successfully added!</p>';
+      } elseif ($_GET['action'] == "deleted") {
+          echo '<p class="error">Entry deleted...</p>';
+      }
+   ?>
+
   <div class="container">
       <table class="pj_table">
           <tr>

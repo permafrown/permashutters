@@ -80,12 +80,6 @@ if(empty($_SESSION['ulogin']))
   }
   ?>
 
-    <?php
-        if($_GET['action'] == "added") {
-            echo '<p class="error">New entry successfully added!</p>';
-        }
-     ?>
-
     <form action="" method="POST">
         <div class="form-group">
             <label for="pj_date_input">Date for new Entry</label>

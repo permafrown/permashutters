@@ -99,7 +99,7 @@ if(empty($_SESSION['ulogin']))
     <form action="" method="POST">
         <input type='hidden' name='pj_id' value='<?php echo $row['pj_id'];?>'>
         <div class="form-group">
-            <label for="pj_date_input">Date for new Entry</label>
+            <label for="pj_date_input">Date for Entry</label>
             <input type="datetime" class="form-control" id="pj_date_input" name="pj_date" placeholder="<?php echo date('Y-m-d H:i:s') ?>"
                 value="<?php echo $row['pj_date'] ?>" required>
         </div>

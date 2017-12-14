@@ -81,18 +81,19 @@ if(empty($_SESSION['ulogin']))
   }
   ?>
 
-    <form>
+    <form action="" method="POST">
         <div class="form-group">
             <label for="pj_date_input">Date for new Entry</label>
-            <input type="datetime" class="form-control" id="pj_date_input" placeholder="<?php echo date('Y-m-d H:i:s') ?>">
+            <input type="datetime" class="form-control" id="pj_date_input" name=":pj_date" placeholder="<?php echo date('Y-m-d H:i:s') ?>"
+                value="<?php date('Y-m-d H:i:s') ?>" required>
         </div>
         <div class="form-group">
             <label for="pj_mins_input">Number of Minutes Spent</label>
-            <input type="number" class="form-control" id="pj_mins_input" placeholder="20" value="20" />
+            <input type="number" class="form-control" id="pj_mins_input" name=":pj_mins" placeholder="20" value="20" required />
         </div>
         <div class="form-group">
             <label for="pj_notes_input">Notes</label>
-            <textarea class="form-control" id="pj_notes_input" rows="3"></textarea>
+            <textarea class="form-control" id="pj_notes_input" rows="3" name=":pj_notes" placeholder="Please add notes here..." required></textarea>
         </div>
     </form>
 

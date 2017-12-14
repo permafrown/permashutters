@@ -92,16 +92,18 @@ if(empty($_SESSION['ulogin']))
     <form action="" method="POST">
         <div class="form-group">
             <label for="pj_date_input">Date for new Entry</label>
-            <input type="datetime" class="form-control" id="pj_date_input" name=":pj_date" placeholder="<?php echo date('Y-m-d H:i:s') ?>"
+            <input type="datetime" class="form-control" id="pj_date_input" name="pj_date" placeholder="<?php echo date('Y-m-d H:i:s') ?>"
                 value="<?php echo date('Y-m-d H:i:s') ?>" required>
         </div>
         <div class="form-group">
             <label for="pj_mins_input">Number of Minutes Spent</label>
-            <input type="number" class="form-control" id="pj_mins_input" name=":pj_mins" placeholder="20" value="20" required />
+            <input type="number" class="form-control" id="pj_mins_input" name="pj_mins" placeholder="20" value="20" required />
         </div>
         <div class="form-group">
             <label for="pj_notes_input">Notes</label>
-            <textarea class="form-control" id="pj_notes_input" rows="3" name=":pj_notes" placeholder="Please add notes here..." required></textarea>
+            <textarea class="form-control" id="pj_notes_input" rows="3" name="pj_notes" placeholder="Please add notes here..." required>
+                <?php if(isset($error)){ echo $_POST['pj_notes'];}?>
+            </textarea>
         </div>
         <button type="submit" class="btn btn-outline-light" name="pj_submit" value="submit">submit</button>
     </form>

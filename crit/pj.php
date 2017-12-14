@@ -41,41 +41,28 @@ if(empty($_SESSION['ulogin']))
       extract($_POST);
 
       //very basic validation
-      if($postTitle ==''){
-          $error[] = 'Please enter the title.';
+      if($pj_notes ==''){
+          $error[] = 'Please enter some notes.';
       }
 
-      if($postDesc ==''){
-          $error[] = 'Please enter the description.';
-      }
-
-      if($postCont ==''){
-          $error[] = 'Please enter the content.';
+      if($pj_mins ==''){
+          $error[] = 'Please enter the number of minutes.';
       }
 
       if(!isset($error)){
 
           try {
 
-              $postSlug = slug($postTitle);
-
               //insert into database
-              $stmt = $connect->prepare('INSERT INTO shutt_posts (postTitle,postSlug,postImg,postLink,postLinkText,postFeat,postCat,postDesc,postCont,postDate) VALUES (:postTitle, :postSlug, :postImg, :postLink, :postLinkText, :postFeat, :postCat, :postDesc, :postCont, :postDate)') ;
+              $stmt = $connect->prepare('INSERT INTO prayer_journal (pj_date, pj_mins, pj_notes) VALUES (:pj_date, :pj_mins, :pj_notes)') ;
               $stmt->execute(array(
-                  ':postTitle' => $postTitle,
-        ':postSlug' => $postSlug,
-        ':postImg' => $postImg,
-        ':postLink' => $postLink,
-        ':postLinkText' => $postLinkText,
-        ':postFeat' => $postFeat,
-        ':postCat' => $postCat,
-                  ':postDesc' => $postDesc,
-                  ':postCont' => $postCont,
-                  ':postDate' => date('Y-m-d H:i:s')
+                  ':pj_date' => date('Y-m-d H:i:s'),
+                  ':pj_mins' => $pj_mins,
+                  ':pj_notes' => $pj_notes,
               ));
 
               //redirect to index page
-              header('Location: index.php?action=added');
+              header('Location: pj.php?action=added');
               exit;
 
           } catch(PDOException $e) {
@@ -93,6 +80,21 @@ if(empty($_SESSION['ulogin']))
       }
   }
   ?>
+
+    <form>
+        <div class="form-group">
+            <label for="pj_date_input">Date for new Entry</label>
+            <input type="datetime" class="form-control" id="pj_date_input" placeholder="Today's Date">
+        </div>
+        <div class="form-group">
+            <label for="pj_mins_input">Number of Minutes Spent</label>
+            <input type="number" class="form-control" id="pj_mins_input" placeholder="20" value="20" />
+        </div>
+        <div class="form-group">
+            <label for="pj_notes_input">Notes</label>
+            <textarea class="form-control" id="pj_notes_input" rows="3"></textarea>
+        </div>
+    </form>
 
 
   <hr class="permahr">

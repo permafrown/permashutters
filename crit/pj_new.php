@@ -99,7 +99,6 @@ if(empty($_SESSION['ulogin']))
         <div class="form-group">
             <label for="pj_notes_input">Notes</label>
             <textarea class="form-control" id="pj_notes_input" rows="3" name="pj_notes" placeholder="Please add notes here..." required>
-                <?php if(isset($error)){ echo $_POST['pj_notes'];}?>
             </textarea>
         </div>
         <button type="submit" class="btn btn-outline-light" name="pj_submit" value="submit">submit</button>

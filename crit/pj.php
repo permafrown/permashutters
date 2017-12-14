@@ -56,7 +56,7 @@ if(isset($_GET['delpost'])) {
           <div class="container">
               <div class="alert alert-success alert-dismissible fade show" role="alert">
                 New entry successfully added!
-                <button type="button" class="close" data-dismiss="alert" aria-label="close"></button>
+                <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>
               </div>
           </div>';
       } elseif ($_GET['action'] == "deleted") {
@@ -64,7 +64,7 @@ if(isset($_GET['delpost'])) {
           <div class="container">
               <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 Entry deleted...
-                <button type="button" class="close" data-dismiss="alert" aria-label="close"></button>
+                <button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>
               </div>
           </div>';
       }

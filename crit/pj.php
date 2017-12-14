@@ -12,6 +12,19 @@ if(empty($_SESSION['ulogin']))
     exit;
 }
 
+pj_del($id) {
+    try {
+        $stmt = connect->prepare("DELETE FROM prayer_journal WHERE id=':id'");
+        $stmt->execute(array(
+            ':id' => $id
+        ));
+        header('Location: pj.php?action=deleted');
+        exit;
+    } catch(PDOException $e) {
+        echo $e->getMessage();
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,93 +40,36 @@ if(empty($_SESSION['ulogin']))
 
   <hr class="permahr">
   <a class="btn btn-outline-light" id="pj_addNew" href="pj_new.php">Add New</a>
-  <button class="btn btn-outline-light" id="pj_delete">Delete</button>
   <hr class="permahr">
 
-  <?php
-
-  //if form has been submitted process it
-  if(isset($_POST['pj_submit'])){
-
-      $_POST = array_map( 'stripslashes', $_POST );
-
-      //collect form data
-      extract($_POST);
-
-      //very basic validation
-      if($pj_notes ==''){
-          $error[] = 'Please enter some notes.';
-      }
-
-      if($pj_mins ==''){
-          $error[] = 'Please enter the number of minutes.';
-      }
-
-      if(!isset($error)){
-
-          try {
-
-              //insert into database
-              $stmt = $connect->prepare('INSERT INTO prayer_journal (pj_date, pj_mins, pj_notes) VALUES (:pj_date, :pj_mins, :pj_notes)') ;
-              $stmt->execute(array(
-                  ':pj_date' => date('Y-m-d H:i:s'),
-                  ':pj_mins' => $pj_mins,
-                  ':pj_notes' => $pj_notes,
-              ));
-
-              //redirect to index page
-              header('Location: pj.php?action=added');
-              exit;
-
+  <div class="container">
+      <table>
+          <tr>
+              <th>date</th>
+              <th>time</th>
+              <th>notes</th>
+          </tr>
+          <?php
+              try {
+                  $stmt = $connect->query('SELECT pj_date, pj_mins, pj_notes FROM prayer_journal ORDER BY pj_id DESC');
+                  while($row = $stmt->fetch()){
+                      echo '<tr>';
+                      echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
+                      echo '<td>'.$row['pj_mins'].'</td>';
+                      echo '<td>'.$row['pj_notes'].'</td>';
+                      ?>
+                      <td>
+                          <a href="<?php pj_del($row['pj_id']); ?>','<?php echo $row['pj_id'];?>')">delete</a>
+                      </td>
+                      <?php
+                      echo '</tr>';
+              }
           } catch(PDOException $e) {
               echo $e->getMessage();
           }
-
-      }
-
-  }
-
-  //check for any errors
-  if(isset($error)){
-      foreach($error as $error){
-          echo '<p class="error">'.$error.'</p>';
-      }
-  }
-  ?>
-    <p>
-        <?php
-        if (!empty($_POST)) {
-            print_r($_POST);
-        }
-
-         ?>
-    </p>
-
-    <?php
-        if($_GET[action] == "added") {
-            echo '<p class="error">New entry successfully added!</p>';
-        }
-     ?>
-
-    <form action="" method="POST">
-        <div class="form-group">
-            <label for="pj_date_input">Date for new Entry</label>
-            <input type="datetime" class="form-control" id="pj_date_input" name="pj_date" placeholder="<?php echo date('Y-m-d H:i:s') ?>"
-                value="<?php echo date('Y-m-d H:i:s') ?>" required>
-        </div>
-        <div class="form-group">
-            <label for="pj_mins_input">Number of Minutes Spent</label>
-            <input type="number" class="form-control" id="pj_mins_input" name="pj_mins" placeholder="20" value="20" required />
-        </div>
-        <div class="form-group">
-            <label for="pj_notes_input">Notes</label>
-            <textarea class="form-control" id="pj_notes_input" rows="3" name="pj_notes" placeholder="Please add notes here..." required>
-                <?php if(isset($error)){ echo $_POST['pj_notes'];}?>
-            </textarea>
-        </div>
-        <button type="submit" class="btn btn-outline-light" name="pj_submit" value="submit">submit</button>
-    </form>
-
+          ?>
+      </table>
+  </div>
 
   <hr class="permahr">
   <div class="container-fluid">

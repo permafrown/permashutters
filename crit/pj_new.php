@@ -26,8 +26,7 @@ if(empty($_SESSION['ulogin']))
   <h1 class="title-centered">prayer journal | permashutters</h1>
 
   <hr class="permahr">
-  <button class="btn btn-outline-light" id="pj_addNew">Add New</button>
-  <button class="btn btn-outline-light" id="pj_delete">Delete</button>
+  <a class="btn btn-outline-light" id="pj_back" href="pj.php">Back</a>
   <hr class="permahr">
 
   <?php

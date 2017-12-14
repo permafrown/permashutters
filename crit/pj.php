@@ -6,10 +6,15 @@
   <?php include_once '../includes/head.php';?>
   <?php include_once '../permadmin/auth/config.php'; ?>
   <link rel="stylesheet" href="css/pj.css">
-  <title>gerbil | permashutters</title>
+  <title>prayer journal | permashutters</title>
 </head>
 <body>
-  <h1 class="title-centered">gerbil | permashutters</h1>
+  <h1 class="title-centered">prayer journal | permashutters</h1>
+
+  <button class="btn btn-outline-light" id="pj_addNew">Add New</button>
+  <button class="btn btn-outline-light" id="pj_delete">Delete</button>
+
+
   <hr class="permahr">
   <div class="container-fluid">
       <div class="col-xs-12">

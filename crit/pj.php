@@ -58,7 +58,9 @@ if(empty($_SESSION['ulogin']))
                       echo '<td>'.$row['pj_mins'].'</td>';
                       echo '<td>'.$row['pj_notes'].'</td>';
                       ?>
-
+                      <td>
+                          <a href="pj_edit.php?id=<?php echo $row['pj_id'];?>">edit</a> |
+                      </td>
                       <?php
                       echo '</tr>';
               }

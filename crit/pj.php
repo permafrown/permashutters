@@ -49,23 +49,7 @@ pj_del($id) {
               <th>time</th>
               <th>notes</th>
           </tr>
-          <?php
-              try {
-                  $stmt = $connect->query('SELECT pj_id, pj_date, pj_mins, pj_notes FROM prayer_journal ORDER BY pj_id DESC');
-                  while($row = $stmt->fetch()){
-                      echo '<tr>';
-                      echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
-                      echo '<td>'.$row['pj_mins'].'</td>';
-                      echo '<td>'.$row['pj_notes'].'</td>';
-                      ?>
 
-                      <?php
-                      echo '</tr>';
-              }
-          } catch(PDOException $e) {
-              echo $e->getMessage();
-          }
-          ?>
       </table>
   </div>
 

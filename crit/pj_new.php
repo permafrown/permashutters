@@ -81,7 +81,7 @@ if(empty($_SESSION['ulogin']))
   ?>
 
     <?php
-        if($_GET[action] == "added") {
+        if($_GET['action'] == "added") {
             echo '<p class="error">New entry successfully added!</p>';
         }
      ?>

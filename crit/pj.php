@@ -84,7 +84,7 @@ if(empty($_SESSION['ulogin']))
     <form>
         <div class="form-group">
             <label for="pj_date_input">Date for new Entry</label>
-            <input type="datetime" class="form-control" id="pj_date_input" placeholder="Today's Date">
+            <input type="datetime" class="form-control" id="pj_date_input" placeholder="<?php echo date('Y-m-d H:i:s') ?>">
         </div>
         <div class="form-group">
             <label for="pj_mins_input">Number of Minutes Spent</label>

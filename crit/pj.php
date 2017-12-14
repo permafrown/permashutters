@@ -12,18 +12,17 @@ if(empty($_SESSION['ulogin']))
     exit;
 }
 
-// pj_del($id) {
-//     try {
-//         $stmt = connect->prepare("DELETE FROM prayer_journal WHERE id=':id'");
-//         $stmt->execute(array(
-//             ':id' => $id
-//         ));
-//         header('Location: pj.php?action=deleted');
-//         exit;
-//     } catch(PDOException $e) {
-//         echo $e->getMessage();
-//     }
-// }
+if(isset($_GET['delpost'])) {
+    try {
+        $stmt = $connect->prepare("DELETE FROM prayer_journal WHERE id= :id");
+        $stmt->execute(array(':id' => $_GET['delpost']));
+
+        header('Location: pj.php?action=deleted');
+        exit;
+    } catch(PDOException $e) {
+        echo $e->getMessage();
+    }
+}
 
 ?>
 <!DOCTYPE html>
@@ -33,6 +32,15 @@ if(empty($_SESSION['ulogin']))
   <?php include_once '../includes/head.php';?>
   <?php include_once '../permadmin/auth/config.php'; ?>
   <link rel="stylesheet" href="css/pj.css">
+  <script language="JavaScript" type="text/javascript">
+    function delpost(id, title)
+    {
+  	  if (confirm("delete '" + title + "'?"))
+  	  {
+  	  	window.location.href = 'pj.php?delpost=' + id;
+  	  }
+    }
+    </script>
   <title>prayer journal | permashutters</title>
 </head>
 <body>
@@ -54,14 +62,15 @@ if(empty($_SESSION['ulogin']))
                   $stmt = $connect->query('SELECT pj_id, pj_date, pj_mins, pj_notes FROM prayer_journal ORDER BY pj_id DESC');
                   while($row = $stmt->fetch()){
                       echo '<tr>';
-                      echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
-                      echo '<td>'.$row['pj_mins'].'</td>';
-                      echo '<td>'.$row['pj_notes'].'</td>';
-                      ?>
-                      <td>
-                          <a href="pj_edit.php?id=<?php echo $row['pj_id'];?>">edit</a> |
-                      </td>
-                      <?php
+                          ?>
+                          <td>
+                              <a href="pj_edit.php?id=<?php echo $row['pj_id'];?>">edit</a> |
+                              <a href="javascript:delpost('<?php echo $row['pj_id'];?>','<?php echo $row['pj_id'];?>')">delete</a>
+                          </td>
+                          <?php
+                          echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
+                          echo '<td>'.$row['pj_mins'].'</td>';
+                          echo '<td>'.$row['pj_notes'].'</td>';
                       echo '</tr>';
               }
           } catch(PDOException $e) {

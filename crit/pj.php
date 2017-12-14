@@ -59,7 +59,7 @@ if(isset($_GET['delpost'])) {
    ?>
 
   <div class="container">
-      <table class="table">
+      <table class="table table-striped table-dark">
       <!-- <table class="pj_table"> -->
         <thead>
             <tr>
@@ -68,26 +68,29 @@ if(isset($_GET['delpost'])) {
                 <th scope="col">notes</th>
             </tr>
         </thead>
-          <?php
-              try {
-                  $stmt = $connect->query('SELECT pj_id, pj_date, pj_mins, pj_notes FROM prayer_journal ORDER BY pj_id DESC');
-                  while($row = $stmt->fetch()){
-                      echo '<tr>';
-                          ?>
-                          <td>
-                              <a href="pj_edit.php?id=<?php echo $row['pj_id'];?>">edit</a> |
-                              <a href="javascript:delpost('<?php echo $row['pj_id'];?>','<?php echo $row['pj_id'];?>')">delete</a>
-                          </td>
-                          <?php
-                          echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
-                          echo '<td>'.$row['pj_mins'].'</td>';
-                          echo '<td>'.$row['pj_notes'].'</td>';
-                      echo '</tr>';
-              }
-          } catch(PDOException $e) {
-              echo $e->getMessage();
-          }
-          ?>
+        <tbody>
+            <?php
+                try {
+                    $stmt = $connect->query('SELECT pj_id, pj_date, pj_mins, pj_notes FROM prayer_journal ORDER BY pj_id DESC');
+                    while($row = $stmt->fetch()){
+                        echo '<tr>';
+                        echo '<th scope="row">'.$row['pj_id'].'</th>'
+                            ?>
+                            <td>
+                                <a href="pj_edit.php?id=<?php echo $row['pj_id'];?>">edit</a> |
+                                <a href="javascript:delpost('<?php echo $row['pj_id'];?>','<?php echo $row['pj_id'];?>')">delete</a>
+                            </td>
+                            <?php
+                            echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
+                            echo '<td>'.$row['pj_mins'].'</td>';
+                            echo '<td>'.$row['pj_notes'].'</td>';
+                        echo '</tr>';
+                }
+            } catch(PDOException $e) {
+                echo $e->getMessage();
+            }
+            ?>
+        </tbody>
       </table>
   </div>
 

@@ -58,9 +58,7 @@ pj_del($id) {
                       echo '<td>'.$row['pj_mins'].'</td>';
                       echo '<td>'.$row['pj_notes'].'</td>';
                       ?>
-                      <td>
-                          <a href="<?php pj_del($row['pj_id']); ?>','<?php echo $row['pj_id'];?>')">delete</a>
-                      </td>
+
                       <?php
                       echo '</tr>';
               }

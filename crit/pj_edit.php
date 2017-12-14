@@ -59,7 +59,7 @@ if(empty($_SESSION['ulogin']))
               //insert into database
               $stmt = $connect->prepare('UPDATE prayer_journal SET pj_date = :pj_date, pj_mins = :pj_mins, pj_notes = :pj_notes WHERE pj_id = :pj_id') ;
               $stmt->execute(array(
-                  ':pj_id' => $pj_id;
+                  ':pj_id' => $pj_id,
                   ':pj_date' => date('Y-m-d H:i:s'),
                   ':pj_mins' => $pj_mins,
                   ':pj_notes' => $pj_notes,

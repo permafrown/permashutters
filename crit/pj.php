@@ -83,7 +83,8 @@ if(isset($_GET['delpost'])) {
                                 <a href="javascript:delpost('<?php echo $row['pj_id'];?>','<?php echo $row['pj_id'];?>')">delete</a>
                             </td>
                             <?php
-                            echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
+                            echo '<td>'.date('Y-m-d H:i:s', strtotime($row['pj_date'])).'</td>';
+                            // echo '<td>'.date('jS M Y', strtotime($row['pj_date'])).'</td>';
                             echo '<td>'.$row['pj_mins'].'</td>';
                             echo '<td>'.$row['pj_notes'].'</td>';
                         echo '</tr>';

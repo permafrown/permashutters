@@ -5,7 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=Bevan|Cinzel|Cinzel+Decorative|EB+Garamond|Lato|Libre+Baskerville|Montserrat|Overlock|Overlock+SC|Poiret+One|Roboto+Condensed|Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro|Tangerine"
     rel="stylesheet">
 <link rel="shortcut icon" href="/favicon.ico">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 <link href="https://file.myfontastic.com/SnuoyfFoAap2SLbczhrj5b/icons.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/auth.css">

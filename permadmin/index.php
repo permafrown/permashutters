@@ -65,7 +65,7 @@
     ?>
 
     <p><a href='add-post.php'>add post</a></p>
-
+</div>
     <div class="container">
     <table class="table table-striped table-dark">
         <thead>
@@ -102,7 +102,6 @@
         </tbody>
     </table>
     </div>
-</div>
 
 <!-- END CMS -->
 <!-- SMALL SCREEN SUBMENU -->

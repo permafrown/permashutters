@@ -87,10 +87,12 @@
                     echo '<td>'.$row['postTitle'].'</td>';
                     echo '<td>'.date('jS M Y', strtotime($row['postDate'])).'</td>';
                     echo '<td>'.$row['postCat'].'</td>';
-                    echo '<td>';
-                        echo '<a href="edit-post.php?id=<?php echo $row[\'postID\'];?>">edit</a> |';
-                        echo '<a href="javascript:delpost(\'<?php echo $row[\'postID\'];?>\',\'<?php echo $row[\'postTitle\'];?>\')">delete</a>';
-                    echo '</td>';
+                    ?>
+                    <td>
+                        <a href="edit-post.php?id=<?php echo $row['postID'];?>">edit</a> |
+                        <a href="javascript:delpost('<?php echo $row['postID'];?>','<?php echo $row['postTitle'];?>')">delete</a>
+                    </td>
+                    <?php
                     echo '</tr>';
             }
         } catch(PDOException $e) {

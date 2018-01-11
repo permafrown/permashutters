@@ -66,7 +66,9 @@
 
     <p><a href='add-post.php'>add post</a></p>
 
-    <table>
+    <div class="container">
+    <table class="table table-striped table-dark">
+        <thead>
         <tr>
             <th>id</th>
             <th>title</th>
@@ -74,6 +76,8 @@
             <th>category</th>
             <th>action</th>
         </tr>
+        </thead>
+        <tbody>
         <?php
             try {
                 $stmt = $connect->query('SELECT postID, postTitle, postDate, postCat FROM shutt_posts ORDER BY postID DESC');
@@ -95,7 +99,9 @@
             echo $e->getMessage();
         }
         ?>
+        </tbody>
     </table>
+    </div>
 </div>
 
 <!-- END CMS -->
